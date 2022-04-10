@@ -1,9 +1,6 @@
----
-title: Clarity
----
 Status: 
 Tags: 
-Links: [High Performers](out/high-performers.md)
+Links: [[High Performers]]
 ___
 # Clarity
 ## Principles
@@ -18,7 +15,7 @@ If we lack clarity but have strong systems:
 ___
 # Backlinks
 ```dataview
-list from [Clarity](out/clarity.md) AND !outgoing([Clarity](out/clarity.md))
+list from [[Clarity]] AND !outgoing([[Clarity]])
 ```
 ___
 References:

@@ -1,13 +1,10 @@
----
-title: Stretching
----
 Status:
 Tags:
-Links: [Wellness MOC](out/wellness-moc.md)
+Links: [[Wellness MOC]]
 ___
 # Stretching
 Hopefully this makes up for the countless days I've spent slouched ;)
 ## Routines
-- [Pomodoro Stretches](out/pomodoro-stretches.md)
+- [[Pomodoro Stretches]]
 ___
 References:

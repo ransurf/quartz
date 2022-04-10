@@ -1,9 +1,6 @@
----
-title: Overflow
----
 Status:
 Tags:
-Links: [Binary](out/binary.md)
+Links: [[Binary]]
 ___
 # Overflow
 Since integers can only hold x amount of bits, an overflow will occur when the calculated answer holds more than it's total capacity

@@ -1,9 +1,6 @@
----
-title: Happiness
----
 Status:
 Tags:
-Links: [Wellness MOC](out/wellness-moc.md)
+Links: [[Wellness MOC]]
 ___
 # Happiness
 ## Principles
@@ -11,15 +8,15 @@ ___
 - Passion + Growth + Contribution = Personal Satisfaction
 
 - Main source is through our valued social relationships
-- The feeling of [Contribution](out/contribution.md)
+- The feeling of [[Contribution]]
 
 - **Remember the 80/20 Rule**
 	- 20% of causes create 80% of effects
 	- Ask yourself:
 		1.  What are the 20% of things that cause 80% of my unhappiness?
 		2.  What are the 20% of things that cause 80% of my happiness?
-- Shaped by our [Environmental Influence](out/environmental-influence.md)
-- [notes/Long Term Thinking](None)
+- Shaped by our [[Environmental Influence]]
+- [[notes/Long Term Thinking]]
 ## Practices
 1. ** Avoid Negative and Irrelevant Information**
 	- News, social media

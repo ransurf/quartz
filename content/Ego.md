@@ -1,15 +1,12 @@
----
-title: Ego
----
 Status:
 Tags: 
-Links: [Personal Flaws](out/personal-flaws.md)
+Links: [[Personal Flaws]]
 ___
 # Ego
 ## Principles
 - Prevents us from accepting mistakes/weaknesses
 ## Prevention
-- Opposite is [Humility](out/humility.md)
+- Opposite is [[Humility]]
 ___
 References:
 

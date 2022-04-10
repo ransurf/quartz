@@ -1,23 +1,22 @@
 ---
-title: Relationships
 aliases:
 ---
 Status:
 Tags:
-Links: [040 Interests MOC](out/040-interests-moc.md)
+Links: [[040 Interests MOC]]
 ___
 
 # Relationships
 It's an interest, all right :,)
 ## Principles
-- [Dating MOC](out/dating-moc.md)
+- [[Dating MOC]]
 ### Characteristics
-- [Attachment Styles](out/attachment-styles.md)
-- [Commitment in a relationship](out/commitment-in-a-relationship.md)
+- [[Attachment Styles]]
+- [[Commitment in a relationship]]
 
 ### Advice
-- [Finding The Right Person for Me and My Type](out/finding-the-right-person-for-me-and-my-type.md)
-- [Make relational decisions deliberately](out/make-relational-decisions-deliberately.md)
-- [Moving in with someone](out/moving-in-with-someone.md)
+- [[Finding The Right Person for Me and My Type]]
+- [[Make relational decisions deliberately]]
+- [[Moving in with someone]]
 ___
 References:

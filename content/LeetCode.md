@@ -1,18 +1,15 @@
----
-title: LeetCode
----
 Status: 
 Tags: 
-Links: [Coding MOC](out/coding-moc.md)
+Links: [[Coding MOC]]
 ___
 # LeetCode
-- [LeetCode Practice](out/leetcode-practice.md)
-- [My LeetCode Regimen](None)
-- [LeetCode Questions](None)
+- [[LeetCode Practice]]
+- [[My LeetCode Regimen]]
+- [[LeetCode Questions]]
 ___
 # Backlinks
 ```dataview
-list from [LeetCode](out/leetcode.md) AND !outgoing([LeetCode](out/leetcode.md))
+list from [[LeetCode]] AND !outgoing([[LeetCode]])
 ```
 ___
 References:

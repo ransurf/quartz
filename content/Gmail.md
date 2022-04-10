@@ -1,9 +1,6 @@
----
-title: Gmail
----
 Status: 
 Tags: 
-Links: [Programs MOC](out/programs-moc.md)
+Links: [[Programs MOC]]
 ___
 
 # Gmail

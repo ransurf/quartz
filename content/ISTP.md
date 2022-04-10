@@ -1,18 +1,15 @@
----
-title: ISTP
----
 Status: 
 Tags: 
-Links: [MBTI Types](out/mbti-types.md)
+Links: [[MBTI Types]]
 ___
 # ISTP
-- [ISTP Functions](out/istp-functions.md)
-- [INFJ AND ISTP](out/infj-and-istp.md)
+- [[ISTP Functions]]
+- [[INFJ AND ISTP]]
 
 ___
 # Backlinks
 ```dataview
-list from [ISTP](out/istp.md) AND !outgoing([ISTP](out/istp.md))
+list from [[ISTP]] AND !outgoing([[ISTP]])
 ```
 ___
 References:

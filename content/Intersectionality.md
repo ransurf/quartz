@@ -1,9 +1,6 @@
----
-title: Intersectionality
----
 Status:
 Tags:
-Links: [Self-Acceptance](out/self-acceptance.md)
+Links: [[Self-Acceptance]]
 ___
 # Intersectionality
 ## Principles

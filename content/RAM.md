@@ -1,13 +1,10 @@
----
-title: RAM
----
 Status:
 Tags:
-Links: [Data Memory](out/data-memory.md) - [Microprocessor](out/microprocessor.md)
+Links: [[Data Memory]] - [[Microprocessor]]
 ___
 # RAM
 ## Principles
-- Made of several [Clock register](out/clock-register.md)
+- Made of several [[Clock register]]
 
 ___
 References:

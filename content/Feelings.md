@@ -1,18 +1,15 @@
----
-title: Feelings
----
 
 Status: <% tp.file.cursor(2) %>
 Tags: <% tp.file.cursor(3) %>
-Links: [<% tp.file.cursor(4) %>
+Links: [[<% tp.file.cursor(4) %>
 ___
-](None# Feelings
+# Feelings
 ## Principles
 <% tp.file.cursor(5) %>
 ___
 # Backlinks
 ```dataview
-list from [[Feelings) AND !outgoing([Feelings](out/feelings.md))
+list from [[Feelings]] AND !outgoing([[Feelings]])
 ```
 ___
 References:

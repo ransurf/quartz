@@ -1,17 +1,14 @@
----
-title: Fashion
----
 Status:
 Tags: 
-Links: [Wellness MOC](out/wellness-moc.md) - [Clothing](out/.trash/clothing.md)
+Links: [[Wellness MOC]] - [[Clothing]]
 ___
 # Fashion
 ## Styles
 [Reddit Post](https://www.reddit.com/r/malefashionadvice/comments/6u0b4c/different_fashion_stylesaesthetics/)
-- [Pastel Clothing](out/pastel-clothing.md)
+- [[Pastel Clothing]]
 ## Shopping
-- [Suit Tips](out/suit-tips.md)
-- [Makeup](out/makeup.md)
+- [[Suit Tips]]
+- [[Makeup]]
 ___
 References:
 

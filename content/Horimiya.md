@@ -1,8 +1,5 @@
----
-title: Horimiya
----
 Tags: #anime
-Links: [Animes](out/animes.md)
+Links: [[Animes]]
 ___
 # Horimiya
 **I haven’t finished watching the whole anime yet (nor has it finished airing all its episodes), but I felt compelled to write about my thoughts from episode 7.

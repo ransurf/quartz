@@ -1,8 +1,5 @@
----
-title: Wisdom
----
 # Wisdom
 
 ---
-toc: [Flow MOC](out/flow-moc.md)
+toc: [[Flow MOC]]
 created: 201903089999

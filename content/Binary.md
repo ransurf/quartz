@@ -1,19 +1,18 @@
 ---
-title: Binary
 aliases:
 ---
 Status:
 Tags: #archivedCards/macm101/numbertheory #aCards/cmpt295/binary
-Links: [Nand2Tetris MOC](out/nand2tetris-moc.md)
+Links: [[Nand2Tetris MOC]]
 ___
 
 # Binary
 
 ## Principles
 Using 0's and 1's to represent digits
-- [Binary Operations](out/binary-operations.md)
-- [Binary Encoding](out/binary-encoding.md)
-- [Negative Binary](out/negative-binary.md)
+- [[Binary Operations]]
+- [[Binary Encoding]]
+- [[Negative Binary]]
 
 ### General Form
 `?`
@@ -60,7 +59,7 @@ Steps to convert unsigned to signed
 
 # Backlinks
 ```dataview
-list from [Binary](out/binary.md) AND !outgoing([Binary](out/binary.md))
+list from [[Binary]] AND !outgoing([[Binary]])
 ```
 ___
 References:

@@ -1,9 +1,6 @@
----
-title: Multivitamins
----
 Status: 
 Tags: 
-Links: [Nutrition](out/nutrition.md)
+Links: [[Nutrition]]
 ___
 # Multivitamins
 ## Intake
@@ -15,7 +12,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [Multivitamins](out/multivitamins.md) AND !outgoing([Multivitamins](out/multivitamins.md))
+list from [[Multivitamins]] AND !outgoing([[Multivitamins]])
 ```
 ___
 References:

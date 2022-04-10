@@ -1,29 +1,26 @@
----
-title: Integers
----
 Status: 
 Tags: #archivedCards/macm101/numbertheory
-Links: [Number Theory](out/number-theory.md)
+Links: [[Number Theory]]
 ___
 # Integers
 ## Principles
-- [Least Common Multiple](out/least-common-multiple.md)
+- [[Least Common Multiple]]
 ### Types
-- [Prime Numbers](out/prime-numbers.md)
-- [Composite Numbers](out/composite-numbers.md)
+- [[Prime Numbers]]
+- [[Composite Numbers]]
 ### Representation
 Represented through:
-- [Decimal Representation](out/decimal-representation.md)
-- [Binary](out/binary.md)
-- [Hexadecimal](out/hexadecimal.md)
+- [[Decimal Representation]]
+- [[Binary]]
+- [[Hexadecimal]]
 ## Operations
-- [Division](out/division.md)
-- [Congruences](out/congruences.md)
+- [[Division]]
+- [[Congruences]]
 
 ___
 # Backlinks
 ```dataview
-list from [Integers](out/integers.md) AND !outgoing([Integers](out/integers.md))
+list from [[Integers]] AND !outgoing([[Integers]])
 ```
 ___
 References:

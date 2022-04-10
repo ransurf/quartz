@@ -1,23 +1,20 @@
----
-title: Self-Love
----
 Status:
 Tags:
-Links: [Self](out/self.md)
+Links: [[Self]]
 ___
 # Self-Love
 ## Principles
 - Caring for ourselves
 	- Setting boundaries to prevent self-harm (emotions, mental health)
-- Related to our [Self-Discipline](out/self-discipline.md), as it prevents us from doing things that may harm our wellbeing
-- [Self-Acceptance](out/self-acceptance.md)
-- [The influential confidence exuberated by personal development](out/the-influential-confidence-exuberated-by-personal-development.md)
+- Related to our [[Self-Discipline]], as it prevents us from doing things that may harm our wellbeing
+- [[Self-Acceptance]]
+- [[The influential confidence exuberated by personal development]]
 ## Practices
-- [Self-Love Three Peaces](out/self-love-three-peaces.md)
-- [Self-Love Pillars](out/self-love-pillars.md)
-- [Self-Love Practices](None)
-- [Promoting Self-Love](out/promoting-self-love.md)
+- [[Self-Love Three Peaces]]
+- [[Self-Love Pillars]]
+- [[Self-Love Practices]]
+- [[Promoting Self-Love]]
 ## Obstacles
-- [Identity Terrorism](out/identity-terrorism.md)
+- [[Identity Terrorism]]
 ___
-References: [The Body Is Not An Apology](out/the-body-is-not-an-apology.md)
+References: [[The Body Is Not An Apology]]

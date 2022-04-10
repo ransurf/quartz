@@ -1,9 +1,6 @@
----
-title: INTJ
----
 Status: 
 Tags: 
-Links: [MBTI Types](out/mbti-types.md)
+Links: [[MBTI Types]]
 ___
 # INTJ
 ## Principles
@@ -34,7 +31,7 @@ They also don't get offended when you talk directly and bluntly
 ___
 # Backlinks
 ```dataview
-list from [INTJ](out/intj.md) AND !outgoing([INTJ](out/intj.md))
+list from [[INTJ]] AND !outgoing([[INTJ]])
 ```
 ___
 References:

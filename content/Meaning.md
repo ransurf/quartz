@@ -1,17 +1,14 @@
----
-title: Meaning
----
 Status: 
 Tags: 
-Links: [Concepts](None)
+Links: [[Concepts]]
 ___
 # Meaning
 ## Principles
-![Four Thousand Weeks](out/permanent-highlights/four-thousand-weeks.md#^c7ydjv)
+![[Four Thousand Weeks#^c7ydjv]]
 ___
 # Backlinks
 ```dataview
-list from [Meaning](out/meaning.md) AND !outgoing([Meaning](out/meaning.md))
+list from [[Meaning]] AND !outgoing([[Meaning]])
 ```
 ___
 References:

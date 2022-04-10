@@ -1,9 +1,6 @@
----
-title: Nutrition
----
 Status: 
-Tags: [Food MOC](out/food-moc.md)
-Links: [Wellness MOC](out/wellness-moc.md)
+Tags: [[Food MOC]]
+Links: [[Wellness MOC]]
 ___
 # Nutrition
 ```ad-info
@@ -13,7 +10,7 @@ collapse: open
 <iframe src="https://i.imgur.com/eA7Hxzp.jpg" width="650" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
 ```
-- [Multivitamins](out/multivitamins.md)
+- [[Multivitamins]]
 ## Macronutrients
 ### Tiktok
 - Calories are calculated by:
@@ -27,27 +24,27 @@ The [Dietary Guidelines for AmericansTrusted Source](https://health.gov/dietaryg
 -   20 to 35 percent of fat
 ## Micronutrients
 ### Super Important
-- [Vitamin D](out/vitamin-d.md)
-- [Probiotics](out/probiotics.md)
-- [Fish Oil](out/fish-oil.md)
+- [[Vitamin D]]
+- [[Probiotics]]
+- [[Fish Oil]]
 ### Helpful
-- [Vitamin B](out/vitamin-b.md)
-- [Calcium](None)
-- [Zinc](out/zinc.md)
-- [Vitamin C](None)
+- [[Vitamin B]]
+- [[Calcium]]
+- [[Zinc]]
+- [[Vitamin C]]
 ## Important Foods
-- [Green Tea](None)
-- [Cranberry](None)
-- [Cinnamon](None)
-- [Cocoa](None)
+- [[Green Tea]]
+- [[Cranberry]]
+- [[Cinnamon]]
+- [[Cocoa]]
 ## Exercise Nutrients
-- [Creatine](out/creatine.md)
-- [Caffeine](None)
-- [BCAA](out/bcaa.md)
+- [[Creatine]]
+- [[Caffeine]]
+- [[BCAA]]
 ___
 # Backlinks
 ```dataview
-list from [Nutrition](out/nutrition.md)
+list from [[Nutrition]]
 ```
 ___
 References:

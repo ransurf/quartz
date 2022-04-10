@@ -1,9 +1,6 @@
----
-title: Consequences
----
 Status:
 Tags: 
-Links: [070 Concepts MOC](out/070-concepts-moc.md)
+Links: [[070 Concepts MOC]]
 ___
 # Consequences
 ## Principles

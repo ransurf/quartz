@@ -1,17 +1,14 @@
----
-title: Seminars
----
 Status: 
 Tags: 
-Links: [Discussion](out/discussion.md)
+Links: [[Discussion]]
 ___
 # Seminars
-- [Types of Seminars](out/types-of-seminars.md)
-- [Email to Mr. Gareau](out/email-to-mr.-gareau.md)
+- [[Types of Seminars]]
+- [[Email to Mr. Gareau]]
 ___
 # Backlinks
 ```dataview
-list from [Seminars](out/seminars.md) AND !outgoing([Seminars](out/seminars.md))
+list from [[Seminars]] AND !outgoing([[Seminars]])
 ```
 ___
 References:

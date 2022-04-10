@@ -1,13 +1,10 @@
----
-title: Communities
----
 zStatus:
 Tags:
-Links: [Entrepreneurship MOC](out/entrepreneurship-moc.md)
+Links: [[Entrepreneurship MOC]]
 ___
 # Communities
-- [How to Build a Community](out/how-to-build-a-community.md)
+- [[How to Build a Community]]
 ## Types
-- [DIY Communities](out/diy-communities.md)
+- [[DIY Communities]]
 ___
 References:

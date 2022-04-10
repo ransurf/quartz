@@ -1,16 +1,13 @@
----
-title: Probiotics
----
 Status: 
 Tags: 
-Links: [Nutrition](out/nutrition.md)
+Links: [[Nutrition]]
 ___
 # Probiotics
 - Digestion system
 ___
 # Backlinks
 ```dataview
-list from [Probiotics](out/probiotics.md) AND !outgoing([Probiotics](out/probiotics.md))
+list from [[Probiotics]] AND !outgoing([[Probiotics]])
 ```
 ___
 References:

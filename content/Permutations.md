@@ -1,10 +1,9 @@
 ---
-title: Permutations
 aliases:
 ---
 Status:
 Tags: #archivedCards/macm101/combinatorics
-Links: [Combinatorics](out/combinatorics.md)
+Links: [[Combinatorics]]
 ___
 
 # Permutations
@@ -69,7 +68,7 @@ ___
 
 # Backlinks
 ```dataview
-list from [Permutations](out/permutations.md) AND !outgoing([Permutations](out/permutations.md))
+list from [[Permutations]] AND !outgoing([[Permutations]])
 ```
 ___
 References:

@@ -1,9 +1,6 @@
----
-title: Electron.js
----
 Status:
 Tags:
-Links: [JavaScript MOC](out/javascript-moc.md)
+Links: [[JavaScript MOC]]
 ___
 # Electron.js
 

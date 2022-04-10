@@ -1,9 +1,6 @@
----
-title: Cybernetics
----
 Status: 
 Tags: 
-Links: [Psycho-Cybernetics](out/psycho-cybernetics.md)
+Links: [[Psycho-Cybernetics]]
 ___
 
 # Cybernetics

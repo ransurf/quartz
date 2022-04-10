@@ -1,18 +1,15 @@
----
-title: freeCodeCamp
----
 Status: 
 Tags: 
-Links: [Coding MOC](out/coding-moc.md)
+Links: [[Coding MOC]]
 ___
 # freeCodeCamp
 > [BOOKMARK](https://www.freecodecamp.org/learn/responsive-web-design/#css-grid)
 ## Principles
-- [FCC Projects](out/fcc-projects.md)
+- [[FCC Projects]]
 ___
 # Backlinks
 ```dataview
-list from [freeCodeCamp](out/freecodecamp.md) AND !outgoing([freeCodeCamp](out/freecodecamp.md))
+list from [[freeCodeCamp]] AND !outgoing([[freeCodeCamp]])
 ```
 ___
 References:

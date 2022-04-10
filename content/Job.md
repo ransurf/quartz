@@ -1,9 +1,6 @@
----
-title: Job
----
 Status: 
 Tags: 
-Links: [030 Career MOC](out/030-career-moc.md)
+Links: [[030 Career MOC]]
 ___
 # Job
 Depending on the scale of the product you will be working on, it will take up to 4 months until you’re confident and comfortable about your performance. Take this time to adapt to your team’s workflow, learn different parts of the product as well as the corresponding code, and participate in design discussions. Rather than implementing small features or fixing minor bugs, try to initiate a larger project for yourself so that you can acquire the knowledge that you did not previously have.
@@ -18,7 +15,7 @@ Depending on the scale of the product you will be working on, it will take up to
 ___
 # Backlinks
 ```dataview
-list from [Job](out/job.md) AND !outgoing([Job](out/job.md))
+list from [[Job]] AND !outgoing([[Job]])
 ```
 ___
 References:

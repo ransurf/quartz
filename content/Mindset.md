@@ -1,16 +1,13 @@
----
-title: Mindset
----
 Status:
 Tags:
-Links: [Wellness MOC](out/wellness-moc.md)
+Links: [[Wellness MOC]]
 ___
 # Mindset
 ## Principles
 - Mindsets can change the definition, significance, and impact of our experiences
 ## Types
-- [Growth Mindset](out/growth-mindset.md) vs [Fixed Mindset](out/fixed-mindset.md)
-- [Rationality](out/rationality.md)
-- [Open-Mindedness](out/open-mindedness.md)
+- [[Growth Mindset]] vs [[Fixed Mindset]]
+- [[Rationality]]
+- [[Open-Mindedness]]
 ___
 References:

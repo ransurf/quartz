@@ -1,9 +1,6 @@
----
-title: Purpose
----
 Status:
 Tags:
-Links: [Productivity](out/productivity.md)
+Links: [[Productivity]]
 ___
 # Purpose
 ## Principles
@@ -14,14 +11,14 @@ ___
 	- **ex)** Your efforts pay dividends to other people; to contribute to the well-being of others. 
 ## Benefits
 - People who tend to consider both personal and prosocial interests do better than those who are selfishly motivated
-- Gives us [Motivation](out/motivation.md)
+- Gives us [[Motivation]]
 ## Cultivation
 - Consider finding a role model to observe and understand the importance of purpose, and seeing that you can do something similar
 -   Reflect on how the work you’re already doing can make a positive change in society, how we can change our current work to enhance its connection to our core values, and finding inspiration in a purposeful role model
 - Requires extensive soul searching
-- [Gravestone Technique](out/gravestone-technique.md)
-- [Odyssey Plan](out/odyssey-plan.md)
-- [The Ideal Ordinary Week](out/the-ideal-ordinary-week.md)
+- [[Gravestone Technique]]
+- [[Odyssey Plan]]
+- [[The Ideal Ordinary Week]]
 ## Levels
 There are different levels of understanding purpose; when building a building with bricks, you can think that you are:
 1. laying bricks

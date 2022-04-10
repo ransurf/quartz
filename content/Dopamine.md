@@ -1,19 +1,16 @@
----
-title: Dopamine
----
 Status: 
 Tags: 
-Links: [Happiness](out/happiness.md)
+Links: [[Happiness]]
 ___
 # Dopamine
 ## Principles
-- Consider forming dopamine through friction, as exemplified by a [Growth Mindset](out/growth-mindset.md)
+- Consider forming dopamine through friction, as exemplified by a [[Growth Mindset]]
 - Dopamine should not be spike before/prior, but from the process itself
 - Having fasts boost the value of the next hit
 ___
 # Backlinks
 ```dataview
-list from [Dopamine](out/dopamine.md) AND !outgoing([Dopamine](out/dopamine.md))
+list from [[Dopamine]] AND !outgoing([[Dopamine]])
 ```
 ___
 References:

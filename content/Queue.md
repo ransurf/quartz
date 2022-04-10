@@ -1,14 +1,13 @@
 ---
-title: Queue
 aliases:
 ---
 Status: 
 Tags: #cards/cmpt225/dataStructures 
-Links: [Abstract Data Type](out/abstract-data-type.md)
+Links: [[Abstract Data Type]]
 ___
 
 # Queue
-- [Priority Queue](out/priority-queue.md)
+- [[Priority Queue]]
 
 Queue
 ?
@@ -54,7 +53,7 @@ ___
 # Backlinks
 
 ```dataview
-list from [Queue](out/queue.md) AND !outgoing([Queue](out/queue.md))
+list from [[Queue]] AND !outgoing([[Queue]])
 ```
 ___
 References:

@@ -1,9 +1,6 @@
----
-title: Psuedo-Work
----
 Status: 
 Tags: 
-Links: [Productivity](out/productivity.md)
+Links: [[Productivity]]
 ___
 # Psuedo-Work
 - When you feel like you are working hard but you aren't actually getting much done
@@ -11,7 +8,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [Psuedo-Work](out/psuedo-work.md) AND !outgoing([Psuedo-Work](out/psuedo-work.md))
+list from [[Psuedo-Work]] AND !outgoing([[Psuedo-Work]])
 ```
 ___
 References:

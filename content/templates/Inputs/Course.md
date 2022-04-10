@@ -1,6 +1,3 @@
----
-title: Course
----
 <% tp.file.cursor(1) %>---
 started: <% tp.file.cursor(5) %>
 finished:
@@ -8,7 +5,7 @@ rating:
 ---
 Status: #📥<% tp.file.cursor(2) %>
 Tags: <% tp.file.cursor(3) %>
-Links: [) Courses](out/-courses.md)
+Links: [[) Courses]]
 ___
 # <% tp.file.title %>
 > [Link](<% tp.file.cursor(4) %>)
@@ -19,7 +16,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [<% tp.file.title %>](None) AND !outgoing([<%tp.file.title%>](None))
+list from [[<% tp.file.title %>]] AND !outgoing([[<%tp.file.title%>]])
 ```
 ___
 

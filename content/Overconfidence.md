@@ -1,9 +1,6 @@
----
-title: Overconfidence
----
 Status:
 Tags:
-Links: [Bias](out/bias.md)
+Links: [[Bias]]
 ___
 # Overconfidence
 ## Principles

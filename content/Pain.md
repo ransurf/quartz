@@ -1,19 +1,16 @@
----
-title: Pain
----
 Status:
 Tags: 
-Links: [Evolution](out/evolution.md)
+Links: [[Evolution]]
 ___
 # Pain
 ## Principles
-- Is a side-effect of a [problem](out/problems.md)
+- Is a side-effect of a [[Problems|problem]]
 - By seeing pain, we are making progress
 - Most bad things are preconceived notions, and in reality, we can find good in them
-- To make use of our pain, we need to [reflect](out/reflection.md)
+- To make use of our pain, we need to [[Reflection|reflect]]
 	- Reflecting while in pain is best, but reflecting after is just as important
 		- ex) It's hard to learn forms of improvement while going through a breakup, but after you will have realized things you could have done better
-	- Results in rapid [learning](out/learning.md) by utilizing our resources and experiences
+	- Results in rapid [[learning]] by utilizing our resources and experiences
 ## Benefits
 - By catering towards pain, we can:
 	1. Identify, accept, and learn from weaknesses

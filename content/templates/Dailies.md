@@ -1,6 +1,3 @@
----
-title: Dailies
----
 Today's Journals
 - [ ] Morning Routine
 

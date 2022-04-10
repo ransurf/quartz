@@ -1,17 +1,14 @@
----
-title: Time
----
 Status: 
 Tags: 
-Links: [070 Concepts MOC](out/070-concepts-moc.md)
+Links: [[070 Concepts MOC]]
 ___
 # Time
 ## Principles
-- [Factors that influence the percieved speed of time](out/factors-that-influence-the-percieved-speed-of-time.md)
+- [[Factors that influence the percieved speed of time]]
 ___
 # Backlinks
 ```dataview
-list from [Time](out/time.md) AND !outgoing([Time](out/time.md))
+list from [[Time]] AND !outgoing([[Time]])
 ```
 ___
 References:

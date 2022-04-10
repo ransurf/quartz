@@ -1,9 +1,6 @@
----
-title: Groupthink
----
 Status:
 Tags:
-Links: [Truth-Seeking](out/truth-seeking.md)
+Links: [[Truth-Seeking]]
 ___
 # Groupthink
 Groupthink is the focus of a group on a certain idea, which may cause echo chambers of people sharing similar experiences

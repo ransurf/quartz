@@ -1,9 +1,6 @@
----
-title: Span
----
 Status: 
 Tags: #cards/math232/unit1
-Links: [Vectors](out/vectors.md)
+Links: [[Vectors]]
 ___
 # Span
 ## Principles
@@ -58,7 +55,7 @@ Suppose v1 and v2 are vectors in R3. Consider the set W = span{v1, v2} = {sv1 + 
 ___
 # Backlinks
 ```dataview
-list from [Span](out/span.md) AND !outgoing([Span](out/span.md))
+list from [[Span]] AND !outgoing([[Span]])
 ```
 ___
 References:

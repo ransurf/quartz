@@ -1,10 +1,9 @@
 ---
-title: Orthonormal
 aliases:
 ---
 Status:
 Tags: #unit1
-Links: [Vectors](out/vectors.md)
+Links: [[Vectors]]
 ___
 
 # Orthonormal
@@ -16,7 +15,7 @@ ___
 
 # Backlinks
 ```dataview
-list from [Orthonormal](out/orthonormal.md) AND !outgoing([Orthonormal](out/orthonormal.md))
+list from [[Orthonormal]] AND !outgoing([[Orthonormal]])
 ```
 ___
 References:

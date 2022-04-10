@@ -1,13 +1,10 @@
----
-title: CSS
----
 Status: 
 Tags: 
-Links: [Coding MOC](out/coding-moc.md)
+Links: [[Coding MOC]]
 ___
 # CSS
 ## Principles
-- [CSS Flexbox](out/css-flexbox.md)
+- [[CSS Flexbox]]
 ### Properties
 - If something is absolute, the parent should be `position: relative`
 - `class:hover` to change onhover
@@ -36,7 +33,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [CSS](out/css.md) AND !outgoing([CSS](out/css.md))
+list from [[CSS]] AND !outgoing([[CSS]])
 ```
 ___
 References:

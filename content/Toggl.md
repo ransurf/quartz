@@ -1,12 +1,9 @@
----
-title: Toggl
----
 Status: 
 Tags: 
-Links: [Computer Applications](None)
+Links: [[Computer Applications]]
 ___
 # Toggl
-- [My Toggl Workflow](out/my-toggl-workflow.md)
+- [[My Toggl Workflow]]
 ## Resources
 > Toggl for two purposes: tracking how much I work on every course and school project, and for work from home internships/jobs to track when I'm reaching my daily hours.
 - Use clients for main things, and use projects for sub
@@ -18,7 +15,7 @@ This way I can easily keep track whether I'm putting in enough time. Similar rea
 ___
 # Backlinks
 ```dataview
-list from [Toggl](out/toggl.md) AND !outgoing([Toggl](out/toggl.md))
+list from [[Toggl]] AND !outgoing([[Toggl]])
 ```
 ___
 References:

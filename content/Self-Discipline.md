@@ -1,9 +1,6 @@
----
-title: Self-Discipline
----
 Status:
 Tags:
-Links: [Self](out/self.md)
+Links: [[Self]]
 ___
 # Self-Discipline
 ## Principles

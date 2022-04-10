@@ -1,20 +1,17 @@
----
-title: Psycho-Pass
----
 Status: 
 Tags: 
-Links: [Anime MOC](out/anime-moc.md)
+Links: [[Anime MOC]]
 ___
 # Psycho-Pass
 - 
 ### Days Watched
 ```query
-line:"[Psycho-Pass](out/psycho-pass.md)"
+line:"[[Psycho-Pass]]"
 ```
 ___
 # Backlinks
 ```dataview
-list from [Psycho-Pass](out/psycho-pass.md) AND !outgoing([Psycho-Pass](out/psycho-pass.md))
+list from [[Psycho-Pass]] AND !outgoing([[Psycho-Pass]])
 ```
 ___
 References:

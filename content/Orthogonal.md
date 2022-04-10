@@ -1,25 +1,24 @@
 ---
-title: Orthogonal
 aliases:
 ---
 Status:
 Tags: #cards/math232/unit1 #cards/math232/unit8
-Links: [Dot Product](out/dot-product.md)
+Links: [[Dot Product]]
 ___
 
 # Orthogonal
-- [Orthogonal Bases](out/orthogonal-bases.md)
-- [Orthogonal Matrix](out/orthogonal-matrix.md)
+- [[Orthogonal Bases]]
+- [[Orthogonal Matrix]]
 
 ## Principles
 ?
 - Orthogonal if dot product is 0
-- [Scalar equation of plane](out/scalar-equation-of-plane.md)
+- [[Scalar equation of plane]]
 [![Image from Gyazo](https://i.gyazo.com/b3d8892849b9aeedc96a46eb42ebbf83.png)](https://gyazo.com/b3d8892849b9aeedc96a46eb42ebbf83)
 [![Image from Gyazo](https://i.gyazo.com/e38c30e2e63ccb38cf951bfc595801a9.png)](https://gyazo.com/e38c30e2e63ccb38cf951bfc595801a9)
 - a,b,c eqn is standard/scalar equation of a plane
 
-- [Orthogonal Complement](out/orthogonal-complement.md)
+- [[Orthogonal Complement]]
 
 
 ### $R^n$
@@ -28,7 +27,7 @@ ___
 
 # Backlinks
 ```dataview
-list from [Orthogonal](out/orthogonal.md) AND !outgoing([Orthogonal](out/orthogonal.md))
+list from [[Orthogonal]] AND !outgoing([[Orthogonal]])
 ```
 ___
 References:

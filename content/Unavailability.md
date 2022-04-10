@@ -1,9 +1,6 @@
----
-title: Unavailability
----
 Status:
 Tags:
-Links: [Distractions](out/distractions.md)
+Links: [[Distractions]]
 ___
 # Email Unavailability
 1. Make people who send you e-mails do more work

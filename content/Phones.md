@@ -1,14 +1,11 @@
----
-title: Phones
----
 Status:
 Tags: 
-Links: [Technology MOC](out/technology-moc.md)
+Links: [[Technology MOC]]
 ___
 # Phones
-- [Cellphone Provider](out/cellphone-provider.md)
-- [Google Pixel 4A](out/google-pixel-4a.md)
-- [Samsung S21](out/samsung-s21.md)
+- [[Cellphone Provider]]
+- [[Google Pixel 4A]]
+- [[Samsung S21]]
 ___
 References:
 

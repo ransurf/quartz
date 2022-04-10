@@ -1,5 +1,0 @@
----
-title: Youtube Description Obsidian Tags
----
-[Youtube Description](out/youtube-description.md)
-Obsidian App,How to Get Started with Obsidian App,how to use obsidian app,how to use obsidian note taking app,obsidian for beginners,obsidian.md,Nick Milo,Obsidian Linking Your Thinking, https://obsidian.md/index.html, Obsidian, app for students,Obsidian free course,obsidian app for students,Obsidian app features,imf framework obsidian,how to organize notes in obsidian,Obsidian app notes,Obsidian app notes tutorial,note-taking app obsidian,obsidian linked mentions, Obsidian review pros and cons, Best note taking app 2021, best idea organizer 2021, best writing app 2021, how to take smart notes, notion note taking app, roam research note taking app

@@ -1,8 +1,5 @@
----
-title: RAM16K
----
 Status:
-Links: [Nand2Tetris Project 3](out/nand2tetris-project-3.md)
+Links: [[Nand2Tetris Project 3]]
 ___
 #  
 ## Notes

@@ -1,9 +1,6 @@
----
-title: Github
----
 Status:
 Tags:
-Links: [Coding MOC](out/coding-moc.md)
+Links: [[Coding MOC]]
 ___
 # Github
 ## To Learn

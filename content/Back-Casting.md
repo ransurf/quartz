@@ -1,9 +1,6 @@
----
-title: Back-Casting
----
 Status:
 Tags:
-Links: [Scenario Planning](out/scenario-planning.md)
+Links: [[Scenario Planning]]
 ___
 # Back-Casting
 back-casting is when we stand at the end of an outcome, reflecting on the events and outcomes that lead to the outcome

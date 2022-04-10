@@ -1,9 +1,6 @@
----
-title: B-Tree
----
 Status: 
 Tags: #cards/cmpt225/dataStructures 
-Links: [Data Structures](out/data-structures.md)
+Links: [[Data Structures]]
 ___
 
 # B-Tree

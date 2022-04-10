@@ -1,13 +1,10 @@
----
-title: Recursion
----
 Status: 
 Tags: 
-Links: [Programming Fundamentals](None)
+Links: [[Programming Fundamentals]]
 ___
 # Recursion
 - Breaks down big problems into smaller problems
-## [x86-64 Assembly](out/x86-64-assembly.md)
+## [[x86-64 Assembly]]
 - same as regular recursion, each function call has its own stack frame, return addresses, and parameters 
 - still have to follow register and function call conventions 
 
@@ -18,7 +15,7 @@ Convert to assembly
 ___
 # Backlinks
 ```dataview
-list from [Recursion](out/recursion.md) AND !outgoing([Recursion](out/recursion.md))
+list from [[Recursion]] AND !outgoing([[Recursion]])
 ```
 ___
 References:

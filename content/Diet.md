@@ -1,21 +1,18 @@
----
-title: Diet
----
 Status:
 Tags:
-Links: [Wellness MOC](out/wellness-moc.md) - [Eating Habits](out/eating-habits.md)
+Links: [[Wellness MOC]] - [[Eating Habits]]
 ___
 # Diet
-- [Feeling Tired After Eating](out/feeling-tired-after-eating.md)
+- [[Feeling Tired After Eating]]
 ## Foods
-- [Supplements](out/supplements.md)
-- [Brain Foods](out/brain-foods.md)
+- [[Supplements]]
+- [[Brain Foods]]
 ## Types
 > All of them involve eating whole foods (not processed or packaged) and include quality sources of protein, healthy fats, complex carbohydrates, and fiber-rich vegetables
-- [Keto Diet](out/keto-diet.md)
-- [Paleo Diet](out/paleo-diet.md)
-- [Mediterranean Diet](out/mediterranean-diet.md)
-- [Slow Carb Diet](out/slow-carb-diet.md)
-- [Intermittent Fasting](out/intermittent-fasting.md)
+- [[Keto Diet]]
+- [[Paleo Diet]]
+- [[Mediterranean Diet]]
+- [[Slow Carb Diet]]
+- [[Intermittent Fasting]]
 ___
 References: [Comparing Diets](https://www.transformyou.com/blog/the-pros-and-cons-of-three-popular-diets-paleo-keto-and-mediterranean)

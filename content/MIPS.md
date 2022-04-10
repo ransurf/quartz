@@ -1,10 +1,9 @@
 ---
-title: MIPS
 aliases:
 ---
 Status:
 Tags: #cards/cmpt295/isa 
-Links: [Instruction Set Architecture (ISA)](out/instruction-set-architecture-isa.md)
+Links: [[Instruction Set Architecture (ISA)]]
 ___
 
 # MIPS

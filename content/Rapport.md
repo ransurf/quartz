@@ -1,9 +1,6 @@
----
-title: Rapport
----
 Status: 
 Tags: 
-Links: [Pyramid of Personal Connection](out/pyramid-of-personal-connection.md)
+Links: [[Pyramid of Personal Connection]]
 ___
 # Rapport
 > Notice, Wonder, and Inquire
@@ -24,13 +21,13 @@ ___
 ### Advice
 - Being more comfortable around strangers makes it easier
 ### Practices
-- [Letting curiosity guide us in conversation](out/letting-curiosity-guide-us-in-conversation.md)
-- [Mindfulness](out/mindfulness.md) of the situation
+- [[Letting curiosity guide us in conversation]]
+- [[Mindfulness]] of the situation
 	- ex) When a student of his was hesitant on sitting near them, the author asked her why, and helped her self-reflect and work towards overcoming her fear
 	- If we assume based on things in the past, then we may not be able to truly understand the current situation
 	- Talking about the present is the most engaging
 		- We can join their thoughts as both of you are able to witness the event
--[Introduce yourself for every person in a meaningful way](out/introduce-yourself-for-every-person-in-a-meaningful-way.md)
+-[[Introduce yourself for every person in a meaningful way]]
 - Connect people to each other
 	- "Connection before content"
 	- Ask a question and get people to share their answers
@@ -83,7 +80,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [Rapport](out/rapport.md)
+list from [[Rapport]]
 ```
 ___
 References: 

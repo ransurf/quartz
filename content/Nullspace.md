@@ -1,10 +1,9 @@
 ---
-title: Nullspace
 aliases: kernel
 ---
 Status:
 Tags: #cards/math232/unit3 
-Links: [Linear Mapping](out/linear-mapping.md)
+Links: [[Linear Mapping]]
 ___
 
 # Nullspace
@@ -33,7 +32,7 @@ Dimension of nullspace is
 - num columns - rank
 <!--SR:!2022-02-21,10,170-->
 
-- [Four fundamental subspaces](out/four-fundamental-subspaces.md)
+- [[Four fundamental subspaces]]
 ## Examples
 - Find nullspace of [![Image from Gyazo](https://i.gyazo.com/a4539ebf59136bc2ea86ccd47657711b.png)](https://gyazo.com/a4539ebf59136bc2ea86ccd47657711b)
 ?
@@ -51,7 +50,7 @@ ___
 
 # Backlinks
 ```dataview
-list from [Nullspace](out/nullspace.md) AND !outgoing([Nullspace](out/nullspace.md))
+list from [[Nullspace]] AND !outgoing([[Nullspace]])
 ```
 ___
 References:

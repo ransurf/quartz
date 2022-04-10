@@ -1,21 +1,18 @@
----
-title: ReactJS
----
 sStatus:
 Tags: 
-Links: [JavaScript MOC](out/javascript-moc.md)
+Links: [[JavaScript MOC]]
 ___
 # ReactJS
-- [ReactJS Web Features](out/reactjs-web-features.md)
+- [[ReactJS Web Features]]
 ## Principles
 - Turns visuals into components that are easily manageable
 - Uses JSX, which is very similar to html
 - Need to import react to use JSX
-- [ReactJS Components](out/reactjs-components.md)
-- [React CSS and Styles](out/react-css-and-styles.md)
-- [ReactJS Object Oriented Programming](out/reactjs-object-oriented-programming.md)
-- [ReactJS Events](out/reactjs-events.md)
-- [ReactJS Hooks](out/reactjs-hooks.md)
+- [[ReactJS Components]]
+- [[React CSS and Styles]]
+- [[ReactJS Object Oriented Programming]]
+- [[ReactJS Events]]
+- [[ReactJS Hooks]]
 `e.preventDefault` prevents page from reloading after submitting form
 ### Rules 
 

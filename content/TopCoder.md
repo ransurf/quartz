@@ -1,9 +1,6 @@
----
-title: TopCoder
----
 Status:
 Tags:
-Links: [DIY Communities Case Studies](out/diy-communities-case-studies.md)
+Links: [[DIY Communities Case Studies]]
 ___
 # TopCoder
 - Turned coding into a huge competition

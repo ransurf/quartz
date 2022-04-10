@@ -1,17 +1,16 @@
 ---
-title: Hashing
 aliases:
 ---
 Status:
 Tags: #cards/cmpt225/dataStructures
-Links: [Data Structures](out/data-structures.md)
+Links: [[Data Structures]]
 ___
 
 # Hashing
 
 ## Principles
 ?
-- Instead of a 1:1 mapping, you do a hashing process to reduce the size of the image using [Hash Functions](out/hash-functions.md)
+- Instead of a 1:1 mapping, you do a hashing process to reduce the size of the image using [[Hash Functions]]
 
 Load factor
 ?
@@ -27,7 +26,7 @@ When multiple unique index keys are hashed to the same locations in the hash tab
 Preventing collisions
 ?
 - Easy to compute hash functions that easily distribute the indexing keys
-- [Collusion resolution strategies](out/collusion-resolution-strategies.md)
+- [[Collusion resolution strategies]]
 - Size of hash table
 - Average length of each chain in closed addressing
 
@@ -67,7 +66,7 @@ Preventing collisions
 2. Probe the resulting location (i.e. cell) in hash table, see it's filled
 3. Cases
 	- Insertion
-		- [Open Addressing](out/open-addressing.md)
+		- [[Open Addressing]]
 	- Search
 		- Found
 	- Remove

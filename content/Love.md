@@ -1,6 +1,3 @@
----
-title: Love
----
 Status: 
 Tags: 
 Links: [Relationships](Relationships)

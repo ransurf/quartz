@@ -1,9 +1,6 @@
----
-title: Netlify
----
 Status: 
 Tags: 
-Links: [Deploying Website Application](None) - [ReactJS](out/reactjs.md)
+Links: [[Deploying Website Application]] - [[ReactJS]]
 ___
 
 # Netlify

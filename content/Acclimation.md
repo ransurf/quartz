@@ -1,9 +1,6 @@
----
-title: Acclimation
----
 Status:
 Tags: 
-Links: [The Plateau Effect](out/the-plateau-effect.md)
+Links: [[The Plateau Effect]]
 ___
 # Acclimation
 ## Principles

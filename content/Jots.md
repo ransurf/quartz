@@ -1,9 +1,6 @@
----
-title: Jots
----
 Status:
 Tags:
-Links: [000 Active MOC](out/000-active-moc.md)
+Links: [[000 Active MOC]]
 ___
 # Jots
 Post-Pandemic Living

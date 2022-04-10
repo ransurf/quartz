@@ -1,22 +1,19 @@
----
-title: Animes
----
 Status:
 Tags:
-Links: [Anime MOC](out/anime-moc.md)
+Links: [[Anime MOC]]
 ___
 # Animes
 Writing my thoughts after watching an anime helps me remember how I first felt when watching it :,)
 ## Write Ups
 ```dataview
 list
-from #anime AND [Animes](out/animes.md)
+from #anime AND [[Animes]]
 sort file.ctime desc
 ```
 ___
 # Backlinks
 ```dataview
-list from [Animes](out/animes.md) AND !outgoing([Animes](out/animes.md))
+list from [[Animes]] AND !outgoing([[Animes]])
 ```
 ___
 References:

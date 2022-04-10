@@ -1,19 +1,18 @@
 ---
-title: Tweet
 tags: 📥/🐦️
 aliases: 
   - 
 cssclass: 
 ---
 
-- `Title:` [<%tp.file.title%>](None)
-- `Type:` [!](None)
+- `Title:` [[<%tp.file.title%>]]
+- `Type:` [[!]]
 - `Tags:` 
 - `Account:` 
 	- `Notable Mentions:`
 - `Reference:` 
 - `Publish Date:` 
-- `Reviewed Date:` [<%tp.date.now()%>](None)
+- `Reviewed Date:` [[<%tp.date.now()%>]]
 
 ---
 

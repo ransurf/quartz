@@ -1,16 +1,13 @@
----
-title: Discord
----
 Status: 
 Tags: 
-Links: [Social Media](out/social-media.md)
+Links: [[Social Media]]
 ___
 # Discord
-- [My discord communities](out/my-discord-communities.md)
+- [[My discord communities]]
 ___
 # Backlinks
 ```dataview
-list from [Discord](out/discord.md) AND !outgoing([Discord](out/discord.md))
+list from [[Discord]] AND !outgoing([[Discord]])
 ```
 ___
 References:

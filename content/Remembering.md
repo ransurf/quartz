@@ -1,22 +1,19 @@
----
-title: Remembering
----
 Status:
 Tags: 
-Links: [Learning](out/learning.md)
+Links: [[Learning]]
 ___
 # Remembering
 ## Principles
-- Helps us combat the [Forgetting Curve](None)
-- Checking retention through [Retrieval Practice](out/retrieval-practice.md)
+- Helps us combat the [[Forgetting Curve]]
+- Checking retention through [[Retrieval Practice]]
 ## Practices
-- [Flashcards](out/flashcards.md)
-- [Highlighting](out/highlighting.md)
-- [Spaced Repetition](out/spaced-repetition.md)
-- [Active Recall](out/active-recall.md)
-- [Mnemonics](out/mnemonics.md)
-- Planning our studying sessions and topics [Revision Timetables](out/revision-timetables.md)
-- Remember numbers using the [Peg System](out/peg-system.md)
+- [[Flashcards]]
+- [[Highlighting]]
+- [[Spaced Repetition]]
+- [[Active Recall]]
+- [[Mnemonics]]
+- Planning our studying sessions and topics [[Revision Timetables]]
+- Remember numbers using the [[Peg System]]
 ___
 References:
 

@@ -1,9 +1,6 @@
----
-title: Highlighting
----
 Status:
 Tags: 
-Links: [Learning](out/learning.md)
+Links: [[Learning]]
 ___
 # Highlighting
 ## Principles

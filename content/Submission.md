@@ -1,11 +1,8 @@
----
-title: Submission
----
-[Soliloquies Assignment](out/soliloquies-assignment.md)
+[[Soliloquies Assignment]]
 ### Chosen 3:
-[Soliloquy 3 - Actors](out/soliloquy-3-actors.md)
-[Soliloquy 4 - To Be Or Not To Be](out/soliloquy-4-to-be-or-not-to-be.md)
-[Soliloquy 6 - Claudius's Beliefs](out/soliloquy-6-claudiuss-beliefs.md)
+[[Soliloquy 3 - Actors]]
+[[Soliloquy 4 - To Be Or Not To Be]]
+[[Soliloquy 6 - Claudius's Beliefs]]
 
 #### Soliloquy 3 - Actors (I.v.92-109)
 Hamlet asks a group of actors to spontaneously perform a scene from _Aeneid_. Despite their lack of preparation and real connection with the characters involved, they manage to portray such convincing emotion to the point where Hamlet begins to question his own.

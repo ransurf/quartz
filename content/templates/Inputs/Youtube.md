@@ -1,6 +1,3 @@
----
-title: Youtube
----
 <% tp.file.cursor(1) %>---
 started: <% tp.file.cursor(5) %>
 finished:
@@ -8,7 +5,7 @@ rating:
 ---
 Status: #📥<% tp.file.cursor(2) %>
 Tags: <% tp.file.cursor(3) %>
-Links: [+ Videos](out/-videos.md)
+Links: [[+ Videos]]
 ___
 # <%tp.file.title%>
 > [URL](<% tp.file.cursor(4) %>)
@@ -20,7 +17,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [<%tp.file.title%>](None)
+list from [[<%tp.file.title%>]]
 ```
 ___
 Created:: <%tp.date.now("YYYY-MM-DD HH:MM") %>

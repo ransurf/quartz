@@ -1,0 +1,16 @@
+Status:
+Tags:
+Links: [[Social Studies 30]]
+___
+# Creation Story Comparisons
+| Indigenous                                                                                                                     | Common                                                                                                          | Biblical                                                                          |
+| ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| Civilizations and animals existed in places other than the earth, and actually helped create the earth                         | The earth was made through the powers and efforts of living creatures, rather than mere science and other means | God was the creator of the earth, and he did it all by himself                    |
+| Animals played important roles in creating the earth and parts of it (raven and trees, muskrat and land)                       | The land, waters, and people were all created when creating the earth                                           | Virtually all people who follow the Bible believe in the same creation story      |
+| There are various stories across different tribes                                                                              | The sky woman and Mary were both miraculously impregnated                                                       | Animals were created as part of the earth, instead of already existing beforehand |
+| There are additional lesssons to be learned from their creation stories (honoring and respecting muskrats and their character) | There consists of a conflict between good and evil (eve and eating the fruit, the evilness of humankind)        | The time spent to create the earth was absolute (6 days)                          |
+| There was pain and suffering involved with creating the earth (Raven ate eyeballs, animals sacrificed themselves to find land) |                                                                                                                 | The Christian creations story is defined and referred to through the Bible        |
+| In the Iroquois creation myth, the creation of different races was highlighted                                                 |                                                                                                                 |                                                                                   |
+| The creationn stories were most commonly passed down and taught about through oral storytelling                                |                                                                                                                 |                                                                                   |
+___
+References:

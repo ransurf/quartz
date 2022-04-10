@@ -1,9 +1,6 @@
----
-title: Prioritization
----
 Status:
 Tags:
-Links: [Planning](out/planning.md)
+Links: [[Planning]]
 ___
 # Prioritization
 ## Steps for Prioritizing Tasks
@@ -28,7 +25,7 @@ ___
 **To-do lists should track:**
 - Inbox, actionable, waiting for, projects list, someday/maybe, references
 ### 5.  Reflect on the options
-- [My Weekly Reviews](out/my-weekly-reviews.md) are a neat time to reflect
+- [[My Weekly Reviews]] are a neat time to reflect
 - There’s a difference between writing down that you need to buy milk vs actually doing it at the grocery store
 - Reflecting allows us to step back and look at the bigger picture, gather and process everything, review our system, update things, and overall get things off our mind
 ### 6. Do Stuffs

@@ -1,9 +1,6 @@
----
-title: Termux
----
 Status: 
 Tags: 
-Links: [Obsidian Mobile Sync](out/obsidian-mobile-sync.md)
+Links: [[Obsidian Mobile Sync]]
 ___
 # Termux
 https://wiki.termux.com/wiki/Internal_and_external_storage
@@ -14,7 +11,7 @@ https://android.stackexchange.com/questions/172440/how-can-i-open-data-data-com-
 ___
 # Backlinks
 ```dataview
-list from [Termux](out/termux.md)
+list from [[Termux]]
 ```
 ___
 References:

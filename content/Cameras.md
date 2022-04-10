@@ -1,16 +1,13 @@
----
-title: Cameras
----
 Status: 
-Tags: [Photography MOC](out/photography-moc.md)
-Links: [Technology MOC](out/technology-moc.md)
+Tags: [[Photography MOC]]
+Links: [[Technology MOC]]
 ___
 # Cameras
-- [Canon EOS M50](out/canon-eos-m50.md)
+- [[Canon EOS M50]]
 ___
 # Backlinks
 ```dataview
-list from [Cameras](out/cameras.md)
+list from [[Cameras]]
 ```
 ___
 References: 

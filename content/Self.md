@@ -1,14 +1,11 @@
----
-title: Self
----
 Status:
 Tags:
-Links: [Wellness MOC](out/wellness-moc.md)
+Links: [[Wellness MOC]]
 ___
 # Self
 Literally us lmao
  ## Principles
- - [Self-Love](out/self-love.md)
- - [Self-Discipline](out/self-discipline.md)
+ - [[Self-Love]]
+ - [[Self-Discipline]]
 ___
 References:

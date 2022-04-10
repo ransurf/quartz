@@ -1,15 +1,12 @@
----
-title: Parties
----
 Status: 
 Tags: 
-Links: [Journal MOC](out/journal-moc.md)
+Links: [[Journal MOC]]
 ___
 # Parties
 ___
 # Backlinks
 ```dataview
-list from [Parties](out/parties.md)
+list from [[Parties]]
 where file.name != "070 Journal MOC"
 ```
 ___

@@ -1,9 +1,6 @@
----
-title: Arguing
----
 Status:
 Tags:
-Links: [Competition](out/competition.md) - [Discussion](out/discussion.md)
+Links: [[Competition]] - [[Discussion]]
 ___
 # Arguing
 ## Principles

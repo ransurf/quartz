@@ -1,12 +1,9 @@
----
-title: Assets
----
 Status: 
 Tags: 
-Links: [085 Finances MOC](out/085-finances-moc.md)
+Links: [[085 Finances MOC]]
 ___
 # Assets
-Assets are things we own that produce money. Examples include [$S Stocks](None) and [Real Estate](None).
+Assets are things we own that produce money. Examples include [[$S Stocks]] and [[Real Estate]].
 
 - To become financially independent, we need to build our assets as much as possible
 	- Know the difference between an asset and a liability
@@ -14,7 +11,7 @@ Assets are things we own that produce money. Examples include [$S Stocks](None) 
 ___
 # Backlinks
 ```dataview
-list from [Assets](out/assets.md) AND !outgoing([Assets](out/assets.md))
+list from [[Assets]] AND !outgoing([[Assets]])
 ```
 ___
 References:

@@ -1,5 +1,4 @@
 ---
-title: blank
 credits: 3
 year: 1
 semester: 1

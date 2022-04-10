@@ -1,35 +1,32 @@
----
-title: Energy
----
 Status: 
 Tags: 
-Links: [Four Factors of Flow](out/four-factors-of-flow.md)
+Links: [[Four Factors of Flow]]
 ___
 # Energy
 - Low energy can be from low glucose
 ## Principles
 - Consists of our:
-	- [Physical Energy](out/physical-energy.md)
-	- [Mental Energy](out/mental-energy.md)
-	- [Emotional Energy](out/emotional-energy.md)
-	- [Spiritual Energy](out/spiritual-energy.md)
+	- [[Physical Energy]]
+	- [[Mental Energy]]
+	- [[Emotional Energy]]
+	- [[Spiritual Energy]]
 
-- [Stress kills energy](out/stress-kills-energy.md)
+- [[Stress kills energy]]
 ## Cultivation
 - Breaks to recharge concentration
 	- We operate in 60-90 minute cycles
 - Master transitioning into your activities
-	- [Transitioning Between Environments](out/transitioning-between-environments.md)
-- Cultivate [Happiness](out/happiness.md)
-	- Consider [Expressing Gratitude](None)
+	- [[Transitioning Between Environments]]
+- Cultivate [[Happiness]]
+	- Consider [[Expressing Gratitude]]
 - Be emotionally aware
-	- [Triggers for emotional awareness](out/triggers-for-emotional-awareness.md)
+	- [[Triggers for emotional awareness]]
 - 2 pushups then cold shower
-- [Energy Management](out/energy-management.md)
+- [[Energy Management]]
 ___
 # Backlinks
 ```dataview
-list from [Energy](out/energy.md) AND !outgoing([Energy](out/energy.md))
+list from [[Energy]] AND !outgoing([[Energy]])
 ```
 ___
 References:

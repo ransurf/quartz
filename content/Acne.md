@@ -1,12 +1,9 @@
----
-title: Acne
----
 Status: 
 Tags: 
-Links: [Wellness MOC](out/wellness-moc.md)
+Links: [[Wellness MOC]]
 ___
 # Acne
-- [Clearing Acne](out/clearing-acne.md)
+- [[Clearing Acne]]
 - 5% Benzoyl Peroxide
 	- prevention and maintenance
 - Red stridex pads
@@ -28,7 +25,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [Acne](out/acne.md)
+list from [[Acne]]
 ```
 ___
 References: 

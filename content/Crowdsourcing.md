@@ -1,11 +1,8 @@
----
-title: Crowdsourcing
----
 Status:
 Tags:
-Links: [Entrepreneurship MOC](out/entrepreneurship-moc.md)
+Links: [[Entrepreneurship MOC]]
 ___
 # Crowdsourcing
-- [Crowdfunding Steps](out/crowdfunding-steps.md)
+- [[Crowdfunding Steps]]
 ___
 References:

@@ -1,18 +1,15 @@
----
-title: Rationality
----
 Status:
 Tags:
-Links: [Wellness MOC](out/wellness-moc.md)
+Links: [[Wellness MOC]]
 ___
 # Rationality
-Being rational helps us prepare for the [Uncertainty](out/uncertainty.md) of [Decision-Making](out/decision-making.md)
+Being rational helps us prepare for the [[Uncertainty]] of [[Decision-Making]]
 ## Principles
-- [Skepticism](out/skepticism.md)
+- [[Skepticism]]
 ## Dangers
-- Letting our [Emotions](out/emotions.md) fully control our thoughts
+- Letting our [[Emotions]] fully control our thoughts
 ## Practices
-- [Decision Buddies](out/decision-buddies.md)
-- [Decision Swear Jar](out/decision-swear-jar.md)
+- [[Decision Buddies]]
+- [[Decision Swear Jar]]
 ___
 References:

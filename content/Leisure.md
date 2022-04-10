@@ -1,9 +1,6 @@
----
-title: Leisure
----
 Status: 
 Tags: 
-Links: [070 Concepts MOC](out/070-concepts-moc.md)
+Links: [[070 Concepts MOC]]
 ___
 # Leisure
 ## Principles
@@ -11,7 +8,7 @@ To the philosophers of the ancient world, leisure wasn’t the means to some oth
 ___
 # Backlinks
 ```dataview
-list from [Leisure](out/leisure.md) AND !outgoing([Leisure](out/leisure.md))
+list from [[Leisure]] AND !outgoing([[Leisure]])
 ```
 ___
 References:

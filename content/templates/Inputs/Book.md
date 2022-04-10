@@ -1,17 +1,16 @@
 ---
-title: Book
 tags: 📥️/📚️
 aliases: 
   - 
 cssclass: 
 ---
 
-# Title: [<%tp.file.title%>](None)
+# Title: [[<%tp.file.title%>]]
 
 ## Metadata
 
 - `Tags:` 
-- `Type:` [{](None)
+- `Type:` [[{]]
 - `Author:` 
 	- `Notable Authors:` 
 - `Keywords:` 
@@ -20,7 +19,7 @@ cssclass:
 - `ISBN:` 
 - `DOI:` 
 - `Publish Date:` 
-- `Reviewed Date:` [<%tp.date.now()%>](None)
+- `Reviewed Date:` [[<%tp.date.now()%>]]
 
 ## Citation
 

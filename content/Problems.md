@@ -1,13 +1,10 @@
----
-title: Problems
----
 Status:
 Tags: 
-Links: [070 Concepts MOC](out/070-concepts-moc.md)
+Links: [[070 Concepts MOC]]
 ___
 # Problems
 ## Principles
-- Creates [Pain](out/pain.md)
+- Creates [[Pain]]
 ## Advice
 - View painful problems as potential improvements screaming at you
 - Don't be afraid to confront harsh realities and problems
@@ -19,7 +16,7 @@ ___
 - Be throrough in understanding our problems
 	- Helps us find the right solutions
 	- Root causes
-- [Diagnosing Problems](out/diagnosing-problems.md)
+- [[Diagnosing Problems]]
 ___
 References:
 

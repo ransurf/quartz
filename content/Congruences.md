@@ -1,17 +1,16 @@
 ---
-title: Congruences
 aliases: modulo
 ---
 Status:
 Tags: #archivedCards/macm101/settheory #archivedCards/macm101/numbertheory
-Links: [Discrete Math Relations](out/discrete-math-relations.md) - [Integers](out/integers.md)
+Links: [[Discrete Math Relations]] - [[Integers]]
 ___
 
 # Congruences
 
 ## Principles
-- [Residues](out/residues.md)
-- [Linear Congruences](out/linear-congruences.md)
+- [[Residues]]
+- [[Linear Congruences]]
 
 Definition in terms of notation
 ?
@@ -31,8 +30,8 @@ a = km + b = (k+q)m + r
 <!--SR:!2021-12-08,1,134-->
 
 ### Uses
-- [Caesar Cipher](out/caesar-cipher.md)
-- [Psuedorandom Generators](out/psuedorandom-generators.md)
+- [[Caesar Cipher]]
+- [[Psuedorandom Generators]]
 
 ## Theorems
 Prove if a ≡ b (mod m) and c ≡ d (mod m), then ac ≡ bd (mod m)
@@ -62,7 +61,7 @@ ___<!--SR:!2021-12-18,11,250-->
 
 # Backlinks
 ```dataview
-list from [Congruences](out/congruences.md) AND !outgoing([Congruences](out/congruences.md))
+list from [[Congruences]] AND !outgoing([[Congruences]])
 ```
 ___
 References:

@@ -1,9 +1,6 @@
----
-title: Autosuggestion
----
 Status:
 Tags:
-Links: [Meditation Problems](out/meditation-problems.md)
+Links: [[Meditation Problems]]
 ___
 # Autosuggestion
 Autosuggestion is a psychological technique related to the placebo effect

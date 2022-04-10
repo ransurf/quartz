@@ -1,9 +1,6 @@
----
-title: Limitless
----
 Status:
 Tags: #literature/books/implemented 
-Links: [Finished-Implementing List](out/finished-implementing-list.md)
+Links: [[Finished-Implementing List]]
 ___
 # UNORGANIZED INFORMATION
 

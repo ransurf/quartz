@@ -1,19 +1,16 @@
----
-title: Skills
----
 Status: 
 Tags: 
-Links: [Behavior](None) - [Mastery](out/kindle-highlights/mastery.md)
+Links: [[Behavior]] - [[Mastery]]
 ___
 # Skills
 - Knowledge + Ability + Training/Practice
-- [Skill Transfer](out/skill-transfer.md)
+- [[Skill Transfer]]
 
 - Skills are best learned through practice rather than theory
 ___
 # Backlinks
 ```dataview
-list from [Skills](out/skills.md) AND !outgoing([Skills](out/skills.md))
+list from [[Skills]] AND !outgoing([[Skills]])
 ```
 ___
 References:

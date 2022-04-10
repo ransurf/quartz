@@ -1,16 +1,13 @@
----
-title: Discomfort
----
 Status: 
 Tags: 
-Links: [Feelings](out/feelings.md)
+Links: [[Feelings]]
 ___
 # Discomfort
 - Constant discomfort can become comfort
 ___
 # Backlinks
 ```dataview
-list from [Discomfort](out/discomfort.md) AND !outgoing([Discomfort](out/discomfort.md))
+list from [[Discomfort]] AND !outgoing([[Discomfort]])
 ```
 ___
 References:

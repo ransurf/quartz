@@ -1,20 +1,17 @@
----
-title: Mindfulness
----
 Status:
 Tags:
-Links: [Wellness MOC](out/wellness-moc.md) - [Focus](out/focus.md)
+Links: [[Wellness MOC]] - [[Focus]]
 ___
 # Mindfulness
-- [Vipassana Meditation](out/vipassana-meditation.md) helps us practice mindfulness
+- [[Vipassana Meditation]] helps us practice mindfulness
 ## Characteristics
 - Mindfulness is nonjudgemental observation of complete acceptance
 	- Pure awareness of the state and change of things
 		- ex) That is a dog in front of me and it is pissing
 	- Realizing that our thoughts are controllable streams of consciousness
-- In tools of titans, ![Tools of Titans](out/kindle-highlights/tools-of-titans.md#^8oav3h)
+- In tools of titans, ![[Tools of Titans#^8oav3h]]
 ## Reasons
-![Four Thousand Weeks](out/permanent-highlights/four-thousand-weeks.md#^60jgpc)
+![[Four Thousand Weeks#^60jgpc]]
 ## Benefits
 - Reminds us of what we are supposed to be doing
 	- Going back to our breathing after being distracted through awareness of our distracted state
@@ -28,7 +25,7 @@ ___
 - Promotes change
 	- We can get rid of our negative traits by acknowledging them and replacing them
 	- By seeing the effects and lack of need for things like greed, we are free to get rid of it on our lives
-- Eventually, one can experience [Everyday Mindfulness](out/everyday-mindfulness.md)
+- Eventually, one can experience [[Everyday Mindfulness]]
 - Reduces fear of death
 	- When seeing our life progress, instead of feeling anxious, we can be joyful of the vibrance of life
 	- When truly examining ourselves, there is no self. We are subject to constant change, and our identity is just a result of all that change.

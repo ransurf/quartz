@@ -1,9 +1,6 @@
----
-title: Valgrind
----
 Status: 
 Tags: 
-Links: [Memory Leak](out/memory-leak.md)
+Links: [[Memory Leak]]
 ___
 # Valgrind
 ## Principles
@@ -11,7 +8,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [Valgrind](out/valgrind.md) AND !outgoing([Valgrind](out/valgrind.md))
+list from [[Valgrind]] AND !outgoing([[Valgrind]])
 ```
 ___
 References:

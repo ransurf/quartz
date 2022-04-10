@@ -1,9 +1,6 @@
----
-title: Stress
----
 Status: 
 Tags: 
-Links: [Feelings](out/feelings.md)
+Links: [[Feelings]]
 ___
 # Stress
 - Stress is a requirement for accomplishment, without it the end results would not be as satisfying
@@ -11,7 +8,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [Stress](out/stress.md) AND !outgoing([Stress](out/stress.md))
+list from [[Stress]] AND !outgoing([[Stress]])
 ```
 ___
 References:

@@ -1,9 +1,6 @@
----
-title: Lifebook
----
 Status:
 Tags:
-Links: [Journal MOC](out/journal-moc.md)
+Links: [[Journal MOC]]
 ___
 # Lifebook
 

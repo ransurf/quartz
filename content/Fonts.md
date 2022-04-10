@@ -1,16 +1,13 @@
----
-title: Fonts
----
 Status: 
 Tags: 
-Links: [Design](out/design.md)
+Links: [[Design]]
 ___
 # Fonts
 <% tp.file.cursor(5) %>
 ___
 # Backlinks
 ```dataview
-list from [Fonts](out/fonts.md) AND !outgoing([Fonts](out/fonts.md))
+list from [[Fonts]] AND !outgoing([[Fonts]])
 ```
 ___
 References:

@@ -1,16 +1,13 @@
----
-title: MongoDB
----
 Status: 
 Tags: 
-Links: [MERN Stack](out/mern-stack.md)
+Links: [[MERN Stack]]
 ___
 # MongoDB
 - MongoDB Atlas to setup database
 ___
 # Backlinks
 ```dataview
-list from [MongoDB](out/mongodb.md) AND !outgoing([MongoDB](out/mongodb.md))
+list from [[MongoDB]] AND !outgoing([[MongoDB]])
 ```
 ___
 References:

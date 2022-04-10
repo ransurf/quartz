@@ -1,14 +1,11 @@
----
-title: Internship
----
 Status: 
 Tags: 
-Links: [030 Career MOC](out/030-career-moc.md)
+Links: [[030 Career MOC]]
 ___
 
 # Internship
 ## Principles
-- [QA Internship](out/qa-internship.md)
+- [[QA Internship]]
 ___
 References:
 

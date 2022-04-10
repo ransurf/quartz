@@ -1,16 +1,13 @@
----
-title: Variables
----
 Status: 
 Tags: <% tp.file.cursor(3) %>
-Links: [<% tp.file.cursor(4) %>
+Links: [[<% tp.file.cursor(4) %>
 ___
-](None# Variables
+# Variables
 <% tp.file.cursor(5) %>
 ___
 # Backlinks
 ```dataview
-list from [[Variables) AND !outgoing([Variables](out/variables.md))
+list from [[Variables]] AND !outgoing([[Variables]])
 ```
 ___
 References:

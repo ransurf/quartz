@@ -1,9 +1,6 @@
----
-title: Warrants
----
 Status: 
 Tags: 
-Links: [Writing](out/writing.md)
+Links: [[Writing]]
 ___
 
 # Warrants

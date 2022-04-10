@@ -1,6 +1,3 @@
----
-title: Seasons
----
 # Seasons
 - natural example of ying and yang...ebb and flow...doesn't have to be duality
 - Many things are cyclical: the seasons, perennials, the moon, period's for women.
@@ -18,5 +15,5 @@ From an early age, we absorb our culture's arrogant conviction that we manufactu
 ― abbrev. quote from Parker J. Palmer, Let Your Life Speak: Listening for the Voice of Vocation
 
 ---
-links: [070 Concepts MOC](out/070-concepts-moc.md)
+links: [[070 Concepts MOC]]
 

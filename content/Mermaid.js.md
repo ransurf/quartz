@@ -1,17 +1,14 @@
----
-title: Mermaid.js
----
 
 Status: 
 Tags: 
-Links: [JavaScript MOC](out/javascript-moc.md) - [Obsidian Features](None)
+Links: [[JavaScript MOC]] - [[Obsidian Features]]
 ___
 # Mermaid.js
 
 ___
 # Backlinks
 ```dataview
-list from [Mermaid.js](out/mermaid.js.md) AND !outgoing([Mermaid.js](out/mermaid.js.md))
+list from [[Mermaid.js]] AND !outgoing([[Mermaid.js]])
 ```
 ___
 References:

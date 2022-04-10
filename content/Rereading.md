@@ -1,9 +1,6 @@
----
-title: Rereading
----
 Status:
 Tags: 
-Links: [Learning](out/learning.md)
+Links: [[Learning]]
 ___
 # Rereading
 ## Principles

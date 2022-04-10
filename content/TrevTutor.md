@@ -1,16 +1,13 @@
----
-title: TrevTutor
----
 Status: 
-Tags: [Math Resources](None)
-Links: [Discrete Mathematics](out/discrete-mathematics.md)
+Tags: [[Math Resources]]
+Links: [[Discrete Mathematics]]
 ___
 # TrevTutor
 - God at this lmao
 ___
 # Backlinks
 ```dataview
-list from [TrevTutor](out/trevtutor.md)
+list from [[TrevTutor]]
 ```
 ___
 References: 

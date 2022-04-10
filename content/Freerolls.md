@@ -1,9 +1,6 @@
----
-title: Freerolls
----
 Status:
 Tags:
-Links: [Decision-Making](out/decision-making.md)
+Links: [[Decision-Making]]
 ___
 # Freerolls
 Freerolling is a situation where the potential losses are insignificant and the potential rewards are significant

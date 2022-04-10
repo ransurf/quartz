@@ -1,16 +1,13 @@
----
-title: Gaming
----
 Status: 
 Tags: 
-Links: [040 Interests MOC](out/040-interests-moc.md)
+Links: [[040 Interests MOC]]
 ___
 # Gaming
 <% tp.file.cursor(5) %>
 ___
 # Backlinks
 ```dataview
-list from [Gaming](out/gaming.md) AND !outgoing([Gaming](out/gaming.md))
+list from [[Gaming]] AND !outgoing([[Gaming]])
 ```
 ___
 References:

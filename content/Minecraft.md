@@ -1,13 +1,10 @@
----
-title: Minecraft
----
 Status: 
 Tags: 
-Links: [Gaming](out/gaming.md)
+Links: [[Gaming]]
 ___
 # Minecraft
 ## Principles
-- [Minecraft Ideal Mining Levels](out/minecraft-ideal-mining-levels.md)
+- [[Minecraft Ideal Mining Levels]]
 	- 4 poke blocks
 	- 
 ## Mining
@@ -21,7 +18,7 @@ Bed: -1841 -76 -1913
 ___
 # Backlinks
 ```dataview
-list from [Minecraft](out/minecraft.md) AND !outgoing([Minecraft](out/minecraft.md))
+list from [[Minecraft]] AND !outgoing([[Minecraft]])
 ```
 ___
 References:

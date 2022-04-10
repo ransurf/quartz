@@ -1,15 +1,12 @@
----
-title: Accountability
----
 Status: 
 Tags: 
-Links: [Choice](None)
+Links: [[Choice]]
 ___
 # Accountability
 > Accountability is the realization that you always have choice; that, in fact, there are no have-to’s in life
-> -- [The 12 Week Year](out/kindle-highlights/the-12-week-year.md)
+> -- [[The 12 Week Year]]
 ## Principles
-- In the [The 12 Week Year](out/kindle-highlights/the-12-week-year.md), our accountability towards our goals inclines us to figure out how we can personally achieve them
+- In the [[The 12 Week Year]], our accountability towards our goals inclines us to figure out how we can personally achieve them
 ## Cultivation
 ### Promoting It
 - Clarify expectations
@@ -18,7 +15,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [Accountability](out/accountability.md) AND !outgoing([Accountability](out/accountability.md))
+list from [[Accountability]] AND !outgoing([[Accountability]])
 ```
 ___
 References:

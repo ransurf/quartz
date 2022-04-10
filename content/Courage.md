@@ -1,16 +1,13 @@
----
-title: Courage
----
 Status: 
 Tags: 
-Links: [Flow MOC](out/flow-moc.md)
+Links: [[Flow MOC]]
 ___
 # Courage
-![Tools of Titans](out/kindle-highlights/tools-of-titans.md#^tln57f)
+![[Tools of Titans#^tln57f]]
 ___
 # Backlinks
 ```dataview
-list from [Courage](out/courage.md) AND !outgoing([Courage](out/courage.md))
+list from [[Courage]] AND !outgoing([[Courage]])
 ```
 ___
 References:

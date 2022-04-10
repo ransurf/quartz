@@ -1,10 +1,9 @@
 ---
-title: Vectors
 aliases:
 ---
 Status:
 Tags:
-Links: [Math 232 Course Outline](out/math-232-course-outline.md)
+Links: [[Math 232 Course Outline]]
 ___
 
 # Vectors
@@ -22,20 +21,20 @@ Vectors are equal if
 ?
  - they have same magnitude and direction
  - Just same distance travelled, initial position doesn't matter
-- [Vector Angles](out/vector-angles.md)
-- [Vector Line Equations](out/vector-line-equations.md)
+- [[Vector Angles]]
+- [[Vector Line Equations]]
 
 ### Properties
-- [Vector Length](out/vector-length.md)
-- [Vector Distance](out/vector-distance.md)
-- [Orthogonal](out/orthogonal.md)
-- [Orthonormal](out/orthonormal.md)
-- [Dot Product](out/dot-product.md)
+- [[Vector Length]]
+- [[Vector Distance]]
+- [[Orthogonal]]
+- [[Orthonormal]]
+- [[Dot Product]]
 - Parallelogram Equality
 	- [![Image from Gyazo](https://i.gyazo.com/2d0b92c1a1af5ca1dc6801719bfe7a36.png)](https://gyazo.com/2d0b92c1a1af5ca1dc6801719bfe7a36)
 
-- [Normal Vector](out/normal-vector.md)
-- [Closed Vectors](out/closed-vectors.md)
+- [[Normal Vector]]
+- [[Closed Vectors]]
 
 #### Opposite vectors
 Let v = (1,-2,1). Find a vector u of mag 7 that is in opp direction than v.
@@ -51,19 +50,19 @@ Let v = (1,-2,1). Find 3 vectors w1; w2; w3 such that w1 is parallel to v1 and s
 - Find length of those, add in relevant fractions
 [![Image from Gyazo](https://i.gyazo.com/ac600c34aa97668386ec5b4acedaee55.png)](https://gyazo.com/ac600c34aa97668386ec5b4acedaee55)
 ### Used in
-- [Parametric Equations](out/parametric-equations.md)
-- [Span](out/span.md)
-- [Basis](out/basis.md)
+- [[Parametric Equations]]
+- [[Span]]
+- [[Basis]]
 
 ## Operations
-- [Linear Combinations](out/linear-combinations.md)
-- [Vector Operations](out/vector-operations.md)
+- [[Linear Combinations]]
+- [[Vector Operations]]
 
 ___
 
 # Backlinks
 ```dataview
-list from [Vectors](out/vectors.md) AND !outgoing([Vectors](out/vectors.md))
+list from [[Vectors]] AND !outgoing([[Vectors]])
 ```
 ___
 References:

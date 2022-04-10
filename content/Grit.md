@@ -1,9 +1,6 @@
----
-title: Grit
----
 Status:
 Tags:
-Links: [Wellness MOC](out/wellness-moc.md)
+Links: [[Wellness MOC]]
 ___
 # Grit
 ## Qualities
@@ -13,11 +10,11 @@ ___
 - Persistent/Tenacious
 	- Giving our complete effort from start to finish
 - People with high grit tend to be more optimistic
-- People with grit tend to have a [Growth Mindset](out/growth-mindset.md)
+- People with grit tend to have a [[Growth Mindset]]
 
 ## Benefits
 - Helps us stay motivated to do the things that will improve our life, even if such tasks may be boring or not immediately rewarding
-- Helps with [ achieving](out/achievement.md) our goals through effort
+- Helps with [[Achievement| achieving]] our goals through effort
 - Develops self-control, gratitude, and social intelligence
 ## Cultivation
 ### Personal

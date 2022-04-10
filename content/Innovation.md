@@ -1,13 +1,10 @@
----
-title: Innovation
----
 Status:
 Tags:
-Links: [Entrepreneurship MOC](out/entrepreneurship-moc.md)
+Links: [[Entrepreneurship MOC]]
 ___
 # Innovation MOC
 ## Principles
-- [Google's Innovation Principles](out/googles-innovation-principles.md)
+- [[Google's Innovation Principles]]
 
 ___
 References:

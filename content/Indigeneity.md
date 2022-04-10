@@ -1,8 +1,5 @@
----
-title: Indigeneity
----
 Related Ideas: 
-Parent: [EDUC100W Concept Mapping](None)]
+Parent: [[EDUC100W Concept Mapping]]]
 ___
 # Indigeneity
 > the fact of originating or occurring naturally in a particular place

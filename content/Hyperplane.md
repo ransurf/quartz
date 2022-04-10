@@ -1,16 +1,13 @@
----
-title: Hyperplane
----
 Status: 
 Tags: 
-Links: [MATH 232 Units](out/math-232-units.md)
+Links: [[MATH 232 Units]]
 ___
 # Hyperplane
 - 
 ___
 # Backlinks
 ```dataview
-list from [Hyperplane](out/hyperplane.md) AND !outgoing([Hyperplane](out/hyperplane.md))
+list from [[Hyperplane]] AND !outgoing([[Hyperplane]])
 ```
 ___
 References:

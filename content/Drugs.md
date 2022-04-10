@@ -1,16 +1,13 @@
----
-title: Drugs
----
 Status: 
 Tags: 
-Links: [Food MOC](out/food-moc.md)
+Links: [[Food MOC]]
 ___
 # Drugs
 <% tp.file.cursor(5) %>
 ___
 # Backlinks
 ```dataview
-list from [Drugs](out/drugs.md) AND !outgoing([Drugs](out/drugs.md))
+list from [[Drugs]] AND !outgoing([[Drugs]])
 ```
 ___
 References:

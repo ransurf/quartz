@@ -1,18 +1,15 @@
----
-title: Flashcards
----
 Status:
 Tags: 
-Links: [Remembering](out/remembering.md)
+Links: [[Remembering]]
 ___
 # Flashcards 
 ## Principles
 - Have one fact/concept per card
 ## Benefits
-- Partake in [Spaced Repetition](out/spaced-repetition.md) and [Active Recall](out/active-recall.md)
+- Partake in [[Spaced Repetition]] and [[Active Recall]]
 - Acts as a second brain, as the cards you create will eventually become remembered through practice
 ## Practices
-- You can [memorize essays](out/essay-memorization-method.md) by turning each idea into a flashcard
+- You can [[Essay Memorization Method|memorize essays]] by turning each idea into a flashcard
 	- Helps chunk
 - Ask yourself whether you truly need to make a flashcard for something
 	- Only make flashcards when:
@@ -30,8 +27,8 @@ ___
 	- A certain concept or procedure
 	- ex) Steps for performing a heart surgerey
 ## Resources
-- [Anki MOC](out/anki-moc.md)
-- [Google Sheets](None)
+- [[Anki MOC]]
+- [[Google Sheets]]
 	- Systematic
 	- Easier view of understood topics
 ___

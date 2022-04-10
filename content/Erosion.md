@@ -1,9 +1,6 @@
----
-title: Erosion
----
 Status:
 Tags:
-Links: [Flow Mechanisms](out/flow-mechanisms.md)
+Links: [[Flow Mechanisms]]
 ___
 # Erosion
 ## Principles

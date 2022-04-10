@@ -1,10 +1,7 @@
----
-title: Antifragility
----
 # Antifragility
 *"If you strike me down I shall become more powerful than you can possibly imagine."* 
 - Getting **stronger from stressors**, more settled from shaking, more adaptable from attacks
-- It's a kind of on-the-fly [Natural Selection](out/natural-selection.md) 
+- It's a kind of on-the-fly [[Natural Selection]] 
 
 ## Related
 - The Phoenix - reborn from the ashes of the dragon
@@ -24,5 +21,5 @@ Domains: The concept has been applied in physics, risk analysis, molecular biolo
 Background: Developed by Nassim Nicholas Taleb
 
 ---
-links: [070 Concepts MOC](out/070-concepts-moc.md)
+links: [[070 Concepts MOC]]
 

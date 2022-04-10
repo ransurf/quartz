@@ -1,9 +1,6 @@
----
-title: Postponed
----
 Status:
 Tags:
-Links: [{ Books MOC](out/-books-moc.md)
+Links: [[{ Books MOC]]
 ___
 # Postponed
 

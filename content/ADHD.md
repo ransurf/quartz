@@ -1,20 +1,17 @@
----
-title: ADHD
----
 Status: 
-Tags: [Attention](out/attention.md)
-Links: [Disorders](None)
+Tags: [[Attention]]
+Links: [[Disorders]]
 ___
 # ADHD
-- [Testing if I have ADHD](out/testing-if-i-have-adhd.md)
-- [Getting tested for ADHD](out/getting-tested-for-adhd.md)
-- [My ADHD Symptoms](out/my-adhd-symptoms.md)
+- [[Testing if I have ADHD]]
+- [[Getting tested for ADHD]]
+- [[My ADHD Symptoms]]
 ## Principles
-- [Inattention](out/inattention.md)
+- [[Inattention]]
 ___
 # Backlinks
 ```dataview
-list from [ADHD](out/adhd.md)
+list from [[ADHD]]
 ```
 ___
 References: 

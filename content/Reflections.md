@@ -1,17 +1,14 @@
----
-title: Reflections
----
 
 Status: <% tp.file.cursor(2) %>
 Tags: <% tp.file.cursor(3) %>
-Links: [<% tp.file.cursor(4) %>
+Links: [[<% tp.file.cursor(4) %>
 ___
-](None# Reflections
+# Reflections
 <% tp.file.cursor(5) %>
 ___
 # Backlinks
 ```dataview
-list from [[Reflections) AND !outgoing([Reflections](out/reflections.md))
+list from [[Reflections]] AND !outgoing([[Reflections]])
 ```
 ___
 References:

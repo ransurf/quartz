@@ -1,21 +1,18 @@
----
-title: ETFs
----
 Status: 
 Tags: 
-Links: [Types of Stocks](out/types-of-stocks.md)
+Links: [[Types of Stocks]]
 ___
 # ETFs
 ```dataview
 table Description, MER
-from [ETFs](out/etfs.md) AND !outgoing([ETFs](out/etfs.md))
+from [[ETFs]] AND !outgoing([[ETFs]])
 where file.name != "Stock Template" AND file.name[0] = "$" AND file.name[1] = "S"
 sort file.name desc
 ```
 ___
 # Backlinks
 ```dataview
-list from [ETFs](out/etfs.md) AND !outgoing([ETFs](out/etfs.md))
+list from [[ETFs]] AND !outgoing([[ETFs]])
 ```
 ___
 References:

@@ -1,12 +1,9 @@
----
-title: Contribution
----
 Status:
 Tags:
-Links: [Happiness](out/happiness.md)
+Links: [[Happiness]]
 ___
 # Contribution
-Contribution helps us gain a [Sense of Belonging (Alderian)](out/sense-of-belonging-alderian.md) and [Happiness](out/happiness.md)
+Contribution helps us gain a [[Sense of Belonging (Alderian)]] and [[Happiness]]
 - As long as we are contributing to others, it will act as a direction to find our calling
 ___
 References:

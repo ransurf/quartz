@@ -1,12 +1,9 @@
----
-title: Basis
----
 Status: 
 Tags: #cards/math232/unit1
-Links: [Vectors](out/vectors.md)
+Links: [[Vectors]]
 ___
 # Basis
-- [Matrix Basis](out/matrix-basis.md)
+- [[Matrix Basis]]
 ## Principles
 ?
 - Set of vectors ($v_1$, $v_2$, $v_3$) in $R^2$, $R^3$ is a basis if
@@ -39,7 +36,7 @@ Find basis of range of linear mapping
 ___
 # Backlinks
 ```dataview
-list from [Basis](out/basis.md) AND !outgoing([Basis](out/basis.md))
+list from [[Basis]] AND !outgoing([[Basis]])
 ```
 ___
 References:

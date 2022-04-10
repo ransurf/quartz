@@ -1,6 +1,9 @@
+---
+title: Servomechanism
+---
 Status: 
 Tags: 
-Links: [[Psycho-Cybernetics]]
+Links: [Psycho-Cybernetics](out/psycho-cybernetics.md)
 ___
 
 # Servomechanism
@@ -15,7 +18,7 @@ There must be a corrective device, however, that will respond to negative feedba
 
 Thus, when we set out to find a new idea, or the answer to a problem, we must assume that the answer exists already—somewhere—and set out to find it.
 
-A psychological example of a servomechnanism is the [[Subconscious Mind|creative mechanism]]
+A psychological example of a servomechnanism is the [creative mechanism](out/subconscious-mind.md)
 ___
 References:
 

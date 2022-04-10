@@ -1,9 +1,10 @@
 ---
+title: Range
 aliases:
 ---
 Status:
 Tags:
-Links: [[Discrete Math Functions]]
+Links: [Discrete Math Functions](out/discrete-math-functions.md)
 ___
 
 # Range
@@ -22,7 +23,7 @@ ___
 
 # Backlinks
 ```dataview
-list from [[Range]] AND !outgoing([[Range]])
+list from [Range](out/range.md) AND !outgoing([Range](out/range.md))
 ```
 ___
 References:

@@ -1,6 +1,9 @@
+---
+title: Regret
+---
 Status:
 Tags:
-Links: [[Reflection]]
+Links: [Reflection](out/reflection.md)
 ___
 # Regret
 Regretting things suck, but if used correctly, it can lead to some valuable insight
@@ -10,6 +13,6 @@ Regretting things suck, but if used correctly, it can lead to some valuable insi
 - Plan ahead
 - Reinforces resolve
 ## Practices
-- We can simulate regret using the [[10 10 10 Rule]]
+- We can simulate regret using the [10 10 10 Rule](out/10-10-10-rule.md)
 ___
 References:q

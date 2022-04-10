@@ -1,6 +1,9 @@
+---
+title: Personality
+---
 Status:
 Tags:
-Links: [[Habits]]
+Links: [Habits](out/habits.md)
 ___
 # Personality
 ## Principles
@@ -8,7 +11,7 @@ ___
 - How we respond to different scenarios
 ## Types of Measurement
 - Workplace Personality Inventory, the Team Dimensions Profile, and Stratified Systems Theory
-- [[Myers–Briggs Type Indicator]]
-- [[Big Five Personality Traits]]
+- [Myers–Briggs Type Indicator](out/myersbriggs-type-indicator.md)
+- [Big Five Personality Traits](out/big-five-personality-traits.md)
 ___
 References:

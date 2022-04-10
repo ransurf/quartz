@@ -1,6 +1,9 @@
+---
+title: Embarassment
+---
 Status:
 Tags:
-Links: [[Networking]]
+Links: [Networking](out/networking.md)
 ___
 # embarassment
 - Just go out to meet people

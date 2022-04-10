@@ -1,19 +1,22 @@
+---
+title: HealthyGamerGG
+---
 
 Status: 
 Tags: 
-Links: [[private/050 People MOC]]
+Links: [private/050 People MOC](None)
 ___
 # HealthyGamerGG
 - Dr. K's course is a synthesis of everything
 ## Inputs
 ```dataview
 table started
-from #📥 AND [[HealthyGamerGG]]
+from #📥 AND [HealthyGamerGG](out/healthygamergg.md)
 ```
 ___
 # Backlinks
 ```dataview
-list from [[HealthyGamerGG]] AND !outgoing([[HealthyGamerGG]])
+list from [HealthyGamerGG](out/healthygamergg.md) AND !outgoing([HealthyGamerGG](out/healthygamergg.md))
 ```
 ___
 References:

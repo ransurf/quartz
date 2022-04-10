@@ -1,5 +1,8 @@
+---
+title: NoFap
+---
 
-[[NoFap Journal]]
+[NoFap Journal](out/nofap-journal.md)
 
 -   noporn: self-confidence, motivation to pursue women, mental clarity, treating women as people
     

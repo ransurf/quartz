@@ -1,6 +1,9 @@
+---
+title: Self-Acceptance
+---
 Status:
-Tags: [[Self-Love]]
-Links: [[Alderian Psychology]]
+Tags: [Self-Love](out/self-love.md)
+Links: [Alderian Psychology](out/alderian-psychology.md)
 ___
 # Self-Acceptance
 ## Principles
@@ -8,7 +11,7 @@ ___
 ## Benefits
 - Downplays the external shame from society
 - Gets rid of our desire to become special and feel superior
-- Promotes [[Intersectionality]]
+- Promotes [Intersectionality](out/intersectionality.md)
 	- The same applies to society; by learning to love ourselves, we can start loving others and the world as a whole
 ## Effects
 - 

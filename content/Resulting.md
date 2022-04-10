@@ -1,6 +1,9 @@
+---
+title: Resulting
+---
 Status:
 Tags:
-Links: [[Decision-Making]]
+Links: [Decision-Making](out/decision-making.md)
 ___
 # Resulting
 ## Principles

@@ -1,6 +1,9 @@
+---
+title: Silence
+---
 Status: 
 Tags: 
-Links: [[Conversation]]
+Links: [Conversation](out/conversation.md)
 ___
 # Silence
 - When asking a powerful question, embrace the silence
@@ -22,7 +25,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[Silence]]
+list from [Silence](out/silence.md)
 ```
 ___
 References: 

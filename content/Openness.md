@@ -1,6 +1,9 @@
+---
+title: Openness
+---
 Status: 
-Tags: [[Transparency]]
-Links: [[Pyramid of Personal Connection]]
+Tags: [Transparency](out/transparency.md)
+Links: [Pyramid of Personal Connection](out/pyramid-of-personal-connection.md)
 ___
 # Openness
 ## Principles
@@ -9,7 +12,7 @@ ___
 - We cannot ask an open question if we are not open ourselves
 - The opposite of being open is to be right
 - When in groups, it's okay to not know the answer
-	- Helps create something new through [[Synergy]]
+	- Helps create something new through [Synergy](out/synergy.md)
 ## Cultivation
 ### Tools
 - Name our triggers
@@ -20,7 +23,7 @@ ___
 - Restate a question
 	- Don't be afraid to mention that you are trying to work on asking better questions
 	- Reinforce the habit
-- [[Converting objective questions into intimate questions]]
+- [Converting objective questions into intimate questions](out/converting-objective-questions-into-intimate-questions.md)
 
 - `Tell me...`
 	- Even more open-minded
@@ -32,7 +35,7 @@ ___
 	- So it’s Friday; what do you hope to do tonight?
 	- What are you excited about?
 	- Ask whether we are asking the right questions
-![[Pasted image 20210622160835.png]]
+![Pasted image 20210622160835.png](None)
 #### Traps
 - Unknown triggers for proving our righteousness
 	- Ask yourself or others the following questions:
@@ -63,7 +66,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[Openness]]
+list from [Openness](out/openness.md)
 ```
 ___
 References: 

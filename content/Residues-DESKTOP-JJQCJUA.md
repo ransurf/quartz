@@ -1,9 +1,10 @@
 ---
+title: Residues-DESKTOP-JJQCJUA
 aliases:
 ---
 Status:
 Tags: #archivedCards/macm101/numbertheory 
-Links: [[Residues]]
+Links: [Residues](out/residues.md)
 ___
 
 # Residues
@@ -42,7 +43,7 @@ ___
 
 # Backlinks
 ```dataview
-list from [[Residues]] AND !outgoing([[Residues]])
+list from [Residues](out/residues.md) AND !outgoing([Residues](out/residues.md))
 ```
 ___
 References:

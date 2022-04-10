@@ -1,6 +1,9 @@
+---
+title: Insecurity
+---
 Status:
 Tags:
-Links: [[Identity Terrorism]]
+Links: [Identity Terrorism](out/identity-terrorism.md)
 ___
 # Insecurity
 ## Principles

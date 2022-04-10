@@ -1,6 +1,9 @@
+---
+title: Axioms
+---
 Status: 
 Tags: 
-Links: [[Discrete Math Theorems]]
+Links: [Discrete Math Theorems](out/discrete-math-theorems.md)
 ___
 # Axioms
 Definitions
@@ -10,7 +13,7 @@ Definitions
 ___
 # Backlinks
 ```dataview
-list from [[Axioms]] AND !outgoing([[Axioms]])
+list from [Axioms](out/axioms.md) AND !outgoing([Axioms](out/axioms.md))
 ```
 ___
 References:

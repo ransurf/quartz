@@ -1,20 +1,23 @@
+---
+title: Quantifiers
+---
 Status: 
 Tags: 
-Links: [[Logic and Formal Reasoning]]
+Links: [Logic and Formal Reasoning](out/logic-and-formal-reasoning.md)
 ___
 # Quantifiers
 ## Principles
 - Logic statements are meaningless until we add a universe 
-- [[Quanifier Variables]]
-- [[Negating Quantifiers]]
+- [Quanifier Variables](out/quanifier-variables.md)
+- [Negating Quantifiers](out/negating-quantifiers.md)
 ### Uses
 - Definitions
 	- `8-7`, mother (`M(x,y)`) of x is female parent of x `P(x,y) ^ Q(y)` where Q(y) means female and P(x,y) means y is a parent of x
 - Rules
 - Theorems
 #### Universes
-- [[Universal Quantifiers]]
-- [[Existential Quantifiers]]
+- [Universal Quantifiers](out/universal-quantifiers.md)
+- [Existential Quantifiers](out/existential-quantifiers.md)
 
 Expressions
 - For every ...
@@ -34,7 +37,7 @@ Expressions
 ___
 # Backlinks
 ```dataview
-list from [[Quantifiers]]
+list from [Quantifiers](out/quantifiers.md)
 ```
 ___
 References: 

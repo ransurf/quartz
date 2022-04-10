@@ -1,3 +1,6 @@
+---
+title: Psycho-Cybernetics
+---
 Status: 
 Tags: 
 Links: [[

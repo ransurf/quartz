@@ -1,6 +1,9 @@
+---
+title: Givers
+---
 Status:
 Tags:
-Links: [[Styles of Social Interaction]] - [[Becoming a Giver]]
+Links: [Styles of Social Interaction](out/styles-of-social-interaction.md) - [Becoming a Giver](out/becoming-a-giver.md)
 ___
 # Givers
 ## Qualities
@@ -14,12 +17,12 @@ ___
 - Tend to not be spotted since they usually aren’t the flashiest
 - Not self-focused
 - Calculate whether the external benefits outweigh the personal cost
-- Probably inhabit the [[5 Minute Favor Rule]]
-- Are willing to accept [[Criticism]] to improve
+- Probably inhabit the [5 Minute Favor Rule](out/5-minute-favor-rule.md)
+- Are willing to accept [Criticism](out/criticism.md) to improve
 ### Social
 - Comfortable expressing their vulnerability, resulting in showing their authenticity and building prestige
 - Use powerless communication style through presenting, selling, persuading and negotiating
-	- Uses [[Powerless Communication]]
+	- Uses [Powerless Communication](out/powerless-communication.md)
 		- Makes the listener think about what they're saying
 - Cares about the needs of others more than their own
 	- Don't see people as obstacles to personal success
@@ -44,7 +47,7 @@ ___
 	- Others are willing to help us after helping them
 	- People who you have helped can recommend you to others
 - Give people lightbulbs and allow for ideas to flow and problems to be solved
-- Empowers others with [[Psychological Safety]]
+- Empowers others with [Psychological Safety](out/psychological-safety.md)
 
 ## Downsides
 ### Personal

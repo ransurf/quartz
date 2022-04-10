@@ -1,6 +1,9 @@
+---
+title: Self-Confidence
+---
 Status: 
 Tags: 
-Links: [[Self]]
+Links: [Self](out/self.md)
 ___
 
 # Self-Confidence

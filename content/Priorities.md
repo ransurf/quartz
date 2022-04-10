@@ -1,6 +1,9 @@
+---
+title: Priorities
+---
 Status: 
-Tags: [[Focus]]
-Links: [[070 Concepts MOC]]
+Tags: [Focus](out/focus.md)
+Links: [070 Concepts MOC](out/070-concepts-moc.md)
 ___
 
 # Priorities

@@ -1,5 +1,8 @@
+---
+title: Kakegurui
+---
 Tags: #anime
-Links: [[Animes]]
+Links: [Animes](out/animes.md)
 ___
 # Kakegurui
 

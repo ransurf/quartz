@@ -1,6 +1,9 @@
+---
+title: Worldview
+---
 Status:
 Tags:
-Links: [[Mindset]]
+Links: [Mindset](out/mindset.md)
 ___
 # Worldview
 How we view the world.

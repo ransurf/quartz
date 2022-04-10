@@ -1,6 +1,9 @@
+---
+title: Empathy
+---
 Status:
 Tags:
-Links: [[Pyramid of Personal Connection]]
+Links: [Pyramid of Personal Connection](out/pyramid-of-personal-connection.md)
 ___
 # Empathy
 > Be sure to fully understand the other person’s point of view before expressing your own.

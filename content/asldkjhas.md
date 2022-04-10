@@ -1,14 +1,17 @@
+---
+title: asldkjhas
+---
 
 Status: <% tp.file.cursor(2) %>
 Tags: <% tp.file.cursor(3) %>
-Links: [[<% tp.file.cursor(4) %>
+Links: [<% tp.file.cursor(4) %>
 ___
-# asldkjhas
+](None# asldkjhas
 <% tp.file.cursor(5) %>
 ___
 # Backlinks
 ```dataview
-list from [[asldkjhas]] AND !outgoing([[asldkjhas]])
+list from [[asldkjhas) AND !outgoing([asldkjhas](out/asldkjhas.md))
 ```
 ___
 References:

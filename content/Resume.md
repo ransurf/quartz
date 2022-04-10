@@ -1,9 +1,10 @@
 ---
+title: Resume
 aliases:
 ---
 Status:
 Tags:
-Links: [[Job]]
+Links: [Job](out/job.md)
 ___
 
 # Resume
@@ -23,7 +24,7 @@ a resume should showcase what you've _done,_ not what you _know_
 - Make resume pleasing
 - bold the results, the consumer influence your development had
 ## Content
-- [[Accomplishment Statements]]
+- [Accomplishment Statements](out/accomplishment-statements.md)
 ## Resume Choices
 
 ### Skills vs Tasks
@@ -34,7 +35,7 @@ ___
 
 # Backlinks
 ```dataview
-list from [[Resume]] AND !outgoing([[Resume]])
+list from [Resume](out/resume.md) AND !outgoing([Resume](out/resume.md))
 ```
 ___
 References:

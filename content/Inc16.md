@@ -1,5 +1,8 @@
+---
+title: Inc16
+---
 Status:
-Links: [[Nand2Tetris Project 2]]
+Links: [Nand2Tetris Project 2](out/nand2tetris-project-2.md)
 ___
 # Inc16 Gate
 ## Notes

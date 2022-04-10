@@ -1,6 +1,9 @@
+---
+title: Universes
+---
 Status: 
 Tags: 
-Links: [[Set Theory]]
+Links: [Set Theory](out/set-theory.md)
 ___
 # Universes
 **Declaring a universe for multiple variables:**
@@ -8,7 +11,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[Universes]] AND !outgoing([[Universes]])
+list from [Universes](out/universes.md) AND !outgoing([Universes](out/universes.md))
 ```
 ___
 References:

@@ -1,14 +1,17 @@
+---
+title: Mortality
+---
 Status: 
 Tags: 
-Links: [[
+Links: [
 ___
-# Mortality
+](None# Mortality
 ## Principles
-- [[Rationalizing mortality through stoicism]]
+- [[Rationalizing mortality through stoicism)
 ___
 # Backlinks
 ```dataview
-list from [[Mortality]] AND !outgoing([[Mortality]])
+list from [Mortality](out/mortality.md) AND !outgoing([Mortality](out/mortality.md))
 ```
 ___
 References:

@@ -1,6 +1,9 @@
+---
+title: Tilt
+---
 Status:
 Tags:
-Links: [[Decision-Making]]
+Links: [Decision-Making](out/decision-making.md)
 ___
 # Tilt
 Tilt is the loss of rationality in our decision-making after a bad outcome

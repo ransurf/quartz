@@ -1,6 +1,9 @@
+---
+title: Morality
+---
 Status:
 Tags: 
-Links: [[Flow MOC]]
+Links: [Flow MOC](out/flow-moc.md)
 ___
 # Morality
 ## Principles

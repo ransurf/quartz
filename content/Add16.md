@@ -1,5 +1,8 @@
+---
+title: Add16
+---
 Status:
-Links: [[Nand2Tetris Project 2]]
+Links: [Nand2Tetris Project 2](out/nand2tetris-project-2.md)
 ___
 # Add16 Gate
 ## Notes

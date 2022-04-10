@@ -1,6 +1,9 @@
+---
+title: Memex
+---
 Status: 
 Tags: 
-Links: [[Zettlekasten Tools]]
+Links: [Zettlekasten Tools](None)
 ___
 # Memex
 ## Features
@@ -13,7 +16,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[Memex]] AND !outgoing([[Memex]])
+list from [Memex](out/memex.md) AND !outgoing([Memex](out/memex.md))
 ```
 ___
 References:

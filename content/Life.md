@@ -1,14 +1,17 @@
+---
+title: Life
+---
 Status: 
 Tags: 
-Links: [[Concepts]]
+Links: [Concepts](None)
 ___
 # Life
 ## Principles
-![[Four Thousand Weeks#^dyge80]]
+![Four Thousand Weeks](out/permanent-highlights/four-thousand-weeks.md#^dyge80)
 ___
 # Backlinks
 ```dataview
-list from [[Life]] AND !outgoing([[Life]])
+list from [Life](out/life.md) AND !outgoing([Life](out/life.md))
 ```
 ___
 References:

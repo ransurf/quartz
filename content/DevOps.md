@@ -1,14 +1,17 @@
+---
+title: DevOps
+---
 Status: 
 Tags: 
-Links: [[Coding MOC]]
+Links: [Coding MOC](out/coding-moc.md)
 ___
 # DevOps
 ## Principles
-- [[Continuous Integration]]
+- [Continuous Integration](out/continuous-integration.md)
 ___
 # Backlinks
 ```dataview
-list from [[DevOps]] AND !outgoing([[DevOps]])
+list from [DevOps](out/devops.md) AND !outgoing([DevOps](out/devops.md))
 ```
 ___
 References: [Reddit ELI5](https://www.reddit.com/r/explainlikeimfive/comments/3e22nr/eli5what_is_devops_how_is_it_useful/)

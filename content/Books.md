@@ -1,6 +1,9 @@
+---
+title: Books
+---
 Status: 
 Tags: 
-Links: [[My Inputs]] - [[Productive Media Consumption]]
+Links: [My Inputs](out/my-inputs.md) - [Productive Media Consumption](None)
 ___
 
 # Books

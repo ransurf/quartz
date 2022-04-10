@@ -1,6 +1,9 @@
+---
+title: Creatine
+---
 Status: 
 Tags: 
-Links: [[Supplements]]
+Links: [Supplements](out/supplements.md)
 ___
 # Creatine
 - Can be taken anytime
@@ -9,7 +12,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[Creatine]] AND !outgoing([[Creatine]])
+list from [Creatine](out/creatine.md) AND !outgoing([Creatine](out/creatine.md))
 ```
 ___
 References:

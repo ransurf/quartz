@@ -1,6 +1,9 @@
+---
+title: Self-Image
+---
 Status: 
 Tags: 
-Links: [[Self]]
+Links: [Self](out/self.md)
 ___
 
 # Self-Image

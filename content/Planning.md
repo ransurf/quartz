@@ -1,16 +1,19 @@
+---
+title: Planning
+---
 Status:
 Tags:
-Links: [[Productivity]]
+Links: [Productivity](out/productivity.md)
 ___
 # Planning
 `Think about things instead of thinking of them -GTD`
-A handy philosophy for planning our goals is the [[GTD Philosophy]]
+A handy philosophy for planning our goals is the [GTD Philosophy](out/gtd-philosophy.md)
 ## Principles
-- [[Prioritization]]
-- [[Scheduling]]
-- [[Goal Setting]]
-- [[Reflection]]
-- [[Warren Buffet's Prioritzation Technique]]
+- [Prioritization](out/prioritization.md)
+- [Scheduling](out/scheduling.md)
+- [Goal Setting](out/goal-setting.md)
+- [Reflection](out/reflection.md)
+- [Warren Buffet's Prioritzation Technique](out/warren-buffets-prioritzation-technique.md)
 ## Time Constraints
 - Identify a deep task that’s important, and to estimate how long it would take. Next, cut that time drastically. As a result, you are forced to skip out on distractions to work solely on the task
 ## Advice
@@ -22,6 +25,6 @@ A handy philosophy for planning our goals is the [[GTD Philosophy]]
 2.  Lead yourself to make choices about all the “inputs” in our life so we can have a wide disposal of “next actions” to implement or renegotiate in the moment
 3.  Curating and coordinating all of that content, utilizing the recognition of the multiple levels of commitments with yourself and others you will have at play, at any point in time
 ## Practices
-- [[Planning the Day]]
+- [Planning the Day](out/planning-the-day.md)
 ___
 References:

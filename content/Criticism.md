@@ -1,10 +1,13 @@
+---
+title: Criticism
+---
 Status:
 Tags:
-Links: [[Growth Mindset]]
+Links: [Growth Mindset](out/growth-mindset.md)
 ___
 # Criticism
 ## Principles
-- [[Giving Criticism]]
-- [[Receiving Criticism]]
+- [Giving Criticism](out/giving-criticism.md)
+- [Receiving Criticism](out/receiving-criticism.md)
 ___
 References:

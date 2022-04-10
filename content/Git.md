@@ -1,10 +1,13 @@
+---
+title: Git
+---
 Status: 
 Tags: 
-Links: [[Coding MOC]]
+Links: [Coding MOC](out/coding-moc.md)
 ___
 # Git
 > [Guide](https://git-scm.com/book/en/v2/)
-- [[Updating a local clone with new branch name]]
+- [Updating a local clone with new branch name](out/updating-a-local-clone-with-new-branch-name.md)
 ## Commands
 Keep credentials: `git config --global credential.helper store`
 Show credentials: `cat  ~/.git-credentials`
@@ -33,7 +36,7 @@ Merging vs rebasing
 ___
 # Backlinks
 ```dataview
-list from [[Git]]
+list from [Git](out/git.md)
 ```
 ___
 References: 

@@ -1,9 +1,12 @@
+---
+title: Syllogisms
+---
 Status:
 Tags:
-Links: [[Propositions]]
+Links: [Propositions](out/propositions.md)
 ___
 # Syllogisms
-Syllogims are combined [[Categorical Proposition|Categorical Propositions]] that are "inescapable from the stated premises"
+Syllogims are combined [Categorical Propositions](out/categorical-proposition.md) that are "inescapable from the stated premises"
 ## Structure
 - First two lines are premises, while third line is a conclusion
 - Require a middle term, M

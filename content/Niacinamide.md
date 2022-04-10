@@ -1,6 +1,9 @@
+---
+title: Niacinamide
+---
 Status: 
 Tags: 
-Links: [[Skincare Ingredients]]
+Links: [Skincare Ingredients](out/skincare-ingredients.md)
 ___
 # Niacinamide
 ## Products
@@ -16,7 +19,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[Niacinamide]] AND !outgoing([[Niacinamide]])
+list from [Niacinamide](out/niacinamide.md) AND !outgoing([Niacinamide](out/niacinamide.md))
 ```
 ___
 References:

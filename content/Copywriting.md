@@ -1,5 +1,8 @@
+---
+title: Copywriting
+---
 Status: 
-Tags: [[Writing]] [[Marketing]]
+Tags: [Writing](out/writing.md) [Marketing](None)
 Links:
 ___
 # Copywriting
@@ -12,7 +15,7 @@ Tips
 ___
 # Backlinks
 ```dataview
-list from [[Copywriting]]
+list from [Copywriting](out/copywriting.md)
 ```
 ___
 References:

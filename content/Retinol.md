@@ -1,6 +1,9 @@
+---
+title: Retinol
+---
 Status: 
 Tags: 
-Links: [[Skincare Ingredients]]
+Links: [Skincare Ingredients](out/skincare-ingredients.md)
 ___
 # Retinol
 ## Products
@@ -13,7 +16,7 @@ cystic acne GONE, improvement in overall skin texture/firmness, pretty much no a
 ___
 # Backlinks
 ```dataview
-list from [[Retinoid]] AND !outgoing([[Retinoid]])
+list from [Retinoid](None) AND !outgoing([Retinoid](None))
 ```
 ___
 References:

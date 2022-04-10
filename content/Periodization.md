@@ -1,13 +1,16 @@
+---
+title: Periodization
+---
 Status: 
 Tags: 
-Links: [[Deep Work]] - [[Deliberate Practice]]
+Links: [Deep Work](out/deep-work.md) - [Deliberate Practice](out/deliberate-practice.md)
 ___
 # Periodization
 - Isolate single topics to work on
 ___
 # Backlinks
 ```dataview
-list from [[Periodization]] AND !outgoing([[Periodization]])
+list from [Periodization](out/periodization.md) AND !outgoing([Periodization](out/periodization.md))
 ```
 ___
 References:

@@ -1,13 +1,16 @@
+---
+title: Keyboards
+---
 Status: 
 Tags: 
-Links: [[040 Interests MOC]]
+Links: [040 Interests MOC](out/040-interests-moc.md)
 ___
 # Keyboards
-- [[Ergonomic Keyboards]]
+- [Ergonomic Keyboards](out/ergonomic-keyboards.md)
 ___
 # Backlinks
 ```dataview
-list from [[Keyboards]] AND !outgoing([[Keyboards]])
+list from [Keyboards](out/keyboards.md) AND !outgoing([Keyboards](out/keyboards.md))
 ```
 ___
 References:

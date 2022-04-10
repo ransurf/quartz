@@ -1,9 +1,10 @@
 ---
+title: Matrix
 aliases:
 ---
 Status:
 Tags: #cards/math232/unit3
-Links: [[MATH 232 Units]]
+Links: [MATH 232 Units](out/math-232-units.md)
 ___
 
 # Matrix
@@ -18,8 +19,8 @@ Syntax (size, specific element)
 - Denote specific element by $[aij]_{mxn}$ or $[aij]$ or $(A)_{ij}$
 <!--SR:!2022-02-16,5,134-->
 
-- [[Matrix Operations]]
-- [[Matrix Vector Multiplication]]
+- [Matrix Operations](out/matrix-operations.md)
+- [Matrix Vector Multiplication](out/matrix-vector-multiplication.md)
 
 - Matrices can scale, reflect, rotate
 - Some matrices are length preserving
@@ -52,7 +53,7 @@ Triangular matrix
 	- A is UT if aij = 0 for every i>j
 	- A is LT if aij = 0 for every j>ix
 
-- [[Standard Matrix]]
+- [Standard Matrix](out/standard-matrix.md)
 ### Decomposition into vectors
 ?
 - Matrix can be turned into a row list of columnar vectors or
@@ -62,17 +63,17 @@ Triangular matrix
 - [![Image from Gyazo](https://i.gyazo.com/0ba5a416132dd46f4778f9d8f5960b00.png)](https://gyazo.com/0ba5a416132dd46f4778f9d8f5960b00)
 
 ### Characteristics
-- [[Matrix Span]]
-- [[Matrix linear independence]]
-- [[Matrix Transpose]]
-- [[Matrix Linearity Properties]]
-- [[Matrix Mapping]]
+- [Matrix Span](out/matrix-span.md)
+- [Matrix linear independence](out/matrix-linear-independence.md)
+- [Matrix Transpose](out/matrix-transpose.md)
+- [Matrix Linearity Properties](out/matrix-linearity-properties.md)
+- [Matrix Mapping](out/matrix-mapping.md)
 ## Examples
 ___
 
 # Backlinks
 ```dataview
-list from [[Matrix]] AND !outgoing([[Matrix]])
+list from [Matrix](out/matrix.md) AND !outgoing([Matrix](out/matrix.md))
 ```
 ___
 References:

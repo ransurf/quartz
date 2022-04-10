@@ -1,6 +1,9 @@
+---
+title: nwHacks2022
+---
 Status: 
 Tags: 
-Links: [[My Hackathons]]
+Links: [My Hackathons](out/my-hackathons.md)
 ___
 # nwHacks2022
 ## Things to Learn
@@ -62,7 +65,7 @@ A user can
 ___
 # Backlinks
 ```dataview
-list from [[nwHacks2022]] AND !outgoing([[nwHacks2022]])
+list from [nwHacks2022](out/nwhacks2022.md) AND !outgoing([nwHacks2022](out/nwhacks2022.md))
 ```
 ___
 References:

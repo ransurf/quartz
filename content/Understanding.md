@@ -1,6 +1,9 @@
+---
+title: Understanding
+---
 Status:
 Tags: 
-Links: [[Learning]]
+Links: [Learning](out/learning.md)
 ___
 # Understanding
 ## Principles
@@ -10,12 +13,12 @@ ___
 	- For more complex concpepts, consider remembering how you remembered something
 ## Practices
 - Make it a habit to not be satisfied with memorization when there is a lack of understanding
-- [[Feynman's Technique]]
-- [[Charlie Munger's Mental Models]] can help us construct models
-- [[Scoping the Subject]]
-- [[Understanding Abstract Ideas]]
-- [[Summarizing Content]]
-- [[Concept Mapping]]
+- [Feynman's Technique](out/feynmans-technique.md)
+- [Charlie Munger's Mental Models](out/charlie-mungers-mental-models.md) can help us construct models
+- [Scoping the Subject](out/scoping-the-subject.md)
+- [Understanding Abstract Ideas](out/understanding-abstract-ideas.md)
+- [Summarizing Content](None)
+- [Concept Mapping](out/concept-mapping.md)
 -  We can understand something by thinking:
 	1. Top down
 		- Find the one law that drives it all

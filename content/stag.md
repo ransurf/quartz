@@ -1,6 +1,9 @@
+---
+title: stag
+---
 Status:
 Tags: 
-Links: [[Parties]]
+Links: [Parties](out/parties.md)
 ___
 # stag
 ## Notable Moments

@@ -1,5 +1,8 @@
+---
+title: Slip-Box
+---
 Status:
-Links: [[Note Storage Systems]]
+Links: [Note Storage Systems](out/note-storage-systems.md)
 ___
 # Slip-Box
 A slip-box allows us to have a permanent foundation of knowledge, allowing us to spend more time thinking rather than recalling information
@@ -12,6 +15,6 @@ A slip-box allows us to have a permanent foundation of knowledge, allowing us to
 - Assemble a toolbox for thinking
 - Creativity machine
 	- Innovation derives from small, incremental steps that add up
-- Refer to [[Note Storage Systems]]
+- Refer to [Note Storage Systems](out/note-storage-systems.md)
 ___
-References: [[How To Take Smart Notes]]
+References: [How To Take Smart Notes](out/references/books/summaries/how-to-take-smart-notes.md)

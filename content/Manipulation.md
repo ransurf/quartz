@@ -1,3 +1,6 @@
+---
+title: Manipulation
+---
 Status:
 Tags: 
 Links: [[

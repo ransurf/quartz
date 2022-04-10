@@ -1,6 +1,9 @@
+---
+title: Laziness
+---
 Status: 
 Tags: 
-Links: [[COGS 110 Course Outline]]
+Links: [COGS 110 Course Outline](out/cogs-110-course-outline.md)
 ___
 # Laziness
 ## Principles
@@ -8,7 +11,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[Laziness]] AND !outgoing([[Laziness]])
+list from [Laziness](out/laziness.md) AND !outgoing([Laziness](out/laziness.md))
 ```
 ___
 References:

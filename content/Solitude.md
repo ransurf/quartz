@@ -1,6 +1,9 @@
+---
+title: Solitude
+---
 Status: 
 Tags: 
-Links: [[Digital Minimalism]]
+Links: [Digital Minimalism](out/kindle-highlights/digital-minimalism.md)
 ___
 # Solitude
 ## Principles
@@ -18,7 +21,7 @@ ___
 - Most high-quality thinking happens prior to the dopamine train
 
 ### Cultivation
-- [[Late night thoughts and motivation ]]
+- [Late night thoughts and motivation ](None)
 Practices include:
 - Going on a walk
 	-  Runs cannot provoke this thought as it's too demanding for you to focus on other things
@@ -33,7 +36,7 @@ Our brain uses down-time from activities to think about our social life, which a
 ___
 # Backlinks
 ```dataview
-list from [[Solitude]] AND !outgoing([[Solitude]])
+list from [Solitude](out/solitude.md) AND !outgoing([Solitude](out/solitude.md))
 ```
 ___
 References:

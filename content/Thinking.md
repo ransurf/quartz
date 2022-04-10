@@ -1,11 +1,14 @@
+---
+title: Thinking
+---
 Status:
 Tags: 
-Links: [[Wellness MOC]]
+Links: [Wellness MOC](out/wellness-moc.md)
 ___
 # Thinking
 ## Principles
 ## Practices
-- [[Machine-Enhanced Thinking]]
+- [Machine-Enhanced Thinking](out/machine-enhanced-thinking.md)
 ___
 References:
 

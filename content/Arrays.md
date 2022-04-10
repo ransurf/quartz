@@ -1,9 +1,10 @@
 ---
+title: Arrays
 aliases:
 ---
 Status:
 Tags: #cards/cmpt295/assembly 
-Links: [[Data Structures]]
+Links: [Data Structures](out/data-structures.md)
 ___
 
 # Arrays
@@ -22,7 +23,7 @@ ___
 - Must do bound checks
 ## Language-Based
 
-### [[x86-64 Assembly Arrays]]
+### [x86-64 Assembly Arrays](out/x86-64-assembly-arrays.md)
 ___
 References:
 

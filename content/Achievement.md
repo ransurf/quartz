@@ -1,6 +1,9 @@
+---
+title: Achievement
+---
 Status:
 Tags:
-Links: [[Grit]]
+Links: [Grit](out/grit.md)
 ___
 # Achievement
 `talent x effort = skill, and skill x effort = achievement`

@@ -1,13 +1,16 @@
+---
+title: Interface
+---
 Status: 
 Tags: 
-Links: [[Data Structures]]
+Links: [Data Structures](out/data-structures.md)
 ___
 # Interface
 <% tp.file.cursor(5) %>
 ___
 # Backlinks
 ```dataview
-list from [[Interface]] AND !outgoing([[Interface]])
+list from [Interface](out/interface.md) AND !outgoing([Interface](out/interface.md))
 ```
 ___
 References:

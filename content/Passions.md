@@ -1,6 +1,9 @@
+---
+title: Passions
+---
 Status:
 Tags:
-Links: [[070 Concepts MOC]]
+Links: [070 Concepts MOC](out/070-concepts-moc.md)
 ___
 # Passions/Interests
 Passions are things in life that we greatly enjoy!

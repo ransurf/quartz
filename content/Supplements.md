@@ -1,11 +1,14 @@
+---
+title: Supplements
+---
 Status:
 Tags:
-Links: [[Diet]]
+Links: [Diet](out/diet.md)
 ___
 # Supplements
 ## Weight Loss/Muscle Gain
-(Refer to [[Slow Carb Diet]]) for more
-- [[PAGG]]
+(Refer to [Slow Carb Diet](out/slow-carb-diet.md)) for more
+- [PAGG](out/pagg.md)
 - Cissus quadrangularis (2,400 mg, three times per day) 
 - Alpha-lipoic acid (300 mg, 30 minutes before each whole-food meal). Here are the other two:
 - L-GLUTAMINE

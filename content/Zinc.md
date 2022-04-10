@@ -1,13 +1,16 @@
+---
+title: Zinc
+---
 Status: 
 Tags: 
-Links: [[Nutrition]]
+Links: [Nutrition](out/nutrition.md)
 ___
 # Zinc
 - natural testosteron booster and supports healing and hair growth
 ___
 # Backlinks
 ```dataview
-list from [[Zinc]] AND !outgoing([[Zinc]])
+list from [Zinc](out/zinc.md) AND !outgoing([Zinc](out/zinc.md))
 ```
 ___
 References:

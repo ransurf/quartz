@@ -1,14 +1,17 @@
+---
+title: Haircuts
+---
 Status: 
 Tags: 
-Links: [[Appearance]] - [[Fashion]]
+Links: [Appearance](None) - [Fashion](out/fashion.md)
 ___
 # Haircuts
-- [[Simple middle part haircut]]
-- [[Two Block Haircut]]
+- [Simple middle part haircut](out/simple-middle-part-haircut.md)
+- [Two Block Haircut](out/two-block-haircut.md)
 ___
 # Backlinks
 ```dataview
-list from [[Haircuts]] AND !outgoing([[Haircuts]])
+list from [Haircuts](out/haircuts.md) AND !outgoing([Haircuts](out/haircuts.md))
 ```
 ___
 References:

@@ -1,6 +1,9 @@
+---
+title: Thrifting
+---
 Status:
-Tags: [[Clothes MOC]] - [[Fashion]] - [[Frugal]]
-Links: [[Shopping MOC]]
+Tags: [Clothes MOC](out/clothes-moc.md) - [Fashion](out/fashion.md) - [Frugal](None)
+Links: [Shopping MOC](None)
 ___
 # Thrifting
 - Thrifting is more about hunting for hidden treasures than leaving with a load of stuff
@@ -15,7 +18,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[Thrifting]]
+list from [Thrifting](out/thrifting.md)
 ```
 ___
 References:

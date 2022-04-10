@@ -1,6 +1,9 @@
+---
+title: Fallacies
+---
 Status:
 Tags:
-Links: [[Propositions]]
+Links: [Propositions](out/propositions.md)
 ___
 # Fallacies
 -  Fallacies can distract us from the true issue at hand

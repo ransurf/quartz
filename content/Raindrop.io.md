@@ -1,6 +1,9 @@
+---
+title: Raindrop.io
+---
 Status: 
 Tags: 
-Links: [[Programs MOC]]
+Links: [Programs MOC](out/programs-moc.md)
 ___
 # Raindrop.io
 ## Features
@@ -11,7 +14,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[Raindrop.io]] AND !outgoing([[Raindrop.io]])
+list from [Raindrop.io](out/raindrop.io.md) AND !outgoing([Raindrop.io](out/raindrop.io.md))
 ```
 ___
 References:

@@ -1,9 +1,10 @@
 ---
+title: Determinants
 aliases:
 ---
 Status:
 Tags: #cards/math232/unit5
-Links: [[Matrix]]
+Links: [Matrix](out/matrix.md)
 ___
 
 # Determinants

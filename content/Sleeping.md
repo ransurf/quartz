@@ -1,6 +1,9 @@
+---
+title: Sleeping
+---
 Status:
 Tags:
-Links: [[Wellness MOC]]
+Links: [Wellness MOC](out/wellness-moc.md)
 ___
 # Sleeping
 ## Sleeping Strategies
@@ -11,9 +14,9 @@ ___
 	- single session of pre-hab testing from the “Pre-Hab” chapter.
 - TAKE A COLD BATH ONE HOUR PRIOR TO BED.
 - RESORT TO THE HALF MILITARY CRAWL POSITION.
-![[Pasted image 20210424133826.png]]
+![Pasted image 20210424133826.png](None)
 ## Sleeping Methods
-![[Pasted image 20210425120639.png]]
+![Pasted image 20210425120639.png](None)
 - Must be consistent with sleep
 ## Steps for Changing Sleep Schedule
 1. Schedule 20 minute naps every 4 hours

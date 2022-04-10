@@ -1,6 +1,9 @@
+---
+title: Humility
+---
 Status:
 Tags: 
-Links: [[Personal Flaws]]
+Links: [Personal Flaws](out/personal-flaws.md)
 ___
 # Humility
 ## Principles

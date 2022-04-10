@@ -1,6 +1,9 @@
+---
+title: TypeScript
+---
 Status: 
 Tags: 
-Links: [[JavaScript MOC]]
+Links: [JavaScript MOC](out/javascript-moc.md)
 ___
 # TypeScript
 - Superset of js
@@ -10,7 +13,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[TypeScript]] AND !outgoing([[TypeScript]])
+list from [TypeScript](out/typescript.md) AND !outgoing([TypeScript](out/typescript.md))
 ```
 ___
 References:

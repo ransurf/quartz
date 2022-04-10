@@ -1,10 +1,13 @@
+---
+title: Calisthenics
+---
 Status:
 Tags:
-Links: [[Exercise MOC]]
+Links: [Exercise MOC](out/exercise-moc.md)
 ___
 # Calisthenics
-- [[Calisthenics Exercises]]
-- [[Calisthenics Workouts]]
+- [Calisthenics Exercises](out/calisthenics-exercises.md)
+- [Calisthenics Workouts](out/calisthenics-workouts.md)
 ## Important Muscles
 1. Shoulders
 	- Do pushups/pullups that only engage the shoulders to strenghten it

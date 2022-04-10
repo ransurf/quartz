@@ -1,6 +1,9 @@
+---
+title: Misfortune
+---
 Status:
 Tags:
-Links: [[Inferiority]]
+Links: [Inferiority](out/inferiority.md)
 ___
 # Misfortune
 ## Principles

@@ -1,6 +1,9 @@
+---
+title: Laptops
+---
 Status: 
 Tags: 
-Links: [[Technology MOC]]
+Links: [Technology MOC](out/technology-moc.md)
 ___
 # Laptops
 - [June 2021 Recommendations](https://www.reddit.com/r/LaptopDeals/comments/nq1ut0/best_general_use_laptops_updated_for_june_2021/)
@@ -8,7 +11,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[Laptops]] AND !outgoing([[Laptops]])
+list from [Laptops](out/laptops.md) AND !outgoing([Laptops](out/laptops.md))
 ```
 ___
 References:

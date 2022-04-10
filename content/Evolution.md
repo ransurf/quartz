@@ -1,6 +1,9 @@
+---
+title: Evolution
+---
 Status:
 Tags: 
-Links: [[Change]]
+Links: [Change](out/change.md)
 ___
 # Evolution
 > Evolving is life’s greatest accomplishment and its greatest reward
@@ -9,7 +12,7 @@ ___
 ## Benefits
 - The faster we can adapt to our personal evolutions, the more successful we can be
 ## Practices
-- Learning from [[Pain]]
+- Learning from [Pain](out/pain.md)
 ___
 References:
 

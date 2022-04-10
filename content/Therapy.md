@@ -1,14 +1,17 @@
+---
+title: Therapy
+---
 Status: 
 Tags: 
-Links: [[Wellness MOC]]
+Links: [Wellness MOC](out/wellness-moc.md)
 ___
 # Therapy
 - Stargazing
-	- [[Tools of Titans#^fjbyrg]]
+	- [Tools of Titans](out/kindle-highlights/tools-of-titans.md#^fjbyrg)
 ___
 # Backlinks
 ```dataview
-list from [[Therapy]] AND !outgoing([[Therapy]])
+list from [Therapy](out/therapy.md) AND !outgoing([Therapy](out/therapy.md))
 ```
 ___
 References:

@@ -1,13 +1,16 @@
+---
+title: B-Roll
+---
 Status: 
 Tags: 
-Links: [[B-Roll
+Links: [B-Roll
 ___
-# B-Roll
+](None# B-Roll
 <% tp.file.cursor(5) %>
 ___
 # Backlinks
 ```dataview
-list from [[B-Roll]] AND !outgoing([[B-Roll]])
+list from [[B-Roll) AND !outgoing([B-Roll](out/b-roll.md))
 ```
 ___
 References:

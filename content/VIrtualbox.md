@@ -1,6 +1,9 @@
+---
+title: VIrtualbox
+---
 Status: 
 Tags: 
-Links: [[Programs MOC]]
+Links: [Programs MOC](out/programs-moc.md)
 ___
 # VIrtualbox
 - Programingknowledge channel
@@ -8,7 +11,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[VIrtualbox]] AND !outgoing([[VIrtualbox]])
+list from [VIrtualbox](out/virtualbox.md) AND !outgoing([VIrtualbox](out/virtualbox.md))
 ```
 ___
 References:

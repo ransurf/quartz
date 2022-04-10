@@ -1,15 +1,18 @@
+---
+title: Sleep
+---
 Status: 
 Tags: 
-Links: [[Wellness MOC]]
+Links: [Wellness MOC](out/wellness-moc.md)
 ___
 # Sleep
 ## Principles
-- [[Memory Consolidation]]
+- [Memory Consolidation](out/memory-consolidation.md)
 - Sleep only as much as you need to, but don't oversleep
 ___
 # Backlinks
 ```dataview
-list from [[Sleep]] AND !outgoing([[Sleep]])
+list from [Sleep](out/sleep.md) AND !outgoing([Sleep](out/sleep.md))
 ```
 ___
 References:

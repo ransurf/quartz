@@ -1,6 +1,9 @@
+---
+title: Present
+---
 Status:
 Tags:
-Links: [[Alderian Psychology]]
+Links: [Alderian Psychology](out/alderian-psychology.md)
 ___
 # Present
 Instead of treating life like climbing a mountain are treating their existences as lines, we should see it as a series of dots/moments (the present).

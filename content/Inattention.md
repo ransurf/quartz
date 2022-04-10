@@ -1,6 +1,9 @@
+---
+title: Inattention
+---
 Status: 
 Tags: 
-Links: [[ADHD]]
+Links: [ADHD](out/adhd.md)
 ___
 # Inattention
 - Lack of ability to focus on one thing for a desired amount of time
@@ -8,14 +11,14 @@ ___
 - Being moved by small irritations and not being able to move past them
 	- How can we thrive if we are slown down by every little inconvenience?
 ## Solution
-- Solution is to turn to Stoicism's [[Acceptance]]
-- [[Vipassana Meditation]]
+- Solution is to turn to Stoicism's [Acceptance](out/acceptance.md)
+- [Vipassana Meditation](out/vipassana-meditation.md)
 	- 20 minutes a day
 - 
 ___
 # Backlinks
 ```dataview
-list from [[Inattention]] AND !outgoing([[Inattention]])
+list from [Inattention](out/inattention.md) AND !outgoing([Inattention](out/inattention.md))
 ```
 ___
 References:

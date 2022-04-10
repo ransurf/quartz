@@ -1,6 +1,9 @@
+---
+title: LinkedIn
+---
 Status: 
 Tags: 
-Links: [[030 Career MOC]]
+Links: [030 Career MOC](out/030-career-moc.md)
 ___
 # LinkedIn
 Headline
@@ -14,7 +17,7 @@ Summary
 ___
 # Backlinks
 ```dataview
-list from [[LinkedIn]] AND !outgoing([[LinkedIn]])
+list from [LinkedIn](out/linkedin.md) AND !outgoing([LinkedIn](out/linkedin.md))
 ```
 ___
 References:

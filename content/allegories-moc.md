@@ -1,0 +1,3 @@
+---
+title: Allegories MOC
+---

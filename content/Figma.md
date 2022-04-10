@@ -1,6 +1,9 @@
+---
+title: Figma
+---
 Status: 
 Tags: 
-Links: [[Design]]
+Links: [Design](out/design.md)
 ___
 
 # Figma

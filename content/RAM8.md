@@ -1,6 +1,9 @@
+---
+title: RAM8
+---
 Status:
 Tags:
-Links: [[Nand2Tetris Project 3]]
+Links: [Nand2Tetris Project 3](out/nand2tetris-project-3.md)
 ___
 # RAM8
 ## Notes

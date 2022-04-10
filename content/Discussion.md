@@ -1,6 +1,9 @@
+---
+title: Discussion
+---
 Status:
 Tags:
-Links: [[private/050 People MOC]]
+Links: [private/050 People MOC](None)
 ___
 # Discussion
 ## Advice

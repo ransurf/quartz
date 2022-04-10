@@ -1,6 +1,9 @@
+---
+title: Melatonin
+---
 Status: 
 Tags: 
-Links: [[Drugs]]
+Links: [Drugs](out/drugs.md)
 ___
 # Melatonin
 ## Principles
@@ -11,7 +14,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[Melatonin]] AND !outgoing([[Melatonin]])
+list from [Melatonin](out/melatonin.md) AND !outgoing([Melatonin](out/melatonin.md))
 ```
 ___
 References: [Melatonin Paper](https://slatestarcodex.com/2018/07/10/melatonin-much-more-than-you-wanted-to-know/)

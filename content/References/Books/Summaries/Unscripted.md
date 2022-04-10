@@ -1,9 +1,10 @@
 ---
+title: Unscripted
 started: 2021-02-20
 finished:
 rating:
 ---
-[[{ Books MOC]]
+[{ Books MOC](out/-books-moc.md)
 Tags: #literature/books/finished 
 **# Unscripted 02/20/2021
 

@@ -1,6 +1,9 @@
+---
+title: Diagonalization
+---
 Status: 
 Tags: #cards/math232/unit6 
-Links: [[Matrix]]
+Links: [Matrix](out/matrix.md)
 ___
 
 # Diagonalization

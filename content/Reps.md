@@ -1,3 +1,6 @@
+---
+title: Reps
+---
 # Reps
 *"Reps, Reps, Reps."*  
 
@@ -11,4 +14,4 @@ In practicing a craft, just show up, and get reps: tiny reps, technical reps, re
 
 ---
 tags:
-links: [[070 Concepts MOC]] — [[Benefits of IMF]]
+links: [070 Concepts MOC](out/070-concepts-moc.md) — [Benefits of IMF](out/benefits-of-imf.md)

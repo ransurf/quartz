@@ -1,6 +1,9 @@
+---
+title: Synthesizing
+---
 Status:
 Tags: 
-Links: [[Decision-Making]]
+Links: [Decision-Making](out/decision-making.md)
 ___
 # Synthesizing
 ## Principles

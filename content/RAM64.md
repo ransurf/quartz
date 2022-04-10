@@ -1,5 +1,8 @@
+---
+title: RAM64
+---
 Status:
-Links: [[Nand2Tetris Project 3]]
+Links: [Nand2Tetris Project 3](out/nand2tetris-project-3.md)
 ___
 #  RAM64
 ## Notes

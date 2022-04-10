@@ -1,18 +1,21 @@
+---
+title: Propositions
+---
 Status:
 Tags:
-Links: [[Logic]]
+Links: [Logic](out/logic.md)
 ___
 # Propositions
 - Consists of variables p,q,r
 ## Principles
-- [[Conditionals]] alter the meaning of propositions
+- [Conditionals](out/conditionals.md) alter the meaning of propositions
 - Can be true or false, but not both at the same time
 - Includes a quantifier (every, all, some, many, etc)
-- [[Categorical Proposition]]
+- [Categorical Proposition](out/categorical-proposition.md)
 ## Types
-- [[Contrapositives]]
-- [[Syllogisms]]
-- [[Fallacies]]
-- [[Paradoxes]]
+- [Contrapositives](out/contrapositives.md)
+- [Syllogisms](out/syllogisms.md)
+- [Fallacies](out/fallacies.md)
+- [Paradoxes](out/paradoxes.md)
 ___
 References:

@@ -1,6 +1,9 @@
+---
+title: Proactivity
+---
 Status:
 Tags:
-Links: [[Wellness MOC]]
+Links: [Wellness MOC](out/wellness-moc.md)
 ___
 # Proactivity
 Proactivity is going after what you want. It is our responsibility to make such promises with ourselves to develop effective habits that will have a positive influence on our lives.

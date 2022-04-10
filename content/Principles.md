@@ -1,6 +1,9 @@
+---
+title: Principles
+---
 Status:
 Tags: 
-Links: [[070 Concepts MOC]]
+Links: [070 Concepts MOC](out/070-concepts-moc.md)
 ___
 # Principles
 ## Principles (lul)
@@ -9,14 +12,14 @@ ___
 - Clear principles is vital for authentic interactions
 - Can consist of higher-level principles that branch off into various specifics
 ## Benefits
-- Helps us make better [[Decision-Making|decisions]]
+- Helps us make better [decisions](out/decision-making.md)
 - Having principles forces you to think for yourself
 - Helps categorize occurences and apply appropriate solutions
 	1. Slow down thinking to note criteria you are using for decisions
 	2. Write the criteria as a principle
 	3. Think about those criteria when you have an outcome to assess, and refine them for the next occurence
 ## Cultivation
-- [[Reflection]] of our experiences
+- [Reflection](out/reflection.md) of our experiences
 ## Practices
 - Get into the habit of clarifying your reasoning and principles to the point where others can adopt them
 ___

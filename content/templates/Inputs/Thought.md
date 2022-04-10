@@ -1,6 +1,9 @@
+---
+title: Thought
+---
 <% tp.file.cursor(1) %>Status: #💭/<% tp.file.cursor(2) %>
 Tags: <% tp.file.cursor(10) %>
-Links: [[= Thoughts]]
+Links: [= Thoughts](out/-thoughts.md)
 ___
 # <% tp.file.title %>
 ## Context
@@ -19,7 +22,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[<% tp.file.title %>]] and !outgoing([[<%tp.file.title%>]])
+list from [<% tp.file.title %>](None) and !outgoing([<%tp.file.title%>](None))
 ```
 ___
 Created::  <%tp.date.now("YYYY-MM-DD HH:MM")%>

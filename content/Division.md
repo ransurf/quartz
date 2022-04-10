@@ -1,11 +1,14 @@
+---
+title: Division
+---
 Status: 
 Tags: #archivedCards/macm101/numbertheory 
-Links: [[Integers]]
+Links: [Integers](out/integers.md)
 ___
 # Division
 - Division
 	- a | b implies a divides b
-- [[Greatest Common Divisor]]
+- [Greatest Common Divisor](out/greatest-common-divisor.md)
 
 Let n and d be positive integers. How many positive integers not exceeding n are divisible by d?
 ?
@@ -51,7 +54,7 @@ ex) if prime factorization is $2^3(3)$, then # of divs is $2^4(3)^2$ = 144
 ___
 # Backlinks
 ```dataview
-list from [[Division]] AND !outgoing([[Division]])
+list from [Division](out/division.md) AND !outgoing([Division](out/division.md))
 ```
 ___
 References:

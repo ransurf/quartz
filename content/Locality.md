@@ -1,6 +1,9 @@
+---
+title: Locality
+---
 Status: 
 Tags: #295/cpu/memory 
-Links: [[Data Memory]]
+Links: [Data Memory](out/data-memory.md)
 ___
 
 # Locality

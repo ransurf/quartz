@@ -1,3 +1,6 @@
+---
+title: Direction
+---
 # Direction
 Think of Direction like "Goals." It's great to have goals, but there is a point of Diminishing Return. Too many goals creates too many Directions. Think of the Abbe Faria's sage advice from the Count of Monte Cristo: too many goals make them all evaporate into *"a thousand follies."*
 
@@ -5,7 +8,7 @@ Sort of like Goal Setting. The "What" of old Gold Setting terminology.
 
 ### Subsets of Direction
 - Goals — Goals basically define the Direction you're going to take.
-- Virtues — At the core of every decision we make are invisible values. The values of highest importance create your virtues, which are your most valuable abilities in which to be really skilled. It's important to define your own Virtues. I have my [[Four Virtues]].
+- Virtues — At the core of every decision we make are invisible values. The values of highest importance create your virtues, which are your most valuable abilities in which to be really skilled. It's important to define your own Virtues. I have my [Four Virtues](out/four-virtues.md).
 
 ## Main Factors Governing Direction
 
@@ -27,4 +30,4 @@ Sort of like Goal Setting. The "What" of old Gold Setting terminology.
 - Ruthless Essentialism — Basically, Saying No to some goals so that you have the Time/Energy/Commitment required for the goals you said "yes" to.
 
 ---
-toc: [[Flow MOC]]
+toc: [Flow MOC](out/flow-moc.md)

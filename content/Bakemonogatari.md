@@ -1,5 +1,8 @@
+---
+title: Bakemonogatari
+---
 Tags: #anime
-Links: [[Animes]]
+Links: [Animes](out/animes.md)
 ___
 # Bakemonogatari
 08/13-TBD Bakemonogatari Thoughts  

@@ -1,13 +1,16 @@
+---
+title: Commitment
+---
 Status: 
 Tags: 
-Links: [[Accountability]] - [[Responsibility]]
+Links: [Accountability](out/accountability.md) - [Responsibility](None)
 ___
 # Commitment
-Commitment is a personal promise that you make to yourself and is the actionable outcome of our [[Accountability]]
+Commitment is a personal promise that you make to yourself and is the actionable outcome of our [Accountability](out/accountability.md)
 ___
 # Backlinks
 ```dataview
-list from [[Commitment]] AND !outgoing([[Commitment]])
+list from [Commitment](out/commitment.md) AND !outgoing([Commitment](out/commitment.md))
 ```
 ___
 References:

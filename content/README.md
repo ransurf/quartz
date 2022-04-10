@@ -1,4 +1,7 @@
-[[LDP/000 Inbox/00 ❗ Readme|LDP]]
+---
+title: README
+---
+[LDP](None)
 # Life Discipline Projects
 Welcome to Life-Disciplines-Projects (LDP), a life-management framework designed by [uwi](https://twitter.com/uwidev). This framework's main application and demo is through [Obsidian](https://obsidian.md/), but being a framework, it can also be applied elsewhere. 
 

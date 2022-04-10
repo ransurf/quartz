@@ -1,17 +1,20 @@
+---
+title: BCIT
+---
 Status: 
 Tags: 
-Links: [[020 School MOC]]
+Links: [020 School MOC](out/020-school-moc.md)
 ___
 # BCIT
-- [[BCIT Email]]
-- [[BCIT Curriculum and Schooling]]
-- [[BCIT Workload]]
+- [BCIT Email](out/bcit-email.md)
+- [BCIT Curriculum and Schooling](out/bcit-curriculum-and-schooling.md)
+- [BCIT Workload](out/bcit-workload.md)
 ### Finances
-- [[BCIT Scholarships and Academic Awards]]
-- [[BCIT Tuition and Fees]]
+- [BCIT Scholarships and Academic Awards](out/bcit-scholarships-and-academic-awards.md)
+- [BCIT Tuition and Fees](out/bcit-tuition-and-fees.md)
 ### Diploma
-- [[BCIT Marketing Management Diploma]]
-- [[BCIT Computer Systems Technology]]
+- [BCIT Marketing Management Diploma](out/bcit-marketing-management-diploma.md)
+- [BCIT Computer Systems Technology](out/bcit-computer-systems-technology.md)
 
 [Computer Systems Technology](https://www.bcit.ca/programs/computer-systems-technology-diploma-full-time-5500dipma/)
 ### Certificate
@@ -30,7 +33,7 @@ https://www.bcit.ca/files/pdf/admission/2021-22-technology-tuition.pdf
 ___
 # Backlinks
 ```dataview
-list from [[BCIT]] AND !outgoing([[BCIT]])
+list from [BCIT](out/bcit.md) AND !outgoing([BCIT](out/bcit.md))
 ```
 ___
 References:

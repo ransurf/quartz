@@ -1,6 +1,9 @@
+---
+title: Contrapositives
+---
 Status:
 Tags:
-Links: [[Propositions]]
+Links: [Propositions](out/propositions.md)
 ___
 # Contrapositives
 ## Principles

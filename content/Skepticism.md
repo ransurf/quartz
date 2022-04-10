@@ -1,6 +1,9 @@
+---
+title: Skepticism
+---
 Status:
 Tags:
-Links: [[Decision-Making]]
+Links: [Decision-Making](out/decision-making.md)
 ___
 # Skepticism
 ## Principles
@@ -11,6 +14,6 @@ ___
 - Helps develop accurate beliefs and removes false ones
 - Acknowledges that we cannot make a concrete decision
 ## Practices
--  [[Devil's Advocate]]
+-  [Devil's Advocate](out/devils-advocate.md)
 ___
 References:

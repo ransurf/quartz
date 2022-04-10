@@ -1,12 +1,15 @@
+---
+title: Transparency
+---
 Status:
 Tags: 
-Links: [[Wellness MOC]]
+Links: [Wellness MOC](out/wellness-moc.md)
 ___
 # Transparency
 > Imagine how many fewer misunderstandings we would have and how much more efficient the world would be—and how much closer we all would be to knowing what’s true—if instead of hiding what they think, people shared it openly (opinions of others and the world)
 ## Principles
 - Expressing our true selves and thoughts
-- A [[Growth Mindset]]
+- A [Growth Mindset](out/growth-mindset.md)
 
 ## Benefits
 > If you try to fake it, others will know and you will not be in a place of connection. It is important to act on natural, genuine curiosity

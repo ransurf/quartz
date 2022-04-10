@@ -1,13 +1,16 @@
+---
+title: Acceptance
+---
 Status: 
 Tags: 
-Links: [[Mindset]] - [[Stoicism MOC]]
+Links: [Mindset](out/mindset.md) - [Stoicism MOC](out/stoicism-moc.md)
 ___
 # Acceptance
-![[Four Thousand Weeks#^s4byo4]]
+![Four Thousand Weeks](out/permanent-highlights/four-thousand-weeks.md#^s4byo4)
 ___
 # Backlinks
 ```dataview
-list from [[Acceptance]] AND !outgoing([[Acceptance]])
+list from [Acceptance](out/acceptance.md) AND !outgoing([Acceptance](out/acceptance.md))
 ```
 ___
 References:

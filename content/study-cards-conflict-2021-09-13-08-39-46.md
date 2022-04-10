@@ -1,0 +1,28 @@
+---
+title: Study Cards (conflict 2021-09-13-08-39-46)
+---
+Status: 
+Tags: 
+Links: [COGS 110 - Learning in Everyday Life](None)
+___
+# Study Cards
+- front is primary idea
+	- given list of every name as an outline
+	- can take notes based on outline, should be prepared prior to class
+- 20 mins am, 20 mins pm
+	- consistent time
+		- transit??
+- make cards for aq locations (25)
+	- number on front
+	- sensory experiences of the environment
+- begin studying during study time
+- [x] create tasks (@2021-09-13 07:33)
+___
+# Backlinks
+```dataview
+list from [Study Cards](out/study-cards.md) AND !outgoing([Study Cards](out/study-cards.md))
+```
+___
+References:
+
+Created:: 2021-09-08 13:09

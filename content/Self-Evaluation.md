@@ -1,6 +1,9 @@
+---
+title: Self-Evaluation
+---
 Status: 
 Tags: 
-Links: [[Necessity]]
+Links: [Necessity](out/necessity.md)
 ___
 # Self-Evaluation
 ## Principles
@@ -8,7 +11,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[Self-Evaluation]] AND !outgoing([[Self-Evaluation]])
+list from [Self-Evaluation](out/self-evaluation.md) AND !outgoing([Self-Evaluation](out/self-evaluation.md))
 ```
 ___
 References:

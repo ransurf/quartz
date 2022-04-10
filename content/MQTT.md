@@ -1,6 +1,9 @@
+---
+title: MQTT
+---
 Status: 
 Tags: 
-Links: [[Coding MOC]]
+Links: [Coding MOC](out/coding-moc.md)
 ___
 # MQTT
 ## Principles
@@ -9,7 +12,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[MQTT]] AND !outgoing([[MQTT]])
+list from [MQTT](out/mqtt.md) AND !outgoing([MQTT](out/mqtt.md))
 ```
 ___
 References:

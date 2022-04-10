@@ -1,6 +1,9 @@
+---
+title: Mnemonics
+---
 Status:
 Tags: 
-Links: [[Remembering]]
+Links: [Remembering](out/remembering.md)
 ___
 # Mnemonics
 ## Principles

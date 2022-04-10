@@ -1,9 +1,12 @@
+---
+title: PAGG
+---
 Status:
 Tags:
-Links: [[Slow Carb Diet Binge Day]]
+Links: [Slow Carb Diet Binge Day](out/slow-carb-diet-binge-day.md)
 ___
 # PAGG
-A super-concoction to consume during the [[Slow Carb Diet Binge Day]]
+A super-concoction to consume during the [Slow Carb Diet Binge Day](out/slow-carb-diet-binge-day.md)
 ### PAGG Ingredients
 - Policosanol: 20–25 mg
 	- plant waxes, lowers cholesterol and increases HDL

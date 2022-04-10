@@ -1,6 +1,9 @@
+---
+title: Irrationality
+---
 Status:
 Tags:
-Links: [[Decision-Making]]
+Links: [Decision-Making](out/decision-making.md)
 ___
 # Irrationality
 It is natural for us to be irrational, emotion-driven in our decisions and behavior.

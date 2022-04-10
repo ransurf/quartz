@@ -1,9 +1,12 @@
+---
+title: Midterm_2_Review
+---
 # Program Control
 ## Function Call and Stack
 - a *caller* calls another function, the *callee*
 
 ### Memory Layout
-![[Pasted image 20220316202945.png|300]]
+![300](None)
 - notice there are 64 bits of actual memory addresses, but only 48 of them are actually accessible (m = 64)
 - Separate across different section  (KSSHDT)
 	- **Kernal** -> system level stuff 
@@ -55,7 +58,7 @@
 - if a memory address to a value (a pointer) need to be passed in the function, the value must also be added to the stack first, then the address can be passed with `leaq`
 
 ### Managing Local Data - L19
-![[Pasted image 20220316212906.png|600]]
+![600](None)
 #### Callee Saved Registers
 - the callee function must preserve the value before using them, and return them to their original values before `ret`
 - callee must push these registers onto the stack and pop it to the same register before return 
@@ -182,7 +185,7 @@ if input size <= array size
 	| long   | cvtsi2ssq |           | cvtsi2sdq         |            |
 
 ### Data Manipulation
-![[Pasted image 20220317104028.png]]
+![Pasted image 20220317104028.png](None)
 # Instruction Set Architecture - L23 
 ## How Computers Work
 - the microprocessor datapath is the way it loads and executes commands
@@ -262,16 +265,16 @@ Microprocessor without Interlocked Pipelined Stages
 
 ## Memory Model 
 - 32 registers
-![[Pasted image 20220317120804.png|600]]
+![600](None)
 - 32 bit word size (hence register is also 32 bits)
 - Byte-addressable -> address resolution is 8 bits
 - memory size is $2^{32} * 8$, so those many distinct chunks 
-![[Pasted image 20220317120836.png|400]]
+![400](None)
 
 ## Instruction Set
 - 3 operand assembly language `add a,b,c` is $a = b + c$
 - keeps design simple as variable number of operarnds is complicated
-![[Pasted image 20220317121052.png]]
+![Pasted image 20220317121052.png](None)
 - MIPS machine instructions are fixed length of 32 bits
 	- opcode (6 bits)-> operand
 	- rs(5) -> first register operand
@@ -280,9 +283,9 @@ Microprocessor without Interlocked Pipelined Stages
 	- shamt(5) -> shift amount
 	- fun(6) -> function code, indicates variant of the opcode
 		
-![[Pasted image 20220317121255.png]]
+![Pasted image 20220317121255.png](None)
 - this method does have problems as the contants can only be defined with 5 bits, which is not enough 
 - created three differemt formats of instructions, *indicated by the opcode*
 	- this format follows the 3rd ISA guideline as different formats still have fields with the same purpose in the same location for each format	
 
-![[Pasted image 20220317121940.png]]
+![Pasted image 20220317121940.png](None)

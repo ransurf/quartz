@@ -1,14 +1,17 @@
+---
+title: Identity
+---
 Status: 
 Tags: 
-Links: [[070 Concepts MOC]]
+Links: [070 Concepts MOC](out/070-concepts-moc.md)
 ___
 # Identity
 ## Quotes
-![[Tools of Titans#^ej8vhm]]
+![Tools of Titans](out/kindle-highlights/tools-of-titans.md#^ej8vhm)
 ___
 # Backlinks
 ```dataview
-list from [[Identity]] AND !outgoing([[Identity]])
+list from [Identity](out/identity.md) AND !outgoing([Identity](out/identity.md))
 ```
 ___
 References:

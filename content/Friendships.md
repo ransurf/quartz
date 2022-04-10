@@ -1,6 +1,9 @@
+---
+title: Friendships
+---
 Status: 
 Tags: 
-Links: [[private/050 People MOC]]
+Links: [private/050 People MOC](None)
 ___
 # Friendships
 ## Characteristics
@@ -22,7 +25,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[Friendships]] AND !outgoing([[Friendships]])
+list from [Friendships](out/friendships.md) AND !outgoing([Friendships](out/friendships.md))
 ```
 ___
 References:

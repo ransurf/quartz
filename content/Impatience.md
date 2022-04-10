@@ -1,6 +1,9 @@
+---
+title: Impatience
+---
 Status: 
 Tags: 
-Links: [[Impatience]]
+Links: [Impatience](out/impatience.md)
 ___
 # Impatience
 ## Principles
@@ -8,7 +11,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[Impatience]] AND !outgoing([[Impatience]])
+list from [Impatience](out/impatience.md) AND !outgoing([Impatience](out/impatience.md))
 ```
 ___
 References:

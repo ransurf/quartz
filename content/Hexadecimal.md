@@ -1,9 +1,10 @@
 ---
+title: Hexadecimal
 aliases:
 ---
 Status:
 Tags: #archivedCards/macm101/numbertheory 
-Links: [[Integers]]
+Links: [Integers](out/integers.md)
 ___
 
 # Hexadecimal
@@ -37,7 +38,7 @@ ___
 
 # Backlinks
 ```dataview
-list from [[Hexadecimal]] AND !outgoing([[Hexadecimal]])
+list from [Hexadecimal](out/hexadecimal.md) AND !outgoing([Hexadecimal](out/hexadecimal.md))
 ```
 ___
 References:

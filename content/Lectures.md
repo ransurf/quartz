@@ -1,6 +1,9 @@
+---
+title: Lectures
+---
 Status: 
 Tags: 
-Links: [[020 School MOC]]
+Links: [020 School MOC](out/020-school-moc.md)
 ___
 # Lectures
 ## Practices
@@ -12,7 +15,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[Lectures]] AND !outgoing([[Lectures]])
+list from [Lectures](out/lectures.md) AND !outgoing([Lectures](out/lectures.md))
 ```
 ___
 References:

@@ -1,3 +1,6 @@
+---
+title: Wordpress
+---
 Status:
 Tags: 
 Links: [[

@@ -1,13 +1,16 @@
+---
+title: Networking
+---
 Status:
 Tags:
-Links: [[private/050 People MOC]]
+Links: [private/050 People MOC](None)
 ___
 # Networking
 Networking is making connections with other people
-- Refer to [[Dormant Ties]]
+- Refer to [Dormant Ties](out/dormant-ties.md)
 ## Principles
-- [[Networking at school]]
-- [[Cold emails]]
+- [Networking at school](out/networking-at-school.md)
+- [Cold emails](out/cold-emails.md)
 ## Cultivation
 - Make connections and have  relationships that give you the opportunity to do something for someone else
 	- Our weak ties (acquaintances) can provide us with various opportunities and new networks

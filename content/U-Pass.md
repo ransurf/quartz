@@ -1,6 +1,9 @@
+---
+title: U-Pass
+---
 Status: 
 Tags: 
-Links: [[SFU]]
+Links: [SFU](out/sfu.md)
 ___
 # U-Pass
 ### **U-PASS BC PROGRAM**
@@ -14,7 +17,7 @@ When using a U-Pass BC, you will need to carry your SFU Student ID Card for your
 ___
 # Backlinks
 ```dataview
-list from [[U-Pass]] AND !outgoing([[U-Pass]])
+list from [U-Pass](out/u-pass.md) AND !outgoing([U-Pass](out/u-pass.md))
 ```
 ___
 References:

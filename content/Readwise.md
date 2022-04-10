@@ -1,6 +1,9 @@
+---
+title: Readwise
+---
 Status: 
 Tags: 
-Links: [[My Tools]] - [[Programs MOC]]
+Links: [My Tools](None) - [Programs MOC](out/programs-moc.md)
 ___
 # Readwise
 [Using readwise](https://readwise.io/bookreview/11134964)
@@ -23,7 +26,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[Readwise]] AND !outgoing([[Readwise]])
+list from [Readwise](out/readwise.md) AND !outgoing([Readwise](out/readwise.md))
 ```
 ___
 References:

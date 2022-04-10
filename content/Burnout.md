@@ -1,6 +1,9 @@
+---
+title: Burnout
+---
 Status:
 Tags: 
-Links: [[Proper Timing]] - [[Taking Breaks]]
+Links: [Proper Timing](out/proper-timing.md) - [Taking Breaks](out/taking-breaks.md)
 ___
 # Burnout
 ## Principles
@@ -12,14 +15,14 @@ ___
 ## Downfalls 
 - Kills our desires through overfamiliarity and creates repulsion of previously-enjoyed things/activities
 ## Practices
-- [[Rejecting Mediocrity]]
+- [Rejecting Mediocrity](out/rejecting-mediocrity.md)
 - Take some time to reflect and change up working conditions
 - Treat our time like a business
 	- ex) Am I really willing to sacrifice 2 hours of sleep for reviewing a few flashcards?
 ## Cultivation
-- A lack of [[Proper Timing]]
+- A lack of [Proper Timing](out/proper-timing.md)
 ## Prevention
-- [[Diversity]] in activities
+- [Diversity](out/diversity.md) in activities
 ___
 References:
 

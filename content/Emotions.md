@@ -1,6 +1,9 @@
+---
+title: Emotions
+---
 Status:
 Tags: 
-Links: [[Rationality]]
+Links: [Rationality](out/rationality.md)
 ___
 # Emotions
 > If you find yourself often emotionally affected by stuff, take time to reflect what is really important in your life
@@ -15,7 +18,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[Emotions]] AND !outgoing([[Emotions]])
+list from [Emotions](out/emotions.md) AND !outgoing([Emotions](out/emotions.md))
 ```
 ___
 References:

@@ -1,13 +1,14 @@
 ---
+title: Combinations
 aliases:
 ---
 Status:
 Tags: #archivedCards/macm101/combinatorics
-Links: [[Combinatorics]]
+Links: [Combinatorics](out/combinatorics.md)
 ___
 
 # Combinations
-- [[Combinations with repetitions]]
+- [Combinations with repetitions](out/combinations-with-repetitions.md)
 
 R-combinations def + notation
 ?
@@ -38,7 +39,7 @@ ___
 
 # Backlinks
 ```dataview
-list from [[Combinations]] AND !outgoing([[Combinations]])
+list from [Combinations](out/combinations.md) AND !outgoing([Combinations](out/combinations.md))
 ```
 ___
 References:

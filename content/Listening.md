@@ -1,17 +1,20 @@
+---
+title: Listening
+---
 Status: 
-Tags: [[Understanding]]
-Links: [[Conversation]]
+Tags: [Understanding](out/understanding.md)
+Links: [Conversation](out/conversation.md)
 ___
 # Listening
 ## Principles
 - When we listen, we tend to look for an expectation or listen to what we want to hear (what we know, approval, next actions, problems)
-- [[Levels of Listening]]
+- [Levels of Listening](out/levels-of-listening.md)
 ## Consequences
 ### Benefits
-- When listening to someone, we provide them new [[Opportunities]], and develop [[Trust]]/[[Respect]]
+- When listening to someone, we provide them new [Opportunities](None), and develop [Trust](out/trust.md)/[Respect](None)
 ### Downsides
 ## Practices
-- [[Reflective Listening]]
+- [Reflective Listening](out/reflective-listening.md)
 ### General Questions
 - What brings you joy?
 - What is this moment (or life) teaching you, right now?
@@ -39,7 +42,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[Listening]]
+list from [Listening](out/listening.md)
 ```
 ___
 References: 

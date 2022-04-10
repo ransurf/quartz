@@ -1,6 +1,9 @@
+---
+title: BCAA
+---
 Status: 
 Tags: 
-Links: [[Nutrition]]
+Links: [Nutrition](out/nutrition.md)
 ___
 # BCAA
 - Branched chain amino acids
@@ -8,7 +11,7 @@ ___
 ___
 # Backlinks
 ```dataview
-list from [[BCAA]] AND !outgoing([[BCAA]])
+list from [BCAA](out/bcaa.md) AND !outgoing([BCAA](out/bcaa.md))
 ```
 ___
 References:

@@ -1,6 +1,9 @@
+---
+title: Stack
+---
 Status: 
 Tags: #cards/cmpt225/dataStructures
-Links: [[Abstract Data Type]]
+Links: [Abstract Data Type](out/abstract-data-type.md)
 ___
 # Stack
 ## Principles
@@ -50,7 +53,7 @@ Disadvantages
 ___
 # Backlinks
 ```dataview
-list from [[Stack]] AND !outgoing([[Stack]])
+list from [Stack](out/stack.md) AND !outgoing([Stack](out/stack.md))
 ```
 ___
 References:

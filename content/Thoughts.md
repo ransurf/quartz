@@ -1,10 +1,13 @@
+---
+title: Thoughts
+---
 thoughStatus:
 Tags:
-Links: [[Journal MOC]]
+Links: [Journal MOC](out/journal-moc.md)
 ___
 # Thoughts
 **
-- [[]]
+- [](None)
 ## April 7 2021
 
 What parts of my life are necessary?

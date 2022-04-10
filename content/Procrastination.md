@@ -1,6 +1,9 @@
+---
+title: Procrastination
+---
 Status:
 Tags: 
-Links: [[Productivity]]
+Links: [Productivity](out/productivity.md)
 ___
 # Procrastination
 ## Principles
@@ -13,15 +16,15 @@ ___
 	- "Should I need to take break?"
 	- "Should I make this more exciting?"
 ## Causes
-- Generally comes from a lack of [[Intrinsic Rewards|reward]] for doing a task
+- Generally comes from a lack of [reward](out/intrinsic-rewards.md) for doing a task
 ## Prevention
-- [[Habits]] can help us bypass such undesired feelings to actually get things done
+- [Habits](out/habits.md) can help us bypass such undesired feelings to actually get things done
 1. Just start lmao
 	- Even if it's for 5 minutes, just start the thing, and after the 5 minutes are up you can decide on whether you want to continue doing it
 		- Usually, you start to get into the zone and the experience isn't as bad as you had imagined it to be
 - Physically writing that you procrastinated and couldn't get something done ^70a72f
-- [[Confronting Procrastination]]
+- [Confronting Procrastination](out/confronting-procrastination.md)
 ## Practices
-- [[Productive Procrastination]]
+- [Productive Procrastination](None)
 ___
 References:

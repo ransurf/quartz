@@ -1,5 +1,8 @@
+---
+title: Overlord
+---
 Tags: #anime
-Links: [[Animes]]
+Links: [Animes](out/animes.md)
 ___
 # Overlord
 10/22/2020  

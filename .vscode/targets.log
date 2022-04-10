@@ -1,0 +1,353 @@
+make.exe all -f e:\quartz\quartz\Makefile --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.3
+# Built for x86_64-pc-msys
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sat Apr  9 23:33:33 2022
+
+# Variables
+
+# environment
+SYSTEMDRIVE = C:
+# environment
+LC_ALL = C
+# environment
+OCULUSBASE = C:\Program Files\Oculus\
+# environment
+USERPROFILE = C:\Users\John
+# environment
+VBOX_MSI_INSTALL_PATH = F:\VirtualBox\
+# environment
+TMPDIR = /c/Users/John/AppData/Local/Temp
+# environment
+LOCALAPPDATA = C:\Users\John\AppData\Local
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-94fe19da-426e-4821-876e-b0dc1ffa2e1d-sock
+# environment
+VSCODE_CWD = E:\quartz\quartz
+# environment
+MINGW_PREFIX = C:/Program Files/Git/mingw64
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# environment
+SYSTEMROOT = C:\WINDOWS
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make
+# environment
+GOPATH = C:\Users\John\go
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+ACLOCAL_PATH = C:\Program Files\Git\mingw64\share\aclocal;C:\Program Files\Git\usr\share\aclocal
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_92936_RJLBSZJDMEPYYGSL
+# environment
+ONEDRIVECOMMERCIAL = C:\Users\John\OneDrive - Simon Fraser University (1sfu)
+# environment
+ORIGINAL_TEMP = C:/Users/John/AppData/Local/Temp
+# environment
+!E: = e:\quartz\quartz
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = E:/quartz/quartz
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+HOSTNAME = DESKTOP-4OS11UT
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\John\AppData\Roaming\Code\CachedData\8dfae7a5cd50421d10cd99cb873990460525a898
+# environment
+SSH_ASKPASS = C:/Program Files/Git/mingw64/libexec/git-core/git-gui--askpass
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = /c/Users/John/AppData/Local/Temp
+# default
+.INCLUDE_DIRS = /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# environment
+PKG_CONFIG_PATH = C:\Program Files\Git\mingw64\lib\pkgconfig;C:\Program Files\Git\mingw64\share\pkgconfig
+# environment
+INTEL_DEV_REDIST = C:\Program Files (x86)\Common Files\Intel\Shared Libraries\
+# environment
+ONEDRIVE = C:\Users\John\OneDrive - Simon Fraser University (1sfu)
+# makefile
+CURDIR := /e/quartz/quartz
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+MSYSTEM_CARCH = x86_64
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+PROGRAMFILES = C:\Program Files
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'e:\quartz\quartz\Makefile', line 1)
+MAKEFILE_LIST := e:\quartz\quartz\Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 92936
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+MINGW_CHOST = x86_64-w64-mingw32
+# automatic
+*F = $(notdir $*)
+# environment
+RG_GPU_FRAMEWORK_ENGINE_RESOURCEDIR = C:\Program Files\Red Giant\RGFX
+# environment
+MANPATH = C:\Program Files\Git\mingw64\local\man;C:\Program Files\Git\mingw64\share\man;C:\Program Files\Git\usr\local\man;C:\Program Files\Git\usr\share\man;C:\Program Files\Git\usr\man;C:\Program Files\Git\share\man
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+ONEDRIVECONSUMER = C:\Users\John\OneDrive
+# default
+MAKE_HOST := x86_64-pc-msys
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+INFOPATH = C:\Program Files\Git\usr\local\info;C:\Program Files\Git\usr\share\info;C:\Program Files\Git\usr\info;C:\Program Files\Git\share\info
+# makefile
+SHELL = /bin/sh
+# environment
+ORIGINAL_PATH = /c/Program Files/Git/mingw64/bin:/c/Program Files/Git/usr/bin:/c/Users/John/bin:/usr/bin:/mingw64/bin:/c/Program Files/Oculus/Support/oculus-runtime:/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/c/Program Files (x86)/Razer Chroma SDK/bin:/c/Program Files/Razer Chroma SDK/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Windows/System32/OpenSSH:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/Users/John/AppData/Local/Microsoft/WindowsApps:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/WINDOWS/System32/OpenSSH:/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/c/Program Files/WIDCOMM/Bluetooth Software:/c/Program Files/WIDCOMM/Bluetooth Software/syswow64:/c/Program Files (x86)/Calibre2:/c/Program Files/Git/cmd:/c/Program Files (x86)/QuickTime/QTSystem:/c/Program Files/nodejs:/c/ProgramData/chocolatey/bin:/e/Program Files/bin:/c/Program Files/Go/bin:/c/Users/John/AppData/Local/Microsoft/WindowsApps:/f/Program Files (x86)/IntelliJ IDEA 2020.3.2/bin:/c/Users/John/AppData/Local/GitHubDesktop/bin:/c/Users/John/AppData/Local/Programs/Microsoft VS Code/bin:/c/Users/John/AppData/Roaming/npm:/c/Program Files (x86)/GitHub CLI:/c/Users/John/go/bin
+# environment
+HOMEPATH = \Users\John
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 2
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /c/Users/John/bin:/c/Program Files/Git/mingw64/bin:/c/Program Files/Git/usr/local/bin:/c/Program Files/Git/usr/bin:/c/Program Files/Git/usr/bin:/c/Program Files/Git/mingw64/bin:/c/Program Files/Git/usr/bin:/c/Users/John/bin:/usr/bin:/mingw64/bin:/c/Program Files/Oculus/Support/oculus-runtime:/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/c/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler:/c/Program Files (x86)/Razer Chroma SDK/bin:/c/Program Files/Razer Chroma SDK/bin:/c/Windows/system32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0:/c/Windows/System32/OpenSSH:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/Users/John/AppData/Local/Microsoft/WindowsApps:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/WINDOWS/System32/OpenSSH:/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/c/Program Files/WIDCOMM/Bluetooth Software:/c/Program Files/WIDCOMM/Bluetooth Software/syswow64:/c/Program Files (x86)/Calibre2:/c/Program Files/Git/cmd:/c/Program Files (x86)/QuickTime/QTSystem:/c/Program Files/nodejs:/c/ProgramData/chocolatey/bin:/e/Program Files/bin:/c/Program Files/Go/bin:/c/Users/John/AppData/Local/Microsoft/WindowsApps:/f/Program Files (x86)/IntelliJ IDEA 2020.3.2/bin:/c/Users/John/AppData/Local/GitHubDesktop/bin:/c/Users/John/AppData/Local/Programs/Microsoft VS Code/bin:/c/Users/John/AppData/Roaming/npm:/c/Program Files (x86)/GitHub CLI:/c/Users/John/go/bin:/c/Program Files/Git/usr/bin/vendor_perl:/c/Program Files/Git/usr/bin/core_perl
+# environment
+COMPUTERNAME = DESKTOP-4OS11UT
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+MINGW_PACKAGE_PREFIX = mingw-w64-x86_64
+# environment
+PROMPT = $P$G
+# environment
+CHOCOLATEYLASTPATHUPDATE = 132799370468884025
+# environment
+INTELLIJ IDEA = F:\Program Files (x86)\IntelliJ IDEA 2020.3.2\bin;
+# environment
+LOGONSERVER = \\DESKTOP-4OS11UT
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = John
+# environment
+TERM_PROGRAM = mintty
+# environment
+COMMONPROGRAMFILES = C:\Program Files\Common Files
+# automatic
+?F = $(notdir $?)
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+MSYSTEM_CHOST = x86_64-w64-mingw32
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# automatic
++F = $(notdir $+)
+# environment
+CONFIG_SITE = C:/Program Files/Git/etc/config.site
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERDOMAIN = DESKTOP-4OS11UT
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+OS = Windows_NT
+# environment
+MSYSTEM_PREFIX = C:/Program Files/Git/mingw64
+# makefile (from 'e:\quartz\quartz\Makefile', line 1)
+.DEFAULT_GOAL := serve
+# environment
+DISPLAY = needs-to-be-defined
+# default
+MAKE_VERSION := 4.3
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# environment
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-4OS11UT
+# environment
+NUMBER_OF_PROCESSORS = 6
+# environment
+PUBLIC = C:\Users\Public
+# environment
+_ = C:/Users/John/AppData/Local/Programs/Microsoft VS Code/Code.exe
+# environment
+APPDATA = C:\Users\John\AppData\Roaming
+# environment
+HOMEDRIVE = C:
+# environment
+LC_CTYPE = en_US.UTF-8
+# environment
+PROCESSOR_ARCHITECTURE = AMD64
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+MSYSTEM = MINGW64
+# environment
+HOME = /c/Users/John
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+EXEPATH = C:\Program Files\Git
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = /c/Users/John/AppData/Local/Temp
+# environment
+TERM = xterm
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\03bbf155d49de9f9088e0b739e1221b0-1.66.1-main-sock
+# default
+.RECIPEPREFIX := 
+# environment
+ORIGINAL_TMP = C:/Users/John/AppData/Local/Temp
+# automatic
+<F = $(notdir $<)
+# environment
+PLINK_PROTOCOL = ssh
+# environment
+AV_APPDATA = C:\Users\John\AppData\Roaming
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+SESSIONNAME = Console
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# environment
+MIC_LD_LIBRARY_PATH = C:\Program Files (x86)\Common Files\Intel\Shared Libraries\compiler\lib\mic
+# environment
+PROCESSOR_REVISION = 9e0a
+# environment
+TERM_PROGRAM_VERSION = 3.4.7
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
+# variable set hash-table stats:
+# Load=135/1024=13%, Rehash=0, Collisions=14/163=9%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+
+# No files, no impossibilities in 0 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+help:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'e:\quartz\quartz\Makefile', line 4):
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
+
+serve:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'e:\quartz\quartz\Makefile', line 7):
+	hugo-obsidian -input=content -output=assets/indices -index -root=. && hugo server --enableGitInfo
+
+# Not a target:
+e:\quartz\quartz\Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-04-02 23:57:03.4877851
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=6/1024=1%, Rehash=0, Collisions=0/16=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 7 / storage = 73 B / avg = 10 B
+# current buf: size = 8162 B / used = 73 B / count = 7 / avg = 10 B
+
+# strcache performance: lookups = 12 / hit rate = 41%
+# hash-table stats:
+# Load=7/8192=0%, Rehash=0, Collisions=0/12=0%
+# Finished Make data base on Sat Apr  9 23:33:33 2022
+
+ 

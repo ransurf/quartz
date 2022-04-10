@@ -1,0 +1,5 @@
+make.exe -f e:\quartz\quartz\Makefile --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/e/quartz/quartz'
+hugo-obsidian -input=content -output=assets/indices -index -root=. && hugo server --enableGitInfo
+make: Leaving directory '/e/quartz/quartz'
+ 

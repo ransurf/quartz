@@ -3,12 +3,8 @@ Tags: [[Clothes MOC]] - [[Fashion]] - [[Frugal]]
 Links: [[Shopping MOC]]
 ___
 # Thrifting
-```ad-info
-title: The Thrifting Mindset
+- Thrifting is more about hunting for hidden treasures than leaving with a load of stuff
 
-Thrifting is more about hunting for hidden treasures than leaving with a load of stuff
-
-```
 ## Principles
 - Go on wednesday for less people
 - Thrift reselling is a thing

@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Apr  9 23:33:33 2022
+# Make data base, printed on Sun Apr 10 01:29:00 2022
 
 # Variables
 
@@ -27,7 +27,7 @@ TMPDIR = /c/Users/John/AppData/Local/Temp
 # environment
 LOCALAPPDATA = C:\Users\John\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-94fe19da-426e-4821-876e-b0dc1ffa2e1d-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-7bd25dc9-0e98-4599-bc9e-8bb02de0e3c9-sock
 # environment
 VSCODE_CWD = E:\quartz\quartz
 # environment
@@ -49,7 +49,7 @@ GOPATH = C:\Users\John\go
 # environment
 ACLOCAL_PATH = C:\Program Files\Git\mingw64\share\aclocal;C:\Program Files\Git\usr\share\aclocal
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_92936_RJLBSZJDMEPYYGSL
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_25932_LSFZWIRTIJZLAREB
 # environment
 ONEDRIVECOMMERCIAL = C:\Users\John\OneDrive - Simon Fraser University (1sfu)
 # environment
@@ -99,7 +99,7 @@ VSCODE_PIPE_LOGGING = true
 # environment
 MSYSTEM_CARCH = x86_64
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -119,7 +119,7 @@ MAKEFILE_LIST := e:\quartz\quartz\Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 92936
+VSCODE_PID = 25932
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
@@ -348,6 +348,6 @@ e:\quartz\quartz\Makefile:
 # strcache performance: lookups = 12 / hit rate = 41%
 # hash-table stats:
 # Load=7/8192=0%, Rehash=0, Collisions=0/12=0%
-# Finished Make data base on Sat Apr  9 23:33:33 2022
+# Finished Make data base on Sun Apr 10 01:29:00 2022
 
  

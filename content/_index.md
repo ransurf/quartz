@@ -1,27 +1,54 @@
 ---
-title: 🪴 Quartz 3.2
+aliases:
 ---
 
-Host your second brain and [digital garden](https://jzhao.xyz/posts/networked-thought) for free. Quartz features
+# Index ✨
+> two brains ***have*** to be better than one, right???
 
-1. Extremely fast full-text search by pressing `Ctrl` + `k`
-2. Customizable and hackable design based on Hugo
-3. Automatically generated backlinks, link previews, and local graph
-4. Built-in [[notes/CJK + Latex Support (测试) | CJK + Latex Support]]
-5. Support for both Markdown Links and Wikilinks
+Hi there! Welcome to my second brain :)
 
-## Get Started
-> 📚 [Setup your own digital garden using Quartz](notes/setup.md)
+In this page you'll find all the notes I've taken ever since I started my [[Obsidian MOC|Obsidian]] adventures back in April 2021.
 
-Not convinced yet? Look at some [community digital gardens](notes/showcase.md) built with Quartz, or read about [why I made Quartz](notes/philosophy.md) to begin with.
+If you aren't familiar, this form of [[Note Taking]] known as the Zettlekasten method allows me to [[Make Connections Between Ideas|link all my notes together]] to strengthen my understanding and form new ideas :D
 
-## Content Lists
-If you prefer browsing the contents of this site through a list instead of a graph, you can find content lists here too:
+The formatting is rather wack and some plugins aren't supported (Like [[Dataview|Obsidian DataView Plugin]]), but I'm too lazy to refactor everything
 
-- [All Notes](/notes)
-- [Setup-related Notes](/tags/setup)
+As much I have tried to censor anything too personal, I'm sure some residue has been accidentally left behind so please let me know if you find anything ^^
 
-## Troubleshooting
-- 🚧 [Troubleshooting and FAQ](notes/troubleshooting.md)
-- 🐛 [Submit an Issue](https://github.com/jackyzha0/quartz/issues)
-- 👀 [Discord Community](https://discord.gg/cRFFHYye7t)
+*Huge thanks to jackyzhao for creating [[Quartz (Graph Website Deployer)]], you can find out how to upload your own vault for free [here](https://github.com/jackyzha0/quartz)*
+
+Anyways, here's some jumping points into different areas in my vault ;)
+
+## Categories
+[[000 Active MOC]]
+- Things I may refer to on a daily basis, like checklists, workflows, etc
+
+010s - [[010 Life MOC]]
+- Stuff related to my personal life like values and periodic reviews (private !)
+
+020s - [[020 School MOC]]
+- Notes I take related to my university, school advice, and course notes B)
+
+030s - [[030 Career MOC]]
+- YouTube, programming, etc
+
+040s - [[040 Interests MOC]]
+- Any areas I'm even slightly interested in
+
+050s - [[050 People MOC]]
+- Out of respect I've hidden this from the vault :)
+
+060s - [[060 Creations MOC]]
+- Random writing I do
+
+070s - [[070 Concepts MOC]]
+- A bit outdated, but acts includes [[Maps of Content]] into the different topics I take notes about :p
+
+080s - [[080 Goals MOC]]
+- For anything goals-related
+
+090s - [[090 References MOC]]
+- Includes all my literature notes, can't wait to have all my personal info leaked here :,)
+
+100s - [[Upkeep MOC]]
+- Things related to maintaining my [[PKM Features]]

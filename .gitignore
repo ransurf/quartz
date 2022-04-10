@@ -3,5 +3,14 @@ public
 resources
 .idea
 content/.obsidian
+content/private
+content/privateThoughts
+# hide Daily Notes folder in content
+content/dailyNotes
+content/weeklyReviews
+content/quarterlyReviews
+content/yearlyReviews
+content/People
+content/templates
 assets/indices/linkIndex.json
 assets/indices/contentIndex.json

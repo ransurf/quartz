@@ -1,14 +1,13 @@
-name: Jacky Zhao
-enableToc: true
+name: John Mavrick Reyes
+enableToc: false
 enableLinkPreview: true
 enableLatex: true
 description:
-  Host your second brain and digital garden for free. Quartz features extremely fast full-text search,
-  Wikilink support, backlinks, local graph, tags, and link previews.
+  Welcome to my second brain :)
 page_title:
-  "🪴 Quartz 3.2"
+  "John Mavrick's Garden"
 links:
-  - link_name: Twitter
-    link: https://twitter.com/_jzhao
-  - link_name: Github
-    link: https://github.com/jackyzha0
+  - link_name: Website
+    link: http://johnmavrick.tech/
+  - link_name: Linktree
+    link: https://linktr.ee/johnmavrick

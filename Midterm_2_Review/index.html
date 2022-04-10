@@ -1,0 +1,563 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=description content="Program Control Function Call and Stack  a caller calls another function, the callee  Memory Layout ![[Pasted image 20220316202945.png|300]]">
+<title>John Mavrick's Garden</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type=image/png href=/icon.png>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
+<link href=https://quartz.jzhao.xyz/styles.62abffa83e1b36143f7e490dc494ec6f.min.css rel=stylesheet>
+<script src=https://quartz.jzhao.xyz/js/darkmode.46b07878b7f5d9e26ad7a3c40f8a0605.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
+<script>const BASE_URL="https://quartz.jzhao.xyz/",fetchData=Promise.all([fetch("https://quartz.jzhao.xyz/indices/linkIndex.b4df6755e0129cea17afc671eb36e0d2.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://quartz.jzhao.xyz/indices/contentIndex.8923c41347a61a4c98ec93c68e1b0edb.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
+<body>
+<div id=search-container>
+<div id=search-space>
+<input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something...">
+<div id=results-container>
+</div>
+</div>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://quartz.jzhao.xyz/js/search.bc849b857f2c1b822264d40635bb67b6.min.js></script>
+<div class=singlePage>
+<header>
+<h1 id=page-title><a href=https://quartz.jzhao.xyz/>John Mavrick's Garden</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+<div class=spacer></div>
+<div class=darkmode>
+<input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg>
+</label>
+<label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg>
+</label>
+</div>
+</header>
+<article>
+<p class=meta>
+Last updated Unknown
+</p>
+<ul class=tags>
+</ul>
+<h1 id=program-control>Program Control</h1>
+<h2 id=function-call-and-stack>Function Call and Stack</h2>
+<ul>
+<li>a <em>caller</em> calls another function, the <em>callee</em></li>
+</ul>
+<h3 id=memory-layout>Memory Layout</h3>
+<p>!<a class="internal-link broken">300</a></p>
+<ul>
+<li>notice there are 64 bits of actual memory addresses, but only 48 of them are actually accessible (m = 64)</li>
+<li>Separate across different section (KSSHDT)
+<ul>
+<li><strong>Kernal</strong> → system level stuff</li>
+<li><strong>Stack</strong> → runtime stack for local variables, locally called arrays</li>
+<li><strong>Shared Libraries</strong> → executable machine instructions like printf</li>
+<li><strong>Heap</strong> → Dynamically allocated with malloc, free, new, delete</li>
+<li><strong>Data</strong> → Static variables for globals, constants</li>
+<li><strong>Text</strong> → use for the file to run, initialized by executable</li>
+</ul>
+</li>
+</ul>
+<h3 id=passing-control>Passing Control</h3>
+<ul>
+<li><strong>%rsp</strong>
+<ul>
+<li>stack specific register</li>
+<li>points at last used byte on the stack</li>
+<li>initialized at the top of the stack, grows downwards</li>
+</ul>
+</li>
+<li><strong>push</strong>
+<ul>
+<li>push Imm, register, or memory address</li>
+<li>when pushing
+<ol>
+<li>get <em><strong>value</strong></em> of <code>src</code></li>
+<li>decrement %rsp by 8</li>
+<li>store value in %rsp</li>
+</ol>
+</li>
+<li>%rsp is an <em>implicit</em> register in push</li>
+</ul>
+</li>
+<li><strong>pop</strong>
+<ul>
+<li>pop onto a given register</li>
+<li>when popping
+<ol>
+<li>read value of memory address stored in %rsp</li>
+<li>store it in dest</li>
+<li>increment %rsp by 8</li>
+</ol>
+</li>
+<li>%rsp is an implicit register</li>
+</ul>
+</li>
+<li><strong>call</strong>
+<ul>
+<li>calls a function</li>
+<li>when calling
+<ol>
+<li>push of PC (program counter → %rip) onto the stack, this is the return address <code>pushq %rip</code></li>
+<li>set PC to first address of func <code>movq "func", %rip (not actual)</code></li>
+<li>start executing <code>jmp func</code></li>
+</ol>
+</li>
+<li>the &ldquo;stack frame&rdquo; begins after the return address of the caller is pushed</li>
+</ul>
+</li>
+<li><strong>ret</strong>
+<ul>
+<li>when returning
+<ol>
+<li>pop the return address off the stack and into PC</li>
+<li>start executing from that address</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id=passing-data---l18>Passing Data - L18</h3>
+<h4 id=x86-calling-convention>x86 Calling Convention</h4>
+<ul>
+<li><em>caller</em>: move the callee&rsquo;s arguments into the correct registers before calling
+<ul>
+<li>in order of arguments: rdi, rsi, rdx, rcx, r8, r9</li>
+</ul>
+</li>
+<li><em>callee</em>: move the returned value to rax</li>
+<li>if there are more than 6 arguments, caller must place the arguments on the stack in reverse order
+<ul>
+<li>the callee then has to pop these values off the stack in order
+<ul>
+<li>note: the displacement will be off because of the addition of the return address on the stack when the function is called</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>if a memory address to a value (a pointer) need to be passed in the function, the value must also be added to the stack first, then the address can be passed with <code>leaq</code></li>
+</ul>
+<h3 id=managing-local-data---l19>Managing Local Data - L19</h3>
+<p>!<a class="internal-link broken">600</a></p>
+<h4 id=callee-saved-registers>Callee Saved Registers</h4>
+<ul>
+<li>the callee function must preserve the value before using them, and return them to their original values before <code>ret</code></li>
+<li>callee must push these registers onto the stack and pop it to the same register before return</li>
+<li><em>this is the responsibility of callee</em></li>
+</ul>
+<h4 id=caller-saved-registers>Caller Saved Registers</h4>
+<ul>
+<li>the caller function must save these values on the stack before calling a function</li>
+<li>includes the argument registers</li>
+<li>it&rsquo;s the caller&rsquo;s responsability to save these, if they get messed up its not its fault</li>
+</ul>
+<h4 id=spilling>Spilling</h4>
+<ul>
+<li>can set up temporary space with %rsp and assign variables</li>
+<li>allocate space with <code>subq $16, %rsp</code></li>
+<li>assign values with <code>movq %rax, 8(%rsp)</code></li>
+<li>restore stack with <code>addq $16, %rsp</code></li>
+</ul>
+<h3 id=recursion---l20>Recursion - L20</h3>
+<ul>
+<li>same as regular recursion, each function call has its own stack frame, return addresses, and parameters</li>
+<li>still have to follow register and function call conventions</li>
+</ul>
+<h2 id=arrays>Arrays</h2>
+<ul>
+<li>they&rsquo;re also just pointers</li>
+<li>these operations give you the same memory address: <code>x + 1</code>, <code>&x[1]</code></li>
+<li>these operations give you the same value: <code>x[4]</code>, <code>*(x+4)</code></li>
+<li>in assembly they&rsquo;re just contiguous points in memory</li>
+<li>calculated with <code>A[i] = A + i * L</code>
+<ul>
+<li><code>A</code> is the address of the first point</li>
+<li><code>i</code> is the index of the array</li>
+<li><code>L</code> is the size of the individual element</li>
+</ul>
+</li>
+<li>allows for quick indexing with memory address indexing via <code>movq (%array start, index, char size), %register you want to save to</code></li>
+<li>allocate by moving %rsp down the stack</li>
+</ul>
+<h3 id=2d-arrays---l21>2D Arrays - L21</h3>
+<ul>
+<li>in C an array is just a longer contiguous row of bytes</li>
+<li>accessed with <code>A[R][C]</code>, row column, think of it as a the array being stripped into stacks of memory, going downward
+<ul>
+<li>access each row with <code>A + (R * C * L)</code>, where R is the row you want, C is the number of columns, and L is the size
+<ul>
+<li>jump rows by incrementing by that multiplication</li>
+</ul>
+</li>
+<li>access each column with <code>A + (C * L)</code> where C is the column you want</li>
+<li>putting it all together, it&rsquo;s <code>A + (i * C + j) * L</code></li>
+</ul>
+</li>
+</ul>
+<h1 id=buffer-overflow---l22>Buffer Overflow - L22</h1>
+<ul>
+<li>local variables, calle and caller saved registers, and return addresses are all stored on the stack</li>
+<li>if a function does this too much it may buffer overflow and overwrite local variables, registers, and return addresses
+<ul>
+<li>leads to seg faults and system vulnerabilities</li>
+<li>called <strong>stack smashing</strong></li>
+</ul>
+</li>
+<li>can be prevented with code like (well the idea anway)</li>
+</ul>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=k>if</span> <span class=n>input</span> <span class=n>size</span> <span class=o>&lt;=</span> <span class=n>array</span> <span class=n>size</span>
+	<span class=n>write</span> <span class=n>into</span> <span class=n>array</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=code-injection>Code Injection</h2>
+<ul>
+<li>attacker overflows the buffer with a string that contains malicious code</li>
+<li>overwrites the retrun address of the function, and makes it point to more malicious code in the string</li>
+<li>when return it called, %rsp jumps to malicious code and starts running it</li>
+</ul>
+<h2 id=defenses>Defenses</h2>
+<h3 id=avoid-overflow>Avoid Overflow</h3>
+<ul>
+<li>design and use functions that check string lengths before writing
+<ul>
+<li>safe: <code>fgets()</code></li>
+<li>unsafe: <code>gets(), strcpy(), strcat(), sprinf()</code></li>
+</ul>
+</li>
+<li><code>strcpy(dest, source)</code> copies an entire string into memory, including null character (bad)</li>
+<li><code>strncpy(dest, source, sizeof(dest))</code> copies enough characters to fit into the destination, padding with null bytes or truncating the version without a null character (okay)</li>
+<li><code>strlcpy(dest, source, sizeof(dest))</code> copies enough for string and the null character, resulting in one less character than <code>strncpy()</code> (good)</li>
+</ul>
+<h3 id=system-level-protection>System-Level Protection</h3>
+<ul>
+<li>randomize stack offsets
+<ul>
+<li>system allocates random amoutns of space before main, shifting the address of %rsp</li>
+<li>makes it harder for hackers to know where the stack frame starts, and thus where to jump to get to malicious code</li>
+</ul>
+</li>
+<li>non-executed code segments
+<ul>
+<li>in the past, x86 had read-only and writeable permissions, only readable permissions could be executed</li>
+<li>x86-64 has <em>executable</em> permissions, and stack memory is non-executable</li>
+</ul>
+</li>
+<li>canary values
+<ul>
+<li>put a randomized canary value between the array and return address</li>
+<li>check if the canary value has been changed before returning, reporting a failure if it has</li>
+</ul>
+</li>
+<li>Control-Flow Enforment Technology
+<ul>
+<li><code>endbr64</code> placed at the front of functions</li>
+<li>microprocessor checks if indirect call goes to functions that start with <code>endbr64</code>, if they don&rsquo;t have the seal of approval the program aborts</li>
+</ul>
+</li>
+</ul>
+<h1 id=floating-point-data---l23>Floating Point Data - L23</h1>
+<ul>
+<li>in the 90s processing was sped up with the advent of SIMD → single instructions on multiple data, and this evolved into two current forms
+<ul>
+<li>SSE → Streaming SIMD Extension</li>
+<li>AVX → Advanced Vector Extensions</li>
+</ul>
+</li>
+</ul>
+<h2 id=xmm-registers>XMM Registers</h2>
+<ul>
+<li>these registers hold floats and doubles, as opposed to our previous registers which were known as <em>integer registers</em></li>
+<li>16 bytes wide</li>
+<li>16 of them, labelled <code>%xmm0</code> to <code>%xmm15</code></li>
+<li>has two modes of storage
+<ul>
+<li><em>scalar mode</em> → similar to regular registers, each register holds one data</li>
+<li><em>vector mode</em> → groups multiple data of smaller type into a single register</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single byte int</td>
+<td>16</td>
+</tr>
+<tr>
+<td>16-bit int</td>
+<td>8</td>
+</tr>
+<tr>
+<td>32-bit int</td>
+<td>4</td>
+</tr>
+<tr>
+<td>float</td>
+<td>4</td>
+</tr>
+<tr>
+<td>double</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h3 id=operations>Operations</h3>
+<ul>
+<li>using operands on vector (packed) registers does the operation to each of the items in that register</li>
+<li>operands are formated <code>operand{p/s}{data}</code> so <code>addpd</code> is add packed double, <code>addsd</code> is add scalar double, <code>addss</code> adds scalar single percision (float)</li>
+<li>standard memory addressing modes and</li>
+<li>the <code>mov</code> command can have the <code>ap</code> flag after it like <code>movap</code> which moved the contents aligned and packed to the next register</li>
+</ul>
+<h3 id=function-call-and-register-saving>Function Call and Register Saving</h3>
+<ul>
+<li>floating point values are saved to the <code>%xmm*</code> registers
+<ul>
+<li>note pointers are still 64 bit, so a pointer to a float still uses the regular registers</li>
+</ul>
+</li>
+<li>arguments are pasesd in order from <code>%xmm</code> 0 to 7</li>
+<li>8 to 15 are just used for managing local data</li>
+<li>return value in <code>%xmm0</code></li>
+<li>all registers are caller-saved</li>
+</ul>
+<h3 id=data-conversion>Data Conversion</h3>
+<ul>
+<li>y axis is source, x axis is destination
+<table>
+<thead>
+<tr>
+<th></th>
+<th>float</th>
+<th>int</th>
+<th>double</th>
+<th>long</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>float</td>
+<td></td>
+<td>cvttss2si</td>
+<td>cvtss2sd</td>
+<td>cvttss2siq</td>
+</tr>
+<tr>
+<td>int</td>
+<td>cvtsi2ss</td>
+<td></td>
+<td>cvtsi2sd</td>
+<td></td>
+</tr>
+<tr>
+<td>double</td>
+<td>cvttsd2ss</td>
+<td>cvttsd2si</td>
+<td></td>
+<td>cvttsd2siq</td>
+</tr>
+<tr>
+<td>long</td>
+<td>cvtsi2ssq</td>
+<td></td>
+<td>cvtsi2sdq</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h3 id=data-manipulation>Data Manipulation</h3>
+<p>!<a class="internal-link broken">Pasted image 20220317104028.png</a></p>
+<h1 id=instruction-set-architecture---l23>Instruction Set Architecture - L23</h1>
+<h2 id=how-computers-work>How Computers Work</h2>
+<ul>
+<li>the microprocessor datapath is the way it loads and executes commands
+<ul>
+<li>ALU (Arithmetic Logical Unit) → performs calculations</li>
+<li>Registers → store data for calcualtions</li>
+<li>Buses → allow data to move betwen</li>
+</ul>
+</li>
+<li>the instruction memory of the cpu holds the machine code for what to do, each time it fetches an instruction is also increments the PC by one to get the next instruction</li>
+</ul>
+<h2 id=back-to-isa>Back to ISA</h2>
+<ul>
+<li>defines the memory model and instruction set of the cpu (implements)</li>
+</ul>
+<h3 id=memory-and-registers>Memory and Registers</h3>
+<ul>
+<li>determines the size of a word (how much memory is fetched/written each cycle)</li>
+<li>determines how big the registers are (related to word count) and how many there are</li>
+<li>determines the memory size
+<ul>
+<li>calculated with $2^m * n$</li>
+<li>$2^m$ addressable locations in memory, where m is the number of bits given for memory addresses</li>
+<li>n is the resolution (size) of each addressable location in memory</li>
+</ul>
+</li>
+<li>Example:
+<ul>
+<li>x86 has a word size of 64 bits, $2^{64}$ addressable memory locations, and 8 bits for each addressible location in memory (byte-addressable)</li>
+<li>it has 16 integer registers and 16 floating point registers</li>
+</ul>
+</li>
+</ul>
+<h3 id=instruction-set>Instruction Set</h3>
+<ul>
+<li>the format, syntax, operands, memory addressing modes</li>
+<li>in both assembly and machine code</li>
+<li>Example:
+<ul>
+<li>x86 has lots of instructions, a two/one operand model, and various memory addressing modes</li>
+</ul>
+</li>
+</ul>
+<h3 id=conventions>Conventions</h3>
+<p>ISA is a formal specification of
+?</p>
+<ul>
+<li>how control and data is passed in function calls</li>
+<li>how registers are preserved during function calls
+<ul>
+<li>which registered are callee or caller saved?</li>
+</ul>
+</li>
+</ul>
+<p>Example of x86 formal specifications
+?</p>
+<ul>
+<li>Example: x86 has registered reserved for callee saved, return addresses, stack pointers, etc.</li>
+</ul>
+<h3 id=model-of-computation>Model of Computation</h3>
+<ul>
+<li>when it converts C to machine code the programmer should understand how it happened</li>
+<li>should produce an expected result</li>
+</ul>
+<h2 id=isa-guidelines>ISA Guidelines</h2>
+<h3 id=1-unambiguous-encoding>1. Unambiguous Encoding</h3>
+<ul>
+<li>the processor can easily decode and execute instructions</li>
+<li>in assembly, each instruction has specific naming schemes that translate directly into machine instructions</li>
+<li>this is done with the opcode and operand format</li>
+</ul>
+<h3 id=2-functionally-complete>2. Functionally Complete</h3>
+<ul>
+<li>turning complete, must have
+<ul>
+<li>Data Transfer → memory reference and storage</li>
+<li>Data Manipulation → arithmetic and logical operations</li>
+<li>Program Control → branching and jumps</li>
+</ul>
+</li>
+</ul>
+<h3 id=3-brief>3. Brief</h3>
+<ul>
+<li>have as few as possible to simplify your hardware</li>
+<li>must have same length and same format
+<ul>
+<li>if the format is different, the fields (sections) of your binary code must be formatted so the fields with the same purpose are at the same location</li>
+</ul>
+</li>
+</ul>
+<h2 id=types-of-instruction-sets>Types of Instruction Sets</h2>
+<h3 id=cisc>CISC</h3>
+<ul>
+<li>Complex Instruction Set Computing</li>
+<li>lots of instructions</li>
+<li>usually &ldquo;register-memory&rdquo; → any instruction can access memory</li>
+<li>Ex: x86, VAX, MC68000</li>
+</ul>
+<h3 id=risc>RISC</h3>
+<ul>
+<li>Reduced Instruction Set Computing</li>
+<li>small general purpose instructions for simpler microprocessor design</li>
+<li>usually &ldquo;load-store&rdquo; → can only access memory with load and store commands</li>
+<li>Ex: <strong>MIPS</strong>, SPARC, Alpha, AXP, PowerPC</li>
+</ul>
+<h1 id=mips---l24>MIPS - L24</h1>
+<p>Microprocessor without Interlocked Pipelined Stages</p>
+<h2 id=memory-model>Memory Model</h2>
+<ul>
+<li>32 registers
+!<a class="internal-link broken">600</a></li>
+<li>32 bit word size (hence register is also 32 bits)</li>
+<li>Byte-addressable → address resolution is 8 bits</li>
+<li>memory size is $2^{32} * 8$, so those many distinct chunks
+!<a class="internal-link broken">400</a></li>
+</ul>
+<h2 id=instruction-set-1>Instruction Set</h2>
+<ul>
+<li>3 operand assembly language <code>add a,b,c</code> is $a = b + c$</li>
+<li>keeps design simple as variable number of operarnds is complicated
+!<a class="internal-link broken">Pasted image 20220317121052.png</a></li>
+<li>MIPS machine instructions are fixed length of 32 bits
+<ul>
+<li>opcode (6 bits)→ operand</li>
+<li>rs(5) → first register operand</li>
+<li>rt(5) → second register operand</li>
+<li>rd(5) → desination register</li>
+<li>shamt(5) → shift amount</li>
+<li>fun(6) → function code, indicates variant of the opcode</li>
+</ul>
+</li>
+</ul>
+<p>!<a class="internal-link broken">Pasted image 20220317121255.png</a></p>
+<ul>
+<li>this method does have problems as the contants can only be defined with 5 bits, which is not enough</li>
+<li>created three differemt formats of instructions, <em>indicated by the opcode</em>
+<ul>
+<li>this format follows the 3rd ISA guideline as different formats still have fields with the same purpose in the same location for each format</li>
+</ul>
+</li>
+</ul>
+<p>!<a class="internal-link broken">Pasted image 20220317121940.png</a></p>
+</article>
+<hr>
+<div class=page-end>
+<div class=backlinks-container>
+<h3>Backlinks</h3>
+<ul class=backlinks>
+<li>
+No backlinks found
+</li>
+</ul>
+</div>
+<div>
+<script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script>
+<h3>Interactive Graph</h3>
+<div id=graph-container></div>
+<style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
+<script src=https://quartz.jzhao.xyz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
+<script>drawGraph("https://quartz.jzhao.xyz/Midterm_2_Review","https://quartz.jzhao.xyz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+</div>
+</div>
+<div id=contact_buttons>
+<footer>
+<p>Made by John Mavrick Reyes using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p>
+<ul>
+<li><a href=/>Home</a></li>
+<li><a href=http://johnmavrick.tech/>Website</a></li><li><a href=https://linktr.ee/johnmavrick>Linktree</a></li></ul>
+</footer>
+</div>
+<script src=https://quartz.jzhao.xyz/js/popover.9d69dffc0f2d029ef30cf63230ccce4c.min.js></script>
+<script>initPopover("https://quartz.jzhao.xyz")</script>
+</div>
+</body>
+</html>

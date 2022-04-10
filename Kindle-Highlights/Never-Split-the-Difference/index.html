@@ -1,0 +1,447 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=description content="Never Split the Difference  Author: Chris Voss    queries that the other side can respond to but that have no fixed answers.">
+<title>John Mavrick's Garden</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type=image/png href=/icon.png>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
+<link href=https://quartz.jzhao.xyz/styles.62abffa83e1b36143f7e490dc494ec6f.min.css rel=stylesheet>
+<script src=https://quartz.jzhao.xyz/js/darkmode.46b07878b7f5d9e26ad7a3c40f8a0605.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
+<script>const BASE_URL="https://quartz.jzhao.xyz/",fetchData=Promise.all([fetch("https://quartz.jzhao.xyz/indices/linkIndex.b4df6755e0129cea17afc671eb36e0d2.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://quartz.jzhao.xyz/indices/contentIndex.8923c41347a61a4c98ec93c68e1b0edb.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
+<body>
+<div id=search-container>
+<div id=search-space>
+<input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something...">
+<div id=results-container>
+</div>
+</div>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://quartz.jzhao.xyz/js/search.bc849b857f2c1b822264d40635bb67b6.min.js></script>
+<div class=singlePage>
+<header>
+<h1 id=page-title><a href=https://quartz.jzhao.xyz/>John Mavrick's Garden</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+<div class=spacer></div>
+<div class=darkmode>
+<input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg>
+</label>
+<label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg>
+</label>
+</div>
+</header>
+<article>
+<p class=meta>
+Last updated April 9, 2022
+</p>
+<ul class=tags>
+</ul>
+<h1 id=never-split-the-difference>Never Split the Difference</h1>
+<ul>
+<li>Author:
+<a href rel=noopener class=internal-link data-src>Chris Voss
+</a></li>
+</ul>
+<hr>
+<p>queries that the other side can respond to but that have no fixed answers. It buys you time. It gives your counterpart the illusion of control—they — loc:
+<a href rel=noopener class=internal-link data-src>72
+</a></p>
+<hr>
+<p>the conversation had shifted from how I’d respond to the threat of my son’s murder to how the professor would deal with the logistical issues involved in getting the money. How he would solve my problems. — loc:
+<a href rel=noopener class=internal-link data-src>74
+</a></p>
+<hr>
+<p>Yes, our techniques clearly worked with mercenaries, drug dealers, terrorists, and brutal killers. But, I wondered, what about with normal humans? — loc:
+<a href rel=noopener class=internal-link data-src>94
+</a></p>
+<hr>
+<p>While I wasn’t actually saying “No,” the questions I kept asking sounded like it. They seemed to insinuate that the other side was being dishonest and unfair. And that was enough to make them falter and negotiate with themselves. Answering my calibrated questions demanded deep emotional strengths and tactical psychological insights that the toolbox they’d been given did not contain. — loc:
+<a href rel=noopener class=internal-link data-src>128
+</a></p>
+<hr>
+<p>“I’m just asking questions,” I said. “It’s a passive-aggressive approach. I just ask the same three or four open-ended questions over and over and over and over. They get worn out answering and give me everything I want.” — loc:
+<a href rel=noopener class=internal-link data-src>132
+</a></p>
+<hr>
+<p>They had a script to follow, a predetermined sequence of actions, offers, and counteroffers designed in a specific order to bring about a particular outcome. It was as if they were dealing with a robot, that if you did a, b, c, and d in a certain fixed order, you would get x. But in the real world negotiation is far too unpredictable and complex for that. You may have to do a then d, and then maybe q. — loc:
+<a href rel=noopener class=internal-link data-src>145
+</a></p>
+<hr>
+<p>Their system was easy to follow and seductive, with four basic tenets. One, separate the person—the emotion—from the problem; two, don’t get wrapped up in the other side’s position (what they’re asking for) but instead focus on their interests (why they’re asking for it) so that you can find what they really want; three, work cooperatively to generate win-win options; and, four, establish mutually agreed-upon standards for evaluating those possible solutions. — loc:
+<a href rel=noopener class=internal-link data-src>186
+</a></p>
+<hr>
+<p>Kahneman later codified his research in the 2011 bestseller Thinking, Fast and Slow.3 Man, he wrote, has two systems of thought: System 1, our animal mind, is fast, instinctive, and emotional; System 2 is slow, deliberative, and logical. And System 1 is far more influential. — loc:
+<a href rel=noopener class=internal-link data-src>208
+</a></p>
+<hr>
+<p>System 1’s inchoate beliefs, feelings, and impressions are the main sources of the explicit beliefs and deliberate choices of System 2. They’re the spring that feeds the river. We react emotionally (System 1) to a suggestion or question. Then that System 1 reaction informs and in effect creates the System 2 answer. — loc:
+<a href rel=noopener class=internal-link data-src>210
+</a></p>
+<hr>
+<p>by asking, “How am I supposed to do that?” I influenced his System 1 emotional mind into accepting that his offer wasn’t good enough; his System 2 then rationalized the situation so that it made sense to give me a better offer. — loc:
+<a href rel=noopener class=internal-link data-src>215
+</a></p>
+<hr>
+<p>It all starts with the universally applicable premise that people want to be understood and accepted. Listening is the cheapest, yet most effective concession we can make to get there. By listening intensely, a negotiator demonstrates empathy and shows a sincere desire to better understand what the other side is experiencing. Psychotherapy research shows that when individuals feel listened to, they tend to listen to themselves more carefully and to openly evaluate and clarify their own thoughts and feelings. In addition, they tend to become less defensive and oppositional and more willing to listen to other points of view, which gets them to the calm and logical place where they can be good Getting to Yes problem solvers. — loc:
+<a href rel=noopener class=internal-link data-src>256
+</a></p>
+<hr>
+<p>Your career, your finances, your reputation, your love life, even the fate of your kids—at some point all of these hinge on your ability to negotiate. — loc:
+<a href rel=noopener class=internal-link data-src>278
+</a></p>
+<hr>
+<p>Negotiating does not mean browbeating or grinding someone down. It simply means playing the emotional game that human society is set up for. In this world, you get what you ask for; you just have to ask correctly. — loc:
+<a href rel=noopener class=internal-link data-src>289
+</a></p>
+<hr>
+<p>in the Appendix you’ll find an invaluable tool I use with all my students and clients called the Negotiation One Sheet: a concise primer of nearly all our tactics and strategies for you to think through and customize for whatever kind of deal you’re looking to close. — loc:
+<a href rel=noopener class=internal-link data-src>342
+</a></p>
+<hr>
+<p>Most important to me is that you understand how urgent, essential, and even beautiful negotiation can be. When we embrace negotiating’s transformative possibilities, we learn how to get what we want and how to move others to a better place. — loc:
+<a href rel=noopener class=internal-link data-src>344
+</a></p>
+<hr>
+<p>In negotiation, each new psychological insight or additional piece of information revealed heralds a step forward and allows one to discard one hypothesis in favor of another. You should engage the process with a mindset of discovery. Your goal at the outset is to extract and observe as much information as possible. Which, by the way, is one of the reasons that really smart people often have trouble being negotiators—they’re so smart they think they don’t have anything to discover. — loc:
+<a href rel=noopener class=internal-link data-src>380
+</a></p>
+<hr>
+<p>Going too fast is one of the mistakes all negotiators are prone to making. If we’re too much in a hurry, people can feel as if they’re not being heard and we risk undermining the rapport and trust we’ve built. — loc:
+<a href rel=noopener class=internal-link data-src>459
+</a></p>
+<hr>
+<p>That’s why your most powerful tool in any verbal communication is your voice. You can use your voice to intentionally reach into someone’s brain and flip an emotional switch. — loc:
+<a href rel=noopener class=internal-link data-src>494
+</a></p>
+<hr>
+<p>There are essentially three voice tones available to negotiators: the late-night FM DJ voice, the positive/playful voice, and the direct or assertive voice. — loc:
+<a href rel=noopener class=internal-link data-src>496
+</a></p>
+<hr>
+<p>Done deal. You can be very direct and to the point as long as you create safety by a tone of voice that says I’m okay, you’re okay, let’s figure things out. — loc:
+<a href rel=noopener class=internal-link data-src>519
+</a></p>
+<hr>
+<p>Mirroring, then, when practiced consciously, is the art of insinuating similarity. “Trust me,” a mirror signals to another’s unconscious, “You and I—we’re alike.” — loc:
+<a href rel=noopener class=internal-link data-src>544
+</a></p>
+<hr>
+<p>It’s almost laughably simple: for the FBI, a “mirror” is when you repeat the last three words (or the critical one to three words) of what someone has just said. — loc:
+<a href rel=noopener class=internal-link data-src>550
+</a></p>
+<hr>
+<p>It’s just four simple steps: 1.  Use the late-night FM DJ voice. 2.  Start with “I’m sorry . . .” 3.  Mirror. 4.  Silence. At least four seconds, to let the mirror work its magic on your counterpart. — loc:
+<a href rel=noopener class=internal-link data-src>672
+</a></p>
+<hr>
+<p>Popping his head into her office, the boss said, “Let’s make two copies of all the paperwork.” “I’m sorry, two copies?” she mirrored in response, remembering not only the DJ voice, but to deliver the mirror in an inquisitive tone. The intention behind most mirrors should be “Please, help me understand.” Every time you mirror someone, they will reword what they’ve said. They will never say it exactly the same way they said it the first time. Ask someone, “What do you mean by that?” and you’re likely to incite irritation or defensiveness. A mirror, however, will get you the clarity you want while signaling respect and concern for what the other person is saying. — loc:
+<a href rel=noopener class=internal-link data-src>682
+</a></p>
+<hr>
+<p>Tactical empathy is understanding the feelings and mindset of another in the moment and also hearing what is behind those feelings so you increase your influence in all the moments that follow. It’s bringing our attention to both the emotional obstacles — loc:
+<a href rel=noopener class=internal-link data-src>778
+</a></p>
+<hr>
+<p>empathy is “the ability to recognize the perspective of a counterpart, and the vocalization of that recognition.” That’s an academic way of saying that empathy is paying attention to another human being, asking what they are feeling, and making a commitment to understanding their world. — loc:
+<a href rel=noopener class=internal-link data-src>773
+</a></p>
+<hr>
+<p>empathy is paying attention to another human being, asking what they are feeling, and making a commitment to understanding their world. — loc:
+<a href rel=noopener class=internal-link data-src>774
+</a></p>
+<hr>
+<p>Tactical empathy is understanding the feelings and mindset of another in the moment and also hearing what is behind those feelings so you increase your influence in all the moments that follow. It’s bringing our attention to both the emotional obstacles and the potential pathways to getting an agreement done. — loc:
+<a href rel=noopener class=internal-link data-src>778
+</a></p>
+<hr>
+<p>We spotted their feelings, turned them into words, and then very calmly and respectfully repeated their emotions back to them. In a negotiation, that’s called labeling. — loc:
+<a href rel=noopener class=internal-link data-src>816
+</a></p>
+<hr>
+<p>Labeling is a way of validating someone’s emotion by acknowledging it. Give someone’s emotion a name and you show you identify with how that person feels. It gets you close to someone without asking about external factors you know nothing about (“How’s your family?”). Think of labeling as a shortcut to intimacy, a time-saving emotional hack. — loc:
+<a href rel=noopener class=internal-link data-src>818
+</a></p>
+<hr>
+<p>Exposing negative thoughts to daylight—“It looks like you don’t want to go back to jail”—makes them seem less frightening. — loc:
+<a href rel=noopener class=internal-link data-src>821
+</a></p>
+<hr>
+<p>But when they are asked to label the emotion, the activity moves to the areas that govern rational thinking. In other words, labeling an emotion—applying rational words to a fear—disrupts its raw intensity. — loc:
+<a href rel=noopener class=internal-link data-src>825
+</a></p>
+<hr>
+<p>I’ve found the phrase “Look, I’m an asshole” to be an amazingly effective way to make problems go away. That approach has never failed me. — loc:
+<a href rel=noopener class=internal-link data-src>885
+</a></p>
+<hr>
+<p>Research shows that the best way to deal with negativity is to observe it, without reaction and without judgment. Then consciously label each negative feeling and replace it with positive, compassionate, and solution-based thoughts. — loc:
+<a href rel=noopener class=internal-link data-src>895
+</a></p>
+<hr>
+<p>Remember the amygdala, the part of the brain that generates fear in reaction to threats? Well, the faster we can interrupt the amygdala’s reaction to real or imaginary threats, the faster we can clear the road of obstacles, and the quicker we can generate feelings of safety, well-being, and trust. — loc:
+<a href rel=noopener class=internal-link data-src>921
+</a></p>
+<hr>
+<p>after Anna labeled Angela’s fears, Angela’s first instinct was to add nuance and detail to those fears. And that detail gave Anna the power to accomplish what she wanted from the negotiation. — loc:
+<a href rel=noopener class=internal-link data-src>1029
+</a></p>
+<hr>
+<p>Pushing hard for “Yes” doesn’t get a negotiator any closer to a win; it just angers the other side. — loc:
+<a href rel=noopener class=internal-link data-src>1119
+</a></p>
+<hr>
+<p>When someone tells you “No,” you need to rethink the word in one of its alternative—and much more real—meanings: ■   I am not yet ready to agree; ■   You are making me feel uncomfortable; ■   I do not understand; ■   I don’t think I can afford it; ■   I want something else; ■   I need more information; or ■   I want to talk it over with someone else. — loc:
+<a href rel=noopener class=internal-link data-src>1183
+</a></p>
+<hr>
+<p>The moment you’ve convinced someone that you truly understand her dreams and feelings (the whole world that she inhabits), mental and behavioral change becomes possible, and the foundation for a breakthrough has been laid. — loc:
+<a href rel=noopener class=internal-link data-src>1664
+</a></p>
+<hr>
+<p>“If you approach a negotiation thinking that the other guy thinks like you, you’re wrong,” I say. “That’s not empathy; that’s projection.” — loc:
+<a href rel=noopener class=internal-link data-src>1799
+</a></p>
+<hr>
+<p>found it impossible to make even the simplest choice. In other words, while we may use logic to reason ourselves toward a decision, the actual decision making is governed by emotion. — loc:
+<a href rel=noopener class=internal-link data-src>1809
+</a></p>
+<hr>
+<p>In other words, while we may use logic to reason ourselves toward a decision, the actual decision making is governed by emotion. — loc:
+<a href rel=noopener class=internal-link data-src>1810
+</a></p>
+<hr>
+<p>Most people make an irrational choice to let the dollar slip through their fingers rather than to accept a derisory offer, because the negative emotional value of unfairness outweighs the positive rational value of the money. — loc:
+<a href rel=noopener class=internal-link data-src>1819
+</a></p>
+<hr>
+<p>“We just want what’s fair,” she said. Emotionally rattled by the implicit accusation, the guy raised his offer immediately. — loc:
+<a href rel=noopener class=internal-link data-src>1848
+</a></p>
+<hr>
+<p>The second use of the F-bomb is more nefarious. In this one, your counterpart will basically accuse you of being dense or dishonest by saying, “We’ve given you a fair offer.” It’s a terrible little jab meant to distract your attention and manipulate you into giving in. — loc:
+<a href rel=noopener class=internal-link data-src>1852
+</a></p>
+<hr>
+<p>the best reaction is to simply mirror the “F” that has just been lobbed at you. “Fair?” you’d respond, pausing to let the word’s power do to them as it was intended to do to you. Follow that with a label: “It seems like you’re ready to provide the evidence that supports that,” which alludes to opening their books or otherwise handing over information that will either contradict their claim to fairness or give you more data to work with than you had previously. Right away, you declaw the attack. The last use of the F-word is my favorite because it’s positive and constructive. It sets the stage for honest and empathetic negotiation. Here’s how I use it: Early on in a negotiation, I say, “I want you to feel like you are being treated fairly at all times. So please stop me at any time if you feel I’m being unfair, and we’ll address it.” It’s simple and clear and sets me up as an honest dealer. With that statement, I let people know it is okay to use that word with me if they use it honestly. As a negotiator, you should strive for a reputation of being fair. Your reputation precedes you. Let it precede you in a way that paves success. HOW TO DISCOVER THE EMOTIONAL DRIVERS BEHIND WHAT THE OTHER PARTY VALUES A few years ago, I stumbled upon the book How to Become a Rainmaker,3 and I like to review it occasionally to refresh my sense of the emotional drivers that fuel decisions. The book does a great job to explain the sales job not as a rational argument, but as an emotional framing job. If you can get the other party to reveal their problems, pain, and unmet objectives—if you can get at what people are really buying—then you can sell them a vision of their problem that leaves your proposal as the perfect solution. Look at this from the most basic level. What does a good babysitter sell, really? It’s not child care exactly, but a relaxed evening. — loc:
+<a href rel=noopener class=internal-link data-src>1859
+</a></p>
+<hr>
+<p>Take the same person, change one or two variables, and $100 can be a glorious victory or a vicious insult. Recognizing this phenomenon lets you bend reality from insult to victory. — loc:
+<a href rel=noopener class=internal-link data-src>1877
+</a></p>
+<hr>
+<p>prospect theory describes how people choose between options that involve risk, like in a negotiation. The theory argues that people are drawn to sure things over probabilities, even when the probability is a better choice. That’s called the Certainty Effect. And people will take greater risks to avoid losses than to achieve gains. That’s called Loss Aversion. — loc:
+<a href rel=noopener class=internal-link data-src>1892
+</a></p>
+<hr>
+<p>To get real leverage, you have to persuade them that they have something concrete to lose if the deal falls through. — loc:
+<a href rel=noopener class=internal-link data-src>1902
+</a></p>
+<hr>
+<p>“Still, I wanted to bring this opportunity to you before I took it to someone else,” I said. Suddenly, their call wasn’t about being cut from $2,000 to $500 but how not to lose $500 to some other guy. — loc:
+<a href rel=noopener class=internal-link data-src>1915
+</a></p>
+<hr>
+<ol start=2>
+<li>LET THE OTHER GUY GO FIRST . . . MOST OF THE TIME. — loc:
+<a href rel=noopener class=internal-link data-src>1919
+</a></li>
+</ol>
+<hr>
+<p>The real issue is that neither side has perfect information going to the table. This often means you don’t know enough to open with confidence. That’s especially true anytime you don’t know the market value of what you are buying or selling, — loc:
+<a href rel=noopener class=internal-link data-src>1932
+</a></p>
+<hr>
+<ol start=3>
+<li>ESTABLISH A RANGE While going first rarely helps, there is one way to seem to make an offer and bend their reality in the process. That is, by alluding to a range. — loc:
+<a href rel=noopener class=internal-link data-src>1948
+</a></li>
+</ol>
+<hr>
+<p>One of the easiest ways to bend your counterpart’s reality to your point of view is by pivoting to nonmonetary terms. After you’ve anchored them high, you can make your offer seem reasonable by offering things that aren’t important to you but could be important to them. — loc:
+<a href rel=noopener class=internal-link data-src>1962
+</a></p>
+<hr>
+<p>see what valuable nonmonetary gems they might have that are cheap to them but valuable to me. — loc:
+<a href rel=noopener class=internal-link data-src>1971
+</a></p>
+<hr>
+<p>numbers that end in 0 inevitably feel like temporary placeholders, guesstimates that you can easily be negotiated off of. But anything you throw out that sounds less rounded—say, $37,263—feels like a figure that you came to as a result of thoughtful calculation. Such numbers feel serious and permanent to your counterpart, so use them to fortify your offers. — loc:
+<a href rel=noopener class=internal-link data-src>1975
+</a></p>
+<hr>
+<p>You can get your counterpart into a mood of generosity by staking an extreme anchor and then, after their inevitable first rejection, offering them a wholly unrelated surprise gift. — loc:
+<a href rel=noopener class=internal-link data-src>1978
+</a></p>
+<hr>
+<ol start=6>
+<li>SURPRISE WITH A GIFT You can get your counterpart into a mood of generosity by staking an extreme anchor and then, after their inevitable first rejection, offering them a wholly unrelated surprise gift. Unexpected conciliatory gestures like this are hugely effective because they introduce a dynamic called reciprocity; — loc:
+<a href rel=noopener class=internal-link data-src>1977
+</a></li>
+</ol>
+<hr>
+<p>Ask: “What does it take to be successful here?” — loc:
+<a href rel=noopener class=internal-link data-src>2025
+</a></p>
+<hr>
+<p>The key issue here is if someone gives you guidance, they will watch to see if you follow their advice. They will have a personal stake in seeing you succeed. You’ve just recruited your first unofficial mentor. — loc:
+<a href rel=noopener class=internal-link data-src>2029
+</a></p>
+<hr>
+<p>we learned that successful negotiation involved getting your counterpart to do the work for you and suggest your solution himself. It involved giving him the illusion of control while you, in fact, were the one defining the conversation. — loc:
+<a href rel=noopener class=internal-link data-src>2096
+</a></p>
+<hr>
+<p>removing the hostility from the statement “You can’t leave” and turning it into a question. “What do you hope to achieve by going?” — loc:
+<a href rel=noopener class=internal-link data-src>2101
+</a></p>
+<hr>
+<p>To bargain well, you need to shed your assumptions about the haggling process and learn to recognize the subtle psychological strategies that play vital roles at the bargaining table. Skilled bargainers see more than just opening offers, counteroffers, and closing moves. They see the psychological currents that run below the surface. — loc:
+<a href rel=noopener class=internal-link data-src>2817
+</a></p>
+<hr>
+<p>Your personal negotiation style—and that of your counterpart—is formed through childhood, schooling, family, culture, and a million other factors; by recognizing it you can identify your negotiating strengths and weaknesses (and those of your counterpart) and adjust your mindset and strategies accordingly. — loc:
+<a href rel=noopener class=internal-link data-src>2834
+</a></p>
+<hr>
+<p>To be great you have to add to your strengths, not replace them. — loc:
+<a href rel=noopener class=internal-link data-src>2852
+</a></p>
+<hr>
+<p>(I’ve got a complementary PDF available that will help you identify your type and that of those around you. Please visit http://info .blackswanltd.com/3-types.) — loc:
+<a href rel=noopener class=internal-link data-src>2932
+</a></p>
+<hr>
+<p>“What else would you be able to offer to make that a good price for me?” — loc:
+<a href rel=noopener class=internal-link data-src>2951
+</a></p>
+<hr>
+<p>And if the other side pushes you to go first, wriggle from his grip. Instead of naming a price, allude to an incredibly high number that someone else might charge. Once when a hospital chain wanted me to name a price first, I said, “Well, if you go to Harvard Business School, they’re going to charge you $2,500 a day per student.” — loc:
+<a href rel=noopener class=internal-link data-src>2952
+</a></p>
+<hr>
+<p>sponge up information from your counterpart. Letting your counterpart anchor first will give you a tremendous feel for him. All you need to learn is how to take the first punch. — loc:
+<a href rel=noopener class=internal-link data-src>2955
+</a></p>
+<hr>
+<p>When a negotiation is far from resolution and going nowhere fast, you need to shake things up and get your counterpart out of their rigid mindset. In times like this, strong moves can be enormously effective tools. Sometimes a situation simply calls for you to be the aggressor and punch the other side in the face. — loc:
+<a href rel=noopener class=internal-link data-src>2978
+</a></p>
+<hr>
+<p>And so when someone puts out a ridiculous offer, one that really pisses you off, take a deep breath, allow little anger, and channel it—at the proposal, not the person—and say, “I don’t see how that would ever work.” — loc:
+<a href rel=noopener class=internal-link data-src>2991
+</a></p>
+<hr>
+<p>When you want to flip a dubious counterpart to your side, ask them, “Why would you do that?” but in a way that the “that” favors you. Let me explain. If you are working to lure a client away from a competitor, you might say, “Why would you ever do business with me? Why would you ever change from your existing supplier? They’re great!” — loc:
+<a href rel=noopener class=internal-link data-src>3006
+</a></p>
+<hr>
+<p>The Ackerman model is an offer-counteroffer method, at least on the surface. But it is a very effective system for beating the usual lackluster bargaining dynamic, which has the predictable result of meeting in the middle. The systematized and easy-to-remember process has only four steps: 1.  Set your target price (your goal). 2.  Set your first offer at 65 percent of your target price. 3.  Calculate three raises of decreasing increments (to 85, 95, and 100 percent). 4.  Use lots of empathy and different ways of saying “No” to get the other side to counter before you increase your offer. 5.  When calculating the final amount, use precise, nonround numbers like, say, $37,893 rather than $38,000. It gives the number credibility and weight. 6.  On your final number, throw in a nonmonetary item (that they probably don’t want) to show you’re at your limit. — loc:
+<a href rel=noopener class=internal-link data-src>3044
+</a></p>
+<hr>
+<p>the Black Swan symbolizes the uselessness of predictions based on previous experience. Black Swans are events or pieces of knowledge that sit outside our regular expectations and therefore cannot be predicted. — loc:
+<a href rel=noopener class=internal-link data-src>3188
+</a></p>
+<hr>
+<p>I began to hypothesize that in every negotiation each side is in possession of at least three Black Swans, three pieces of information that, were they to be discovered by the other side, would change everything. My experience since has proven this to be true. — loc:
+<a href rel=noopener class=internal-link data-src>3227
+</a></p>
+<hr>
+<p>Unless correctly interrogated, most people aren’t able to articulate the information you want. The world didn’t tell Steve Jobs that it wanted an iPad: he uncovered our need, that Black Swan, without us knowing the information was there. — loc:
+<a href rel=noopener class=internal-link data-src>3238
+</a></p>
+<hr>
+<p>we always ask ourselves, “Why are they communicating what they are communicating right now?” — loc:
+<a href rel=noopener class=internal-link data-src>3251
+</a></p>
+<hr>
+<p>In theory, leverage is the ability to inflict loss and withhold gain. Where does your counterpart want to gain and what do they fear losing? Discover these pieces of information, we are told, and you’ll build leverage over the other side’s perceptions, actions, and decisions. — loc:
+<a href rel=noopener class=internal-link data-src>3260
+</a></p>
+<hr>
+<p>Leverage has a lot of inputs, like time and necessity and competition. If you need to sell your house now, you have less leverage than if you don’t have a deadline. — loc:
+<a href rel=noopener class=internal-link data-src>3268
+</a></p>
+<hr>
+<p>At a taxonomic level, there are three kinds: Positive, Negative, and Normative. — loc:
+<a href rel=noopener class=internal-link data-src>3276
+</a></p>
+<hr>
+<p>Positive leverage is quite simply your ability as a negotiator to provide—or withhold—things that your counterpart wants. Whenever the other side says, “I want . . .” as in, “I want to buy your car,” you have positive leverage. — loc:
+<a href rel=noopener class=internal-link data-src>3277
+</a></p>
+<hr>
+<p>NEGATIVE LEVERAGE Negative leverage is what most civilians picture when they hear the word “leverage.” It’s a negotiator’s ability to make his counterpart suffer. And it is based on threats: you have negative leverage if you can tell your counterpart, “If you don’t fulfill your commitment/pay your bill/etc., I will destroy — loc:
+<a href rel=noopener class=internal-link data-src>3291
+</a></p>
+<hr>
+<p>Normative leverage is using the other party’s norms and standards to advance your position. If you can show inconsistencies between their beliefs and their actions, you have normative leverage. No one likes to look like a hypocrite. For example, if your counterpart lets slip that they generally pay a certain multiple of cash flow when they buy a company, you can frame your desired price in a way that reflects that valuation. — loc:
+<a href rel=noopener class=internal-link data-src>3309
+</a></p>
+<hr>
+<p>By positioning your demands within the worldview your counterpart uses to make decisions, you show them respect and that gets you attention and results. Knowing your counterpart’s religion is more than just gaining normative leverage per se. Rather, it’s gaining a holistic understanding of your counterpart’s worldview—in this case, literally a religion—and using that knowledge to inform your negotiating moves. — loc:
+<a href rel=noopener class=internal-link data-src>3367
+</a></p>
+<hr>
+<p>we trust people more when we view them as being similar or familiar. — loc:
+<a href rel=noopener class=internal-link data-src>3386
+</a></p>
+<hr>
+<p>people respond favorably to requests made in a reasonable tone of voice and followed with a “because” reason. — loc:
+<a href rel=noopener class=internal-link data-src>3416
+</a></p>
+<hr>
+<p>If you’re going to be great at anything—a great negotiator, a great manager, a great husband, a great wife—you’re going to have to do that. You’re going to have to ignore that little genie who’s telling you to give up, to just get along—as well as that other genie who’s telling you to lash out and yell. — loc:
+<a href rel=noopener class=internal-link data-src>3582
+</a></p>
+<hr>
+<p>Whether it’s in the office or around the family dinner table, don’t avoid honest, clear conflict. It will get you the best car price, the higher salary, and the largest donation. It will also save your marriage, your friendship, and your family. — loc:
+<a href rel=noopener class=internal-link data-src>3599
+</a></p>
+<hr>
+<p>Every negotiation, every conversation, every moment of life, is a series of small conflicts that, managed well, can rise to creative beauty. Embrace them. — loc:
+<a href rel=noopener class=internal-link data-src>3603
+</a></p>
+</article>
+<hr>
+<div class=page-end>
+<div class=backlinks-container>
+<h3>Backlinks</h3>
+<ul class=backlinks>
+<li>
+No backlinks found
+</li>
+</ul>
+</div>
+<div>
+<script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script>
+<h3>Interactive Graph</h3>
+<div id=graph-container></div>
+<style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
+<script src=https://quartz.jzhao.xyz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
+<script>drawGraph("https://quartz.jzhao.xyz/Kindle-Highlights/Never-Split-the-Difference","https://quartz.jzhao.xyz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+</div>
+</div>
+<div id=contact_buttons>
+<footer>
+<p>Made by John Mavrick Reyes using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p>
+<ul>
+<li><a href=/>Home</a></li>
+<li><a href=http://johnmavrick.tech/>Website</a></li><li><a href=https://linktr.ee/johnmavrick>Linktree</a></li></ul>
+</footer>
+</div>
+<script src=https://quartz.jzhao.xyz/js/popover.9d69dffc0f2d029ef30cf63230ccce4c.min.js></script>
+<script>initPopover("https://quartz.jzhao.xyz")</script>
+</div>
+</body>
+</html>

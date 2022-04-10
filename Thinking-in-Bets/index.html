@@ -1,0 +1,602 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=description content="Status: Tags: #literature/books/implemented Links: [[Finished-Implementing List]] - [[Thinking in Bets Application]]
+ Thinking in Bets Introduction  Thinking in bets entails the quality our decisions and luck  We must be able to differentiate between the two    1 - Life is Poker, Not Chess  It&rsquo;s important to not use the outcome of a decision to downplay the righteousness of the decision (resulting)  Formed through hindsight bias, seeing an outcome as inevitable after witnessing the outcome    Human Irrationality  We choose to believe that luck has little influence, and that our decisions predict the outcome  We tend to find connections, even if they are untrue   We have a reflexive mind and a deliberative mind  Our reflexive mindis unconscious and rapid Our deliberative mind consideres facts and information  We have little space in our mind to do deliberative thinking     Poker includes countless short sessions of decision-making with immediate outcomes (winning/losing) John von neumann helped cultivate the physics behind hydrogen bombs, the fist computers, and other military events, all within the last 10 years of his life  Also wrote about game theory, the study of mathematical models of conflict and cooperation between intelligent rational decision-makers Real games are commonplace in our daily lives, and they involve risk, uncertainty, and deception (like poker)  Even the most thought-out decisions may not go as planned   Chess games always have a best move in the given position; everything is shown, and there is nothing hidden  We should not treat life decisions like chess decisions      Uncertainty  It&rsquo;s easy to assume that facts are certain to come up with a rational decision  A coin has a heads and tails side, so the chance of flipping either is 50/50  It&rsquo;s important to stay skeptical, and acknowledge that we cannot make a concrete decision  It&rsquo;s important to accept that we don&rsquo;t know something, but still try anyways       Due to the uncertainty of our choices, it is important we have a solid process for making decisions, and that we can conduct multiple experiments to have sample data  We need shades of gray    Redefining Wrong  Instead of viewing the decision as bad, the decision just ended up with the undesired outcome  Redefining wrong helps us remove the negative connotation from it  It&rsquo;s stupid to think we will always get optimal results in such a random world      2 - Wanna Bet?">
+<title>John Mavrick's Garden</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type=image/png href=/icon.png>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
+<link href=https://quartz.jzhao.xyz/styles.62abffa83e1b36143f7e490dc494ec6f.min.css rel=stylesheet>
+<script src=https://quartz.jzhao.xyz/js/darkmode.46b07878b7f5d9e26ad7a3c40f8a0605.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
+<script>const BASE_URL="https://quartz.jzhao.xyz/",fetchData=Promise.all([fetch("https://quartz.jzhao.xyz/indices/linkIndex.b4df6755e0129cea17afc671eb36e0d2.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://quartz.jzhao.xyz/indices/contentIndex.8923c41347a61a4c98ec93c68e1b0edb.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
+<body>
+<div id=search-container>
+<div id=search-space>
+<input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something...">
+<div id=results-container>
+</div>
+</div>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://quartz.jzhao.xyz/js/search.bc849b857f2c1b822264d40635bb67b6.min.js></script>
+<div class=singlePage>
+<header>
+<h1 id=page-title><a href=https://quartz.jzhao.xyz/>John Mavrick's Garden</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+<div class=spacer></div>
+<div class=darkmode>
+<input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg>
+</label>
+<label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg>
+</label>
+</div>
+</header>
+<article>
+<p class=meta>
+Last updated Unknown
+</p>
+<ul class=tags>
+</ul>
+<p>Status:
+Tags: #literature/books/implemented
+Links: <a href=/Finished-Implementing-List rel=noopener class=internal-link data-src=/Finished-Implementing-List>Finished-Implementing List</a> - <a href=/Thinking-in-Bets-Application rel=noopener class=internal-link data-src=/Thinking-in-Bets-Application>Thinking in Bets Application</a></p>
+<hr>
+<h1 id=thinking-in-bets>Thinking in Bets</h1>
+<h2 id=introduction>Introduction</h2>
+<ul>
+<li>Thinking in bets entails the quality our decisions and luck
+<ul>
+<li>We must be able to differentiate between the two</li>
+</ul>
+</li>
+</ul>
+<h2 id=1---life-is-poker-not-chess>1 - Life is Poker, Not Chess</h2>
+<ul>
+<li>It&rsquo;s important to not use the outcome of a decision to downplay the righteousness of the decision (resulting)
+<ul>
+<li>Formed through hindsight bias, seeing an outcome as inevitable after witnessing the outcome</li>
+</ul>
+</li>
+</ul>
+<h3 id=human-irrationality>Human Irrationality</h3>
+<ul>
+<li>We choose to believe that luck has little influence, and that our decisions predict the outcome
+<ul>
+<li>We tend to find connections, even if they are untrue</li>
+</ul>
+</li>
+<li>We have a reflexive mind and a deliberative mind
+<ul>
+<li>Our reflexive mindis unconscious and rapid</li>
+<li>Our deliberative mind consideres facts and information
+<ul>
+<li>We have little space in our mind to do deliberative thinking</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Poker includes countless short sessions of decision-making with immediate outcomes (winning/losing)</li>
+<li>John von neumann helped cultivate the physics behind hydrogen bombs, the fist computers, and other military events, all within the last 10 years of his life
+<ul>
+<li>Also wrote about game theory, the study of mathematical models of conflict and cooperation between intelligent rational decision-makers</li>
+<li>Real games are commonplace in our daily lives, and they involve risk, uncertainty, and deception (like poker)
+<ul>
+<li>Even the most thought-out decisions may not go as planned</li>
+</ul>
+</li>
+<li>Chess games always have a best move in the given position; everything is shown, and there is nothing hidden
+<ul>
+<li>We should not treat life decisions like chess decisions</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id=uncertainty>Uncertainty</h3>
+<ul>
+<li>It&rsquo;s easy to assume that facts are certain to come up with a rational decision
+<ul>
+<li>A coin has a heads and tails side, so the chance of flipping either is 50/50
+<ul>
+<li>It&rsquo;s important to stay skeptical, and acknowledge that we cannot make a concrete decision
+<ul>
+<li>It&rsquo;s important to accept that we don&rsquo;t know something, but still try anyways</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Due to the uncertainty of our choices, it is important we have a solid process for making decisions, and that we can conduct multiple experiments to have sample data
+<ul>
+<li>We need shades of gray</li>
+</ul>
+</li>
+</ul>
+<h3 id=redefining-wrong>Redefining Wrong</h3>
+<ul>
+<li>Instead of viewing the decision as bad, the decision just ended up with the undesired outcome
+<ul>
+<li>Redefining wrong helps us remove the negative connotation from it
+<ul>
+<li>It&rsquo;s stupid to think we will always get optimal results in such a random world</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id=2---wanna-bet>2 - Wanna Bet?</h2>
+<ul>
+<li>Our decisions are always bets where we put down other alternatives and hope that luck is on our side and that we chose the best decision
+<ul>
+<li>From stocks, job relocations, parenting philosophies, everything is a bet</li>
+</ul>
+</li>
+<li>When making decisions in competition, we are betting against our other possible options rather than the enemy&rsquo;s decisions</li>
+</ul>
+<h3 id=beliefs>Beliefs</h3>
+<ul>
+<li>Our beliefs (experiences, information) have a great influence on our decision making</li>
+</ul>
+<h4 id=abstract-beliefs>Abstract Beliefs</h4>
+<ul>
+<li>Abstract beliefs are beliefs outside our direct experience, learned from external influences)</li>
+<li>We believe we make our beliefs by hearing something, evaluating it, and then forming it, but in reality, we mostly accept them and fail to question them
+<ul>
+<li>When put under time pressure, we tend to guess things are true</li>
+</ul>
+</li>
+<li>Smarter people are more prone to supporting previously held beliefs, as they naturally find evidence and think rationally
+<ul>
+<li>Also prone to blind-spot bias, where a person can be aware of other people&rsquo;s biases but not themselves</li>
+<li>More prone to manipulating information to support their beliefs</li>
+</ul>
+</li>
+</ul>
+<h4 id=list-of-questions-when-making-decisions>List of Questions When Making Decisions</h4>
+<blockquote>
+<p>How do I know this?
+Where did I get this information?
+Who did I get it from?
+What is the quality of my sources?
+How much do I trust them?
+How up to date is my information?
+How much information do I have that is relevant to the belief?
+What other things like this have I been confident about that turned out not to be true?
+What are the other plausible alternatives?
+What do I know about the person challenging my belief?
+What is their view of how credible my opinion is?
+What do they know that I don’t know?
+What is their level of expertise?
+What am I missing?</p>
+</blockquote>
+<ul>
+<li>Asking someone to make a bet makes us consider the third step of forming abstract beliefs, where we question our own</li>
+</ul>
+<h3 id=redefining-confidence>Redefining Confidence</h3>
+<ul>
+<li>Virtually all facts are subject to revision or reversal</li>
+<li>Consider adding probabilities to beliefs (0 to 100%)
+<ul>
+<li>Helps us not completely shift our belief</li>
+<li>Helps us not feel offended by disagreeing information
+<ul>
+<li>By considering ^ we can refine our existing beliefs</li>
+</ul>
+</li>
+<li>By allowing room for wrong, other people can help us better understand the flaws in our beliefs
+<ul>
+<li>Also shows that we acknowledge the other stances</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Basically, be open-minded and transparent with the specifics of your beliefs</li>
+</ul>
+<h2 id=3---bet-to-learn-fielding-the-unfolding-future>3 - Bet to Learn: Fielding the Unfolding Future</h2>
+<ul>
+<li>Experience is important in becoming an expert, but you also need to learn from it to get the most out of it</li>
+<li>Betting on a future entails:
+<ul>
+<li>Belief → Bet → Set of Outcomes
+<ul>
+<li>It&rsquo;s important to look back and see if the outcome of our bets were caused by luck or our choices</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id=learning-loop>Learning Loop</h3>
+<p>Belief → Bet → Outcome → Bet 2 → Belief &mldr;</p>
+<ul>
+<li>We are good at setting &ldquo;ER&rdquo; goals (richer, smarter, etc.), but we fail to reach them because of our poor decision-making and executation
+<ul>
+<li>We need to learn when to close the feedback loop and spend time learning</li>
+</ul>
+</li>
+</ul>
+<h3 id=luck-vs-skill>Luck vs Skill</h3>
+<ul>
+<li>ex) Losing weight would be a mix of skill (diet and exercise) and genetics/famine (luck)
+<ul>
+<li>Being able to differentiate skill-based outcomes from luck-based outcomes helps us focus on the more valuable learning opportunities
+<ul>
+<li>If we attribute our wins to skill and losses to luck, we will never truly learn
+<ul>
+<li><a href=/Self-Serving-Bias rel=noopener class=internal-link data-src=/Self-Serving-Bias>Self-Serving Bias</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id=people-watching>People Watching</h3>
+<ul>
+<li>Watching from the choices of others helps us learn with little consequences
+<ul>
+<li>Eliminates the effects of self-serving bias, but it still has bias
+<ul>
+<li>Good outcomes are luck, and bad outcomes are their skill</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id=reshaping-competition>Reshaping Competition</h3>
+<ul>
+<li>Instead of measuring our success with others, we can measure our process with others
+<ul>
+<li>ex) Giving more credit, more willing to admit mistakes, open-minded</li>
+</ul>
+</li>
+<li>We can treat the outcome sorting process as a risk/bet</li>
+</ul>
+<h3 id=thinking-in-bets-mindset>Thinking in Bets Mindset</h3>
+<ul>
+<li>Paying more attention to the other side to better understand the overall scenario</li>
+<li>Perspective taking entails examining our decisions in the context of someone else&rsquo;s mindset/position
+<ul>
+<li>Being wrong feels twice as bad as being right</li>
+<li>Can be practiced through preparation, practice, and reptition</li>
+</ul>
+</li>
+<li>Any improvement is better than none</li>
+</ul>
+<h2 id=4---buddy-system>4 - Buddy System</h2>
+<ul>
+<li>Not all situations and people are interest in truth-seeking and criticism
+<ul>
+<li>Both parties need to be willing in the exchange</li>
+</ul>
+</li>
+<li>A buddy system/decision group helps keep us on track
+<ul>
+<li>Should have a minimum of 3 people (agree, disagree, referee) for it to be stable and productive</li>
+</ul>
+</li>
+<li>Even if we value truth-seeking greatly, it&rsquo;s okay if not all of our friends are into it
+<ul>
+<li>Helps provide balance</li>
+</ul>
+</li>
+<li>Can lead to confirmatory thought (amplifying bias), or exploratory thought (open-minded)
+<ul>
+<li>Confirmatory thought can lead to echo-chambers where everyone shares their similar experiences</li>
+</ul>
+</li>
+</ul>
+<h4 id=principles>Principles</h4>
+<ol>
+<li>Focus on accuracy over confirmation
+<ul>
+<li>Truthseeking, objectivity, open-minded</li>
+</ul>
+</li>
+<li>Accountability</li>
+<li>Open to new and diverse ideas</li>
+</ol>
+<h3 id=importance-of-groups>Importance of Groups</h3>
+<h4 id=approval>Approval</h4>
+<ul>
+<li>We crave approval, whether it be through ourselves or others
+<ul>
+<li>Approval from others can be used as evidence of sound decision-making, and makes exploratory thought commonplace</li>
+</ul>
+</li>
+<li>Accountability stems from us wanting approval
+<ul>
+<li>Helps us keep our beliefs and behavior similar to the rest of the group</li>
+</ul>
+</li>
+</ul>
+<h4 id=view-diversity>View Diversity</h4>
+<ul>
+<li>To view our blind spots, we need to ask others for help and criticism</li>
+<li>Red teams are groups of people dedicated to argue with the proposed ideas and beliefs</li>
+<li>We are naturally attracted to homogenity</li>
+</ul>
+<h4 id=monetary-bets-outside-of-gambling>Monetary Bets Outside of Gambling</h4>
+<ul>
+<li>Scientists and researchers already bet their reputation, but monetary bets would provide explicit confidence in their beliefs and be more objective
+<ul>
+<li>Winning a bet can be an incentive</li>
+</ul>
+</li>
+</ul>
+<h2 id=5---dissent-to-win>5 - Dissent to Win</h2>
+<ul>
+<li>People should share their individual data to support their beliefs and help the community</li>
+<li>The rashomon effect is when two people have different recollections of the same event
+<ul>
+<li>Thus, we can&rsquo;t assume someone&rsquo;s story is complete and valid</li>
+</ul>
+</li>
+<li>Don&rsquo;t shoot the messenger or the message
+<ul>
+<li>Force yourself to find the good sides of different things
+<ul>
+<li>Helps better understand the idea and the people behind them, which can be good for competition</li>
+</ul>
+</li>
+<li>Consider reframing the message as if someone you respected said it</li>
+</ul>
+</li>
+</ul>
+<h3 id=conflicts-of-interest>Conflicts of Interest</h3>
+<ul>
+<li>Conflicts of interest = bias</li>
+<li>When you know the outcome of a story, you can better investigate the contributory decisions that led to it
+<ul>
+<li>When the outcome is unknown, we can only base our inferred probability on the decisions
+<ul>
+<li>Sometimes its better to not know the outcome to prevent bias</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id=skepticism>Skepticism</h4>
+<ul>
+<li>Although somewhat frowned upon, skepticism is important in developing accurate beliefs
+<ul>
+<li>Play devil&rsquo;s advocate</li>
+</ul>
+</li>
+</ul>
+<h4 id=others>Others</h4>
+<ul>
+<li>Speak with uncertainty to hear the opinions of others</li>
+<li>When disagreeing, agree first then add your opinion &ldquo;and, but&rdquo;
+<ul>
+<li>Will be more open to what we have to say</li>
+</ul>
+</li>
+<li>Ask if people want to vent or need advice
+<ul>
+<li>Advice can lead to truth-seeking</li>
+</ul>
+</li>
+</ul>
+<h2 id=6---becoming-our-own-buddy>6 - Becoming Our Own Buddy</h2>
+<ul>
+<li>We want to reflect on our past and future selves when making decisions</li>
+<li>Temporal discounting is when we favor our present-self over our future-self
+<ul>
+<li>ex) Staying up late despite having a test tomorrow</li>
+</ul>
+</li>
+<li>Since we don&rsquo;t know the future, our thoughts of it are purely based off of the past
+<ul>
+<li>Engage the same neural pathways</li>
+</ul>
+</li>
+</ul>
+<h4 id=regret>Regret</h4>
+<ul>
+<li>Envisioning the negative consequences of breaking a rule/promise helps us experience regret, which better reinforces our resolve
+<ul>
+<li>We can do this by asking ourself futuristic thought-provoking questions
+<ul>
+<li>Ask yourself on how making a decision would affect the future 10 minutes vs 10 months vs 10 years from now, as well as making the same decision in the past with the same time levels of time</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Regret helps us:
+<ol>
+<li>Make better decisions</li>
+<li>Treat ourselves more compassionately after the fact</li>
+<li>Plan ahead</li>
+</ol>
+</li>
+</ul>
+<h4 id=bad-events>Bad Events</h4>
+<ul>
+<li>If the outcome is intended for long-term, why the fuck should we care about the short-term outcomes
+<ul>
+<li>Stop ticker-watching</li>
+<li>The same can be said for our every-day lives
+<ul>
+<li>We should view our happiness as long-term and sustainable
+<ul>
+<li>Helps reduce the negative impact of bad events</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>We feel better if we go from a loss of $1000 to a loss of $100 rather than a win of $1000 to a win of $100
+<ul>
+<li>However, when looking at it as if it happened in the past, we will be far happier to have the latter outcome as we had actually won money</li>
+</ul>
+</li>
+</ul>
+<h3 id=tilt>Tilt</h3>
+<ul>
+<li>Tilt is the loss of rationality in our decision-making after a bad outcome
+<ul>
+<li>Continues to spiral as we get more bad outcomes and worsen our choices</li>
+</ul>
+</li>
+<li>To counter tilt, we can create routines to calm ourselves down when we are about to tilt
+<ul>
+<li>10-10-10 questions, 10 deep breaths, just brush it off, asking yourself about the origin of your tilt</li>
+</ul>
+</li>
+</ul>
+<h4 id=ulysses-contract>Ulysses Contract</h4>
+<ul>
+<li>Mitigates irrationality by preventing decisions or committing to behaviors in the future based on past experiences
+<ul>
+<li>ex) I spend a lot of money on food at the mall, so I&rsquo;ll bring healthy snacks next time I go
+<ul>
+<li>Helps remove one possible option for bad behavior, but it forces us to go through more unconvential methods</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id=decision-swear-jar>Decision Swear Jar</h4>
+<ul>
+<li>Helps us be more mindful of hindering our decision-making by being accountable for it</li>
+<li>Decision interruptions include:
+<ul>
+<li>Illusionary certainty (I&rsquo;m 100% sure)</li>
+<li>Overconfidence ^</li>
+<li>Irrational outcome fielding (That was pure luck)</li>
+<li>Complaining for sympathy</li>
+<li>Insulting others out of spite</li>
+<li>Shooting the message or the messenger</li>
+<li>Zooming in on small moments (worst day ever)</li>
+<li>Believing in echo chambers or irrational acceptance/rejection</li>
+<li>Saying the word wrong</li>
+<li>Lack of self-compassion</li>
+<li>Altering stories in our favor</li>
+<li>Asking biased questions in our favor</li>
+<li>Neglecting the opinions of others</li>
+</ul>
+</li>
+</ul>
+<h4 id=reconnaissance-on-the-future>Reconnaissance on the Future</h4>
+<ul>
+<li>We should consider the possible futures of our bets
+<ul>
+<li>Helps us understand the probabilities of each outcome, and the protocol for each outcome</li>
+</ul>
+</li>
+<li>Scenario planning is when we map out all scenarios
+<ul>
+<li>Prevents unexpected regret and euphoria, hindsight bias, acknowledges uncertainty, and encourages preparedness
+<ul>
+<li>ex) If you have a 10% chance of winning $500, you could estimate it to be $50 earned
+<ul>
+<li>Incentivises accuracy and prioritization, as well as improving the gains</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id=back-casting>Back-Casting</h4>
+<ul>
+<li>Standing at the end and looking backward is more effective than standing at the start and looking forward</li>
+<li>Prospective hindsight (imagining the event has already occured and looking back at it), increases the discovery of reasons for future outcomes by 30%
+<ul>
+<li>Just like setting goals, as we plan what we want the outcome to be and work towards it
+<ul>
+<li>Infinitely better than doing nothing and not making any progress</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id=premortems>Premortems</h4>
+<ul>
+<li>Investigating something awful before it happens
+<ul>
+<li>Imagining not achieving our goals
+<ul>
+<li>Good to pair with backcasting</li>
+<li>Prepares us for future obstacles</li>
+<li>Incorporating negative visualizations motivate us
+<ul>
+<li>Mental contrasting</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id=hindsight-bias>Hindsight Bias</h4>
+<ul>
+<li>Time is a tree
+<ul>
+<li>The trunk is our past, and the branches are our potential futures
+<ul>
+<li>Thicker branches are more probable
+<ul>
+<li>With hindsight bias, when a future is chosen, the rest get cut of and we focus solely on the lone branch</li>
+<li>It&rsquo;s important to reconstruct the tree and evaluate the other outcomes</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>References:</p>
+</article>
+<hr>
+<div class=page-end>
+<div class=backlinks-container>
+<h3>Backlinks</h3>
+<ul class=backlinks>
+<li>
+<a href=/Decision-Making>Untitled Page</a>
+</li>
+<li>
+<a href=/How-to-Decide-Application>Untitled Page</a>
+</li>
+<li>
+<a href=/Self-Serving-Bias>Untitled Page</a>
+</li>
+<li>
+<a href=/Thinking-in-Bets-Application>Untitled Page</a>
+</li>
+</ul>
+</div>
+<div>
+<script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script>
+<h3>Interactive Graph</h3>
+<div id=graph-container></div>
+<style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
+<script src=https://quartz.jzhao.xyz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
+<script>drawGraph("https://quartz.jzhao.xyz/Thinking-in-Bets","https://quartz.jzhao.xyz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+</div>
+</div>
+<div id=contact_buttons>
+<footer>
+<p>Made by John Mavrick Reyes using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p>
+<ul>
+<li><a href=/>Home</a></li>
+<li><a href=http://johnmavrick.tech/>Website</a></li><li><a href=https://linktr.ee/johnmavrick>Linktree</a></li></ul>
+</footer>
+</div>
+<script src=https://quartz.jzhao.xyz/js/popover.9d69dffc0f2d029ef30cf63230ccce4c.min.js></script>
+<script>initPopover("https://quartz.jzhao.xyz")</script>
+</div>
+</body>
+</html>

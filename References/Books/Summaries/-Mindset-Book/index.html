@@ -1,0 +1,665 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=description content="Tags: #literature/books/implemented Links: [[Finished-Implementing List]] Finished Implementing: 2021-05-01 21:10 PM
+ Chapter 1 - Mindsets   There are fixed mindsets and growth mindsets">
+<title>John Mavrick's Garden</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type=image/png href=/icon.png>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
+<link href=https://quartz.jzhao.xyz/styles.62abffa83e1b36143f7e490dc494ec6f.min.css rel=stylesheet>
+<script src=https://quartz.jzhao.xyz/js/darkmode.46b07878b7f5d9e26ad7a3c40f8a0605.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
+<script>const BASE_URL="https://quartz.jzhao.xyz/",fetchData=Promise.all([fetch("https://quartz.jzhao.xyz/indices/linkIndex.b4df6755e0129cea17afc671eb36e0d2.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://quartz.jzhao.xyz/indices/contentIndex.8923c41347a61a4c98ec93c68e1b0edb.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
+<body>
+<div id=search-container>
+<div id=search-space>
+<input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something...">
+<div id=results-container>
+</div>
+</div>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://quartz.jzhao.xyz/js/search.bc849b857f2c1b822264d40635bb67b6.min.js></script>
+<div class=singlePage>
+<header>
+<h1 id=page-title><a href=https://quartz.jzhao.xyz/>John Mavrick's Garden</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+<div class=spacer></div>
+<div class=darkmode>
+<input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg>
+</label>
+<label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg>
+</label>
+</div>
+</header>
+<article>
+<p class=meta>
+Last updated April 9, 2022
+</p>
+<ul class=tags>
+</ul>
+<p>Tags: #literature/books/implemented
+Links: <a href=/Finished-Implementing-List rel=noopener class=internal-link data-src=/Finished-Implementing-List>Finished-Implementing List</a>
+Finished Implementing: 2021-05-01 21:10 PM</p>
+<hr>
+<h3 id=chapter-1---mindsets>Chapter 1 - Mindsets</h3>
+<ul>
+<li>
+<p>There are fixed mindsets and growth mindsets</p>
+</li>
+<li>
+<p>People with growth mindsets are still frustrated, but they are ready to take risks and confront challenges</p>
+</li>
+<li>
+<p>People are terrible at estimating their abilities, and people with fixed mindsets were major offenders</p>
+</li>
+<li>
+<p>Mindsets can change the definition, significance, and impact of failure</p>
+</li>
+</ul>
+<h4 id=questions>Questions</h4>
+<ol>
+<li>
+<p>I think intelligence is changeable</p>
+</li>
+<li>
+<p>You can learn new things and change your intelligence</p>
+</li>
+<li>
+<p>You can always change your intelligence</p>
+</li>
+<li>
+<p>You cannot substantially change how intelligent you are</p>
+</li>
+<li>
+<p>I am a certain kind of person, but I can change it</p>
+</li>
+<li>
+<p>People can always change substantially</p>
+</li>
+<li>
+<p>The important parts of myself can be changed</p>
+</li>
+<li>
+<p>You can change basic things about yourself</p>
+</li>
+</ol>
+<h3 id=chapter-2---inside-the-mindsets>Chapter 2 - Inside the Mindsets</h3>
+<ul>
+<li>
+<p>Fixed mindsets try to prove that you are talented, so failure can have negative effects</p>
+</li>
+<li>
+<p>Effort is a bad thing since it can signal inefficiency</p>
+</li>
+<li>
+<p>Growth mindsets are trying to learn, and do not care about success/failure</p>
+</li>
+<li>
+<p>Effort is a good thing since you are trying to learn and improve</p>
+</li>
+<li>
+<p>People with fixed mindsets want a partner who would worship then, while people with growth mindsets want a partner that would see their faults and help them work on them</p>
+</li>
+<li>
+<p>People in growth mindsets don’t just seek challenges, they thrive and grow from them</p>
+</li>
+<li>
+<p>They tend to maintain the same level of interest when things get challenging</p>
+</li>
+<li>
+<p>They tend to favor long-term perfection rather than short-term</p>
+</li>
+<li>
+<p>Don’t let your success be defined by single accomplishments</p>
+</li>
+<li>
+<p>It’s okay to want to be special, unless being special entails being better than others</p>
+</li>
+<li>
+<p>People in the fixed mindset feel the need to be better than others to feel successful</p>
+</li>
+<li>
+<p>If you’re merely somebody when you’re successful, what are you when you aren’t successful?</p>
+</li>
+<li>
+<p>People in the fixed mindset tend to find people who are worse-off to boost their self-esteem, while people with the growth mindset tend to find people who are better than them to learn more</p>
+</li>
+<li>
+<p>We are still in the process of mistakes until we deny them</p>
+</li>
+<li>
+<p>The more depressed people with growth mindsets are, the more willing they are to overcome their problems</p>
+</li>
+<li>
+<p>In short, when people believe in fixed traits, they are always in danger of being measured by a failure. It can define them in a permanent way. Smart or talented as they may be, this mindset seems to rob them of their coping resources</p>
+</li>
+<li>
+<p>When people believe their basic qualities can be developed, failures may still hurt, but failures don’t define them. And if abilities can be expanded—if change and growth are possible—then there are still many paths to success</p>
+</li>
+<li>
+<p>We tend to value effortless accomplishment over achievement through effort</p>
+</li>
+<li>
+<p>Effort ignites ability and turns it into accomplishment</p>
+</li>
+<li>
+<p>We tend to avoid putting in effort since it displays struggle and prevents us from making excuses</p>
+</li>
+<li>
+<p>We can either reflect and look at what we could have done, or look back and see what we had done</p>
+</li>
+<li>
+<p>Watch groundhog day</p>
+</li>
+<li>
+<p>Fixed mindset people desire to be the best, while people with the growth mindset just arrive there as a by-product of their enthusiasm</p>
+</li>
+<li>
+<p>Fixed mindsets focus on the outcome, while growth mindsets value the process</p>
+</li>
+<li>
+<p>Growth mindsets believe that things can be changed, not that all things can be changed</p>
+</li>
+<li>
+<p>You don’t always need confidence in the growth mindset: even if you’re not good at something, you can still do it. Sometimes, you tend to do things because you’re not good at it</p>
+</li>
+</ul>
+<h3 id=chapter-3---ability-and-accomplishment>Chapter 3 - Ability and Accomplishment</h3>
+<ul>
+<li>
+<p>People with growth mindsets tend to study to learn the concepts, rather than to get a good mark</p>
+</li>
+<li>
+<p>They find new methods of learning that are improvements to previous methods</p>
+</li>
+<li>
+<p>With the right mindset and teaching, people are capable of a lot more than we think</p>
+</li>
+<li>
+<p>The fixed mindset distracts people, discourages effort and results in worse learning strategies</p>
+</li>
+<li>
+<p>It turns other people into judges instead of allies</p>
+</li>
+<li>
+<p>Drawing is a seeing skill where we must combine different components to produce creations.</p>
+</li>
+<li>
+<p>Experiencing failure that damages your self-confidence affects your future results</p>
+</li>
+<li>
+<p>Telling people they are smart make them feel dumber and act dumber, but claim that they are smarter</p>
+</li>
+<li>
+<p>People tend to do worse when negative labels are placed upon them, but people with a growth mindset tend to try and challenge that negative label to prove it wrong</p>
+</li>
+<li>
+<p>People’s character stem from their mindset; when things go wrong, people may lose their focus and ability, putting everything in jeopardy</p>
+</li>
+</ul>
+<h3 id=chapter-4---champion-mindset>Chapter 4 - Champion Mindset</h3>
+<ul>
+<li>
+<p>Consider the championship mentality where a person has to do something or else they fail</p>
+</li>
+<li>
+<p>Ability can help you get to the top, but character lets you stay there</p>
+</li>
+<li>
+<p>People with growth mindsets find setbacks motivating; they are responsible for self-improvement, self-motivation, and self-responsibility</p>
+</li>
+<li>
+<p>Fixed mindsets don’t have control over ability and motivation; you hope that talent carries you through</p>
+</li>
+<li>
+<p>Rather than being content with where you are, strive for self-improvement</p>
+</li>
+</ul>
+<h3 id=chapter-5---mindset-and-leadership>Chapter 5 - Mindset and Leadership</h3>
+<ul>
+<li>
+<p>It is important for leaders to be humble, and to always stay curious and confront challenges with the final goal of improvement</p>
+</li>
+<li>
+<p>Being a CEO with a fixed mindset prevents us from acknowledging areas of weakness, becoming overconfident and over prioritizing themselves</p>
+</li>
+<li>
+<p>Can a fixed mindset be a root of insecurity?</p>
+</li>
+<li>
+<p>CEOs tend to degrade their workers</p>
+</li>
+<li>
+<p>Instead of allowing for learning and growth, everyone is more focused about being judged</p>
+</li>
+</ul>
+<h4 id=growth-leaders>Growth Leaders</h4>
+<ul>
+<li>
+<p>Put more emphasis on we rather than I</p>
+</li>
+<li>
+<p>Display true self-confidence; the ability to be open to change regardless of the source- your readiness to grow</p>
+</li>
+<li>
+<p>Groupthink is when people share the same idea and feel superior compared to others, and is usually created by a fixed mindset</p>
+</li>
+<li>
+<p>It is important to provide new alternatives and</p>
+</li>
+<li>
+<p>Managers are most effective when they have a growth mindset</p>
+</li>
+<li>
+<p>Presenting skills as learnable</p>
+</li>
+<li>
+<p>Valuing learning and perseverance rather than genius and talent</p>
+</li>
+<li>
+<p>Giving feedback that promotes learning and future success</p>
+</li>
+<li>
+<p>Presenting managers as resources for learning</p>
+</li>
+<li>
+<p>Anyone can become a leader, but people fail to do so since they stop seeking improvement</p>
+</li>
+<li>
+<p>People may sometimes overlook one’s potential for development</p>
+</li>
+<li>
+<p>People who work in growth mindset companies trust their company and feel more empowered, important, and committed, while people who work in fixed mindset companies want to leave ASAP</p>
+</li>
+</ul>
+<h4 id=questions-1>Questions</h4>
+<p>Grow Your Mindset</p>
+<p>■ Are you in a fixed-mindset or growth-mindset workplace? Do you feel people are just judging you or are they helping you develop? Maybe you could try making it a more growth-mindset place, starting with yourself. Are there ways you could be less defensive about your mistakes? Could you profit more from the feedback you get? Are there ways you can create more learning experiences for yourself?</p>
+<ul>
+<li>I feel like I am leaning a bit more towards a growth mindset, as I still have aspects of a fixed mindset. I think people are trying to help me develop, and are not just judging me. I can probably place less excuses on my failures, and get more out of them then I already am. I can create more learning experiences for myself by conversing with those who have similar mindsets</li>
+</ul>
+<p>■ How do you act toward others in your workplace? Are you a fixed-mindset boss, focused on your power more than on your employees’ well-being? Do you ever reaffirm your status by demeaning others? Do you ever try to hold back high-performing employees because they threaten you?</p>
+<ul>
+<li>I may act confident, but I don’t do it at the expense of others. As of recently, I’ve been more accepting of those who are better than me, and am beginning to have less feelings of jealousy or resentment</li>
+</ul>
+<p>Consider ways to help your employees develop on the job: Apprenticeships? Workshops? Coaching sessions? Think about how you can start seeing and treating your employees as your collaborators, as a team. Make a list of strategies and try them out. Do this even if you already think of yourself as a growth-mindset boss. Well-placed support and growth-promoting feedback never hurt.</p>
+<ul>
+<li>I can start learning more about the people around me, whether it be about their character or their opinions during certain scenarios</li>
+</ul>
+<p>■ If you run a company, look at it from a mindset perspective. Does it need you to do a Lou Gerstner on it? Think seriously about how to root out elitism and create a culture of self-examination, open communication, and teamwork. Read Gerst ner’s excellent book Who Says Elephants Can’t Dance? to see how it’s done.</p>
+<p>■ Is your workplace set up to promote groupthink? If so, the whole decision-making process is in trouble. Create ways to foster alternative views and constructive criticism. Assign people to play the devil’s advocate, taking opposing viewpoints so you can see the holes in your position. Get people to wage debates that argue different sides of the issue. Have an anonymous suggestion box that employees must contribute to as part of the decision-making process. Remember, people can be independent thinkers and team players at the same time. Help them fill both roles.</p>
+<ul>
+<li>Nope, I can’t really answer this question though</li>
+</ul>
+<h3 id=chapter-6---mindsets-in-love>Chapter 6 - Mindsets in Love</h3>
+<ul>
+<li>
+<p>Relationships that adopt a fixed mindset will</p>
+</li>
+<li>
+<p>Not be willing to work on the problems that arise, and will either think it was not meant to be or blame the other person</p>
+</li>
+<li>
+<p>If you’re truly compatible, then everything should come naturally, right?</p>
+</li>
+<li>
+<p>Expect the other person to be able to read their mind</p>
+</li>
+<li>
+<p>Expect to agree on everything</p>
+</li>
+<li>
+<p>Believe that problems indicate character flaws that cannot be solved</p>
+</li>
+<li>
+<p>Instead of being judgemental, a growth mindset tries to support them</p>
+</li>
+<li>
+<p>Fixed mindsets encourage righteousness, while growth mindsets allow us to shoulder the blame and move on</p>
+</li>
+<li>
+<p>It’s normal for partners to be fairly different, as finding ways to connect these differences deepens a relationship</p>
+</li>
+<li>
+<p>Have friends that don’t use you to feel empowered</p>
+</li>
+<li>
+<p>People with the fixed mindset tend to be more shy</p>
+</li>
+<li>
+<p>Growth mindsets can also be shy, but it doesn’t stop them from challenging themselves and getting into uncomfortable situations</p>
+</li>
+<li>
+<p>Fixed mindsets want revenge on those who have wronged us (bullies), while growth mindsets want to educate them</p>
+</li>
+</ul>
+<h4 id=grow-your-mindset>Grow Your Mindset</h4>
+<p>■ After a rejection, do you feel judged, bitter, and vengeful? Or do you feel hurt, but hopeful of forgiving, learning, and moving on? Think of the worst rejection you ever had. Get in touch with all the feelings, and see if you can view it from a growth mindset. What did you learn from it? Did it teach you something about what you want and don’t want in your life? Did it teach you some positive things that were useful in later relationships? Can you forgive that person and wish them well? Can you let go of the bitterness?</p>
+<ul>
+<li>
+<p>After a rejection, I felt bad, but I never thought about seeking revenge. I somewhat came to dislike myself, but it has made me less impulsive and made me brush up on some of my bad traits</p>
+</li>
+<li>
+<p>I can definitely let go of the bitterness, since I can’t control their choice</p>
+</li>
+</ul>
+<p>■ Picture your ideal love relationship. Does it involve perfect compatibility—no disagreements, no compromises, no hard work? Please think again. In every relationship, issues arise. Try to see them from a growth mindset: Problems can be a vehicle for developing greater understanding and intimacy. Allow your partner to air his or her differences, listen carefully, and discuss them in a patient and caring manner. You may be surprised at the closeness this creates.</p>
+<ul>
+<li>
+<p>I used to think that perfect compatibility was the ideal relationship, but after reading this book, I can see how it’s important to be different if worked upon appropriately</p>
+</li>
+<li>
+<p>Instead, I might value a person who has a growth mindset, rather than a person who is very similar to me</p>
+</li>
+</ul>
+<p>■ Are you a blamer like me? It’s not good for a relationship to pin everything on your partner. Create your own Maurice and blame him instead. Better yet, work toward curing yourself of the need to blame. Move beyond thinking about fault and blame all the time. Think of me trying to do that too.</p>
+<ul>
+<li>I used to be a constant blamer, but now I take some time to better understand the situation, and see what I could have done instead</li>
+</ul>
+<p>■ Are you shy? Then you really need the growth mindset. Even if it doesn’t cure your shyness, it will help keep it from messing up your social interactions. Next time you’re venturing into a social situation, think about these things: how social skills are things you can improve and how social interactions are for learning and enjoyment, not judgment. Keep practicing this.</p>
+<ul>
+<li>Yes I am shy. I never really thought about the implications of a fixed/growth mindset regarding social behavior, and this made me want to break out of my shell even more</li>
+</ul>
+<h3 id=chapter-7---origin-of-mindsets>Chapter 7 - Origin of Mindsets</h3>
+<ul>
+<li>
+<p>Praising the intelligence of children harms their motivation and performance</p>
+</li>
+<li>
+<p>Instead, praise their efforts and attempts to try new things, and ask questions that shows interest in their choices</p>
+</li>
+<li>
+<p>When confronting someone about their failures, get them to reflect on what they can do to improve, and don’t inflict permanent damage onto them</p>
+</li>
+<li>
+<p>People with a growth mindset tend to focus less on grades and focus on their contributions to society</p>
+</li>
+<li>
+<p>Growth mindset teachers believe in the growth of intellect and talent, and are fascinated with the process of learning</p>
+</li>
+<li>
+<p>They challenge you while also nurturing you</p>
+</li>
+<li>
+<p>Students don’t sabotage their work when they know that school is for helping them grow</p>
+</li>
+<li>
+<p>You need to apply yourself to be better every day, and eventually it will make you a lot better</p>
+</li>
+<li>
+<p>To be a good teacher, you must be able to analyze and motivate your students</p>
+</li>
+<li>
+<p>Growth mindset is about believing people can develop their abilities. It does not mean:</p>
+</li>
+<li>
+<p>Being open-minded/flexible</p>
+</li>
+<li>
+<p>Effort is the end-all be-all</p>
+</li>
+<li>
+<p>Praising effort that isn’t there</p>
+</li>
+<li>
+<p>Solely praising the effort instead of the outcome</p>
+</li>
+<li>
+<p>Telling children they can do anything</p>
+</li>
+<li>
+<p>We can achieve a growth mindset by taking a journey to having a larger growth mindset than our fixed mindset</p>
+</li>
+<li>
+<p>It can be troublesome to pass on a growth mindset if:</p>
+</li>
+<li>
+<p>A teacher’s actions don’t match up with their mindset</p>
+</li>
+<li>
+<p>Setbacks are given a negative connotation</p>
+</li>
+<li>
+<p>Emphasis is put on memorization rather than understanding</p>
+</li>
+</ul>
+<h3 id=chapter-8---changing-mindsets>Chapter 8 - Changing Mindsets</h3>
+<ul>
+<li>
+<p>During change, new beliefs provide an alternative to previous beliefs</p>
+</li>
+<li>
+<p>Cognitive behavioral therapy is effective, but it fails to convert people from a fixed mindset to a growth mindset</p>
+</li>
+<li>
+<p>“Tony’s internal monologue went from: I’m naturally gifted. I don’t need to study. I don’t need to sleep. I’m superior”</p>
+</li>
+<li>
+<p>To: Uh-oh, I’m losing it. I can’t understand things, I can’t remember things. What am I now?</p>
+</li>
+<li>
+<p>To: Don’t worry so much about being smart. Don’t worry so much about avoiding failures. That becomes self-destructive. Let’s start to study and sleep and get on with life.</p>
+</li>
+</ul>
+<h4 id=dilemmas>Dilemmas</h4>
+<ul>
+<li>
+<p>When found in an unfortunate situation, try to find ways to get yourself out of there</p>
+</li>
+<li>
+<p>When high expectations are placed on you, you find out how others cope with such feelings and met said expectations</p>
+</li>
+<li>
+<p>When you don’t get what you want (salary raise), don’t think the world is against you, think of steps you can take to achieve that change</p>
+</li>
+<li>
+<p>If your “perfect life” seems to be shattered, instead of self-doubting yourself, try to understand what led to that result and think of ways to prevent it from happening again</p>
+</li>
+<li>
+<p>When trying to teach others about the growth mindset, you need to incorporate it into their lives</p>
+</li>
+<li>
+<p>If tragedy strikes in someone you hold close to you, rather than letting them off completely, let them do what they want to do and adjust their circumstances to help them slowly get back to their previous level</p>
+</li>
+<li>
+<p>When someone is not meeting your expectations, instead of bashing them for it, help support them</p>
+</li>
+<li>
+<p>The fixed mindset allows a person to feel happy in their current scenario, without a desire to improve</p>
+</li>
+<li>
+<p>Willpower is not just something you have or don’t have. Willpower needs help.</p>
+</li>
+<li>
+<p>When a problem improves, people tend to stop doing what caused it to improve</p>
+</li>
+<li>
+<p>Change does not work like this; change has to be maintained</p>
+</li>
+<li>
+<p>A mindset change is revolutionizing the way you see things, not just specks of change</p>
+</li>
+<li>
+<p>Judge and be judged → Learn and help learn</p>
+</li>
+</ul>
+<h4 id=journey-to-a-growth-mindset>Journey to a Growth Mindset</h4>
+<ol>
+<li>
+<p>Admit you have a fixed mindset</p>
+</li>
+<li>
+<p>Identify the triggers of your fixed mindset</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>Taking on new challenges</p>
+</li>
+<li>
+<p>Struggle to find solutions</p>
+</li>
+<li>
+<p>Failure</p>
+</li>
+<li>
+<p>Feeling discouraged by more successful people</p>
+</li>
+<li>
+<p>Validating yourself by other people’s results</p>
+</li>
+</ul>
+<ol start=3>
+<li>Give your fixed-mindset persona a name and characteristics</li>
+</ol>
+<ul>
+<li>Name is yes</li>
+</ul>
+<ol start=4>
+<li>Accept your persona and let it run its course during tough times</li>
+</ol>
+<ul>
+<li>
+<p>After, reason with it and explain how you’re going to exhibit a growth mindset</p>
+</li>
+<li>
+<p>Convert their thinking into a growth mindset</p>
+</li>
+</ul>
+<ol start=5>
+<li>Set goals for growth</li>
+</ol>
+<ul>
+<li>
+<p>What are the opportunities for learning and growth today for myself and the people around me?</p>
+</li>
+<li>
+<p>When, where, and how will I embark on my plan?</p>
+</li>
+<li>
+<p>When, where, and how will I act on my new plan?</p>
+</li>
+<li>
+<p>What do I have to do to maintain and continue the growth?</p>
+</li>
+</ul>
+<p>Do this every day</p>
+<p>
+<img src=https://lh3.googleusercontent.com/Rl1U9hsmU0ky9cyjJN5oSQtXz4WvGmw8mfHNKxaacOm6Pee5hPAIsueTyjWzJDsnDYNUj8zaX26X0Ncb-xVVc6hux0vVCrBNIaaVWHQy9uMlR7wdNqCAkMLWG5bcFUSBwd-WCi0o alt></p>
+<h1 id=recommended-books>Recommended Books</h1>
+<p>Beck, Aaron T. Love Is Never Enough. New York: Harper & Row, 1988.</p>
+<p>———. Prisoners of Hate. New York: HarperCollins, 1999.</p>
+<p>Beck, Judith S. Cognitive Therapy. New York: Guilford Press, 1995.</p>
+<p>Bennis, Warren. On Becoming a Leader. Cambridge, MA: Perseus Publishing, 1989/2003.</p>
+<p>Binet, Alfred (Suzanne Heisler, trans.). Modern Ideas About Children. Menlo Park, CA: Suzanne Heisler, 1975 (original work, 1909).</p>
+<p>Bloom, Benjamin S. Developing Talent in Young People. New York: Ballantine Books, 1985.</p>
+<p>Collins, Jim. Good to Great: Why Some Companies Make the Leap . . . and Others Don’t. New York: HarperCollins, 2001.</p>
+<p>Collins, Marva, and Civia Tamarkin. Marva Collins’ Way: Returning to Excellence in Education. Los Angeles: Jeremy Tarcher, 1982/1990.</p>
+<p>Csikszentmihalyi, Mihaly. Flow: The Psychology of Optimal Experience. New York: Harper & Row, 1990.</p>
+<p>Davis, Stan. Schools Where Everyone Belongs: Practical Strategies for Reducing Bullying. Wayne, ME: Stop Bullying Now, 2003.</p>
+<p>Edwards, Betty. The New Drawing on the Right Side of the Brain. New York: Tarcher/Putnam, 1979/1999.</p>
+<p>Ellis, Albert. Reason and Emotion in Psychotherapy. Secaucus, NJ: Citadel, 1962.</p>
+<p>Ginott, Haim G. Between Parent & Child. New York: Avon Books, 1956.</p>
+<p>———. Between Parent & Teenager. New York: Macmillan, 1969.</p>
+<p>———. Teacher and Child. New York: Macmillan, 1972.</p>
+<p>Goleman, Daniel. Emotional Intelligence: Why It Can Matter More than IQ. New York: Bantam, 1995.</p>
+<p>Gottman, John, with Nan Silver. Why Marriages Succeed or Fail. New York: Fireside/Simon & Schuster, 1994.</p>
+<p>Gould, Stephen J. The Mismeasure of Man. New York: Norton, 1981.</p>
+<p>Holt, John. How Children Fail. New York: Addison Wesley, 1964/1982.</p>
+<p>Hyatt, Carole, and Linda Gottlieb. When Smart People Fail. New York: Penguin Books, 1987/1993.</p>
+<p>Janis, Irving. Groupthink, 2nd ed. Boston: Houghton Mifflin, 1972/1982.</p>
+<p>Lewis, Michael. Coach: Lessons on the Game of Life. New York: Norton, 2005.</p>
+<p>———. Moneyball: The Art of Winning an Unfair Game. New York: Norton, 2003.</p>
+<p>McCall, Morgan W. High Flyers: Developing the Next Generation of Leaders. Boston: Harvard Business School Press, 1998.</p>
+<p>McLean, Bethany, and Peter Elkind. The Smartest Guys in the Room: The Amazing Rise and Scandalous Fall of Enron. New York: Penguin Group, 2003.</p>
+<p>Olweus, Dan. Bullying at School. Malden, MA: Blackwell, 1993.</p>
+<p>Reeve, Christopher. Nothing Is Impossible: Reflections on a New Life. New York: Random House, 2002.</p>
+<p>Sand, Barbara L. Teaching Genius: Dorothy DeLay and the Making of a Musician. Portland, OR: Amadeus Press, 2000.</p>
+<p>Seligman, Martin E. P. Learned Optimism: How to Change Your Mind and Your Life. New York: Knopf, 1991.</p>
+<p>Tharp, Twyla. The Creative Habit. New York: Simon & Schuster, 2003.</p>
+<p>Wetzler, Scott. Is It You or Is It Me? Why Couples Play the Blame Game. New York: HarperCollins, 1998.</p>
+<p>Wooden, John, with Steve Jamison. Wooden: A Lifetime of Observations and Reflections On and Off the Court. Lincolnwood, IL: Contemporary Books, 1997.</p>
+<h1 id=application>Application</h1>
+<ul>
+<li>
+<p>View challenges, obstacles, effort, criticism, and the success of others with a growth mindset</p>
+</li>
+<li>
+<p>Embrace challenges to test my character</p>
+</li>
+<li>
+<p>Be determined to overcome obstacles to reach new heights</p>
+</li>
+<li>
+<p>Encourage effort to spend time improving myself</p>
+</li>
+<li>
+<p>Learn from criticism to improve my areas of weakness</p>
+</li>
+<li>
+<p>Be inspired from the success of others by learning from their story</p>
+</li>
+<li>
+<p>Adopt the growth-mindset approach to the dilemmas mentioned</p>
+</li>
+<li>
+<p>Work towards no longer being shy by not being afraid of failure</p>
+</li>
+<li>
+<p>Continue my journey towards valuing education over grades</p>
+</li>
+<li>
+<p>Refrain from looking down on others when they have failed, and instead, help them get back up</p>
+</li>
+<li>
+<p>Stop making excuses and start finding methods of improvement</p>
+</li>
+<li>
+<p>Make sure I acknowledge and confront my fixed mindset</p>
+</li>
+<li>
+<p>Embrace learning</p>
+</li>
+</ul>
+<p>**</p>
+</article>
+<hr>
+<div class=page-end>
+<div class=backlinks-container>
+<h3>Backlinks</h3>
+<ul class=backlinks>
+<li>
+No backlinks found
+</li>
+</ul>
+</div>
+<div>
+<script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script>
+<h3>Interactive Graph</h3>
+<div id=graph-container></div>
+<style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
+<script src=https://quartz.jzhao.xyz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
+<script>drawGraph("https://quartz.jzhao.xyz/References/Books/Summaries/-Mindset-Book","https://quartz.jzhao.xyz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+</div>
+</div>
+<div id=contact_buttons>
+<footer>
+<p>Made by John Mavrick Reyes using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p>
+<ul>
+<li><a href=/>Home</a></li>
+<li><a href=http://johnmavrick.tech/>Website</a></li><li><a href=https://linktr.ee/johnmavrick>Linktree</a></li></ul>
+</footer>
+</div>
+<script src=https://quartz.jzhao.xyz/js/popover.9d69dffc0f2d029ef30cf63230ccce4c.min.js></script>
+<script>initPopover("https://quartz.jzhao.xyz")</script>
+</div>
+</body>
+</html>

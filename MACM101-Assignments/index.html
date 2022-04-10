@@ -1,0 +1,216 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=description content="Status: Tags: Links: [[notes/) MACM 101 - Discrete Mathematics I]]
+ MACM101 Assignments Assignment 10   7    6 | 7 Harmonic numbers:">
+<title>John Mavrick's Garden</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type=image/png href=/icon.png>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
+<link href=https://quartz.jzhao.xyz/styles.62abffa83e1b36143f7e490dc494ec6f.min.css rel=stylesheet>
+<script src=https://quartz.jzhao.xyz/js/darkmode.46b07878b7f5d9e26ad7a3c40f8a0605.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
+<script>const BASE_URL="https://quartz.jzhao.xyz/",fetchData=Promise.all([fetch("https://quartz.jzhao.xyz/indices/linkIndex.b4df6755e0129cea17afc671eb36e0d2.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://quartz.jzhao.xyz/indices/contentIndex.8923c41347a61a4c98ec93c68e1b0edb.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
+<body>
+<div id=search-container>
+<div id=search-space>
+<input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something...">
+<div id=results-container>
+</div>
+</div>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://quartz.jzhao.xyz/js/search.bc849b857f2c1b822264d40635bb67b6.min.js></script>
+<div class=singlePage>
+<header>
+<h1 id=page-title><a href=https://quartz.jzhao.xyz/>John Mavrick's Garden</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+<div class=spacer></div>
+<div class=darkmode>
+<input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg>
+</label>
+<label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg>
+</label>
+</div>
+</header>
+<article>
+<p class=meta>
+Last updated Unknown
+</p>
+<ul class=tags>
+</ul>
+<p>Status:
+Tags:
+Links: <a class="internal-link broken">notes/) MACM 101 - Discrete Mathematics I</a></p>
+<hr>
+<h1 id=macm101-assignments>MACM101 Assignments</h1>
+<h2 id=assignment-10httpscanvassfucacourses66056files17753314wrap1>
+<a href="https://canvas.sfu.ca/courses/66056/files/17753314?wrap=1" rel=noopener>Assignment 10</a></h2>
+<ul>
+<li>
+<a href=https://math.stackexchange.com/questions/2475298/prove-that-2n-1-is-divisible-by-3-for-all-positive-integers-n rel=noopener>7</a></li>
+<li></li>
+</ul>
+<p>
+<a href=https://courses.engr.illinois.edu/cs173/fa2011/Homework/hw7-solutions.pdf rel=noopener>6</a> |
+<a href=https://math.stackexchange.com/questions/1008654/solving-a-question-about-fibonacci-and-lucas-numbers-using-induction rel=noopener>7</a>
+Harmonic numbers:
+<a href=https://gyazo.com/2663d6d7ce9207ee0feb695e53c3f473 rel=noopener>
+<img src=https://i.gyazo.com/2663d6d7ce9207ee0feb695e53c3f473.png alt="Image from Gyazo"></a></p>
+<ul>
+<li>
+<p>4</p>
+<ul>
+<li>
+<p>yea, by assuming the statement is true for all i in the range of 1 &lt;= i &lt;= k</p>
+</li>
+<li>
+<p>when you go to verify P(k+1), 1 &lt;= ⌊(k+1)/2⌋ &lt;= k</p>
+</li>
+<li>
+<p>so then lets set ⌊(k+1)/2⌋ = i</p>
+</li>
+<li>
+<p>and as you know C_i &lt;= 4(i-1)^2 by the inductive hypothesis</p>
+</li>
+<li>
+<p>at least that&rsquo;s what i did</p>
+</li>
+<li>
+<p>cuz tbh I dont know if anything that im doing is actually correct</p>
+</li>
+<li>
+<p>from there you can expand</p>
+</li>
+<li>
+<p>Well think about it</p>
+</li>
+<li>
+<p>By the inductive hypothesis, we made i &lt;= k</p>
+</li>
+<li>
+<p>And think</p>
+</li>
+<li>
+<p>What is C_(k+1) less than</p>
+</li>
+<li>
+<p>And what is C_i less than</p>
+</li>
+<li>
+<p>That&rsquo;s pretty much all I can give without basically giving away the answer</p>
+</li>
+</ul>
+</li>
+<li>
+<p>i have no idea if i did it right but what i did was replace the C(k+1) with the definition of C terms and used 1/2*k +1/2 as the subscript on that</p>
+<ul>
+<li>and then when i used the inductive hypothesis i just used the fractions</li>
+</ul>
+</li>
+<li>
+<p>8</p>
+<ul>
+<li>Let the Chomp board have n rows and n columns. We claim that the first player can win the game by making the first move to leave just the top row and left-most column. (He does this by selecting the cookie in the second column of the second row.) Let P(n) be the statement that if a player has presented his opponent with a Chomp configuration consisting of just n cookies in the top row and n cookies in the left-most column (both of these including the poisoned cookie in the upper left corner), then he can win the game. We will prove /nP(n) by strong induction. We know that P(l) is true, because the opponent is forced to take the poisoned cookie at his first turn. Fix k 2 1 and assume that P(j) is true for all j :=:; k. We claim that P(k + 1) is true. It is the opponent&rsquo;s turn to move. If she picks the poisoned cookie, then the game is over and she loses. Otherwise, assume that she picks the cookie in the top row in column j, or the cookie in the left column in row j, for some j with 2 :=:; j :=:; k + 1. The first player now picks the cookie in the left column in row j, or the cookie in the top row in column j, respectively. This leaves the position covered by P(j - 1) for his opponent, so by the inductive hypothesis, he can win.</li>
+</ul>
+</li>
+</ul>
+<h2 id=assignment-7httpscanvassfucacourses66056files17512611wrap1>
+<a href="https://canvas.sfu.ca/courses/66056/files/17512611?wrap=1" rel=noopener>Assignment 7</a></h2>
+<h2 id=assignment-6httpscanvassfucacourses66056filespreview17436167>
+<a href="https://canvas.sfu.ca/courses/66056/files?preview=17436167" rel=noopener>Assignment 6</a></h2>
+<h2 id=assignment-5httpscanvassfucacourses66056files17360020wrap1>
+<a href="https://canvas.sfu.ca/courses/66056/files/17360020?wrap=1" rel=noopener>Assignment 5</a></h2>
+<ul>
+<li>6
+<ul>
+<li>The set B is empty. Indeed, if B 6= ∅, say, a ∈ B, then either a ∈ A or a 6∈ A. In the first case a ∈ A ∩ B implying a 6∈ A 4 B and A 4 B 6= A. In the second case a ∈ A 4 B, but a 6∈ A. Again, we get A 4 B 6= A.</li>
+</ul>
+</li>
+<li>Forgot to prove 8, thought it meant prove by using diagram</li>
+</ul>
+<h2 id=assignment-4httpscanvassfucacourses66056filespreview17294643>
+<a href="https://canvas.sfu.ca/courses/66056/files?preview=17294643" rel=noopener>Assignment 4</a></h2>
+<h2 id=assignment-3httpscanvassfucacourses66056files17173248wrap1>
+<a href="https://canvas.sfu.ca/courses/66056/files/17173248?wrap=1" rel=noopener>Assignment 3</a></h2>
+<h6 id=comparison>Comparison</h6>
+<p>1</p>
+<ul>
+<li>b) even? where did z come from</li>
+</ul>
+<p>2</p>
+<ul>
+<li>b) Our answers are the same right? according to slide 7-13 at least</li>
+<li>c) I think the two quantifiers are swapped since &ldquo;everybody&rdquo; is the one doing the fooling, so they would be x</li>
+<li>d) which one is ur answer wut? also do you sure on whether we are supposed to introduce quantifiers for things like nancy and fred cuz i have no clue xd</li>
+<li>e) still unsure on how to introduce quantifiers for people, also it says exactly so you need !</li>
+</ul>
+<p>4</p>
+<ul>
+<li>b) do you know if we&rsquo;re supposed to prove/explain why?</li>
+</ul>
+<p>5</p>
+<ul>
+<li>i think you should also probably include the one person right?</li>
+</ul>
+<p>6</p>
+<ul>
+<li>a) I think the question wants us to have our answer in the &ldquo;if, then structure&rdquo;
+<ul>
+<li>Do you think we can just denote the positive integer thing as a universe or do we have to have the predicate?</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h6 id=answers>Answers</h6>
+<h1 id=backlinks>Backlinks</h1>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>list from <a href=/MACM101-Assignments rel=noopener class=internal-link data-src=/MACM101-Assignments>MACM101 Assignments</a> AND !outgoing(<a href=/MACM101-Assignments rel=noopener class=internal-link data-src=/MACM101-Assignments>MACM101 Assignments</a>)
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>References:</p>
+<p>Created:: 2021-10-04 22:11</p>
+</article>
+<hr>
+<div class=page-end>
+<div class=backlinks-container>
+<h3>Backlinks</h3>
+<ul class=backlinks>
+<li>
+No backlinks found
+</li>
+</ul>
+</div>
+<div>
+<script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script>
+<h3>Interactive Graph</h3>
+<div id=graph-container></div>
+<style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
+<script src=https://quartz.jzhao.xyz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
+<script>drawGraph("https://quartz.jzhao.xyz/MACM101-Assignments","https://quartz.jzhao.xyz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+</div>
+</div>
+<div id=contact_buttons>
+<footer>
+<p>Made by John Mavrick Reyes using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p>
+<ul>
+<li><a href=/>Home</a></li>
+<li><a href=http://johnmavrick.tech/>Website</a></li><li><a href=https://linktr.ee/johnmavrick>Linktree</a></li></ul>
+</footer>
+</div>
+<script src=https://quartz.jzhao.xyz/js/popover.9d69dffc0f2d029ef30cf63230ccce4c.min.js></script>
+<script>initPopover("https://quartz.jzhao.xyz")</script>
+</div>
+</body>
+</html>

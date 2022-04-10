@@ -1,0 +1,1094 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=description content="Concepts To Relearn  Related rates problems, implicit differentiation Understand what work I need to show Explanations of what an integral represents in a question Todos Go through the solutions to the problems I skipped in big ideas mc Complete remaining questions in unit 1 video review Complete unit 2 circuit practice Unit 3 chain rule circuit 1st and 2nd derivative calculator questions  Dates April 1  40ish minutes doing “ap calculus ab big ideas” multiple choice”  Didn’t do question 18, 35, 36 17/36 correct LMAO Calculator part was strong, just messed up a lot on no calculator  Maybe I could have been more thorough with my answers if I wasn’t trying to complete the thing in 1/3rd the time   I have a lot to work on for remembering concepts   Watched unit 1 review  Didn’t complete questions   Watched today’s class meeting Finished and reviewed MC Limits section 1, got 10/18 lmao TODO Finish unit 1 ap review Finish last 2019 free response question  April 2  40 minutes doing mc functions  Holy am I washed, I think it’s a mix of rushing and not knowing that to do  I rush because I don’t know how to properly approach the question Hopefully there’s nothing like that on the test lmao I should probably redo it when I have time and try to reasonably go through it     50 minutes doing big ideas fr 1-3 35mins doing questions + 30 minutes reviewing and looking at ap scoring of the questions  I don’t need to write sentences after everything Remember EVT requires to find dy/dx so it would be when e(t)-l(t) = 0 to find critnums, then integral of e(t)-l(t) + initial to find min/max Please never ever write answer for the wrong question ever again Free response is probably my strong suit Be concerned if you don’t end up using a certain piece of information that they provide   20 minutes derivatives circuit practice  Completed 10/20, kinda slow but w/e   Unit 3 review video  April 3  35 mins doing big ideas frq 4-6  Rolled through FTC part 1 and graphical analysis(8.">
+<title>John Mavrick's Garden</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type=image/png href=/icon.png>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
+<link href=https://quartz.jzhao.xyz/styles.62abffa83e1b36143f7e490dc494ec6f.min.css rel=stylesheet>
+<script src=https://quartz.jzhao.xyz/js/darkmode.46b07878b7f5d9e26ad7a3c40f8a0605.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
+<script>const BASE_URL="https://quartz.jzhao.xyz/",fetchData=Promise.all([fetch("https://quartz.jzhao.xyz/indices/linkIndex.b4df6755e0129cea17afc671eb36e0d2.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://quartz.jzhao.xyz/indices/contentIndex.8923c41347a61a4c98ec93c68e1b0edb.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
+<body>
+<div id=search-container>
+<div id=search-space>
+<input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something...">
+<div id=results-container>
+</div>
+</div>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://quartz.jzhao.xyz/js/search.bc849b857f2c1b822264d40635bb67b6.min.js></script>
+<div class=singlePage>
+<header>
+<h1 id=page-title><a href=https://quartz.jzhao.xyz/>John Mavrick's Garden</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+<div class=spacer></div>
+<div class=darkmode>
+<input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg>
+</label>
+<label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg>
+</label>
+</div>
+</header>
+<article>
+<p class=meta>
+Last updated Unknown
+</p>
+<ul class=tags>
+</ul>
+<h4 id=concepts-to-relearn>Concepts To Relearn</h4>
+<ul>
+<li>Related rates problems, implicit differentiation</li>
+<li>Understand what work I need to show</li>
+<li>Explanations of what an integral represents in a question
+Todos</li>
+<li>Go through the solutions to the problems I skipped in big ideas mc</li>
+<li>Complete remaining questions in unit 1 video review</li>
+<li>Complete unit 2 circuit practice</li>
+<li>Unit 3 chain rule circuit</li>
+<li>1st and 2nd derivative calculator questions</li>
+</ul>
+<h4 id=dates>Dates</h4>
+<h5 id=april-1>April 1</h5>
+<ul>
+<li>40ish minutes doing “ap calculus ab big ideas” multiple choice”
+<ul>
+<li>Didn’t do question 18, 35, 36</li>
+<li>17/36 correct LMAO</li>
+<li>Calculator part was strong, just messed up a lot on no calculator
+<ul>
+<li>Maybe I could have been more thorough with my answers if I wasn’t trying to complete the thing in 1/3rd the time</li>
+</ul>
+</li>
+<li>I have a lot to work on for remembering concepts</li>
+</ul>
+</li>
+<li>Watched unit 1 review
+<ul>
+<li>Didn’t complete questions</li>
+</ul>
+</li>
+<li>Watched today’s class meeting</li>
+<li>Finished and reviewed MC Limits section 1, got 10/18 lmao
+TODO</li>
+<li>Finish unit 1 ap review</li>
+<li>Finish last 2019 free response question</li>
+</ul>
+<h5 id=april-2>April 2</h5>
+<ul>
+<li>40 minutes doing mc functions
+<ul>
+<li>Holy am I washed, I think it’s a mix of rushing and not knowing that to do
+<ul>
+<li>I rush because I don’t know how to properly approach the question</li>
+<li>Hopefully there’s nothing like that on the test lmao</li>
+<li>I should probably redo it when I have time and try to reasonably go through it</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>50 minutes doing big ideas fr 1-3</li>
+<li>35mins doing questions + 30 minutes reviewing and looking at ap scoring of the questions
+<ul>
+<li>I don’t need to write sentences after everything</li>
+<li>Remember EVT requires to find dy/dx so it would be when e(t)-l(t) = 0 to find critnums, then integral of e(t)-l(t) + initial to find min/max</li>
+<li>Please never ever write answer for the wrong question ever again</li>
+<li>Free response is probably my strong suit</li>
+<li>Be concerned if you don’t end up using a certain piece of information that they provide</li>
+</ul>
+</li>
+<li>20 minutes derivatives circuit practice
+<ul>
+<li>Completed 10/20, kinda slow but w/e</li>
+</ul>
+</li>
+<li>Unit 3 review video</li>
+</ul>
+<h5 id=april-3>April 3</h5>
+<ul>
+<li>35 mins doing big ideas frq 4-6
+<ul>
+<li>Rolled through FTC part 1 and graphical analysis(8.5mins, 7mins), struggled with function understanding (18mins)
+<ul>
+<li>When finding min/max, consider crit nums</li>
+<li>When finding average value, consider integrals</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>50 mins doing 2018 free response frq 4-6
+<ul>
+<li>Was lost on the first two, and would frequently follow along with the scoring sheet</li>
+<li>I was able to do the last one</li>
+</ul>
+</li>
+<li>23ish mins doing multiple choice, 27ish mins reviewing answers
+<ul>
+<li>15/23, not bad compared to my previous scores, but can still do better</li>
+<li>Only a few things I didn’t know, but now I understand</li>
+<li>Just gotta keep watching out for misreading and thinking incorrectly</li>
+</ul>
+</li>
+<li>1 hour watching chain rule review and chain rule circuit
+<ul>
+<li>Left some over</li>
+</ul>
+</li>
+</ul>
+<h5 id=april-4>April 4</h5>
+<ul>
+<li>37 minutes for big ideas frq 7-9, 15ish for review
+<ul>
+<li>Forgot:
+<ul>
+<li>the second derivative test justification</li>
+<li>how to find vertical tangents (substitute for variable (y) by isolating it in dy/dx equation)</li>
+<li>Show points are on a curve by plugging into equation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>37 minutes for frq 2017 1-3, decent time to review
+<ul>
+<li>Not bad, just gotta work on explaining things in context to problem</li>
+<li>Use limit rules to explain why a derivative does not exist (limit from left and limit from right don’t equal)</li>
+<li>More practice on those wack d questions for related rates</li>
+</ul>
+</li>
+<li>30 minutes for mc unit 3 (1st and 2nd derivative)
+<ul>
+<li>Gotta do questions similar to these</li>
+<li>Was confused on if a question was calculator active or not</li>
+<li>When in doubt, find the derivative and solve for roots lmao</li>
+<li>f’(x) is the slope…</li>
+</ul>
+</li>
+<li>45 minutes finished unit 4 derivatives circuit</li>
+</ul>
+<h5 id=april-5>April 5</h5>
+<ul>
+<li>
+<p>26 minutes to finish AP Calculus big ideas, 21 to review</p>
+<ul>
+<li>Keep OG value when doing implicit derivatives and have the derivative as a by product</li>
+<li>Use u-substitution to make things easier</li>
+</ul>
+</li>
+<li>
+<p>30 minutes to finish 2017 free response 4-6, 20 minutes to review</p>
+<ul>
+<li>39/54 or 72% average for 2017 free response</li>
+<li>Nice to see that I understand the concepts for the most part, so I can quickly do them and review after</li>
+<li>(4.a) equation is an approximation</li>
+<li>(4.b) When determining whether a linearization approximation is an over/underapproximation, remember the implicit derivative</li>
+<li>You know something’s off when you don’t use a certain piece of info
+<ul>
+<li>Mark important information and remark after using it to find out if certain info hasn’t been used</li>
+</ul>
+</li>
+<li>(4.c) Bring things to the top and find integral from there
+<ul>
+<li>Constant was 12 and I got -1/3072…</li>
+</ul>
+</li>
+<li>(5.a) read properly lol, left = negative</li>
+<li>(5.b) didn’t consider a certain time interval for some reason</li>
+<li>(6.c) Used wrong info from graph</li>
+<li>(6.d) When justifying using MVT, say that function is differentiable, then that it is also continuous. Then, end points are not included. Remember to use the value they give you too :p</li>
+<li>Not bad, just gotta keep reviewing like this for the 9 other frq questions im gonna do lmao</li>
+</ul>
+</li>
+<li>
+<p>90 minutes struggling on unit 5 circuits</p>
+<ul>
+<li>I wish they had guided us through them or provided answers with work</li>
+<li>Forgot about multiple choice review oop</li>
+</ul>
+</li>
+<li>
+<p>24.5 minutes for 19-35, skipping 3 calculator questions</p>
+<ul>
+<li>Gotta remember to factor out the exponent and solve for roots</li>
+<li>Otherwise, did pretty good surprisingly</li>
+<li>Should remember to try and do the calc questions later</li>
+</ul>
+</li>
+</ul>
+<h5 id=april-6>April 6</h5>
+<ul>
+<li>35 minutes for 2016 FRQ 1-3
+<ul>
+<li>15mins 7/9, 9.5 mins 9/9, 10.5 mins 5/9</li>
+<li>(2.a) If asked whether E(t)=R(t) when one of them is a table, check if the beginning of the interval and the end of the interval have different signs to use IVT</li>
+<li>Remember that distance = absolute value</li>
+<li>(3.b) The question asked for when an inflection point was so I immediately assumed it was g”=f’, even though my reasoning was using f increasing/decreasing</li>
+<li>Apparently you only need to mention g=f’ once in the whole question for it to be applied</li>
+<li>College Board answers use intervals instead of saying no sign change/increasing to decreasing</li>
+<li>(2.d) Thought I had to find intervals where g(x) > 0 instead of &lt; 0
+<ul>
+<li>From now on, I should prompt myself on what I’m trying to find so I consciously know
+<ul>
+<li>Make markers on paper, underline on written tests</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>46 minutes to attempt 15 questions (skipped 3) bruh, 7/15
+<ul>
+<li>Closed intervals and derivative applications usually imply EVT</li>
+<li>You can find the derivative of the acceleration to find max/min acceleration</li>
+</ul>
+</li>
+<li>25 mins following unit 6 review
+<ul>
+<li>Be careful with the reverse a,b on integrals</li>
+<li>Remember that sqrt(r^2-x^2) is a semi-circle</li>
+<li>f’(x)/f(x) dx equals ln|f(x)|, so you can manipulate stuff to get to there</li>
+</ul>
+</li>
+<li>15 mins unit 6b antideriv circuit
+<ul>
+<li>Just minor errors</li>
+</ul>
+</li>
+</ul>
+<h5 id=april-7>April 7</h5>
+<ul>
+<li>17 minutes for 2016 FRQ 4-6
+<ul>
+<li>5mins 9/9, 7mins 7/9, 5mins 6/9</li>
+<li>(5.b) I just wrote the equation without solving lmao</li>
+<li>Wrote variable as t instead of h like the question implied
+<ul>
+<li>Just follow the question to be safe</li>
+</ul>
+</li>
+<li>(6.c) I put 2 outside the integral when the inside had f(2x)
+<ul>
+<li>When in doubt, u-substitution, or just be conscious</li>
+</ul>
+</li>
+<li>Also forgot to write and implement the 2x in the first place
+<ul>
+<li>Just gotta slow things down, no need to rush</li>
+</ul>
+</li>
+<li>Still got 81% wtf ?????</li>
+<li>Gotta start rereading the question after I finished the question to make sure I did what I needed to</li>
+<li>Maybe I should start to practice reviewing to prevent mistakes I am prone to</li>
+<li>I’m surprised at how fast I was able to complete this</li>
+<li>Overall for the 2016 frq was 0.796 or 43/54 in 52/90 minutes
+<ul>
+<li>I seem to be understanding the concepts, so as long as I can refine my reviewing skills, I should be set</li>
+<li>I feel like going through the answers can help my reviewing skills as I can realize the potential errors I can make
+<ul>
+<li>Not the same experience as having to review and troubleshoot mid-test, but it’s more convenient for me :sunglasses:</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>1 hour for 16-21 derivative applications
+<ul>
+<li>¾ correct, didn’t interpret question correctly</li>
+<li>Struggled with the free response questions
+<ul>
+<li>(20.a) when finding an x coordinate, find the derivative of the main function then plug it in with the rate of change form along with the x and y coordinates of the given point of the tangent line</li>
+<li>(21) Gotta brush up on related rates
+<ul>
+<li>y/x of triangle 1 = y/x of triangle 2</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id=april-8>April 8</h5>
+<ul>
+<li>35 minutes for 2015 FRQ 1-3
+<ul>
+<li>14.5 mins 7/9, 12.5 mins 8/9, 8 mins 8/9 = 23/27 = 85%</li>
+<li>(1.b) forgot to round decimal to 3</li>
+<li>(1.c) Thought initial value was 20 instead of 30</li>
+<li>(1.d) ^, also used same variable as was in the integral</li>
+<li>(2.a) forgot a set of brackets when plugging into calculator</li>
+<li>(3.b) didn’t include all units in my explanation, didn’t need to include the result, only needed to calculate it after</li>
+<li>Not bad, I was surprisingly calm and thorough during the calculator portion</li>
+<li>Happy I started catching onto the difference between displacement and distance</li>
+<li>I think plugging in the equations prior to doing the questions so I can copy them for future use was super useful
+<ul>
+<li>Just gotta be extra cautious as having the initial wrong could be very very bad</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>41 minutes for integration theory 30 questions
+<ul>
+<li>Got 16/28, not too bad
+<ul>
+<li>Should try a practice mc to see what I get</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>20 minutes for unit 8 stuff
+<ul>
+<li>Didn’t do questions I already did and questions I’m going to do in the future</li>
+</ul>
+</li>
+<li>Been idling for most of this time
+<ul>
+<li>Can probably start browsing ap textbook</li>
+</ul>
+</li>
+</ul>
+<h5 id=april-9>April 9</h5>
+<ul>
+<li>36.5 minutes for FRQ 2015 4-6
+<ul>
+<li>15, 9, 12 minutes respectively, 3, 8, 7 points respectively 18/27, (66%)</li>
+<li>(4.a) miscalculated one of the slopes on the slope field</li>
+<li>(4.b) forgot to distribute a negative when plugging in dy/dx
+<ul>
+<li>Add brackets next time</li>
+</ul>
+</li>
+<li>Wasn’t sure on how to answer the question and find the concavity of solution curve
+<ul>
+<li>Take into account the second derivative with the x and y signs of the quadrant, then determine whether it would be positive or negative</li>
+<li>I was close to this but since I had a -y I was confused on how it would provide a definite answer of up or down concavity</li>
+</ul>
+</li>
+<li>(4.c) Got the question right, but instead of doing differential equations, I could’ve just plugged it into the equation given lmao
+<ul>
+<li>Ask myself whether I have dy/dx yet</li>
+</ul>
+</li>
+<li>1 != 0 rather than 1 > 0</li>
+<li>(4.d) Yikes, didn’t know how to do it at all</li>
+<li>Steps for finding values of constants m and b when y=mx + b is a solution to the differential equation:</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>Isolate m by taking derivative of both sides</li>
+<li>Plug differential equation as dy/dx</li>
+<li>Replace y with y = mx + b</li>
+<li>Move m over, group terms, then solve for zeros</li>
+</ol>
+<ul>
+<li>Different from the question I had yesterday, only question is whether I can remember this</li>
+<li>Genuinely don’t remember doing anything like this before</li>
+<li>(5.a) Be sure to state that f’(x) = 0 at the potential relative extrema</li>
+<li>(5.c) When finding points of inflection, I could have clarified what a relative extrema entails (changing signs)</li>
+<li>Put in wrong x-coordinate for a poi
+<ul>
+<li>Clarify through question information or graph 4Head</li>
+</ul>
+</li>
+<li>(5.d) Messed up trying to find vertical slope
+<ul>
+<li>When finding vertical/horizontal tangents, isolate the variable using the numerator/denominator, then plug it into original equation</li>
+</ul>
+</li>
+<li>25 minutes integration applications 1-9
+<ul>
+<li>Referred twice to answer key, one was because I had no idea what I was supposed to do, and once because I didn’t know what to set as u</li>
+</ul>
+</li>
+<li>35 minutes integration applications 10-21
+<ul>
+<li>10/21</li>
+<li>For the most part I knew the concepts so it wasn’t too bad</li>
+</ul>
+</li>
+<li>29.5 minutes 2003 mc part 1 (55 given)
+<ul>
+<li>25/28, 89%</li>
+<li>(17) I could have factored out the 2e^x and ended up with (2e^x)(x+2), in which the answer would have obviously been -2</li>
+<li>(19) It was a differential equation LMAO</li>
+<li>(24) I was able to find the slope, but I wasn’t thinking on the next step
+<ul>
+<li>All the answers were of slope intercept, so I had to calculate y then solve for b</li>
+</ul>
+</li>
+<li>28 questions, was only able to not finish one</li>
+</ul>
+</li>
+</ul>
+<h5 id=april-10>April 10</h5>
+<ul>
+<li>32:38 minutes for FRQ 2014 1-3
+<ul>
+<li>15:18 | 10:30 | 6:47 minutes respectively, 4 | 8 | 9 points respectively
+<ul>
+<li>21/27 = 77.7%</li>
+</ul>
+</li>
+<li>(1.a) Tried to use an integral instead of finding MVT, wtf???
+<ul>
+<li>AVERAGE RATE OF CHANGE IS MVT</li>
+</ul>
+</li>
+<li>(1.c) Got wrong x value when I set the two equations equal to each other
+<ul>
+<li>Idek man</li>
+</ul>
+</li>
+<li>(1.d) Didn’t know how to find L(t) using the r.o.c at A(30)
+<ul>
+<li>When using an approximation at a certain point to figure out a value outside the interval, the equation should be:
+End result = (Value at end of interval) + (R.O.C at end of interval)(x-end of interval)
+ex) 0.5 = A(30) + A’(30)(t-30)</li>
+</ul>
+</li>
+<li>(2.b) Forgot to add exponent to imply base/height when plugin into the calculator, but had it in the equation I wrote down LMAO</li>
+<li>I’m surprised using the MVT completely escaped my mind, but that embarrassing moment will probably make me never forget ever again
+<ul>
+<li>It’s usually the starting question too</li>
+</ul>
+</li>
+<li>Just gotta use common sense when doing 1.d</li>
+<li>I have no idea how i got a wrong value for 1.c</li>
+<li>Not bad, just gotta remember the stuff I reflect upon lul</li>
+</ul>
+</li>
+<li>38.5 minutes doing last mc section review
+<ul>
+<li>Completely forgot about proportionality, and was not accustomed to the different styles of questions they asked (setting two equations equal through each other by isolating c, finding c then k), it was pretty insightful</li>
+<li>Surprising amount of a(t) to x(t) stuff</li>
+<li>Keep forgetting to add the y value on the other side of the equation when solving for c</li>
+</ul>
+</li>
+<li>23 minutes for calculator-active MC</li>
+<li>17/17, 100%
+<ul>
+<li>There were questions on the mc section reviews :eyes:</li>
+</ul>
+</li>
+<li>18:50 minutes for FRQ 2003 1-2
+<ul>
+<li>10:15 | 8:35 respectively, 9 | 8 respectively
+<ul>
+<li>(2.c) You don’t add initial value for total distance since it doesn’t technically travel that distance, only gotta do it for position
+<ul>
+<li>⅔ still since it marks based off limits, integrand, and answer</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>After marking, I’m not mad at all
+<ul>
+<li>Even though some of the questions I did were part of the MC section review practice, it felt pretty smooth</li>
+<li>MC got 25/28, 17/17</li>
+<li>FRQ got 17/18</li>
+</ul>
+</li>
+</ul>
+<h5 id=april-11>April 11</h5>
+<ul>
+<li>25 minutes for FRQ 2014 4-6
+<ul>
+<li>13 | 6:15 | 5:30 minutes respectively, 9 | 6 | 9 points respectively</li>
+<li>(5.d) I was so fixated on the chain rule for f that I completely disregarded g, lmao
+<ul>
+<li>Not too sure on what to say other than just be sure to make sure all functions are still in the equation after doing chain rule or some other form of manipulation</li>
+<li>One simple mistake cost me 3 marks</li>
+</ul>
+</li>
+<li>Did super well super fast, and was happy I was able to do well on the train question</li>
+<li>Glad I was able to recognize MVTs</li>
+</ul>
+</li>
+<li>41 minutes for FRQ 2003 3-6
+<ul>
+<li>7:30 | 6 | 9:30 | 17:45 minutes respectively, 9 | 8 | 7 | 4 respectively</li>
+<li>(4.b) Forgot to account for subtracting the integral since the area was under x axis</li>
+<li>(5.b) removed a 2 from variable by multiplying by 2, oops</li>
+<li>(5.c) wrong equation because of b</li>
+<li>(6.b) the first integral should have been 0 to 3
+<ul>
+<li>Now I know :shrug:</li>
+</ul>
+</li>
+<li>(6.c) Got 0 marks because I had k over 2 for some reason in the initial equation
+<ul>
+<li>I had the right ideas, but that one copy error cost me</li>
+<li>Just had to find a system for g(x), find g’(x) and set up a system, isolate a variable and plug it into original, then solve for the other variable</li>
+<li>I did all that but I had k/2 instead of k</li>
+</ul>
+</li>
+<li>Wow, that really affected my marks lmao</li>
+</ul>
+</li>
+</ul>
+<h5 id=april-12>April 12</h5>
+<ul>
+<li>32:30 minutes for FRQ 2013 1-3
+<ul>
+<li>11:45 | 12:30 | 8:20 minutes respectively, 7 | 5.5 | 9 points respectively</li>
+<li>(1.c) I forgot to plug in 5 into the equation and left it at x, so my calculator chose some random value lmao
+<ul>
+<li>Just a mistake that’s easily preventable</li>
+</ul>
+</li>
+<li>(2.a) Set the absolute value of the equation equal to 2, then set move everything to one side and plug it into a calculator to find the zeros</li>
+<li>(2.c) I used a wrong interval, which made me miss a zero
+<ul>
+<li>I should probably do something about my wack memory and delusion</li>
+<li>Make double-checking a habit</li>
+</ul>
+</li>
+<li>These small mistakes are really stealing a lot of my marks huh</li>
+<li>Surprised I didn’t think of the solution to (2.a)</li>
+</ul>
+</li>
+<li>36/55 minutes for no calc 2008 MC, 22/28
+<ul>
+<li>All but 3 questions in 27:30, spent 8:45 on 3 questions</li>
+<li>(3) Should have done product rule instead of being lazy</li>
+<li>(14) Just because a point is zero does not mean it needs to shift concavity at that point, there can be many zeros</li>
+<li>(18) You can turn the x + y = k into slope intercept form to find the slope at which the two graphs intersect, then solve for x by setting dy/dx of the other function to the slope found, then solve for y by plugging x into the 2nd og equation, then plug the point found into the first equation
+<ul>
+<li>Was not thinking this at all lmao, but I understand it now</li>
+<li>The first equation given was another line, it was not dy/dx</li>
+</ul>
+</li>
+<li>(19) You have to search for both -infinity and infinity
+<ul>
+<li>Negative infinity can be found by considering the other numbers since n^-infinity is 0
+Positive infinity could have been found through l&rsquo;hopital&rsquo;s rule</li>
+</ul>
+</li>
+<li>(21) <em>Velocity of the particle increasing</em></li>
+<li>As a result, it was during the inflection point</li>
+<li>(23) Didn’t bother to check by plugging in x</li>
+<li>Wow.</li>
+<li>24/50 minutes for calc 2008, 17/17</li>
+<li>MC Section equates to 39/45, 86.66%</li>
+<li>Way better than I thought it was going to be, but I should not be making those kinds of mistakes</li>
+<li>Just don’t be lazy, and hopefully I can keep retain the problem-solving skills necessary to remember how to do some of these questions</li>
+</ul>
+</li>
+</ul>
+<h5 id=april-13>April 13</h5>
+<ul>
+<li>13:30 minutes FRQ 2013 4-6</li>
+<li>6:20 | 3:23 | 3:42 minutes respectively, 9 | 6 | 8 respectively</li>
+<li>Was doing 2014 initially by accident lmao</li>
+<li>(2.a) Forgot to solve for area, lost 3 marks</li>
+<li>I paid attention for the other two questions, but didn’t for this one</li>
+<li>(3.b) I was lazy and decided to not distribute the negative to the right and just put it outside instead</li>
+<li>I think it gives a different answer</li>
+<li>Considering how much extra time I had, it shouldn’t matter if I save a few seconds of time</li>
+<li>Probably the fastest I’ve finished 3 questions</li>
+<li>52:32 minutes for FRQ 2008 1-6</li>
+<li>First ever time doing all 6 at once</li>
+<li>8:35 | 7:52 | 10 | 9:48 | 6:06 | 10:06 minutes respectively</li>
+<li>8 | 9 | 6 | 9 | 8 | 6 points respectively</li>
+<li>(1.b) If the area is negative, it is still going to be top - bottom nonetheless</li>
+<li>The axes of rotation is still the same</li>
+<li>(3.a) Supposed to do product rule for r and h, lost 3 points</li>
+<li>(5.a) Messed up one of the slope fields</li>
+<li>(6.c) Forgot to derive x^2 so lost 3 points</li>
+</ul>
+<h5 id=april-16>April 16</h5>
+<ul>
+<li>2012 no-calc MC
+<ul>
+<li>44:30 minutes for 28 questions, 20/28 respectively</li>
+<li>(2) thought it was difference of squares, but in reality, I had to move x over then solve, making the inner domain negative</li>
+<li>(9) Didn&rsquo;t know to set the limit part as an actual limit when solving for k</li>
+<li>(14) Got it right from guessing, but consider finding the values for g, g' independently
+<ul>
+<li>x in the outer value should have been 7 since g(x) = 7</li>
+</ul>
+</li>
+<li>(16) Shouldn&rsquo;t have guessed and should have solved
+<ul>
+<li>Find derivative, then expand and set to 0, then isolate for t</li>
+</ul>
+</li>
+<li>(18) The number in f(x) is what they are trying to find the value at
+<ul>
+<li>Find the derivative of the function then plug x back</li>
+</ul>
+</li>
+<li>(21) Was a horizontal asymptote, so I was supposed to solve for x → infinity</li>
+<li>(23) derivative is a constant since x has a degree of 1 in a linear function</li>
+<li>(25) negative negates the -1 from cosx, making c = -1/2</li>
+<li>(26) g'(x) is increasing dummy, there was no need to integrate it lmao</li>
+<li>I can&rsquo;t remember if the difficult thing about the 2012 exam was the MC or the FRQ, but I&rsquo;m nonetheless dissapointed in my performance</li>
+<li>Mistakes were more from a lack of understanding than small errors</li>
+</ul>
+</li>
+</ul>
+<h5 id=april-17>April 17</h5>
+<ul>
+<li>2012 calc MC
+<ul>
+<li>17:30 for all but #88, 22:30 total, 12/17 total</li>
+<li>(78) I circled the x-coordinate instead of the slope</li>
+<li>(82) Looked for relative extrema of f' instead of zero when determining relative extrema of f</li>
+<li>(83) Bad approximation, they turned the area into a triangle and found it like that</li>
+<li>(84) Gotta refine my understanding of similar triangles
+<ul>
+<li>Set ratio of y to x for both triangles, with x+y being the length of the bigger triangle and y being the length of the smaller triangle
+<ul>
+<li>Get rid of fractions, then differentiate remaining x and y
+<ul>
+<li>Plug in r.o.c. of x, then tada!</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>I need to stop asumminggggggg</li>
+<li>Similar triangles is definitely something I need to practice</li>
+</ul>
+</li>
+<li>2011 FRQ 1-2
+<ul>
+<li>9 | 11 minutes respectively, 9 | 8 points respectively</li>
+<li>(2.c) There was no need to include the denominator part, as I was not looking for an average
+<ul>
+<li>I should have known since taking the antiderivative would have been H(10)-H(0)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id=april-18>April 18</h5>
+<ul>
+<li>2012 frq 1-3
+<ul>
+<li>10 | 7 | 7 minutes respectively, 8 | 9 | 8 points respectively</li>
+<li>(1.a) Didn&rsquo;t mention that the value was an approximation</li>
+<li>(2.c) Consider finding the integral with respect to y</li>
+<li>(3.a) should be -1/4</li>
+<li>Not bad, just small mistakes
+<ul>
+<li>Maybe I should stop practicing those kinds of problems if I&rsquo;m already decent with them</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Skimming through 2011 practice questions
+<ul>
+<li>(5.a) When using the tangent line of a graph to approximate the value at a certain time, set up a slope intercept equation, then plug in the new value</li>
+</ul>
+</li>
+</ul>
+<h5 id=april-19>April 19</h5>
+<ul>
+<li>2012 frq 4-6
+<ul>
+<li>5:10 | 6:45 | 6:15 mins respectively, 7 | 8 | 7 points respectively</li>
+<li>(4.d) Incorrectly plugged in integral limits into u
+<ul>
+<li>Gotta be careful and take time instead of assuming</li>
+</ul>
+</li>
+<li>(5.b) Forgot to do implicit derivative for B, even though I consciously remembered it while doing the question
+<ul>
+<li>If it&rsquo;s looking for the rate of change of a differential equation, it most likely needs a slope</li>
+</ul>
+</li>
+<li>(5.c) Was supposed to find the time at t=4, not t=6
+<ul>
+<li>As a result, wrong limits on integrand</li>
+</ul>
+</li>
+<li>No way I&rsquo;m making these kinds of mistakes lmaoo
+<ul>
+<li>I don&rsquo;t think these are repeat mistakes though so it&rsquo;s okay</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Barron AP Practice Test 1 no-calc MC
+<ul>
+<li>Starred 4 questions, got to end by 37:10</li>
+</ul>
+</li>
+</ul>
+<h5 id=june-45>June 4/5</h5>
+<ul>
+<li>Jesus it&rsquo;s been 2 whole months since started doing this shit</li>
+<li>Did MC of Barron AP 13/30 in 40 minutes
+<ul>
+<li>Was not able to answer a concerning amount of questions</li>
+<li>
+<ol start=3>
+<li>Didn&rsquo;t do product rule</li>
+</ol>
+</li>
+<li>
+<ol start=4>
+<li>Didn&rsquo;t do MVT</li>
+</ol>
+</li>
+<li>
+<ol start=10>
+<li>Acceleration is slope of velocity bruh</li>
+</ol>
+</li>
+<li>
+<ol start=11>
+<li>Miscalculated answer</li>
+</ol>
+<ul>
+<li>Furthest away was found by first rel extrema bruh</li>
+</ul>
+</li>
+<li>
+<ol start=12>
+<li>Use triangles instead of ftc 1</li>
+</ol>
+<ul>
+<li>Solve for covered distance then isolate t=5</li>
+<li>miscalculated area xd</li>
+</ul>
+</li>
+<li>
+<ol start=13>
+<li>WTF they introduced polynomial long division????</li>
+</ol>
+<ul>
+<li>Bruh</li>
+</ul>
+</li>
+<li>16.R &lt; A &lt; T &lt; L
+<ul>
+<li>I thought it was L &lt; T &lt; A &lt; R</li>
+<li>WTF THE EXACT OPPOSITE</li>
+<li>I ordered it the wrong way oops</li>
+</ul>
+</li>
+<li>
+<ol start=17>
+<li>There is a vertical tangent when y = 0, so you look back at the og equation to see the roots, which there were 3 (x-1), (x+1), x</li>
+</ol>
+</li>
+<li>
+<ol start=19>
+<li>Didn&rsquo;t know how to solve for arctan(1), could have done 2 times of the integral from 0 to 1</li>
+</ol>
+</li>
+<li>
+<ol start=20>
+<li>You can find average value even if f is not differentiable</li>
+</ol>
+<ul>
+<li>Just gotta calculate it</li>
+</ul>
+</li>
+<li>
+<ol start=21>
+<li>separation of variables??</li>
+</ol>
+<ul>
+<li>2f'(x) is 2y, separation of variables, do differential equations</li>
+</ul>
+</li>
+<li>
+<ol start=23>
+<li>I&rsquo;m supposed to know how to solve for sec^2???</li>
+</ol>
+<ul>
+<li>Was supposed to solve for dy/dx, and sec^2y and tan y would have just been 1/0 respectively</li>
+</ul>
+</li>
+<li>
+<ol start=26>
+<li>you were supposed to solve for the lim using l&rsquo;hopitals rule so you could find out what you needed f(1) to equal</li>
+</ol>
+</li>
+<li>
+<ol start=27>
+<li>Had the right process but didn&rsquo;t know which answer to pick</li>
+</ol>
+<ul>
+<li>Gotta combine fraction dummy</li>
+</ul>
+</li>
+<li>
+<ol start=28>
+<li>Gotta check the derivative dummy</li>
+</ol>
+</li>
+<li>
+<ol start=29>
+<li>Calculated slope wrong</li>
+</ol>
+</li>
+<li>
+<ol start=30>
+<li>Don&rsquo;t know how to find this shit</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Calc MC (7/15)
+<ul>
+<li>
+<ol start=31>
+<li>Didn&rsquo;t read that it was speed so disregarded the absolute value</li>
+</ol>
+</li>
+<li>
+<ol start=32>
+<li>It&rsquo;s graph of f', not f, so x=3 would mean poi</li>
+</ol>
+</li>
+<li>
+<ol start=33>
+<li>Calculate area for linearization and plug into equation</li>
+</ol>
+</li>
+<li>
+<ol start=39>
+<li>LESS THAN 4 FUCK</li>
+</ol>
+</li>
+<li>
+<ol start=42>
+<li>Complicated trig problem jesuss</li>
+</ol>
+</li>
+<li>
+<ol start=43>
+<li>Since f(0) = f(pi), rolle&rsquo;s theorem implies that mvt will work when the values are 0, which happens 4 times</li>
+</ol>
+</li>
+<li>
+<ol start=44>
+<li>Find 2nd derivative of volume to see whether it is increasing or decreasing</li>
+</ol>
+<ul>
+<li>Can group constants together to make it easier</li>
+</ul>
+</li>
+<li>
+<ol start=45>
+<li>differential equation bruh</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>This test was harder than what I&rsquo;m used to, but I was still able to do decently
+<ul>
+<li>No real weakness, just gotta get back into the mc groove and start reviewing the different concepts</li>
+<li></li>
+</ul>
+</li>
+</ul>
+<h5 id=june-6>June 6</h5>
+<ul>
+<li>AB Practice Examination 2 | 16/30</li>
+<li>
+<ol>
+<li>Was thinking of finding a different limit oops</li>
+</ol>
+<ul>
+<li>it would be approaching infinity since it would be a number divided by virtually zero</li>
+</ul>
+</li>
+<li>
+<ol start=2>
+<li>I am trolling</li>
+</ol>
+<ul>
+<li>Same degree is coefficients</li>
+</ul>
+</li>
+<li>
+<ol start=3>
+<li>Forgot about the e/ln cancellation</li>
+</ol>
+<ul>
+<li>y equals 0 since u/u is 1</li>
+</ul>
+</li>
+<li>
+<ol start=4>
+<li>Find y at 0 then y' at 0 to find slope</li>
+</ol>
+</li>
+<li>Slope intercept form</li>
+<li>
+<ol start=8>
+<li>Just some implicit derivatives</li>
+</ol>
+</li>
+<li>
+<ol start=9>
+<li>Gotta know the difference between h → 0 and x → a limits</li>
+</ol>
+<ul>
+<li>h → 0 has f(x) as left hand side</li>
+</ul>
+</li>
+<li>
+<ol start=10>
+<li>Am so lost</li>
+</ol>
+</li>
+<li>
+<ol start=11>
+<li>Forgot to account for -1/2 exponent xd</li>
+</ol>
+</li>
+<li>
+<ol start=13>
+<li>Should have put negative as inverse of content so it becomes ln2</li>
+</ol>
+</li>
+<li>
+<ol start=15>
+<li>I don&rsquo;t think this kind of question will be on the test</li>
+</ol>
+</li>
+<li>
+<ol start=16>
+<li>Set them equal to eachother, combine integral</li>
+</ol>
+</li>
+<li>
+<ol start=23>
+<li>Don&rsquo;t need to find derivative to find asymptotes</li>
+</ol>
+<ul>
+<li>Vertical is when denominator = 0</li>
+<li>Horizontal is found through long division</li>
+</ul>
+</li>
+<li>
+<ol start=29>
+<li>The three was inside the equation so a should have been 0</li>
+</ol>
+</li>
+<li>
+<ol start=30>
+<li>Stick to my gut bruh</li>
+</ol>
+<ul>
+<li>The upper and lower should be squared independently</li>
+</ul>
+</li>
+</ul>
+<h5 id=june-7>June 7</h5>
+<ul>
+<li>Barrons FRQ</li>
+<li>1.b) Said maxima not extrema
+<ul>
+<li>Counting endpoint as a relative extrema???</li>
+</ul>
+</li>
+<li>1.c) should be more thorough with justification</li>
+<li>2.a) got wrong final result for some reason</li>
+<li>2.b) <code>t/3</code> should be raised to exponent</li>
+<li>2.c) They calculated total sales, not just rate of sales</li>
+<li>2.d) Didn&rsquo;t acknowledge <code>average value</code></li>
+<li>4.b) Forgot to write a and b for integrals</li>
+<li>
+<ol start=5>
+<li>Don&rsquo;t know crap about global minimums</li>
+</ol>
+</li>
+<li>6.a) Did not know surface area of a sphere bruh
+<ul>
+<li>4pir^2</li>
+<li>Did right calculations though other than that</li>
+</ul>
+</li>
+<li>6.b) Density is calculated through surface x thickness?
+<ul>
+<li>Had to include surface area as well, and a and b were radii so it was 0 and 6</li>
+</ul>
+</li>
+</ul>
+<h4 id=practice-results>Practice Results</h4>
+<h5 id=2003>2003</h5>
+<ul>
+<li>Overall for the test is 87/99 | 87.8% in 112.5/180 minutes</li>
+<li>95.4 composite score</li>
+<li>25/28 no-calc MC in 29:30/55 minutes, 17/17 calc MC in 23/50 minutes</li>
+<li>17/18 calc FRQ in 18:50/30 minutes, 28/36 in 41/60 minutes</li>
+<li>Weakest parts were the non-calculator FRQ questions, in which I lost majority of my marks</li>
+<li>For the most part I did the right processes, but a single error would end up making me lose plenty of marks</li>
+<li>Although miniscule, I should be extra cautious and be mindful of my calculations to mitigate errors like this from happening again</li>
+</ul>
+<h5 id=2008>2008</h5>
+<ul>
+<li>5</li>
+<li>93 composite score</li>
+</ul>
+<h5 id=2012>2012</h5>
+<ul>
+<li>20/28 non-calc mc, 12/17 calc mc
+<ul>
+<li>67/90 minutes spent, 32/45 marks earned</li>
+</ul>
+</li>
+<li>10 | 7 | 7 | 5:10 | 6:45 | 6:15 minutes respectively, 8 | 9 | 8 | 7 | 8 | 7 points respectively
+<ul>
+<li>42:10/90 minutes spent, 47/54 marks earned</li>
+</ul>
+</li>
+<li>85 composite score (67/108 for a 5)
+<ul>
+<li>79% raw percentage (32+47)/(54+45)</li>
+</ul>
+</li>
+<li>The MC was definitely harder than the previous ones, but FRQ was the same</li>
+<li>Just gotta keep brushing up FRQ skills until I can stop making small mistakes</li>
+</ul>
+</article>
+<hr>
+<div class=page-end>
+<div class=backlinks-container>
+<h3>Backlinks</h3>
+<ul class=backlinks>
+<li>
+<a href=/AP>Untitled Page</a>
+</li>
+</ul>
+</div>
+<div>
+<script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script>
+<h3>Interactive Graph</h3>
+<div id=graph-container></div>
+<style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
+<script src=https://quartz.jzhao.xyz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
+<script>drawGraph("https://quartz.jzhao.xyz/AP-Calculus-AB-Study-Progress","https://quartz.jzhao.xyz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+</div>
+</div>
+<div id=contact_buttons>
+<footer>
+<p>Made by John Mavrick Reyes using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p>
+<ul>
+<li><a href=/>Home</a></li>
+<li><a href=http://johnmavrick.tech/>Website</a></li><li><a href=https://linktr.ee/johnmavrick>Linktree</a></li></ul>
+</footer>
+</div>
+<script src=https://quartz.jzhao.xyz/js/popover.9d69dffc0f2d029ef30cf63230ccce4c.min.js></script>
+<script>initPopover("https://quartz.jzhao.xyz")</script>
+</div>
+</body>
+</html>

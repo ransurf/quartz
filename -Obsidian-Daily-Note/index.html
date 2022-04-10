@@ -1,0 +1,331 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=description content="Status: Tags: #videoidea/obsidian Links: !V Video Ideas 
+ Obsidian Daily Note   Script for Obsidian Daily Note  Obsidian Daily Note Video Reflection">
+<title>John Mavrick's Garden</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type=image/png href=/icon.png>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
+<link href=https://quartz.jzhao.xyz/styles.62abffa83e1b36143f7e490dc494ec6f.min.css rel=stylesheet>
+<script src=https://quartz.jzhao.xyz/js/darkmode.46b07878b7f5d9e26ad7a3c40f8a0605.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
+<script>const BASE_URL="https://quartz.jzhao.xyz/",fetchData=Promise.all([fetch("https://quartz.jzhao.xyz/indices/linkIndex.b4df6755e0129cea17afc671eb36e0d2.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://quartz.jzhao.xyz/indices/contentIndex.8923c41347a61a4c98ec93c68e1b0edb.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
+<body>
+<div id=search-container>
+<div id=search-space>
+<input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something...">
+<div id=results-container>
+</div>
+</div>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://quartz.jzhao.xyz/js/search.bc849b857f2c1b822264d40635bb67b6.min.js></script>
+<div class=singlePage>
+<header>
+<h1 id=page-title><a href=https://quartz.jzhao.xyz/>John Mavrick's Garden</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+<div class=spacer></div>
+<div class=darkmode>
+<input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg>
+</label>
+<label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg>
+</label>
+</div>
+</header>
+<article>
+<p class=meta>
+Last updated April 9, 2022
+</p>
+<ul class=tags>
+</ul>
+<p>Status:
+Tags: #videoidea/obsidian
+Links:
+<a href=/V-Video-Ideas rel=noopener class=internal-link data-src=/V-Video-Ideas>!V Video Ideas
+</a></p>
+<hr>
+<h1 id=obsidian-daily-note>Obsidian Daily Note</h1>
+<blockquote>
+<p>
+<a href=/Script-for-Obsidian-Daily-Note rel=noopener class=internal-link data-src=/Script-for-Obsidian-Daily-Note>Script for Obsidian Daily Note
+</a>
+<a href=/Obsidian-Daily-Note-Video-Reflection rel=noopener class=internal-link data-src=/Obsidian-Daily-Note-Video-Reflection>Obsidian Daily Note Video Reflection
+</a></p>
+</blockquote>
+<h2 id=titles>Titles</h2>
+<p>How I Use Obsidian Daily Notes as a Bullet Journal (Template/Workflow for Tasks, Planner, Schedule)</p>
+<p>The ULTIMATE Daily Note Template for Obsidian Bullet Journalling (Workflow for Tasks, Planner, Schedule)</p>
+<h2 id=description>Description</h2>
+<h2 id=planning>Planning</h2>
+<h5 id=what>What</h5>
+<p><strong>How would you describe this project?</strong></p>
+<ul>
+<li>A tutorial/showcase of how I use obsidian as my daily planner</li>
+</ul>
+<h5 id=who>Who</h5>
+<p><strong>Is there a target audience? Why will the audience watch the video?</strong></p>
+<ul>
+<li>People who want to use obsidian as an all-in-one tool</li>
+</ul>
+<h5 id=when>When</h5>
+<p><strong>Timeline and Important Dates/Steps</strong></p>
+<ul>
+<li>n/a</li>
+</ul>
+<h5 id=where>Where</h5>
+<p><strong>Where will footage and production be done?</strong></p>
+<ul>
+<li>At home on my computer :)</li>
+</ul>
+<h5 id=why>Why</h5>
+<p><strong>Why are you doing this project?</strong></p>
+<ul>
+<li>Share my productive workflow
+<ul>
+<li>Obsidian is a good tool for helping automating and making the process more efficient</li>
+</ul>
+</li>
+</ul>
+<p><strong>What ideas/messages do I want to focus on in the video?</strong></p>
+<ul>
+<li>Benefits of weekly reviews</li>
+<li>My workflow</li>
+</ul>
+<h5 id=how>How</h5>
+<h2 id=what-skills-and-knowledge-will-you-need-to-complete-this-project><strong>What skills and knowledge will you need to complete this project?</strong></h2>
+<p><strong>What will my script include?</strong></p>
+<ul>
+<li>My personal workflow</li>
+<li>The benefits</li>
+<li>Who this is for</li>
+</ul>
+<p><strong>What will my video include?</strong></p>
+<ul>
+<li>An overview of my workflow, an example of a day using the template, and some benefits/downsides I have noticed</li>
+</ul>
+<h2 id=what-materials-resources-etc-will-you-need-to-complete-your-project><strong>What materials, resources, etc. will you need to complete your project?</strong></h2>
+<hr>
+<p>References:</p>
+<p>Created:: 2021-05-30 23:11 PM</p>
+<h2 id=brainstorming>Brainstorming</h2>
+<h3 id=benefits>Benefits</h3>
+<ul>
+<li>Automated and paper-free
+<ul>
+<li>Can set it to create and open upon opening obsidian</li>
+<li>Templates and online babyy</li>
+</ul>
+</li>
+<li>Fully customizable</li>
+<li>Helps you incorporate healthy habits
+<ul>
+<li>Gratitude journal</li>
+<li>daily reminders</li>
+</ul>
+</li>
+<li>Scheduling and task board
+<ul>
+<li>Not the most efficient but works surprisingly well despite it not being the app&rsquo;s main purpose
+<ul>
+<li>Plugins save the day</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Acts as a journal to see what you did on a day
+<ul>
+<li>Useful for weekly reviews, reminiscing of the past, and judging your productivity</li>
+<li>Helps you be more mindful of what you&rsquo;re doing</li>
+</ul>
+</li>
+<li>Helps you reflect on the day and prepare for the next day
+<ul>
+<li>What went good? bad? plan for tomorrow?</li>
+</ul>
+</li>
+</ul>
+<h3 id=process>Process</h3>
+<h4 id=setup>Setup</h4>
+<ul>
+<li>Create a template for a daily note</li>
+<li>Think of the purpose of your daily note
+<ul>
+<li>Don&rsquo;t be afraid to modify the template until you find something suitable for your own needs</li>
+<li>Switch up headers, writing prompts, add emojis, try to make it your own</li>
+</ul>
+</li>
+<li>Download and enable any complementary plugins
+<ul>
+<li>Calendar
+<ul>
+<li>Simple GUI that makes accessing daily notes super easy</li>
+<li>Nice touch to the GUI</li>
+</ul>
+</li>
+<li>Day Planner
+<ul>
+<li>Helps me visualize the day and see how I allocated my time</li>
+</ul>
+</li>
+<li>Templater
+<ul>
+<li>Helps set up the automatic links to other daily notes</li>
+<li>Embed templates or parts of other notes</li>
+<li>Conditional flow</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id=features>Features</h4>
+<h5 id=reminders>Reminders</h5>
+<p>Reminders</p>
+<ul>
+<li>I have a link to some daily reminders I want to acknowledge when starting off the day
+<ul>
+<li>Can be affirmations, advice, your weekly review, whatever</li>
+</ul>
+</li>
+<li>Kind of like sticky notes in your mirror</li>
+<li>In my case, I also have yesterday&rsquo;s previous improvement</li>
+<li>Today&rsquo;s big three
+<ul>
+<li>I like to write down 3 important tasks I want to complete during each day to set as a bare minimum on what to do</li>
+</ul>
+</li>
+</ul>
+<p>Journals</p>
+<ul>
+<li>Gratitude
+<ul>
+<li>Helps me appreciate the previous day thinking of three things I&rsquo;m grateful for about the world, and three things about myself</li>
+<li>Start my day off with a positive mindset</li>
+</ul>
+</li>
+<li>Stock
+<ul>
+<li>Of course, not everyone is into investing, so feel free to substitute it for whatever hobbies you&rsquo;re passionate about</li>
+<li>In my stock journal, I just have some prompts I reflect and respond to so I can be more mindful of the stock market and my portfolio</li>
+</ul>
+</li>
+<li>Schedule
+<ul>
+<li>Acts as my daily schedule and daily journal</li>
+<li>I currently incorporate my dailies notes that has all the things I want to do everyday
+<ul>
+<li>Depending on whether you like scheduling your day, you can also schedule other tasks like the big three or any errands on your to-do list</li>
+</ul>
+</li>
+<li>Before I would plan my whole day, but since I&rsquo;m using the 52/17 rule, I now just log when I start my different time sessions
+<ul>
+<li>I use these time logs as a journal as I write down thoughts, emotions, status updates for projects</li>
+<li>I don&rsquo;t personally use it, but there&rsquo;s a community plugin called <code>Rollover Daily Todos</code> that takes unfinished todos and moves them into your next daily note
+<ul>
+<li>Just be sure to select the appropriate header</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Helps you record and reflect the day&rsquo;s events</li>
+</ul>
+</li>
+</ul>
+<p>Reflection</p>
+<ul>
+<li>Feelings
+<ul>
+<li>Venting</li>
+</ul>
+</li>
+<li>Thoughts
+<ul>
+<li>For more in-depth and random thoughts I like to put them here</li>
+<li>These thoughts can then be turned into further notes, or just left there to vent</li>
+</ul>
+</li>
+<li>Book Implementation
+<ul>
+<li>Every week I choose a book to include in my daily note to help take action on the things I learn and read about. In this week&rsquo;s chosen book, &ldquo;Why we Sleep&rdquo;, I have some prompts questioning my sleep quality and hygeine the day prior.</li>
+</ul>
+</li>
+<li>Productivity
+<ul>
+<li>This section just helps me think about the day&rsquo;s productivity as a whole, noting both the good and bad</li>
+<li>I also think of improvement measures for the next day, and use the first prompt to think it through</li>
+</ul>
+</li>
+</ul>
+<h4 id=throughout-the-day>Throughout the day</h4>
+<ul>
+<li>As soon as I open my PC</li>
+<li>After my morning routine and before starting my day
+<ul>
+<li>Reminders, gratitude journal, plan tasks</li>
+</ul>
+</li>
+<li>Have it loaded as a work space but there&rsquo;s also a thing to open today&rsquo;s daily note on the side bar</li>
+</ul>
+<h4 id=conclusion>Conclusion</h4>
+<ul>
+<li>Obsidian may not be the most effective tool for daily notes/planners, but I just prefer the convenience of having everything in one place</li>
+<li>Day planners in general have been a super supportive in helping me prepare and cherish every single day
+<ul>
+<li>Keeps me focused and motivated
+<ul>
+<li>Nice to see the progress made in a single week</li>
+</ul>
+</li>
+<li>Gets me critically thinking through reflection
+<ul>
+<li>Helps me improve and find out topics of discussion for weekly reviews</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</article>
+<hr>
+<div class=page-end>
+<div class=backlinks-container>
+<h3>Backlinks</h3>
+<ul class=backlinks>
+<li>
+<a href=/Obsidian-Daily-Note-Video-Reflection>Untitled Page</a>
+</li>
+<li>
+<a href=/Obsidian-Video-Ideas>Untitled Page</a>
+</li>
+<li>
+<a href=/Script-for-Obsidian-Daily-Note>Untitled Page</a>
+</li>
+</ul>
+</div>
+<div>
+<script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script>
+<h3>Interactive Graph</h3>
+<div id=graph-container></div>
+<style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
+<script src=https://quartz.jzhao.xyz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
+<script>drawGraph("https://quartz.jzhao.xyz/-Obsidian-Daily-Note","https://quartz.jzhao.xyz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+</div>
+</div>
+<div id=contact_buttons>
+<footer>
+<p>Made by John Mavrick Reyes using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p>
+<ul>
+<li><a href=/>Home</a></li>
+<li><a href=http://johnmavrick.tech/>Website</a></li><li><a href=https://linktr.ee/johnmavrick>Linktree</a></li></ul>
+</footer>
+</div>
+<script src=https://quartz.jzhao.xyz/js/popover.9d69dffc0f2d029ef30cf63230ccce4c.min.js></script>
+<script>initPopover("https://quartz.jzhao.xyz")</script>
+</div>
+</body>
+</html>

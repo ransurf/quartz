@@ -1,0 +1,878 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=description content="Status: Tags: Links: [[CMPT 125 Studying]]
+ CMPT 125 Practice Problems  Use the big-O notation to express the running time of bar(n) as a function of n Write a function with the same functionality as bar(n) whose running time is O(1).">
+<title>John Mavrick's Garden</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type=image/png href=/icon.png>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
+<link href=https://quartz.jzhao.xyz/styles.62abffa83e1b36143f7e490dc494ec6f.min.css rel=stylesheet>
+<script src=https://quartz.jzhao.xyz/js/darkmode.46b07878b7f5d9e26ad7a3c40f8a0605.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
+<script>const BASE_URL="https://quartz.jzhao.xyz/",fetchData=Promise.all([fetch("https://quartz.jzhao.xyz/indices/linkIndex.b4df6755e0129cea17afc671eb36e0d2.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://quartz.jzhao.xyz/indices/contentIndex.8923c41347a61a4c98ec93c68e1b0edb.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
+<body>
+<div id=search-container>
+<div id=search-space>
+<input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something...">
+<div id=results-container>
+</div>
+</div>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://quartz.jzhao.xyz/js/search.bc849b857f2c1b822264d40635bb67b6.min.js></script>
+<div class=singlePage>
+<header>
+<h1 id=page-title><a href=https://quartz.jzhao.xyz/>John Mavrick's Garden</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+<div class=spacer></div>
+<div class=darkmode>
+<input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg>
+</label>
+<label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg>
+</label>
+</div>
+</header>
+<article>
+<p class=meta>
+Last updated April 9, 2022
+</p>
+<ul class=tags>
+</ul>
+<p>Status:
+Tags:
+Links: <a href=/CMPT-125-Studying rel=noopener class=internal-link data-src=/CMPT-125-Studying>CMPT 125 Studying</a></p>
+<hr>
+<h1 id=cmpt-125-practice-problems>CMPT 125 Practice Problems</h1>
+<ul>
+<li>Use the big-O notation to express the running time of bar(n) as a function of n</li>
+<li>Write a function with the same functionality as bar(n) whose running time is O(1).</li>
+</ul>
+<h2 id=binary-search-trees>Binary Search Trees</h2>
+<p>3,4 - far left/far right
+5- In-order traversal
+6-
+7- if statement before printing
+8-
+9-
+11-
+16-</p>
+<h2 id=binary-treeshttpspiazzacomclasskt82u06t98j7fdcid220>
+<a href="https://piazza.com/class/kt82u06t98j7fd?cid=220" rel=noopener>Binary Trees</a></h2>
+<h3 id=1---equality-of-two-binary-trees>1 - Equality of two binary trees</h3>
+<p><code>src16</code></p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=kt>bool</span> <span class=nf>BT_equal</span><span class=p>(</span><span class=n>BTnode_t</span><span class=o>*</span> <span class=n>root1</span><span class=p>,</span> <span class=n>BTnode_t</span><span class=o>*</span> <span class=n>root2</span><span class=p>)</span> <span class=p>{</span>
+  
+ <span class=k>if</span> <span class=p>(</span><span class=n>root1</span> <span class=o>==</span> <span class=nb>NULL</span> <span class=o>||</span> <span class=n>root2</span> <span class=o>==</span> <span class=nb>NULL</span><span class=p>)</span> <span class=p>{</span>
+
+ <span class=k>return</span> <span class=nb>true</span><span class=p>;</span>
+
+ <span class=p>}</span>
+  
+ <span class=kt>bool</span> <span class=n>isEqual</span> <span class=o>=</span> <span class=nb>true</span><span class=p>;</span>
+
+ <span class=k>if</span> <span class=p>(</span><span class=n>root1</span><span class=o>→</span><span class=n>value</span> <span class=o>!=</span> <span class=n>root2</span><span class=o>→</span><span class=n>value</span><span class=p>)</span> <span class=p>{</span>
+
+ <span class=n>isEqual</span> <span class=o>=</span> <span class=nb>false</span><span class=p>;</span>
+
+ <span class=p>}</span>
+  
+ <span class=k>return</span> <span class=n>BT_equal</span><span class=p>(</span><span class=n>root1</span><span class=o>→</span><span class=n>left</span><span class=p>,</span> <span class=n>root2</span><span class=o>→</span><span class=n>left</span><span class=p>)</span> <span class=o>&amp;&amp;</span> <span class=n>isEqual</span> <span class=o>&amp;&amp;</span> <span class=n>BT_equal</span><span class=p>(</span><span class=n>root1</span><span class=o>→</span><span class=n>right</span><span class=p>,</span> <span class=n>root2</span><span class=o>→</span><span class=n>right</span><span class=p>);</span>
+
+<span class=p>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=2---array-to-inorder>2 - Array to inOrder</h3>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=n>BTnode_t</span><span class=o>*</span> <span class=nf>in_order_tree</span><span class=p>(</span><span class=kt>int</span><span class=o>*</span> <span class=n>arr</span><span class=p>,</span> <span class=kt>int</span> <span class=n>n</span><span class=p>)</span> <span class=p>{</span>
+  
+ <span class=n>BTnode_t</span><span class=o>*</span> <span class=n>parent</span> <span class=o>=</span> <span class=n>create_node</span><span class=p>(</span><span class=n>arr</span><span class=p>[</span><span class=mi>0</span><span class=p>]);</span>
+  
+ <span class=k>for</span> <span class=p>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span> <span class=n>i</span><span class=o>&lt;</span><span class=n>n</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
+	 <span class=n>BTnode_t</span><span class=o>*</span> <span class=n>child</span> <span class=o>=</span> <span class=n>create_node</span><span class=p>(</span><span class=n>arr</span><span class=p>[</span><span class=n>i</span><span class=p>]);</span>
+	 <span class=n>set_right_child</span><span class=p>(</span><span class=n>parent</span><span class=p>,</span> <span class=n>child</span><span class=p>);</span>
+ <span class=p>}</span>
+	
+ <span class=k>return</span> <span class=n>parent</span><span class=p>;</span>
+<span class=p>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=3---iterative-size>3 - Iterative Size</h3>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=kt>int</span> <span class=nf>iterative_tree_size</span><span class=p>(</span><span class=n>BTnode_t</span><span class=o>*</span> <span class=n>root</span><span class=p>)</span> <span class=p>{</span>
+
+  <span class=k>if</span> <span class=p>(</span><span class=n>root</span> <span class=o>==</span> <span class=nb>NULL</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+  <span class=p>}</span>
+
+  <span class=n>LL_t</span><span class=o>*</span> <span class=n>list</span> <span class=o>=</span> <span class=n>LLcreate</span><span class=p>();</span>
+  <span class=kt>int</span> <span class=n>size</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+  <span class=n>LL_add_to_head</span><span class=p>(</span><span class=n>list</span><span class=p>,</span> <span class=n>root</span><span class=p>);</span>
+  
+  <span class=k>while</span> <span class=p>(</span><span class=n>list</span><span class=o>→</span><span class=n>size</span> <span class=o>&gt;</span> <span class=mi>0</span><span class=p>)</span> <span class=p>{</span>
+    <span class=n>BTnode_t</span><span class=o>*</span> <span class=n>curr</span> <span class=o>=</span> <span class=n>list</span><span class=o>→</span><span class=n>head</span><span class=o>→</span><span class=n>data</span><span class=p>;</span>
+
+    <span class=k>if</span> <span class=p>(</span><span class=n>curr</span><span class=o>→</span><span class=n>left</span> <span class=o>!=</span> <span class=nb>NULL</span><span class=p>)</span>
+      <span class=n>LL_add_to_tail</span><span class=p>(</span><span class=n>list</span><span class=p>,</span> <span class=n>curr</span><span class=o>→</span><span class=n>left</span><span class=p>);</span>
+
+    <span class=k>if</span> <span class=p>(</span><span class=n>curr</span><span class=o>→</span><span class=n>right</span> <span class=o>!=</span> <span class=nb>NULL</span><span class=p>)</span>
+      <span class=n>LL_add_to_tail</span><span class=p>(</span><span class=n>list</span><span class=p>,</span> <span class=n>curr</span><span class=o>→</span><span class=n>right</span><span class=p>);</span>
+
+    <span class=n>LL_remove_from_head</span><span class=p>(</span><span class=n>list</span><span class=p>);</span>
+    <span class=n>size</span><span class=o>++</span><span class=p>;</span>
+
+  <span class=p>}</span>
+
+  <span class=k>return</span> <span class=n>size</span><span class=p>;</span>
+<span class=p>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=4-->4 -</h3>
+<h3 id=5---nodes-in-level-k>5 - Nodes in level k</h3>
+<p>Only prints but still works :p</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=kt>void</span> <span class=nf>nodes_in_level</span><span class=p>(</span><span class=n>BTnode_t</span><span class=o>*</span> <span class=n>root</span><span class=p>,</span> <span class=kt>int</span> <span class=n>n</span><span class=p>)</span> <span class=p>{</span>
+  <span class=k>if</span> <span class=p>(</span><span class=n>root</span> <span class=o>==</span> <span class=nb>NULL</span><span class=p>)</span>
+    <span class=k>return</span><span class=p>;</span>
+
+  <span class=k>if</span> <span class=p>(</span><span class=n>n</span><span class=o>==</span><span class=mi>0</span><span class=p>)</span>
+    <span class=n>printf</span><span class=p>(</span><span class=s>&#34;%d</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>root</span><span class=o>→</span><span class=n>value</span><span class=p>);</span>
+  
+  <span class=k>else</span> <span class=p>{</span>
+    <span class=n>nodes_in_level</span><span class=p>(</span><span class=n>root</span><span class=o>→</span><span class=n>left</span><span class=p>,</span> <span class=n>n</span><span class=o>-</span><span class=mi>1</span><span class=p>);</span>
+    <span class=n>nodes_in_level</span><span class=p>(</span><span class=n>root</span><span class=o>→</span><span class=n>right</span><span class=p>,</span> <span class=n>n</span><span class=o>-</span><span class=mi>1</span><span class=p>);</span>
+  <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=stacks-queues-llhttpspiazzacomclasskt82u06t98j7fdcid178>
+<a href="https://piazza.com/class/kt82u06t98j7fd?cid=178" rel=noopener>Stacks, Queues, LL</a></h2>
+<h3 id=1---get_middle>1 - get_middle</h3>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=n>node_t</span><span class=o>*</span> <span class=nf>get_middle</span><span class=p>(</span><span class=n>LL_t</span><span class=o>*</span> <span class=n>list</span><span class=p>)</span> <span class=p>{</span>
+
+  <span class=n>node_t</span><span class=o>*</span> <span class=n>newNode</span> <span class=o>=</span> <span class=p>(</span><span class=n>node_t</span><span class=o>*</span><span class=p>)</span> <span class=n>malloc</span><span class=p>(</span><span class=k>sizeof</span><span class=p>(</span><span class=n>node_t</span><span class=p>));</span>
+
+  <span class=kt>int</span> <span class=n>mid</span> <span class=o>=</span> <span class=n>list</span><span class=o>→</span><span class=n>size</span><span class=o>/</span><span class=mi>2</span><span class=p>;</span>
+
+  <span class=n>newNode</span> <span class=o>=</span> <span class=n>list</span><span class=o>→</span><span class=n>head</span><span class=p>;</span>
+
+  <span class=k>for</span> <span class=p>(</span><span class=kt>int</span> <span class=n>i</span><span class=o>=</span><span class=mi>0</span><span class=p>;</span> <span class=n>i</span><span class=o>&lt;</span><span class=n>mid</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
+    <span class=n>newNode</span> <span class=o>=</span> <span class=n>newNode</span><span class=o>→</span><span class=n>next</span><span class=p>;</span>
+  <span class=p>}</span>
+  
+  <span class=k>return</span> <span class=n>newNode</span><span class=p>;</span>
+<span class=p>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=2---equal_lists>2 - equal_lists</h3>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=kt>bool</span> <span class=nf>are_equal</span><span class=p>(</span><span class=k>const</span> <span class=n>LL_t</span> <span class=o>*</span> <span class=n>list1</span><span class=p>,</span> <span class=k>const</span> <span class=n>LL_t</span> <span class=o>*</span> <span class=n>list2</span><span class=p>)</span> <span class=p>{</span>
+
+  <span class=k>if</span> <span class=p>(</span><span class=n>list1</span><span class=o>→</span><span class=n>size</span> <span class=o>!=</span> <span class=n>list2</span><span class=o>→</span><span class=n>size</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>return</span> <span class=nb>false</span><span class=p>;</span>
+  <span class=p>}</span>
+
+  <span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+  <span class=n>node_t</span><span class=o>*</span> <span class=n>elem1</span> <span class=o>=</span> <span class=n>list1</span><span class=o>→</span><span class=n>head</span><span class=p>;</span>
+  <span class=n>node_t</span><span class=o>*</span> <span class=n>elem2</span> <span class=o>=</span> <span class=n>list2</span><span class=o>→</span><span class=n>head</span><span class=p>;</span>
+
+  <span class=k>while</span> <span class=p>(</span><span class=n>elem1</span> <span class=o>!=</span> <span class=nb>NULL</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=p>(</span><span class=n>elem1</span><span class=o>→</span><span class=n>data</span> <span class=o>!=</span> <span class=n>elem2</span><span class=o>→</span><span class=n>data</span><span class=p>)</span>
+      <span class=k>return</span> <span class=nb>false</span><span class=p>;</span>
+    <span class=n>elem1</span> <span class=o>=</span> <span class=n>elem1</span><span class=o>→</span><span class=n>next</span><span class=p>;</span>
+    <span class=n>elem2</span> <span class=o>=</span> <span class=n>elem2</span><span class=o>→</span><span class=n>next</span><span class=p>;</span>
+  <span class=p>}</span>
+  <span class=k>return</span> <span class=nb>true</span><span class=p>;</span>
+<span class=p>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=3---copy_list>3 - copy_list</h3>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=n>LL_t</span><span class=o>*</span> <span class=nf>copy_list</span><span class=p>(</span><span class=n>LL_t</span><span class=o>*</span> <span class=n>orig</span><span class=p>)</span> <span class=p>{</span>
+	
+	<span class=n>LL_t</span> <span class=o>*</span><span class=n>new_list</span> <span class=o>=</span> <span class=n>LLcreate</span><span class=p>();</span>
+	<span class=n>node_t</span><span class=o>*</span> <span class=n>orig_node</span> <span class=o>=</span> <span class=n>orig</span><span class=o>→</span><span class=n>head</span><span class=p>;</span>
+	
+	<span class=c1>//new_list→head = orig_node;
+</span><span class=c1></span>	<span class=k>while</span><span class=p>(</span><span class=n>orig_node</span> <span class=o>!=</span> <span class=nb>NULL</span><span class=p>){</span>
+		<span class=n>LL_add_to_tail</span><span class=p>(</span><span class=n>new_list</span><span class=p>,</span><span class=n>orig_node</span><span class=o>→</span><span class=n>data</span><span class=p>);</span>
+		<span class=c1>//printf(&#34;%d\n&#34;,orig_node→data);
+</span><span class=c1></span>		<span class=n>orig_node</span> <span class=o>=</span> <span class=n>orig_node</span><span class=o>→</span><span class=n>next</span><span class=p>;</span>
+	<span class=p>}</span>
+	<span class=k>return</span> <span class=n>new_list</span><span class=p>;</span>
+<span class=p>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=4---equal_queues>4 - equal_queues</h3>
+<ul>
+<li>Create size helper function</li>
+<li>src14/queue-LL</li>
+</ul>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span><span class=lnt>59
+</span><span class=lnt>60
+</span><span class=lnt>61
+</span><span class=lnt>62
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=kt>int</span> <span class=nf>queue_size</span><span class=p>(</span><span class=n>queue_t</span><span class=o>*</span> <span class=n>queue</span><span class=p>)</span> <span class=p>{</span>
+
+  <span class=n>queue_t</span><span class=o>*</span> <span class=n>temp_q</span> <span class=o>=</span> <span class=n>queue_create</span><span class=p>();</span>
+  <span class=kt>int</span> <span class=n>size</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+
+  <span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>queue_is_empty</span><span class=p>(</span><span class=n>queue</span><span class=p>))</span> <span class=p>{</span>
+    <span class=n>enqueue</span><span class=p>(</span><span class=n>temp_q</span><span class=p>,</span> <span class=n>dequeue</span><span class=p>(</span><span class=n>queue</span><span class=p>));</span>
+    <span class=n>size</span><span class=o>++</span><span class=p>;</span>
+  <span class=p>}</span>
+
+  <span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>queue_is_empty</span><span class=p>(</span><span class=n>temp_q</span><span class=p>))</span> <span class=p>{</span> <span class=c1>//put back into original stack
+</span><span class=c1></span>    <span class=n>enqueue</span><span class=p>(</span><span class=n>queue</span><span class=p>,</span> <span class=n>dequeue</span><span class=p>(</span><span class=n>temp_q</span><span class=p>));</span>
+  <span class=p>}</span>
+
+  <span class=n>queue_free</span><span class=p>(</span><span class=n>temp_q</span><span class=p>);</span>
+  <span class=k>return</span> <span class=n>size</span><span class=p>;</span>
+<span class=p>}</span>
+
+<span class=kt>bool</span> <span class=nf>equal_queues</span><span class=p>(</span><span class=n>queue_t</span><span class=o>*</span> <span class=n>q1</span><span class=p>,</span> <span class=n>queue_t</span><span class=o>*</span> <span class=n>q2</span><span class=p>)</span> <span class=p>{</span>
+  
+  <span class=n>queue_t</span><span class=o>*</span> <span class=n>temp_1</span> <span class=o>=</span> <span class=n>queue_create</span><span class=p>();</span>
+  <span class=n>queue_t</span><span class=o>*</span> <span class=n>temp_2</span> <span class=o>=</span> <span class=n>queue_create</span><span class=p>();</span>
+
+  <span class=kt>int</span> <span class=n>size1</span> <span class=o>=</span> <span class=n>queue_size</span><span class=p>(</span><span class=n>q1</span><span class=p>);</span>
+  <span class=kt>int</span> <span class=n>size2</span> <span class=o>=</span> <span class=n>queue_size</span><span class=p>(</span><span class=n>q2</span><span class=p>);</span>
+
+  <span class=k>if</span> <span class=p>(</span><span class=n>size1</span> <span class=o>!=</span> <span class=n>size2</span><span class=p>)</span> <span class=p>{</span> 
+    <span class=n>queue_free</span><span class=p>(</span><span class=n>temp_1</span><span class=p>);</span>
+    <span class=n>queue_free</span><span class=p>(</span><span class=n>temp_2</span><span class=p>);</span>
+    <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+  <span class=p>}</span>
+  
+  <span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>queue_is_empty</span><span class=p>(</span><span class=n>q1</span><span class=p>))</span> <span class=p>{</span> <span class=c1>//check for equality, store all values
+</span><span class=c1></span>
+    <span class=kt>int</span> <span class=n>q1curr</span> <span class=o>=</span> <span class=n>dequeue</span><span class=p>(</span><span class=n>q1</span><span class=p>);</span>
+    <span class=kt>int</span> <span class=n>q2curr</span> <span class=o>=</span> <span class=n>dequeue</span><span class=p>(</span><span class=n>q2</span><span class=p>);</span>
+    <span class=n>printf</span><span class=p>(</span><span class=s>&#34;gets vals&#34;</span><span class=p>);</span>
+
+    <span class=k>if</span> <span class=p>(</span><span class=n>q1curr</span> <span class=o>!=</span> <span class=n>q2curr</span><span class=p>)</span> <span class=p>{</span>
+      <span class=n>queue_free</span><span class=p>(</span><span class=n>temp_1</span><span class=p>);</span>
+      <span class=n>queue_free</span><span class=p>(</span><span class=n>temp_2</span><span class=p>);</span>
+      <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+
+    <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+      <span class=n>enqueue</span><span class=p>(</span><span class=n>temp_1</span><span class=p>,</span> <span class=n>q1curr</span><span class=p>);</span>
+      <span class=n>enqueue</span><span class=p>(</span><span class=n>temp_2</span><span class=p>,</span> <span class=n>q2curr</span><span class=p>);</span>
+    <span class=p>}</span>
+  <span class=p>}</span>
+
+  <span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>queue_is_empty</span><span class=p>(</span><span class=n>temp_1</span><span class=p>)</span> <span class=p>)</span> <span class=p>{</span> <span class=c1>//put back into original queues
+</span><span class=c1></span>
+    <span class=kt>int</span> <span class=n>data</span> <span class=o>=</span> <span class=n>dequeue</span><span class=p>(</span><span class=n>temp_1</span><span class=p>);</span>
+    <span class=n>enqueue</span><span class=p>(</span><span class=n>q1</span><span class=p>,</span> <span class=n>data</span><span class=p>);</span>
+    <span class=n>data</span> <span class=o>=</span> <span class=n>dequeue</span><span class=p>(</span><span class=n>temp_2</span><span class=p>);</span>
+    <span class=n>enqueue</span><span class=p>(</span><span class=n>q2</span><span class=p>,</span> <span class=n>data</span><span class=p>);</span>
+  <span class=p>}</span>
+
+  <span class=n>queue_free</span><span class=p>(</span><span class=n>temp_1</span><span class=p>);</span>
+  <span class=n>queue_free</span><span class=p>(</span><span class=n>temp_2</span><span class=p>);</span>
+
+  <span class=k>return</span> <span class=mi>1</span><span class=p>;</span>
+<span class=p>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=5---copy_queue>5 - copy_queue</h3>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=n>queue_t</span><span class=o>*</span> <span class=nf>copy_queue</span><span class=p>(</span><span class=n>queue_t</span><span class=o>*</span> <span class=n>orig</span><span class=p>)</span> <span class=p>{</span>
+  <span class=n>queue_t</span><span class=o>*</span> <span class=n>copy_q</span> <span class=o>=</span> <span class=n>queue_create</span><span class=p>();</span>
+  <span class=n>queue_t</span><span class=o>*</span> <span class=n>temp_q</span> <span class=o>=</span> <span class=n>queue_create</span><span class=p>();</span>
+
+  <span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>queue_is_empty</span><span class=p>(</span><span class=n>orig</span><span class=p>))</span> <span class=p>{</span>
+    <span class=n>enqueue</span><span class=p>(</span><span class=n>temp_q</span><span class=p>,</span> <span class=n>dequeue</span><span class=p>(</span><span class=n>orig</span><span class=p>));</span> <span class=c1>//put into temp
+</span><span class=c1></span>  <span class=p>}</span>
+
+  <span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>queue_is_empty</span><span class=p>(</span><span class=n>temp_q</span><span class=p>))</span> <span class=p>{</span>
+    <span class=kt>int</span> <span class=n>data</span> <span class=o>=</span> <span class=n>dequeue</span><span class=p>(</span><span class=n>temp_q</span><span class=p>);</span> <span class=c1>//allows to build both
+</span><span class=c1></span>    <span class=n>enqueue</span><span class=p>(</span><span class=n>orig</span><span class=p>,</span> <span class=n>data</span><span class=p>);</span>
+    <span class=n>enqueue</span><span class=p>(</span><span class=n>copy_q</span><span class=p>,</span> <span class=n>data</span><span class=p>);</span>
+  <span class=p>}</span>
+
+  <span class=k>return</span> <span class=n>copy_q</span><span class=p>;</span>
+<span class=p>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=6---equal_stacks>6 - equal_stacks</h3>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span><span class=lnt>59
+</span><span class=lnt>60
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=kt>int</span> <span class=nf>stack_size</span><span class=p>(</span><span class=n>stack_t</span><span class=o>*</span> <span class=n>s</span><span class=p>)</span> <span class=p>{</span>
+  <span class=c1>// implement me
+</span><span class=c1></span>  <span class=n>stack_t</span><span class=o>*</span> <span class=n>temp_stack</span> <span class=o>=</span> <span class=n>stack_create</span><span class=p>();</span>
+  <span class=kt>int</span> <span class=n>size</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+
+  <span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>stack_is_empty</span><span class=p>(</span><span class=n>s</span><span class=p>))</span> <span class=p>{</span>
+    <span class=n>stack_push</span><span class=p>(</span><span class=n>temp_stack</span><span class=p>,</span> <span class=n>stack_pop</span><span class=p>(</span><span class=n>s</span><span class=p>));</span>
+    <span class=n>size</span><span class=o>++</span><span class=p>;</span>
+  <span class=p>}</span>
+
+  <span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>stack_is_empty</span><span class=p>(</span><span class=n>temp_stack</span><span class=p>))</span> <span class=p>{</span> <span class=c1>//put back into original stack
+</span><span class=c1></span>    <span class=n>stack_push</span><span class=p>(</span><span class=n>s</span><span class=p>,</span> <span class=n>stack_pop</span><span class=p>(</span><span class=n>temp_stack</span><span class=p>));</span>
+  <span class=p>}</span>
+
+  <span class=n>stack_free</span><span class=p>(</span><span class=n>temp_stack</span><span class=p>);</span>
+  <span class=k>return</span> <span class=n>size</span><span class=p>;</span>
+<span class=p>}</span>
+
+<span class=kt>bool</span> <span class=nf>stack_equal</span><span class=p>(</span><span class=n>stack_t</span><span class=o>*</span> <span class=n>s1</span><span class=p>,</span> <span class=n>stack_t</span><span class=o>*</span> <span class=n>s2</span><span class=p>)</span> <span class=p>{</span>
+  <span class=c1>// implement me
+</span><span class=c1></span>  <span class=n>stack_t</span><span class=o>*</span> <span class=n>temp_1</span> <span class=o>=</span> <span class=n>stack_create</span><span class=p>();</span>
+  <span class=n>stack_t</span><span class=o>*</span> <span class=n>temp_2</span> <span class=o>=</span> <span class=n>stack_create</span><span class=p>();</span>
+  <span class=kt>int</span> <span class=n>size1</span> <span class=o>=</span> <span class=n>stack_size</span><span class=p>(</span><span class=n>s1</span><span class=p>);</span>
+  <span class=kt>int</span> <span class=n>size2</span> <span class=o>=</span> <span class=n>stack_size</span><span class=p>(</span><span class=n>s2</span><span class=p>);</span>
+
+  <span class=k>if</span> <span class=p>(</span><span class=n>size1</span> <span class=o>!=</span> <span class=n>size2</span><span class=p>)</span> <span class=p>{</span> 
+    <span class=n>stack_free</span><span class=p>(</span><span class=n>temp_1</span><span class=p>);</span>
+    <span class=n>stack_free</span><span class=p>(</span><span class=n>temp_2</span><span class=p>);</span>
+    <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+  <span class=p>}</span>
+
+  <span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>stack_is_empty</span><span class=p>(</span><span class=n>s1</span><span class=p>))</span> <span class=p>{</span> <span class=c1>//s1 and s2 have to be same size due to above return if conditional
+</span><span class=c1></span>
+    <span class=kt>int</span> <span class=n>val1</span> <span class=o>=</span> <span class=n>stack_pop</span><span class=p>(</span><span class=n>s1</span><span class=p>);</span>
+    <span class=kt>int</span> <span class=n>val2</span> <span class=o>=</span> <span class=n>stack_pop</span><span class=p>(</span><span class=n>s2</span><span class=p>);</span>
+    
+
+    <span class=k>if</span> <span class=p>(</span><span class=n>val1</span> <span class=o>!=</span> <span class=n>val2</span><span class=p>)</span> <span class=p>{</span>
+      <span class=n>stack_free</span><span class=p>(</span><span class=n>temp_1</span><span class=p>);</span>
+      <span class=n>stack_free</span><span class=p>(</span><span class=n>temp_2</span><span class=p>);</span>
+      <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+    <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+      <span class=n>stack_push</span><span class=p>(</span><span class=n>temp_1</span><span class=p>,</span> <span class=n>val1</span><span class=p>);</span>
+      <span class=n>stack_push</span><span class=p>(</span><span class=n>temp_2</span><span class=p>,</span> <span class=n>val2</span><span class=p>);</span>
+    <span class=p>}</span>
+  <span class=p>}</span>
+ 
+  <span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>stack_is_empty</span><span class=p>(</span><span class=n>temp_1</span><span class=p>))</span> <span class=p>{</span> <span class=c1>//put back into original stacks
+</span><span class=c1></span>    
+    <span class=kt>int</span> <span class=n>data</span> <span class=o>=</span> <span class=n>stack_pop</span><span class=p>(</span><span class=n>temp_1</span><span class=p>);</span>
+    <span class=n>stack_push</span><span class=p>(</span><span class=n>s1</span><span class=p>,</span> <span class=n>data</span><span class=p>);</span>
+    <span class=n>data</span> <span class=o>=</span> <span class=n>stack_pop</span><span class=p>(</span><span class=n>temp_2</span><span class=p>);</span>
+    <span class=n>stack_push</span><span class=p>(</span><span class=n>s2</span><span class=p>,</span> <span class=n>data</span><span class=p>);</span>
+  <span class=p>}</span>
+  
+  <span class=n>stack_free</span><span class=p>(</span><span class=n>temp_1</span><span class=p>);</span>
+  <span class=n>stack_free</span><span class=p>(</span><span class=n>temp_2</span><span class=p>);</span>
+  
+  <span class=k>return</span> <span class=mi>1</span><span class=p>;</span>
+<span class=p>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=7---copy_stack>7 - copy_stack</h3>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=n>stack_t</span><span class=o>*</span> <span class=nf>copy_stack</span><span class=p>(</span><span class=n>stack_t</span><span class=o>*</span> <span class=n>orig</span><span class=p>)</span> <span class=p>{</span>
+	<span class=n>stack_t</span><span class=o>*</span> <span class=n>copy_s</span> <span class=o>=</span> <span class=n>stack_create</span><span class=p>();</span>
+	<span class=n>stack_t</span><span class=o>*</span> <span class=n>temp_s</span> <span class=o>=</span> <span class=n>stack_create</span><span class=p>();</span>
+	
+	<span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>stack_is_empty</span><span class=p>(</span><span class=n>orig</span><span class=p>))</span> <span class=p>{</span>
+		<span class=n>stack_push</span><span class=p>(</span><span class=n>temp_s</span><span class=p>,</span> <span class=n>stack_pop</span><span class=p>(</span><span class=n>orig</span><span class=p>));</span>
+	<span class=p>}</span>
+	
+	<span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>stack_is_empty</span><span class=p>(</span><span class=n>temp_s</span><span class=p>))</span> <span class=p>{</span>
+		<span class=kt>int</span> <span class=n>data</span> <span class=o>=</span> <span class=n>stack_pop</span><span class=p>(</span><span class=n>temp_s</span><span class=p>);</span>
+		<span class=n>stack_push</span><span class=p>(</span><span class=n>orig</span><span class=p>,</span> <span class=n>data</span><span class=p>);</span>
+		<span class=n>stack_push</span><span class=p>(</span><span class=n>copy_q</span><span class=p>,</span> <span class=n>data</span><span class=p>);</span>
+	<span class=p>}</span>
+	<span class=k>return</span> <span class=n>copy_s</span><span class=p>;</span>
+<span class=p>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=8---reverse_queue>8 - reverse_queue</h3>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=kt>void</span> <span class=nf>reverse_queue</span><span class=p>(</span><span class=n>queue_t</span><span class=o>*</span> <span class=n>queue</span><span class=p>)</span> <span class=p>{</span>
+
+  <span class=n>LL_t</span><span class=o>*</span> <span class=n>list</span> <span class=o>=</span> <span class=n>malloc</span><span class=p>(</span><span class=k>sizeof</span><span class=p>(</span><span class=n>LL_t</span><span class=p>));</span> <span class=c1>//temp to store in reverse
+</span><span class=c1></span>  <span class=n>LLcreate</span><span class=p>(</span><span class=n>list</span><span class=p>);</span>
+
+  <span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>queue_is_empty</span><span class=p>(</span><span class=n>queue</span><span class=p>))</span> <span class=p>{</span> <span class=c1>//adds to head to reverse
+</span><span class=c1></span>    <span class=kt>int</span> <span class=n>data</span> <span class=o>=</span> <span class=n>dequeue</span><span class=p>(</span><span class=n>queue</span><span class=p>);</span>
+    <span class=n>LL_add_to_head</span><span class=p>(</span><span class=n>list</span><span class=p>,</span> <span class=n>data</span><span class=p>);</span>
+    
+
+  <span class=p>}</span>
+ 
+
+  <span class=k>while</span> <span class=p>(</span><span class=n>list</span><span class=o>→</span><span class=n>head</span> <span class=o>!=</span> <span class=nb>NULL</span><span class=p>)</span> <span class=p>{</span>
+    <span class=kt>int</span> <span class=n>data</span> <span class=o>=</span> <span class=n>LL_remove_from_head</span><span class=p>(</span><span class=n>list</span><span class=p>);</span>
+    <span class=n>enqueue</span><span class=p>(</span><span class=n>queue</span><span class=p>,</span> <span class=n>data</span><span class=p>);</span>
+    <span class=n>printf</span><span class=p>(</span><span class=s>&#34;qdata = %d</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>data</span><span class=p>);</span>
+  <span class=p>}</span>
+
+  <span class=n>LL_free</span><span class=p>(</span><span class=n>list</span><span class=p>);</span>
+<span class=p>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=9---reverse_stack>9 - reverse_stack</h3>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=kt>void</span> <span class=nf>reverse_stack</span><span class=p>(</span><span class=n>stack_t</span><span class=o>*</span> <span class=n>stack</span><span class=p>)</span> <span class=p>{</span>
+  <span class=n>stack_t</span><span class=o>*</span> <span class=n>temp_s</span> <span class=o>=</span> <span class=n>stack_create</span><span class=p>();</span>
+  <span class=n>stack_t</span><span class=o>*</span> <span class=n>temp_s2</span> <span class=o>=</span> <span class=n>stack_create</span><span class=p>();</span>
+
+  <span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>stack_is_empty</span><span class=p>(</span><span class=n>stack</span><span class=p>))</span> <span class=p>{</span>
+    <span class=n>stack_push</span><span class=p>(</span><span class=n>temp_s</span><span class=p>,</span> <span class=n>stack_pop</span><span class=p>(</span><span class=n>stack</span><span class=p>));</span>
+  <span class=p>}</span>
+
+  <span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>stack_is_empty</span><span class=p>(</span><span class=n>temp_s</span><span class=p>))</span> <span class=p>{</span>
+    <span class=n>stack_push</span><span class=p>(</span><span class=n>temp_s2</span><span class=p>,</span> <span class=n>stack_pop</span><span class=p>(</span><span class=n>temp_s</span><span class=p>));</span>
+  <span class=p>}</span>
+
+  <span class=k>while</span> <span class=p>(</span><span class=o>!</span><span class=n>stack_is_empty</span><span class=p>(</span><span class=n>temp_s2</span><span class=p>))</span> <span class=p>{</span>
+    <span class=n>stack_push</span><span class=p>(</span><span class=n>stack</span><span class=p>,</span> <span class=n>stack_pop</span><span class=p>(</span><span class=n>temp_s2</span><span class=p>));</span>
+  <span class=p>}</span>
+<span class=p>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=10>10</h3>
+<p>Enqueue - push onto s1
+Dequeue - push s1 → s2, pop s2, push s2 → s1
+isEmpty - check if stack is empty</p>
+<h3 id=11>11</h3>
+<h3 id=12>12</h3>
+<h2 id=basics-of-coding-in-chttpspiazzacomclasskt82u06t98j7fdcid22>
+<a href="https://piazza.com/class/kt82u06t98j7fd?cid=22" rel=noopener>Basics of Coding in C</a></h2>
+<blockquote>
+<p>14 Questions</p>
+</blockquote>
+<ul>
+<li><a href=/CMPT-125-Basics-of-Coding-in-C-Practice-Problems rel=noopener class=internal-link data-src=/CMPT-125-Basics-of-Coding-in-C-Practice-Problems>CMPT 125 Basics of Coding in C Practice Problems</a></li>
+</ul>
+<h3 id=attempts>Attempts</h3>
+<ul>
+<li><input checked disabled type=checkbox> 2- prints <code>a</code> twice</li>
+<li><input checked disabled type=checkbox> 3- Doesn&rsquo;t run</li>
+<li><input disabled type=checkbox> 4- Either prints &lsquo;a&rsquo; twice or error due to modifying constant pointer</li>
+<li><input checked disabled type=checkbox> 5- Did it mentally then in code, holy I am slow lmao</li>
+<li><input disabled type=checkbox> 6-</li>
+<li><input disabled type=checkbox> </li>
+</ul>
+<h3 id=answers>Answers</h3>
+<p>2- Yup
+3- Runs on gcc, but not on replit???
+4- Error
+5- Yes, just need to brush up on syntax</p>
+<h2 id=big-o-notation>Big O Notation</h2>
+<ul>
+<li>CMPT125-Midterm Review on Piazza</li>
+<li><a href=/CMPT-125-Big-O-Notation-Practice-Problems rel=noopener class=internal-link data-src=/CMPT-125-Big-O-Notation-Practice-Problems>CMPT 125 Big O Notation Practice Problems</a></li>
+</ul>
+<h2 id=dynamic-memory-allocationhttpspiazzacomclasskt82u06t98j7fdcid69>
+<a href="https://piazza.com/class/kt82u06t98j7fd?cid=69" rel=noopener>Dynamic Memory Allocation</a></h2>
+<blockquote>
+<p>6 Questions</p>
+</blockquote>
+<h2 id=recursion>Recursion</h2>
+<ul>
+<li><a href=/CMPT-125-Recursion-Practice-Problems rel=noopener class=internal-link data-src=/CMPT-125-Recursion-Practice-Problems>CMPT 125 Recursion Practice Problems</a></li>
+</ul>
+<h2 id=searching-and-sortinghttpspiazzacomclasskt82u06t98j7fdcid103>
+<a href="https://piazza.com/class/kt82u06t98j7fd?cid=103" rel=noopener>Searching and Sorting</a></h2>
+<ul>
+<li><a href=/CMPT-125-Searching-and-Sorting-Practice-Problems rel=noopener class=internal-link data-src=/CMPT-125-Searching-and-Sorting-Practice-Problems>CMPT 125 Searching and Sorting Practice Problems</a></li>
+</ul>
+<hr>
+<h1 id=backlinks>Backlinks</h1>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>list from <a href=/CMPT-125-Practice-Problems rel=noopener class=internal-link data-src=/CMPT-125-Practice-Problems>CMPT 125 Practice Problems</a> AND !outgoing(<a href=/CMPT-125-Practice-Problems rel=noopener class=internal-link data-src=/CMPT-125-Practice-Problems>CMPT 125 Practice Problems</a>)
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>References:</p>
+<p>Created:: 2021-10-17 16:13</p>
+</article>
+<hr>
+<div class=page-end>
+<div class=backlinks-container>
+<h3>Backlinks</h3>
+<ul class=backlinks>
+<li>
+<a href=/CMPT-125-Basics-of-Coding-in-C-Practice-Problems>Untitled Page</a>
+</li>
+<li>
+<a href=/CMPT-125-Big-O-Notation-Practice-Problems>Untitled Page</a>
+</li>
+<li>
+<a href=/CMPT-125-Midterm-Study-Plan>Untitled Page</a>
+</li>
+<li>
+<a href=/CMPT-125-Recursion-Practice-Problems>Untitled Page</a>
+</li>
+<li>
+<a href=/CMPT-125-Studying>Untitled Page</a>
+</li>
+</ul>
+</div>
+<div>
+<script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script>
+<h3>Interactive Graph</h3>
+<div id=graph-container></div>
+<style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
+<script src=https://quartz.jzhao.xyz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
+<script>drawGraph("https://quartz.jzhao.xyz/CMPT-125-Practice-Problems","https://quartz.jzhao.xyz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+</div>
+</div>
+<div id=contact_buttons>
+<footer>
+<p>Made by John Mavrick Reyes using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p>
+<ul>
+<li><a href=/>Home</a></li>
+<li><a href=http://johnmavrick.tech/>Website</a></li><li><a href=https://linktr.ee/johnmavrick>Linktree</a></li></ul>
+</footer>
+</div>
+<script src=https://quartz.jzhao.xyz/js/popover.9d69dffc0f2d029ef30cf63230ccce4c.min.js></script>
+<script>initPopover("https://quartz.jzhao.xyz")</script>
+</div>
+</body>
+</html>

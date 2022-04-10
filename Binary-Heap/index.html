@@ -1,0 +1,464 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=description content="Status: Tags: #cards/cmpt225/dataStructures/adt/trees Links: [[Binary Tree]]
+ Binary Heap Principles Strength ?
+ Finding element with largest/smallest key value  Operations remove()   ?">
+<title>John Mavrick's Garden</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type=image/png href=/icon.png>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
+<link href=https://quartz.jzhao.xyz/styles.62abffa83e1b36143f7e490dc494ec6f.min.css rel=stylesheet>
+<script src=https://quartz.jzhao.xyz/js/darkmode.46b07878b7f5d9e26ad7a3c40f8a0605.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
+<script>const BASE_URL="https://quartz.jzhao.xyz/",fetchData=Promise.all([fetch("https://quartz.jzhao.xyz/indices/linkIndex.b4df6755e0129cea17afc671eb36e0d2.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://quartz.jzhao.xyz/indices/contentIndex.8923c41347a61a4c98ec93c68e1b0edb.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
+<body>
+<div id=search-container>
+<div id=search-space>
+<input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something...">
+<div id=results-container>
+</div>
+</div>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://quartz.jzhao.xyz/js/search.bc849b857f2c1b822264d40635bb67b6.min.js></script>
+<div class=singlePage>
+<header>
+<h1 id=page-title><a href=https://quartz.jzhao.xyz/>John Mavrick's Garden</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+<div class=spacer></div>
+<div class=darkmode>
+<input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg>
+</label>
+<label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg>
+</label>
+</div>
+</header>
+<article>
+<p class=meta>
+Last updated April 9, 2022
+</p>
+<ul class=tags>
+</ul>
+<p>Status:
+Tags: #cards/cmpt225/dataStructures/adt/trees
+Links: <a class="internal-link broken">Binary Tree</a></p>
+<hr>
+<h1 id=binary-heap>Binary Heap</h1>
+<h2 id=principles>Principles</h2>
+<p>Strength
+?</p>
+<ul>
+<li>Finding element with largest/smallest key value</li>
+</ul>
+<h3 id=operations>Operations</h3>
+<h4 id=remove><code>remove()</code></h4>
+<p>
+<a href=https://gyazo.com/53f09f8f6249b16170e0ab7d07dcac0f rel=noopener>
+<img src=https://i.gyazo.com/53f09f8f6249b16170e0ab7d07dcac0f.png alt="Image from Gyazo"></a>
+?
+<a href=https://gyazo.com/a7a8bb6c924d0e30a7211c303bc7516d rel=noopener>
+<img src=https://i.gyazo.com/a7a8bb6c924d0e30a7211c303bc7516d.png alt="Image from Gyazo"></a></p>
+<h3 id=time-efficiency>Time Efficiency</h3>
+<p>Overall: O($log_2n$)
+Visit each level of heap ;; O($log_2n$)
+Retrieval ;; O(1)</p>
+<h3 id=public-interface>Public Interface</h3>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=c1>// Description: Inserts an element.
+</span><span class=c1></span><span class=kt>bool</span> <span class=nf>insert</span><span class=p>(</span> <span class=n>ElementType</span> <span class=p>)</span> <span class=p>;</span>
+<span class=c1>// Description: Removes the element located at the root and returns it.
+</span><span class=c1>// Precondition: Binary heap is not empty.
+</span><span class=c1>// Throws EmptyBinaryHeapException if binary heap is empty.
+</span><span class=c1></span><span class=n>ElementType</span> <span class=nf>remove</span><span class=p>(</span> <span class=p>);</span>
+<span class=c1>// Description: Returns the element located at the root.
+</span><span class=c1>// Precondition: Binary heap is not empty.
+</span><span class=c1>// Postcondition: The binary heap is unchanged by this operation.
+</span><span class=c1>// Throws EmptyBinaryHeapException if binary heap is empty.
+</span><span class=c1></span><span class=n>ElementType</span> <span class=nf>max</span><span class=p>(</span> <span class=p>)</span> <span class=k>const</span><span class=p>;</span>
+<span class=n>ElementType</span> <span class=nf>min</span><span class=p>(</span> <span class=p>)</span> <span class=k>const</span><span class=p>;</span>
+<span class=c1>// Description: Returns the number of elements stored in the data collection.
+</span><span class=c1>// Postcondition: The binary heap is unchanged by this operation.
+</span><span class=c1></span><span class=kt>int</span> <span class=nf>getElementCount</span><span class=p>(</span> <span class=p>)</span> <span class=k>const</span><span class=p>;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=types>Types</h3>
+<h4 id=minimum-binary-heap>Minimum Binary Heap</h4>
+<p>?</p>
+<ul>
+<li>Complete binary tree</li>
+<li>Key value of anode in such heap is &lt; or = to key value of its children</li>
+<li>Node&rsquo;s let and right subtrees are also minimum binary heaps</li>
+<li>root contains the element with the smallest key value</li>
+</ul>
+<h5 id=operations-1>Operations</h5>
+<h6 id=insert><code>insert()</code></h6>
+<p>Algorithm for Max Binary Heap
+?</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=n>indexOfRoot</span> <span class=o>=</span> <span class=mi>0</span>
+<span class=n>indexOfBottom</span> <span class=o>=</span> <span class=n>elementCount</span>
+<span class=n>insert</span> <span class=k>new</span> <span class=n>element</span> <span class=err>@</span> <span class=err>“</span><span class=n>bottom</span><span class=err>”</span> <span class=n>of</span> <span class=n>heap</span><span class=p>(</span><span class=err>@</span> <span class=n>indexOfBottom</span><span class=p>)</span>
+<span class=n>elementCount</span><span class=o>++</span>
+<span class=n>reHeapUp</span><span class=p>(</span><span class=n>indexOfBottom</span><span class=p>)</span>
+<span class=c1>// If the element has a parent and …
+</span><span class=c1></span><span class=k>if</span> <span class=p>(</span><span class=n>indexOfBottom</span> <span class=o>&gt;</span> <span class=n>indexOfRoot</span><span class=p>)</span>
+  <span class=n>indexOfParent</span> <span class=o>=</span> <span class=n>floor</span><span class=p>((</span><span class=n>indexOfBottom</span><span class=err>–</span> <span class=mi>1</span><span class=p>)</span> <span class=o>/</span> <span class=mi>2</span><span class=p>)</span>
+<span class=c1>// … key value of parent &lt; key value of child then …
+</span><span class=c1></span><span class=k>if</span> <span class=p>(</span><span class=n>heap</span><span class=p>[</span><span class=n>indexOfParent</span><span class=p>]</span> <span class=o>&gt;</span> <span class=n>heap</span><span class=p>[</span><span class=n>indexOfBottom</span><span class=p>])</span>
+  <span class=c1>//… swap the element with its parent
+</span><span class=c1></span>  <span class=n>swap</span> <span class=n>heap</span><span class=p>[</span><span class=n>indexOfParent</span><span class=p>]</span> <span class=n>with</span> <span class=n>heap</span><span class=p>[</span><span class=n>indexOfBottom</span><span class=p>]</span>
+<span class=n>reHeapUp</span><span class=p>(</span><span class=n>indexOfParent</span><span class=p>)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>
+<a href=https://gyazo.com/6158a00293dd705ae5e14900537eac33 rel=noopener>
+<img src=https://i.gyazo.com/6158a00293dd705ae5e14900537eac33.png alt="Image from Gyazo"></a></p>
+<h6 id=remove-1><code>remove()</code></h6>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=kt>int</span> <span class=n>MinHeap</span><span class=o>::</span><span class=n>extractMin</span><span class=p>()</span>
+<span class=p>{</span>
+	<span class=k>if</span> <span class=p>(</span><span class=n>heap_size</span> <span class=o>&lt;=</span> <span class=mi>0</span><span class=p>)</span>
+		<span class=k>return</span> <span class=n>INT_MAX</span><span class=p>;</span>
+	<span class=k>if</span> <span class=p>(</span><span class=n>heap_size</span> <span class=o>==</span> <span class=mi>1</span><span class=p>)</span>
+	<span class=p>{</span>
+		<span class=n>heap_size</span><span class=o>--</span><span class=p>;</span>
+		<span class=k>return</span> <span class=n>harr</span><span class=p>[</span><span class=mi>0</span><span class=p>];</span>
+	<span class=p>}</span>
+
+	<span class=c1>// Move last element to first then reHeapDown
+</span><span class=c1></span>	<span class=kt>int</span> <span class=n>root</span> <span class=o>=</span> <span class=n>harr</span><span class=p>[</span><span class=mi>0</span><span class=p>];</span>
+	<span class=n>harr</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>=</span> <span class=n>harr</span><span class=p>[</span><span class=n>heap_size</span><span class=o>-</span><span class=mi>1</span><span class=p>];</span>
+	<span class=n>heap_size</span><span class=o>--</span><span class=p>;</span>
+	<span class=n>MinHeapify</span><span class=p>(</span><span class=mi>0</span><span class=p>);</span>
+
+	<span class=k>return</span> <span class=n>root</span><span class=p>;</span>
+<span class=p>}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id=maximum-binary-heap>Maximum binary heap</h4>
+<p>?</p>
+<ul>
+<li>Complete binary tree</li>
+<li>key value of a node in such heap is > or = to key value of its children (if any)</li>
+<li>the node’s left and right subtrees are also maximum binary heaps</li>
+<li>root contains the element with the largest key value</li>
+</ul>
+<h5 id=operations-2>Operations</h5>
+<h6 id=insert-1><code>insert()</code></h6>
+<p>Algorithm for Max Binary Heap
+?</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=n>indexOfRoot</span> <span class=o>=</span> <span class=mi>0</span>
+<span class=n>indexOfBottom</span> <span class=o>=</span> <span class=n>elementCount</span>
+<span class=n>insert</span> <span class=k>new</span> <span class=n>element</span> <span class=err>@“</span> <span class=n>bottom</span><span class=err>”</span> <span class=n>of</span> <span class=n>heap</span><span class=p>(</span><span class=err>@</span> <span class=n>indexOfBottom</span><span class=p>)</span>
+<span class=n>elementCount</span><span class=o>++</span>
+<span class=n>reHeapUp</span><span class=p>(</span><span class=n>indexOfBottom</span><span class=p>)</span>
+<span class=c1>// If the element has a parent and …
+</span><span class=c1></span><span class=k>if</span> <span class=p>(</span><span class=n>indexOfBottom</span> <span class=o>&gt;</span> <span class=n>indexOfRoot</span><span class=p>)</span>
+  <span class=n>indexOfParent</span> <span class=o>=</span> <span class=n>floor</span><span class=p>((</span><span class=n>indexOfBottom</span><span class=err>–</span> <span class=mi>1</span><span class=p>)</span> <span class=o>/</span> <span class=mi>2</span><span class=p>)</span>
+<span class=c1>// … key value of parent &lt; key value of child then …
+</span><span class=c1></span><span class=k>if</span> <span class=p>(</span><span class=n>heap</span><span class=p>[</span><span class=n>indexOfParent</span><span class=p>]</span> <span class=o>&lt;</span> <span class=n>heap</span><span class=p>[</span><span class=n>indexOfBottom</span><span class=p>])</span>
+  <span class=c1>//… swap the element with its parent
+</span><span class=c1></span>  <span class=n>swap</span> <span class=n>heap</span><span class=p>[</span><span class=n>indexOfParent</span><span class=p>]</span> <span class=n>with</span> <span class=n>heap</span><span class=p>[</span><span class=n>indexOfBottom</span><span class=p>]</span>
+<span class=n>reHeapUp</span><span class=p>(</span><span class=n>indexOfParent</span><span class=p>)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h6 id=remove-2><code>remove()</code></h6>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=n>indexOfRoot</span> <span class=o>=</span> <span class=mi>0</span>
+<span class=n>call</span> <span class=n>retrieve</span><span class=p>()(</span><span class=n>optional</span><span class=p>)</span> <span class=o>=&gt;</span>
+  <span class=k>return</span> <span class=n>element</span> <span class=n>stored</span> <span class=n>in</span> <span class=n>root</span> <span class=n>of</span> <span class=n>heap</span><span class=p>(</span><span class=n>array</span><span class=p>[</span><span class=n>indexOfRoot</span><span class=p>])</span>
+<span class=n>replace</span> <span class=n>element</span> <span class=n>stored</span> <span class=n>in</span> <span class=n>root</span> <span class=n>with</span> <span class=n>element</span> <span class=n>stored</span> <span class=n>at</span> <span class=n>the</span> <span class=n>bottom</span> <span class=n>of</span>
+  <span class=n>heap</span> <span class=n>i</span><span class=p>.</span><span class=n>e</span><span class=p>.,</span> <span class=n>last</span> <span class=n>element</span> <span class=o>=&gt;</span> <span class=n>copy</span> <span class=n>element</span> <span class=n>stored</span> <span class=n>at</span> <span class=n>the</span> <span class=n>bottom</span><span class=p>(</span><span class=n>at</span> <span class=n>index</span> <span class=n>elementCount</span> <span class=o>-</span> <span class=mi>1</span><span class=p>)</span>
+<span class=n>into</span> <span class=n>root</span> <span class=n>of</span> <span class=n>heap</span> <span class=o>=&gt;</span> <span class=n>elementCount</span><span class=err>–</span>
+<span class=n>reHeapDown</span><span class=p>(</span><span class=n>indexOfRoot</span><span class=p>)</span>
+<span class=c1>// If the parent has at least a child and …
+</span><span class=c1></span><span class=k>if</span> <span class=p>(</span><span class=n>heap</span><span class=p>[</span><span class=n>indexOfRoot</span><span class=p>]</span> <span class=n>is</span> <span class=n>not</span> <span class=n>a</span> <span class=n>leaf</span><span class=p>)</span>
+  <span class=n>compute</span> <span class=n>index</span> <span class=n>of</span> <span class=n>children</span>
+<span class=n>compare</span> <span class=n>the</span> <span class=n>children</span> <span class=n>and</span> <span class=n>pick</span> <span class=n>largest</span> <span class=n>child</span>
+<span class=n>set</span> <span class=n>indexOfMaxChild</span> <span class=n>to</span> <span class=n>index</span> <span class=n>of</span> <span class=n>largest</span> <span class=n>child</span> <span class=n>of</span> <span class=n>root</span>
+<span class=c1>// … key value of parent &lt; key value of largest child then …
+</span><span class=c1></span><span class=k>if</span> <span class=p>(</span><span class=n>heap</span><span class=p>[</span><span class=n>indexOfRoot</span><span class=p>]</span> <span class=o>&lt;</span> <span class=n>heap</span><span class=p>[</span><span class=n>indexOfMaxChild</span><span class=p>])</span>
+  <span class=c1>//… swap the parent with its largest child
+</span><span class=c1></span>  <span class=n>swap</span> <span class=n>heap</span><span class=p>[</span><span class=n>indexOfRoot</span><span class=p>]</span> <span class=n>with</span> <span class=n>heap</span><span class=p>[</span><span class=n>indexOfMaxChild</span><span class=p>]</span>
+<span class=n>reHeapDown</span><span class=p>(</span><span class=n>indexOfMaxChild</span><span class=p>)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id=implementations>Implementations</h3>
+<h4 id=array>Array</h4>
+<ul>
+<li>Of a cell at index i:
+<ul>
+<li>Left child is located index 2*i + 1</li>
+<li>Right child is located at index 2*i + 2</li>
+<li>Parent is located at index floor( (i-1) / 2)</li>
+</ul>
+</li>
+</ul>
+<p>Last parent is stored
+?</p>
+<ul>
+<li>floor([eC/2] - 1)</li>
+</ul>
+<h3 id=algorithms>Algorithms</h3>
+<h4 id=reheapup>reHeapUp</h4>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span><span class=lnt>59
+</span><span class=lnt>60
+</span><span class=lnt>61
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=c1>// Utility method - Recursively put the array back into a min Binary Heap.
+</span><span class=c1></span><span class=k>template</span> <span class=o>&lt;</span><span class=k>class</span> <span class=nc>ElementType</span><span class=o>&gt;</span>
+<span class=kt>void</span> <span class=n>BinaryHeap</span><span class=o>&lt;</span><span class=n>ElementType</span><span class=o>&gt;::</span><span class=n>reHeapUp</span><span class=p>(</span><span class=kt>unsigned</span> <span class=kt>int</span> <span class=n>indexOfBottom</span><span class=p>)</span> <span class=p>{</span>
+
+	<span class=k>if</span><span class=p>(</span><span class=n>indexOfBottom</span> <span class=o>&gt;</span> <span class=mi>0</span><span class=p>)</span> <span class=p>{</span>
+		<span class=kt>int</span> <span class=n>indexOfParent</span> <span class=o>=</span> <span class=n>floor</span><span class=p>((</span><span class=n>indexOfBottom</span> <span class=o>-</span> <span class=mi>1</span><span class=p>)</span> <span class=o>/</span> <span class=mi>2</span><span class=p>);</span>
+		<span class=k>if</span><span class=p>(</span><span class=n>elements</span><span class=p>[</span><span class=n>indexOfBottom</span><span class=p>]</span> <span class=o>&lt;=</span> <span class=n>elements</span><span class=p>[</span><span class=n>indexOfParent</span><span class=p>])</span>
+		<span class=p>{</span>
+			<span class=c1>//Swap
+</span><span class=c1></span>			<span class=n>ElementType</span> <span class=n>temp</span> <span class=o>=</span> <span class=n>elements</span><span class=p>[</span><span class=n>indexOfParent</span><span class=p>];</span>
+			<span class=n>elements</span><span class=p>[</span><span class=n>indexOfParent</span><span class=p>]</span> <span class=o>=</span> <span class=n>elements</span><span class=p>[</span><span class=n>indexOfBottom</span><span class=p>];</span>
+			<span class=n>elements</span><span class=p>[</span><span class=n>indexOfBottom</span><span class=p>]</span> <span class=o>=</span> <span class=n>temp</span><span class=p>;</span>
+			<span class=n>reHeapUp</span><span class=p>(</span><span class=n>indexOfParent</span><span class=p>);</span>
+		<span class=p>}</span>
+	<span class=p>}</span>
+
+	<span class=k>return</span><span class=p>;</span>
+	
+<span class=p>}</span> <span class=c1>// end reHeapUp
+</span><span class=c1></span><span class=cp>#### reHeapDown
+</span><span class=cp></span><span class=err>```</span><span class=n>cpp</span>
+<span class=k>template</span> <span class=o>&lt;</span><span class=k>class</span> <span class=nc>ElementType</span><span class=o>&gt;</span>
+<span class=kt>void</span> <span class=n>BinaryHeap</span><span class=o>&lt;</span><span class=n>ElementType</span><span class=o>&gt;::</span><span class=n>reHeapDown</span><span class=p>(</span><span class=kt>unsigned</span> <span class=kt>int</span> <span class=n>indexOfRoot</span><span class=p>)</span> <span class=p>{</span>
+
+	<span class=kt>unsigned</span> <span class=kt>int</span> <span class=n>indexOfMinChild</span> <span class=o>=</span> <span class=n>indexOfRoot</span><span class=p>;</span>
+	
+	<span class=c1>// Find indices of children.
+</span><span class=c1></span>	<span class=kt>unsigned</span> <span class=kt>int</span> <span class=n>indexOfLeftChild</span> <span class=o>=</span> <span class=mi>2</span><span class=o>*</span><span class=n>indexOfRoot</span><span class=o>+</span><span class=mi>1</span><span class=p>;</span>
+	<span class=kt>unsigned</span> <span class=kt>int</span> <span class=n>indexOfRightChild</span> <span class=o>=</span> <span class=mi>2</span><span class=o>*</span><span class=n>indexOfRoot</span><span class=o>+</span><span class=mi>2</span><span class=p>;</span>
+
+    <span class=c1>// Base case: elements[indexOfRoot] is a leaf as it has no children
+</span><span class=c1></span>	<span class=k>if</span> <span class=p>(</span><span class=n>indexOfLeftChild</span> <span class=o>&gt;</span> <span class=n>elementCount</span><span class=o>-</span><span class=mi>1</span><span class=p>)</span> <span class=k>return</span><span class=p>;</span>
+
+	<span class=c1>// If we need to swap, select the smallest child
+</span><span class=c1></span>    <span class=k>if</span> <span class=p>(</span><span class=n>elements</span><span class=p>[</span><span class=n>indexOfRoot</span><span class=p>]</span> <span class=o>&gt;</span> <span class=n>elements</span><span class=p>[</span><span class=n>indexOfLeftChild</span><span class=p>])</span>
+    	<span class=n>indexOfMinChild</span> <span class=o>=</span> <span class=n>indexOfLeftChild</span><span class=p>;</span>
+
+    <span class=c1>// Check if there is a right child, is it the smallest?
+</span><span class=c1></span>    <span class=k>if</span> <span class=p>(</span><span class=n>indexOfRightChild</span> <span class=o>&lt;</span> <span class=n>elementCount</span><span class=p>)</span> <span class=p>{</span>
+		<span class=k>if</span> <span class=p>(</span><span class=n>elements</span><span class=p>[</span><span class=n>indexOfMinChild</span><span class=p>]</span> <span class=o>&gt;</span> <span class=n>elements</span><span class=p>[</span><span class=n>indexOfRightChild</span><span class=p>])</span>
+		    <span class=n>indexOfMinChild</span> <span class=o>=</span> <span class=n>indexOfRightChild</span><span class=p>;</span>
+	<span class=p>}</span>
+
+	<span class=c1>// Swap parent with smallest of children.
+</span><span class=c1></span>	<span class=k>if</span> <span class=p>(</span><span class=n>indexOfMinChild</span> <span class=o>!=</span> <span class=n>indexOfRoot</span><span class=p>)</span> <span class=p>{</span>
+		
+	   <span class=n>ElementType</span> <span class=n>temp</span> <span class=o>=</span> <span class=n>elements</span><span class=p>[</span><span class=n>indexOfRoot</span><span class=p>];</span>
+	   <span class=n>elements</span><span class=p>[</span><span class=n>indexOfRoot</span><span class=p>]</span> <span class=o>=</span> <span class=n>elements</span><span class=p>[</span><span class=n>indexOfMinChild</span><span class=p>];</span>
+	   <span class=n>elements</span><span class=p>[</span><span class=n>indexOfMinChild</span><span class=p>]</span> <span class=o>=</span> <span class=n>temp</span><span class=p>;</span>
+	   
+	   <span class=c1>// Recursively put the array back into a heap
+</span><span class=c1></span>	   <span class=n>reHeapDown</span><span class=p>(</span><span class=n>indexOfMinChild</span><span class=p>);</span>
+    <span class=p>}</span>
+
+	<span class=k>return</span><span class=p>;</span>
+	
+<span class=p>}</span> <span class=c1>// end reHeapDown
+</span><span class=c1></span><span class=n>___</span>
+<span class=nl>References</span><span class=p>:</span>
+
+<span class=n>Created</span><span class=o>::</span> <span class=mi>2022</span><span class=o>-</span><span class=mo>03</span><span class=o>-</span><span class=mi>14</span> <span class=mo>05</span><span class=o>:</span><span class=mi>29</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+</article>
+<hr>
+<div class=page-end>
+<div class=backlinks-container>
+<h3>Backlinks</h3>
+<ul class=backlinks>
+<li>
+<a href=/Binary-Heap-Sort>Untitled Page</a>
+</li>
+</ul>
+</div>
+<div>
+<script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script>
+<h3>Interactive Graph</h3>
+<div id=graph-container></div>
+<style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
+<script src=https://quartz.jzhao.xyz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
+<script>drawGraph("https://quartz.jzhao.xyz/Binary-Heap","https://quartz.jzhao.xyz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+</div>
+</div>
+<div id=contact_buttons>
+<footer>
+<p>Made by John Mavrick Reyes using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p>
+<ul>
+<li><a href=/>Home</a></li>
+<li><a href=http://johnmavrick.tech/>Website</a></li><li><a href=https://linktr.ee/johnmavrick>Linktree</a></li></ul>
+</footer>
+</div>
+<script src=https://quartz.jzhao.xyz/js/popover.9d69dffc0f2d029ef30cf63230ccce4c.min.js></script>
+<script>initPopover("https://quartz.jzhao.xyz")</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=description content="Status: #videoscript/obsidian #videoscript/workflow Tags: [[Obsidian Workflows]] Links: [[! Obsidian Daily Note]]
+ Script for Obsidian Daily Note Introduction  Aside from Obsidian&rsquo;s iconic ability to link different notes together, I&rsquo;ve found one of the program&rsquo;s side features to be just as important in my personal organization and productivity.">
+<title>John Mavrick's Garden</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type=image/png href=/icon.png>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
+<link href=https://quartz.jzhao.xyz/styles.62abffa83e1b36143f7e490dc494ec6f.min.css rel=stylesheet>
+<script src=https://quartz.jzhao.xyz/js/darkmode.46b07878b7f5d9e26ad7a3c40f8a0605.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
+<script>const BASE_URL="https://quartz.jzhao.xyz/",fetchData=Promise.all([fetch("https://quartz.jzhao.xyz/indices/linkIndex.b4df6755e0129cea17afc671eb36e0d2.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://quartz.jzhao.xyz/indices/contentIndex.8923c41347a61a4c98ec93c68e1b0edb.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
+<body>
+<div id=search-container>
+<div id=search-space>
+<input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something...">
+<div id=results-container>
+</div>
+</div>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://quartz.jzhao.xyz/js/search.bc849b857f2c1b822264d40635bb67b6.min.js></script>
+<div class=singlePage>
+<header>
+<h1 id=page-title><a href=https://quartz.jzhao.xyz/>John Mavrick's Garden</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+<div class=spacer></div>
+<div class=darkmode>
+<input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg>
+</label>
+<label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg>
+</label>
+</div>
+</header>
+<article>
+<p class=meta>
+Last updated Unknown
+</p>
+<ul class=tags>
+</ul>
+<p>Status: #videoscript/obsidian #videoscript/workflow
+Tags: <a href=/Obsidian-Workflows rel=noopener class=internal-link data-src=/Obsidian-Workflows>Obsidian Workflows</a>
+Links: <a href=/-Obsidian-Daily-Note rel=noopener class=internal-link data-src=/-Obsidian-Daily-Note>! Obsidian Daily Note</a></p>
+<hr>
+<h1 id=script-for-obsidian-daily-note>Script for Obsidian Daily Note</h1>
+<h2 id=introduction>Introduction</h2>
+<ul>
+<li>Aside from Obsidian&rsquo;s iconic ability to link different notes together, I&rsquo;ve found one of the program&rsquo;s side features to be just as important in my personal organization and productivity.</li>
+<li>In this video, I&rsquo;ll show you how I incorporate Obsidian&rsquo;s daily notes into my everyday life, sharing the purpose and benefits of my workflow. Whether you&rsquo;re completely new to obsidian or are looking for inspiration, I&rsquo;m sure you&rsquo;ll find something to be of use in this video, so be sure to watch until the very end.</li>
+</ul>
+<h2 id=setup>Setup</h2>
+<h3 id=plugins>Plugins</h3>
+<ul>
+<li>Before I get into my workflow, I&rsquo;d like to share some additional plugins and templates I use to make the process effortless and convenient
+<ul>
+<li>The three main plugins I would recommend are the templater, calendar, and day planner plugins, which can be easily found when browsing community plugins</li>
+<li>Templater provides further customizability to Obsidian templates, giving you the option to embed notes, plan cursor positions, run js syntax, and run various commands.
+<ul>
+<li>In the template, I use it to automatically connect it to relevant periodical notes like the current week, the day before, and the day after.</li>
+<li>Inspired by Bryan Jenk&rsquo;s daily notes, I also use conditional flows to remind me of important review dates</li>
+</ul>
+</li>
+<li>Second, Calendar plugin provides a visually pleasing yet functional UI to easily open daily or weekly notes. I just tend to have it on the side bar for quick reference</li>
+<li>Last but not least, Day Planner helps me visualize the day and see how I allocated my time. If you&rsquo;re interested, there&rsquo;s also some features to help with time management, like progress bars and notifications.</li>
+</ul>
+</li>
+<li>Not gonna lie, my template might be a bit overkill for your liking, so don&rsquo;t be afraid to modify it a bit to best suit your own needs. Switch up headers, writing prompts, add emojis, just try to make appealing by adding your own flair. Anyways, it&rsquo;s time to take a deeper dive into my workflow.</li>
+</ul>
+<h3 id=template>Template</h3>
+<ul>
+<li><code>I'll just briefly highlight the different sections and features of my template, and will dive into my reasoning for having them during the actual example day.</code></li>
+</ul>
+<h5 id=reminders>Reminders</h5>
+<p>I like to have reminders at the top of my list, to, well you know, remind me of things. I have my Obsidian vault and daily note open on launch, so it&rsquo;s the first thing I see in the morning when turning on my computer.</p>
+<ul>
+<li>I have a link to a daily reminders note which consists of things like affirmations, mindsets and advice, all with the purpose of starting my day with the right mindset
+<ul>
+<li>You can think of them as sticky notes plastered on the mirror.</li>
+</ul>
+</li>
+<li>Next up is today&rsquo;s big three, a list of three 3 tasks I want to complete for the day. This helps me prioritize the various tasks in my to do list, and gives me a minimum goal to reach for the day.</li>
+</ul>
+<h5 id=journals>Journals</h5>
+<p>After reminders, it&rsquo;s time for stuff regarding the contents of this day, whether it be my daily gratitude, stock writeup, or my schedule planning.</p>
+<ul>
+<li>First off is my gratitude journal. After going through my reminders, I write 3 things that happened yesterday that I&rsquo;m grateful for, and then three personal achievements in my character that I&rsquo;m proud of
+<ul>
+<li>This helps me appreciate and be mindful of the previous day, as well as start the day off with confidence</li>
+</ul>
+</li>
+<li>The second section is for my stock journal, where I have some prompts I reflect and respond to. This helps me stay mindful of the stock market and my portfolio, which is important considering the responsibility investing entails
+<ul>
+<li>Of course, not everyone is into investing, so feel free to substitute it for whatever hobbies you&rsquo;re passionate about</li>
+</ul>
+</li>
+<li>Last but not least is the schedule section, which acts as my daily planner and daily journal
+<ul>
+<li>Using templater, I embed a note that has all the things I want to do everyday so all I have to do is some minor tweaking and additions
+<ul>
+<li>Depending on whether you like scheduling your day, you can also schedule other tasks like the big three or any errands on your to-do list</li>
+</ul>
+</li>
+<li>I used to plan every minute of my day, but since I&rsquo;m using the 52/17 rule, I now just log when I start my different time sessions
+<ul>
+<li>Once my day actually starts, I prefix each task with the start time so it shows up on my day planner
+<ul>
+<li>After a session, I record any thoughts, emotions, status updates, or anything on my mind</li>
+</ul>
+</li>
+<li>Also, I don&rsquo;t personally use it, but there&rsquo;s a community plugin called <code>Rollover Daily Todos</code> that takes unfinished todos and moves them into your next daily note
+<ul>
+<li>Just be sure to select the appropriate header you want them to fall under</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Now that the day is done, it&rsquo;s time for some reflection</p>
+<h5 id=reflection>Reflection</h5>
+<ul>
+<li>
+<p>Looking back at the day&rsquo;s events and considering my current state, I keep note of any unique feelings, observations, and thoughts that continue to linger in my mind</p>
+<ul>
+<li>These ideas can then be turned into further notes, or just left there to vent</li>
+</ul>
+</li>
+<li>
+<p>Most of the features of my daily note are borrowed or generic, so I&rsquo;m glad I could say this upcoming part of the daily journal was self-inspired.</p>
+<ul>
+<li>Every week, I choose a book to include in my daily note to help take action on the things I learn and read about. In this week&rsquo;s chosen book, &ldquo;Why we Sleep&rdquo;, I have some prompts questioning my sleep quality and hygeine the day prior.
+<ul>
+<li>Usually the prompts are based on the day&rsquo;s events, but this one is better filled out early in the day</li>
+<li>After using the prompts for a week, I think about whether it would be helpful in my daily note</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Right before I end the day, I think about the day&rsquo;s productivity as a whole, noting both the good and bad</p>
+<ul>
+<li>I also think of improvement measures for the next day, and reflect on the effectiveness of today&rsquo;s improvements</li>
+</ul>
+</li>
+<li>
+<p>For funsies, at the end of my note I have an obsidian search query to see what notes I took during the day</p>
+</li>
+<li>
+<p>Anyways, that&rsquo;s all there is to the template. Up next, I&rsquo;ll share some of the benefits my daily note workflow provides</p>
+</li>
+</ul>
+<h3 id=benefits>Benefits</h3>
+<ul>
+<li>Benefits are rather subjective and not everyone finds the same value in certain practices, so it&rsquo;s important to also spend some time thinking about how you can utilize some the different parts of the daily note.</li>
+<li>In my own case, the perceived benefits of the workflow are best described by the three main headers of the app: having reminders, active journalling, and insightful reflection</li>
+<li>Reminders
+<ul>
+<li>I&rsquo;m rather forgetful, so being able to see reminders in the day helps me with remembering things and building habits</li>
+<li>The section for the three tasks of the day may not seem like a reminder, but I refer to it to stay on track. In fact, the very act of writing them out is a reminder of my everyday commitment to get things done. Additionally, I begin to feel lazy or unmotivated during the later parts of the day, but writing down the things I need to do helps me hold myself accountable.</li>
+</ul>
+</li>
+<li>Journals
+<ul>
+<li>The main benefit from journalling is being able to plan the day, which is inavluable towards providing structure and ensuring relevance to my weekly goals.</li>
+<li>Furthermore, spending some time every day on certain parts of my life like stocks help me slowly refine my skills, and expressing daily gratitude helps me cherish my previous experiences and character.</li>
+</ul>
+</li>
+<li>Reflection
+<ul>
+<li>Coming up with the day&rsquo;s strengths and weaknesses through reflection helps me find room for improvement. It helps me find value in my daily activities, turning them from mere tasks or chores into valuable lessons and memorable experiences that shape my future character.</li>
+<li>Lastly, by deliberately incorporating a book&rsquo;s values and practices into my daily note, I can slowly work towards applying the countless books I&rsquo;ve read through varying experimental changes and mindsets.</li>
+</ul>
+</li>
+</ul>
+<h4 id=conclusion>Conclusion</h4>
+<ul>
+<li>So yeah, that&rsquo;s the gist of my daily note workflow in Obsidian! I appreciate you watching until the very end of this video. Having such a bulky daily note can look quite intimidating, but you can always slowly work towards your desired workflow by incorporating a thing or two every week. The convenience and reliability of a daily note can completely revolutionize your day from start to beginning, especially if you&rsquo;re an INFJ like me that thinks internally a bit more than they probably should. Anyways, if you found my advice helpful be sure to like and share this video, and subscribe for more content like this. This has been John Mavrick, stay mindful.</li>
+</ul>
+<hr>
+<p>References:</p>
+<p>Created:: 2021-07-04 19:17 PM</p>
+</article>
+<hr>
+<div class=page-end>
+<div class=backlinks-container>
+<h3>Backlinks</h3>
+<ul class=backlinks>
+<li>
+<a href=/-Obsidian-Daily-Note>Untitled Page</a>
+</li>
+<li>
+<a href=/Daily-Journalling-Plan>Untitled Page</a>
+</li>
+</ul>
+</div>
+<div>
+<script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script>
+<h3>Interactive Graph</h3>
+<div id=graph-container></div>
+<style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
+<script src=https://quartz.jzhao.xyz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
+<script>drawGraph("https://quartz.jzhao.xyz/Script-for-Obsidian-Daily-Note","https://quartz.jzhao.xyz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+</div>
+</div>
+<div id=contact_buttons>
+<footer>
+<p>Made by John Mavrick Reyes using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p>
+<ul>
+<li><a href=/>Home</a></li>
+<li><a href=http://johnmavrick.tech/>Website</a></li><li><a href=https://linktr.ee/johnmavrick>Linktree</a></li></ul>
+</footer>
+</div>
+<script src=https://quartz.jzhao.xyz/js/popover.9d69dffc0f2d029ef30cf63230ccce4c.min.js></script>
+<script>initPopover("https://quartz.jzhao.xyz")</script>
+</div>
+</body>
+</html>

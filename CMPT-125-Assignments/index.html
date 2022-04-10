@@ -1,0 +1,604 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=description content="Status: Tags: Links: [[notes/) CMPT 125 - Introduction to Computing Science and Programming II]]
+ CMPT 125 Assignments Ass 5  [[~ Travelling Salesperson Problem]]  Ass 4  Use isdigit() to tell whether it is an operation or a digit is it pre-order if I check the root before parents?">
+<title>John Mavrick's Garden</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type=image/png href=/icon.png>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
+<link href=https://quartz.jzhao.xyz/styles.62abffa83e1b36143f7e490dc494ec6f.min.css rel=stylesheet>
+<script src=https://quartz.jzhao.xyz/js/darkmode.46b07878b7f5d9e26ad7a3c40f8a0605.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
+<script>const BASE_URL="https://quartz.jzhao.xyz/",fetchData=Promise.all([fetch("https://quartz.jzhao.xyz/indices/linkIndex.b4df6755e0129cea17afc671eb36e0d2.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://quartz.jzhao.xyz/indices/contentIndex.8923c41347a61a4c98ec93c68e1b0edb.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
+<body>
+<div id=search-container>
+<div id=search-space>
+<input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something...">
+<div id=results-container>
+</div>
+</div>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://quartz.jzhao.xyz/js/search.bc849b857f2c1b822264d40635bb67b6.min.js></script>
+<div class=singlePage>
+<header>
+<h1 id=page-title><a href=https://quartz.jzhao.xyz/>John Mavrick's Garden</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+<div class=spacer></div>
+<div class=darkmode>
+<input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg>
+</label>
+<label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg>
+</label>
+</div>
+</header>
+<article>
+<p class=meta>
+Last updated Unknown
+</p>
+<ul class=tags>
+</ul>
+<p>Status:
+Tags:
+Links: <a class="internal-link broken">notes/) CMPT 125 - Introduction to Computing Science and Programming II</a></p>
+<hr>
+<h1 id=cmpt-125-assignments>CMPT 125 Assignments</h1>
+<h2 id=ass-5>Ass 5</h2>
+<ul>
+<li><a class="internal-link broken">~ Travelling Salesperson Problem</a></li>
+</ul>
+<h2 id=ass-4>Ass 4</h2>
+<ul>
+<li>Use isdigit() to tell whether it is an operation or a digit</li>
+<li>is it pre-order if I check the root before parents?</li>
+<li>if its a leaf then its a number</li>
+<li>if its a middle node then it has to be a</li>
+</ul>
+<p>So I went with an alternate method when recursively calling left and right, check if they&rsquo;re a leaf node, if they&rsquo;re not then they need to be wrapped in parentheses, after wrapping the two operands in parentheses (as appropriate), return,with the operator in the middle. And this method works.</p>
+<h3 id=process>Process</h3>
+<p>if leaf
+return num
+<code>( </code></p>
+<p><code> )</code></p>
+<h2 id=ass-2>Ass 2</h2>
+<ul>
+<li><a class="internal-link broken">HW2-CMPT125-FALL2021.pdf</a></li>
+<li>1,2,4,6,7,8,9</li>
+</ul>
+<h3 id=psuedo-code>Psuedo-Code</h3>
+<ul>
+<li>Adding file</li>
+<li>For each line, if title != title, then add new song at end of file and return 0
+<ul>
+<li>While loop to check each line, boolean to store whether it is there</li>
+</ul>
+</li>
+</ul>
+<h3 id=q1>Q1</h3>
+<h2 id=extra-test-cases>Extra test cases</h2>
+<h3 id=q2>Q2</h3>
+<h3 id=q3>Q3</h3>
+<h3 id=q4>Q4</h3>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>  1
+</span><span class=lnt>  2
+</span><span class=lnt>  3
+</span><span class=lnt>  4
+</span><span class=lnt>  5
+</span><span class=lnt>  6
+</span><span class=lnt>  7
+</span><span class=lnt>  8
+</span><span class=lnt>  9
+</span><span class=lnt> 10
+</span><span class=lnt> 11
+</span><span class=lnt> 12
+</span><span class=lnt> 13
+</span><span class=lnt> 14
+</span><span class=lnt> 15
+</span><span class=lnt> 16
+</span><span class=lnt> 17
+</span><span class=lnt> 18
+</span><span class=lnt> 19
+</span><span class=lnt> 20
+</span><span class=lnt> 21
+</span><span class=lnt> 22
+</span><span class=lnt> 23
+</span><span class=lnt> 24
+</span><span class=lnt> 25
+</span><span class=lnt> 26
+</span><span class=lnt> 27
+</span><span class=lnt> 28
+</span><span class=lnt> 29
+</span><span class=lnt> 30
+</span><span class=lnt> 31
+</span><span class=lnt> 32
+</span><span class=lnt> 33
+</span><span class=lnt> 34
+</span><span class=lnt> 35
+</span><span class=lnt> 36
+</span><span class=lnt> 37
+</span><span class=lnt> 38
+</span><span class=lnt> 39
+</span><span class=lnt> 40
+</span><span class=lnt> 41
+</span><span class=lnt> 42
+</span><span class=lnt> 43
+</span><span class=lnt> 44
+</span><span class=lnt> 45
+</span><span class=lnt> 46
+</span><span class=lnt> 47
+</span><span class=lnt> 48
+</span><span class=lnt> 49
+</span><span class=lnt> 50
+</span><span class=lnt> 51
+</span><span class=lnt> 52
+</span><span class=lnt> 53
+</span><span class=lnt> 54
+</span><span class=lnt> 55
+</span><span class=lnt> 56
+</span><span class=lnt> 57
+</span><span class=lnt> 58
+</span><span class=lnt> 59
+</span><span class=lnt> 60
+</span><span class=lnt> 61
+</span><span class=lnt> 62
+</span><span class=lnt> 63
+</span><span class=lnt> 64
+</span><span class=lnt> 65
+</span><span class=lnt> 66
+</span><span class=lnt> 67
+</span><span class=lnt> 68
+</span><span class=lnt> 69
+</span><span class=lnt> 70
+</span><span class=lnt> 71
+</span><span class=lnt> 72
+</span><span class=lnt> 73
+</span><span class=lnt> 74
+</span><span class=lnt> 75
+</span><span class=lnt> 76
+</span><span class=lnt> 77
+</span><span class=lnt> 78
+</span><span class=lnt> 79
+</span><span class=lnt> 80
+</span><span class=lnt> 81
+</span><span class=lnt> 82
+</span><span class=lnt> 83
+</span><span class=lnt> 84
+</span><span class=lnt> 85
+</span><span class=lnt> 86
+</span><span class=lnt> 87
+</span><span class=lnt> 88
+</span><span class=lnt> 89
+</span><span class=lnt> 90
+</span><span class=lnt> 91
+</span><span class=lnt> 92
+</span><span class=lnt> 93
+</span><span class=lnt> 94
+</span><span class=lnt> 95
+</span><span class=lnt> 96
+</span><span class=lnt> 97
+</span><span class=lnt> 98
+</span><span class=lnt> 99
+</span><span class=lnt>100
+</span><span class=lnt>101
+</span><span class=lnt>102
+</span><span class=lnt>103
+</span><span class=lnt>104
+</span><span class=lnt>105
+</span><span class=lnt>106
+</span><span class=lnt>107
+</span><span class=lnt>108
+</span><span class=lnt>109
+</span><span class=lnt>110
+</span><span class=lnt>111
+</span><span class=lnt>112
+</span><span class=lnt>113
+</span><span class=lnt>114
+</span><span class=lnt>115
+</span><span class=lnt>116
+</span><span class=lnt>117
+</span><span class=lnt>118
+</span><span class=lnt>119
+</span><span class=lnt>120
+</span><span class=lnt>121
+</span><span class=lnt>122
+</span><span class=lnt>123
+</span><span class=lnt>124
+</span><span class=lnt>125
+</span><span class=lnt>126
+</span><span class=lnt>127
+</span><span class=lnt>128
+</span><span class=lnt>129
+</span><span class=lnt>130
+</span><span class=lnt>131
+</span><span class=lnt>132
+</span><span class=lnt>133
+</span><span class=lnt>134
+</span><span class=lnt>135
+</span><span class=lnt>136
+</span><span class=lnt>137
+</span><span class=lnt>138
+</span><span class=lnt>139
+</span><span class=lnt>140
+</span><span class=lnt>141
+</span><span class=lnt>142
+</span><span class=lnt>143
+</span><span class=lnt>144
+</span><span class=lnt>145
+</span><span class=lnt>146
+</span><span class=lnt>147
+</span><span class=lnt>148
+</span><span class=lnt>149
+</span><span class=lnt>150
+</span><span class=lnt>151
+</span><span class=lnt>152
+</span><span class=lnt>153
+</span><span class=lnt>154
+</span><span class=lnt>155
+</span><span class=lnt>156
+</span><span class=lnt>157
+</span><span class=lnt>158
+</span><span class=lnt>159
+</span><span class=lnt>160
+</span><span class=lnt>161
+</span><span class=lnt>162
+</span><span class=lnt>163
+</span><span class=lnt>164
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-c data-lang=c><span class=cp>#include</span> <span class=cpf>&lt;stdio.h&gt;</span><span class=cp>
+</span><span class=cp>#include</span> <span class=cpf>&lt;stdlib.h&gt;</span><span class=cp>
+</span><span class=cp>#include</span> <span class=cpf>&lt;stdbool.h&gt;</span><span class=cp>
+</span><span class=cp>#include</span> <span class=cpf>&lt;string.h&gt;</span><span class=cp>
+</span><span class=cp>#include</span> <span class=cpf>&lt;stdbool.h&gt;</span><span class=cp>
+</span><span class=cp></span>
+<span class=cp>#include</span> <span class=cpf>&#34;assignment2.h&#34;</span><span class=cp>
+</span><span class=cp></span>
+<span class=kt>int</span> <span class=nf>add_song</span><span class=p>(</span><span class=k>const</span> <span class=kt>char</span><span class=o>*</span> <span class=n>file_name</span><span class=p>,</span> <span class=n>song</span> <span class=n>s</span><span class=p>)</span> <span class=p>{</span>
+
+  <span class=n>FILE</span> <span class=o>*</span><span class=n>fptr</span> <span class=o>=</span> <span class=n>fopen</span><span class=p>(</span><span class=s>&#34;./songs.db&#34;</span><span class=p>,</span><span class=s>&#34;a&#34;</span><span class=p>);</span>
+
+  <span class=k>if</span><span class=p>(</span><span class=n>fptr</span> <span class=o>==</span> <span class=nb>NULL</span><span class=p>)</span> <span class=p>{</span>
+    <span class=n>exit</span><span class=p>(</span><span class=mi>1</span><span class=p>);</span>             
+  <span class=p>}</span>
+
+  <span class=k>if</span> <span class=p>(</span><span class=n>find_song</span><span class=p>(</span><span class=n>file_name</span><span class=p>,</span> <span class=n>s</span><span class=p>.</span><span class=n>title</span><span class=p>))</span> <span class=p>{</span>
+    <span class=k>return</span> <span class=mi>0</span><span class=p>;</span>
+  <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+    <span class=n>fwrite</span><span class=p>(</span><span class=o>&amp;</span><span class=n>s</span><span class=p>,</span> <span class=k>sizeof</span><span class=p>(</span><span class=n>s</span><span class=p>),</span> <span class=mi>1</span><span class=p>,</span> <span class=n>fptr</span><span class=p>);</span>
+  <span class=p>}</span>
+
+  <span class=n>fclose</span><span class=p>(</span><span class=n>fptr</span><span class=p>);</span>
+  <span class=k>return</span> <span class=mi>1</span><span class=p>;</span>
+<span class=p>}</span>
+
+
+
+<span class=n>song</span><span class=o>*</span> <span class=nf>find_song</span><span class=p>(</span><span class=k>const</span> <span class=kt>char</span><span class=o>*</span> <span class=n>file_name</span><span class=p>,</span> <span class=k>const</span> <span class=kt>char</span><span class=o>*</span> <span class=n>title</span><span class=p>)</span> <span class=p>{</span>
+  
+  <span class=n>FILE</span> <span class=o>*</span><span class=n>fptr</span> <span class=o>=</span> <span class=n>fopen</span><span class=p>(</span><span class=s>&#34;./songs.db&#34;</span><span class=p>,</span><span class=s>&#34;r&#34;</span><span class=p>);</span>
+  <span class=n>song</span><span class=o>*</span> <span class=n>s</span> <span class=o>=</span> <span class=p>(</span><span class=n>song</span><span class=o>*</span><span class=p>)</span> <span class=n>malloc</span><span class=p>(</span><span class=k>sizeof</span><span class=p>(</span><span class=n>song</span><span class=p>));</span>
+
+  <span class=k>if</span><span class=p>(</span><span class=n>fptr</span> <span class=o>==</span> <span class=nb>NULL</span><span class=p>)</span> <span class=p>{</span>
+    <span class=n>exit</span><span class=p>(</span><span class=mi>1</span><span class=p>);</span>             
+  <span class=p>}</span>
+  
+  <span class=k>while</span> <span class=p>(</span><span class=nb>true</span><span class=p>)</span> <span class=p>{</span>
+    <span class=n>fread</span><span class=p>(</span><span class=n>s</span><span class=p>,</span> <span class=k>sizeof</span><span class=p>(</span><span class=o>*</span><span class=n>s</span><span class=p>),</span> <span class=mi>1</span><span class=p>,</span> <span class=n>fptr</span><span class=p>);</span>
+    <span class=k>if</span> <span class=p>(</span><span class=n>feof</span><span class=p>(</span><span class=n>fptr</span><span class=p>))</span> <span class=p>{</span>
+      <span class=k>break</span><span class=p>;</span>
+    <span class=p>}</span>
+   
+    <span class=k>if</span> <span class=p>(</span><span class=n>strcmp</span><span class=p>(</span><span class=n>s</span><span class=o>→</span><span class=n>title</span><span class=p>,</span> <span class=n>title</span><span class=p>)</span> <span class=o>==</span> <span class=mi>0</span><span class=p>)</span> <span class=p>{</span>
+      <span class=k>return</span> <span class=n>s</span><span class=p>;</span>
+    <span class=p>}</span>
+  <span class=p>}</span>
+
+  <span class=n>fclose</span><span class=p>(</span><span class=n>fptr</span><span class=p>);</span>
+  <span class=k>return</span> <span class=nb>NULL</span><span class=p>;</span>
+
+<span class=p>}</span>
+
+
+<span class=kt>unsigned</span> <span class=kt>long</span> <span class=nf>fib3</span><span class=p>(</span><span class=kt>unsigned</span> <span class=kt>int</span> <span class=n>n</span><span class=p>)</span> <span class=p>{</span>
+  <span class=kt>long</span><span class=o>*</span> <span class=n>arrFib</span> <span class=o>=</span> <span class=p>(</span><span class=kt>long</span><span class=o>*</span><span class=p>)</span> <span class=n>malloc</span><span class=p>(</span> <span class=p>(</span><span class=n>n</span><span class=o>+</span><span class=mi>1</span><span class=p>)</span> <span class=o>*</span> <span class=k>sizeof</span><span class=p>(</span><span class=kt>long</span><span class=p>));</span>
+
+  <span class=k>if</span> <span class=p>(</span><span class=n>arrFib</span> <span class=o>==</span> <span class=nb>NULL</span><span class=p>)</span>
+    <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span> 
+
+  <span class=c1>//set first 3 numbers of array to be used in loop
+</span><span class=c1></span>  <span class=n>arrFib</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> 
+  <span class=n>arrFib</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span> <span class=o>=</span> <span class=mi>1</span><span class=p>;</span>
+  <span class=n>arrFib</span><span class=p>[</span><span class=mi>2</span><span class=p>]</span> <span class=o>=</span> <span class=mi>2</span><span class=p>;</span>
+
+  <span class=c1>//iteratively calculates each number
+</span><span class=c1></span>  <span class=k>for</span> <span class=p>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>3</span><span class=p>;</span> <span class=n>i</span><span class=o>&lt;=</span><span class=n>n</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span> 
+    <span class=n>arrFib</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>=</span> <span class=n>arrFib</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=o>+</span> <span class=n>arrFib</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>2</span><span class=p>]</span> <span class=o>+</span> <span class=n>arrFib</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>3</span><span class=p>];</span>
+  <span class=p>}</span>
+
+  <span class=k>return</span> <span class=n>arrFib</span><span class=p>[</span><span class=n>n</span><span class=p>];</span>
+<span class=p>}</span>
+
+
+<span class=kt>int</span> <span class=nf>linear_search_rec_first</span><span class=p>(</span><span class=kt>int</span><span class=o>*</span> <span class=n>ar</span><span class=p>,</span> <span class=kt>int</span> <span class=n>length</span><span class=p>,</span> <span class=kt>int</span> <span class=n>number</span><span class=p>)</span> <span class=p>{</span>
+  
+  <span class=k>static</span> <span class=kt>bool</span> <span class=n>newArray</span> <span class=o>=</span> <span class=nb>false</span><span class=p>;</span>
+  <span class=k>static</span> <span class=kt>int</span> <span class=n>index</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+  
+  <span class=k>if</span> <span class=p>(</span><span class=n>newArray</span><span class=p>)</span> <span class=p>{</span>
+    <span class=n>index</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+    <span class=n>newArray</span> <span class=o>=</span> <span class=nb>false</span><span class=p>;</span>
+  <span class=p>}</span>
+  
+
+  <span class=c1>//out of bounds
+</span><span class=c1></span>  <span class=k>if</span> <span class=p>(</span><span class=n>index</span> <span class=o>&gt;=</span> <span class=n>length</span><span class=p>)</span> <span class=p>{</span>
+    <span class=n>newArray</span> <span class=o>=</span> <span class=nb>true</span><span class=p>;</span>
+    <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+  <span class=p>}</span>
+  <span class=n>printf</span><span class=p>(</span><span class=s>&#34;index and num: %d %d</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>index</span><span class=p>,</span> <span class=n>ar</span><span class=p>[</span><span class=n>index</span><span class=p>]);</span>
+  <span class=k>if</span> <span class=p>(</span><span class=n>ar</span><span class=p>[</span><span class=n>index</span><span class=p>]</span> <span class=o>==</span> <span class=n>number</span><span class=p>)</span> <span class=p>{</span>
+    <span class=n>printf</span><span class=p>(</span><span class=s>&#34;in</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>);</span>
+    <span class=n>newArray</span> <span class=o>=</span> <span class=nb>true</span><span class=p>;</span>
+    <span class=k>return</span> <span class=n>index</span><span class=p>;</span>
+  <span class=p>}</span>
+
+  <span class=c1>//increments after each iteration like a for loop
+</span><span class=c1></span>  <span class=n>index</span><span class=o>++</span><span class=p>;</span>
+  <span class=n>newArray</span> <span class=o>=</span> <span class=nb>false</span><span class=p>;</span>
+  <span class=k>return</span> <span class=n>linear_search_rec_first</span><span class=p>(</span><span class=n>ar</span><span class=p>,</span> <span class=n>length</span><span class=p>,</span> <span class=n>number</span><span class=p>);</span>
+<span class=p>}</span>
+
+<span class=kt>int</span> <span class=nf>linear_search_rec_last</span><span class=p>(</span><span class=kt>int</span><span class=o>*</span> <span class=n>ar</span><span class=p>,</span> <span class=kt>int</span> <span class=n>length</span><span class=p>,</span> <span class=kt>int</span> <span class=n>number</span><span class=p>)</span> <span class=p>{</span>
+  <span class=n>length</span> <span class=o>=</span> <span class=n>length</span><span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+  
+  <span class=k>if</span> <span class=p>(</span><span class=n>length</span> <span class=o>&lt;</span> <span class=mi>0</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>return</span> <span class=o>-</span><span class=mi>1</span><span class=p>;</span>
+  <span class=p>}</span>
+  <span class=k>if</span> <span class=p>(</span><span class=n>ar</span><span class=p>[</span><span class=n>length</span><span class=p>]</span> <span class=o>==</span> <span class=n>number</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>return</span> <span class=n>length</span><span class=p>;</span>
+  <span class=p>}</span>
+  
+  <span class=k>return</span> <span class=n>linear_search_rec_last</span><span class=p>(</span><span class=n>ar</span><span class=p>,</span> <span class=n>length</span><span class=p>,</span> <span class=n>number</span><span class=p>);</span>
+<span class=p>}</span>
+
+
+<span class=kt>int</span> <span class=nf>count_tokens</span><span class=p>(</span><span class=k>const</span> <span class=kt>char</span><span class=o>*</span> <span class=n>str</span><span class=p>,</span> <span class=kt>char</span> <span class=n>delim</span><span class=p>)</span> <span class=p>{</span>
+  <span class=c1>// implement me
+</span><span class=c1></span>  <span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+  <span class=kt>int</span> <span class=n>numTokens</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+  
+  <span class=k>while</span> <span class=p>(</span><span class=n>str</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>!=</span> <span class=sc>&#39;\0&#39;</span><span class=p>)</span> <span class=p>{</span>
+    <span class=c1>//adds token count for when non-delim char follows delim
+</span><span class=c1></span>    <span class=k>if</span> <span class=p>(</span> <span class=n>str</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>==</span> <span class=n>delim</span> <span class=o>&amp;&amp;</span> <span class=n>str</span><span class=p>[</span><span class=n>i</span><span class=o>+</span><span class=mi>1</span><span class=p>]</span> <span class=o>!=</span> <span class=sc>&#39;\0&#39;</span> <span class=o>&amp;&amp;</span> <span class=n>str</span><span class=p>[</span><span class=n>i</span><span class=o>+</span><span class=mi>1</span><span class=p>]</span> <span class=o>!=</span> <span class=n>delim</span> <span class=p>)</span> <span class=p>{</span>
+      <span class=n>numTokens</span><span class=o>++</span><span class=p>;</span>
+    <span class=p>}</span>
+    <span class=n>i</span><span class=o>++</span><span class=p>;</span>
+  <span class=p>}</span>
+  <span class=k>return</span> <span class=n>numTokens</span><span class=p>;</span> <span class=c1>//crashes before returning
+</span><span class=c1></span><span class=p>}</span>
+
+
+<span class=kt>char</span><span class=o>**</span> <span class=nf>get_tokens</span><span class=p>(</span><span class=k>const</span> <span class=kt>char</span><span class=o>*</span> <span class=n>str</span><span class=p>,</span> <span class=kt>char</span> <span class=n>delim</span><span class=p>)</span> <span class=p>{</span>
+
+  <span class=kt>int</span> <span class=n>numTokens</span> <span class=o>=</span> <span class=n>count_tokens</span><span class=p>(</span><span class=n>str</span><span class=p>,</span> <span class=n>delim</span><span class=p>);</span>
+  <span class=kt>int</span> <span class=n>currTokenNum</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+
+  <span class=kt>char</span><span class=o>**</span> <span class=n>tokens</span> <span class=o>=</span> <span class=n>malloc</span><span class=p>(</span><span class=n>numTokens</span> <span class=o>*</span> <span class=k>sizeof</span><span class=p>(</span><span class=kt>char</span><span class=o>*</span><span class=p>));</span>
+  <span class=k>for</span> <span class=p>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>i</span> <span class=o>&lt;</span> <span class=n>numTokens</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span>
+    <span class=n>tokens</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>=</span> <span class=n>malloc</span><span class=p>((</span><span class=n>strlen</span><span class=p>(</span><span class=n>str</span><span class=p>))</span> <span class=o>*</span> <span class=k>sizeof</span><span class=p>(</span><span class=kt>char</span><span class=p>));</span>
+
+  <span class=k>for</span> <span class=p>(</span><span class=kt>int</span> <span class=n>str_i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>str_i</span><span class=o>&lt;</span><span class=n>strlen</span><span class=p>(</span><span class=n>str</span><span class=p>);</span> <span class=n>str_i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
+    <span class=k>if</span> <span class=p>(</span><span class=n>str</span><span class=p>[</span><span class=n>str_i</span><span class=p>]</span> <span class=o>!=</span> <span class=n>delim</span><span class=p>)</span> <span class=p>{</span>
+      <span class=c1>// char* currTokenPtr = &amp;tokens[currTokenNum];
+</span><span class=c1></span>      <span class=kt>int</span> <span class=n>tok_i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span>
+      <span class=k>while</span> <span class=p>(</span><span class=n>str</span><span class=p>[</span><span class=n>str_i</span><span class=p>]</span> <span class=o>!=</span> <span class=n>delim</span><span class=p>)</span> <span class=p>{</span>
+        <span class=n>tokens</span><span class=p>[</span><span class=n>currTokenNum</span><span class=p>][</span><span class=n>tok_i</span><span class=p>]</span> <span class=o>=</span> <span class=n>str</span><span class=p>[</span><span class=n>str_i</span><span class=p>];</span>
+        <span class=n>str_i</span><span class=o>++</span><span class=p>;</span>
+        <span class=n>tok_i</span><span class=o>++</span><span class=p>;</span>
+      <span class=p>}</span>
+
+      <span class=n>printf</span><span class=p>(</span><span class=s>&#34;</span><span class=se>\n</span><span class=s>DONE: tokens[%d] = %s</span><span class=se>\n\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>currTokenNum</span><span class=p>,</span> <span class=n>tokens</span><span class=p>[</span><span class=n>currTokenNum</span><span class=p>]);</span>
+      <span class=n>currTokenNum</span><span class=o>++</span><span class=p>;</span>
+    <span class=p>}</span>
+  <span class=p>}</span>
+
+  <span class=k>for</span> <span class=p>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>0</span><span class=p>;</span> <span class=n>i</span> <span class=o>&lt;</span> <span class=n>numTokens</span><span class=p>;</span> <span class=n>i</span><span class=o>++</span><span class=p>)</span> <span class=p>{</span>
+    <span class=n>printf</span><span class=p>(</span><span class=s>&#34;tokens[%d] = %s</span><span class=se>\n</span><span class=s>&#34;</span><span class=p>,</span> <span class=n>i</span><span class=p>,</span> <span class=n>tokens</span><span class=p>[</span><span class=n>i</span><span class=p>]);</span>
+  <span class=p>}</span>
+  <span class=k>return</span> <span class=n>tokens</span><span class=p>;</span>
+<span class=p>}</span>
+
+<span class=c1>//have placeholder string, use val of j to properly alloc mem for string
+</span></code></pre></td></tr></table>
+</div>
+</div><h2 id=reflections>Reflections</h2>
+<h3 id=1-86--07>1 (86%, -0.7%)</h3>
+<ul>
+<li>4
+<ul>
+<li>17
+<ul>
+<li>max was first value (-12)</li>
+<li>Didn&rsquo;t apply abs to first value bruh</li>
+</ul>
+</li>
+<li>19
+<ul>
+<li>max was first value (-1)</li>
+<li>^</li>
+</ul>
+</li>
+<li>22
+<ul>
+<li>Test case was 1, so it would return nothing</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id=rules>Rules</h2>
+<ul>
+<li>
+<p>Don&rsquo;t print anything, don&rsquo;t run with math.h or modify makefile</p>
+</li>
+<li>
+<p>Main will call <code>assignment</code></p>
+</li>
+<li>
+<p>Compile using makefile (gcc into machine code)</p>
+<ul>
+<li>type <code>make</code> in console</li>
+</ul>
+</li>
+<li>
+<p>Runs on linux, make sure code compiles by running test 1</p>
+</li>
+<li>
+<p>maybe have a while loop where the value is changed to the next one in case something happens you know</p>
+</li>
+</ul>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>typedef enum {false, true} bool;
+
+  
+
+void str_subtract_one(char* num) {
+
+int strLen = strlen(num);
+
+bool isZeroCase = false; //keeps track on whether to continue
+
+for (int i=strLen-1; i&gt;=0; i--) { //reverse iteration through string
+
+printf(&#34;i = %d\n&#34;, i);
+
+if (isZeroCase) { //if
+
+printf(&#34;nums[i] = %d\n&#34;, num[i]);
+
+if (num[i] == &#39;0&#39;) {
+
+printf(&#34;0 case&#34;);
+
+num[i] = &#39;9&#39;;
+
+isZeroCase = true; //causes next to update
+
+} else {
+
+num[i] = num[i]-1;
+
+break;
+
+}
+
+}
+
+printf(&#34;num is currently: %s\n&#34;, num);
+
+}
+
+}
+</code></pre></td></tr></table>
+</div>
+</div><p>for loop, continues to decrease string as <code>isZero</code> is true
+while currDigit = 0??</p>
+<hr>
+<h1 id=backlinks>Backlinks</h1>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>list from <a href=/CMPT-125-Assignments rel=noopener class=internal-link data-src=/CMPT-125-Assignments>CMPT 125 Assignments</a> AND !outgoing(<a href=/CMPT-125-Assignments rel=noopener class=internal-link data-src=/CMPT-125-Assignments>CMPT 125 Assignments</a>)
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>References:</p>
+<p>Created:: 2021-09-20 14:57</p>
+</article>
+<hr>
+<div class=page-end>
+<div class=backlinks-container>
+<h3>Backlinks</h3>
+<ul class=backlinks>
+<li>
+<a href=/CMPT-125-Running-Assignments-Linux>Untitled Page</a>
+</li>
+</ul>
+</div>
+<div>
+<script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script>
+<h3>Interactive Graph</h3>
+<div id=graph-container></div>
+<style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
+<script src=https://quartz.jzhao.xyz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
+<script>drawGraph("https://quartz.jzhao.xyz/CMPT-125-Assignments","https://quartz.jzhao.xyz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+</div>
+</div>
+<div id=contact_buttons>
+<footer>
+<p>Made by John Mavrick Reyes using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p>
+<ul>
+<li><a href=/>Home</a></li>
+<li><a href=http://johnmavrick.tech/>Website</a></li><li><a href=https://linktr.ee/johnmavrick>Linktree</a></li></ul>
+</footer>
+</div>
+<script src=https://quartz.jzhao.xyz/js/popover.9d69dffc0f2d029ef30cf63230ccce4c.min.js></script>
+<script>initPopover("https://quartz.jzhao.xyz")</script>
+</div>
+</body>
+</html>

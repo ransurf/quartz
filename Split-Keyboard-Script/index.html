@@ -1,0 +1,389 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=description content="Status: Tags: Links: [[Learning to Use a Split Keyboard]] - [[Split Keyboard Video Description]]
+ Split Keyboard Script Introduction  Does switching to a split keyboard really improve typing ergnomics?">
+<title>John Mavrick's Garden</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type=image/png href=/icon.png>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
+<link href=https://quartz.jzhao.xyz/styles.62abffa83e1b36143f7e490dc494ec6f.min.css rel=stylesheet>
+<script src=https://quartz.jzhao.xyz/js/darkmode.46b07878b7f5d9e26ad7a3c40f8a0605.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
+<script>const BASE_URL="https://quartz.jzhao.xyz/",fetchData=Promise.all([fetch("https://quartz.jzhao.xyz/indices/linkIndex.b4df6755e0129cea17afc671eb36e0d2.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://quartz.jzhao.xyz/indices/contentIndex.8923c41347a61a4c98ec93c68e1b0edb.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
+<body>
+<div id=search-container>
+<div id=search-space>
+<input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something...">
+<div id=results-container>
+</div>
+</div>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://quartz.jzhao.xyz/js/search.bc849b857f2c1b822264d40635bb67b6.min.js></script>
+<div class=singlePage>
+<header>
+<h1 id=page-title><a href=https://quartz.jzhao.xyz/>John Mavrick's Garden</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+<div class=spacer></div>
+<div class=darkmode>
+<input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg>
+</label>
+<label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg>
+</label>
+</div>
+</header>
+<article>
+<p class=meta>
+Last updated Unknown
+</p>
+<ul class=tags>
+</ul>
+<p>Status:
+Tags:
+Links: <a href=/Learning-to-Use-a-Split-Keyboard rel=noopener class=internal-link data-src=/Learning-to-Use-a-Split-Keyboard>Learning to Use a Split Keyboard</a> - <a href=/Split-Keyboard-Video-Description rel=noopener class=internal-link data-src=/Split-Keyboard-Video-Description>Split Keyboard Video Description</a></p>
+<hr>
+<h1 id=split-keyboard-script>Split Keyboard Script</h1>
+<h2 id=introduction>Introduction</h2>
+<ul>
+<li>Does switching to a split keyboard really improve typing ergnomics?</li>
+<li><code>Show wrist pain or something</code></li>
+<li>How long does it to learn a completely new typing style?</li>
+<li><code>Show split keyboard layout</code></li>
+<li>In this video, I&rsquo;m going to try and answer these questions by using a split keyboard for 7 days. If you want to see whether buying a split keyboard is for you, be sure to watch until the end.</li>
+<li><code>Typing on lily</code></li>
+</ul>
+<h2 id=preface>Preface</h2>
+<h3 id=keyboard>Keyboard</h3>
+<ul>
+<li>The keyboard I&rsquo;m going to use for this experiment is the lily58, a split keyboard with straight columns opposed to the traditional staggered ones.</li>
+<li><code>Show comparsion</code></li>
+<li>I felt this was a cheap and effective keyboard to evaluate the correlation between keyboard layout and ergonomics, as it similarly follows the natural extension and height difference of our fingers.</li>
+<li><code>Clip of extending my fingers over lily</code></li>
+<li>Anyways, as the name suggests, it has 58 keys, and here&rsquo;s a quick picture of the keyboard&rsquo;s keymapping:
+<ul>
+<li>The lower and raise keys allow the keyboard to switch to different layers when pressed, which lets me completely switch the functions of each key within a single keypress.</li>
+<li><code>Lily labelled keymap png</code></li>
+<li>Everything is similarly placed in comparison to a normal keyboard, except for the enter key now being the right space bar and the backspace moving to the bottom row</li>
+<li><code>Pan to enter and backspace</code>
+<ul>
+<li>I&rsquo;m honestly not so sure on how I&rsquo;m going to adjust to this drastic change</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id=previous-expertise>Previous Expertise</h3>
+<ul>
+<li>With my current keyboard, I can hit over 100 words per minute on typeracer and over 140 words on monkeytype.</li>
+<li><code>Disclaimer of how I forgot to take typing tests before switching</code></li>
+<li>Unfortunately, I&rsquo;ve been pretty stagnant at this typing speed due to my bad habits, like using my index finger to press spacebar, which leaves my two thumbs to do absolutely nothing</li>
+<li><code>Clip from aliexpress keyboard video</code></li>
+<li>Hopefully, forcing myself to adopt proper typing habits while using the lily58 can help me also improve my typing speeds on a normal keyboard</li>
+<li><code>Clip of lily typing</code></li>
+</ul>
+<h2 id=plan>Plan</h2>
+<h3 id=practice>Practice</h3>
+<ul>
+<li>To try and get used to the layout and ergonomics of a split keyboard, I&rsquo;m going to spend some time every day practicing my typing skills. I&rsquo;m going to spend 5-10 minutes on monkey type to practice typing words, 5-10 minutes on typeracer to practice typing full sentences, and 5 minutes on speedcoder to practice programming.
+<code>Clips of all websites accordingly</code></li>
+<li>Additionally, I&rsquo;ll also explicitly use the keyboard for everything I do on my computer, whether it be typing up homework or playing valorant
+<code>Clip of essay and valorant</code></li>
+<li>To measure my typing skill for each day, I&rsquo;ll take my top 5 scores for both monkeytype and typeracer, and I&rsquo;ll take my best two scores from speedcoder.</li>
+<li><code>Clip of obsidian recordings/filling up a chart</code></li>
+</ul>
+<h3 id=layout>Layout</h3>
+<ul>
+<li>After spending some time considering the keymapping, I decided to just make minor tweaks to the default one I was provided. Here&rsquo;s an image that shows my additions:
+<ul>
+<li>I swapped the shift and ctrl keys back to how they usually are, as I don&rsquo;t see much of a benefit for swapping them in the first place</li>
+<li>For my lower layer, I decided to fill up the top row with some extra function keys I can program to random useful keys or macro
+<ul>
+<li>Right now, I have the top row on the left-hand side for media keys like changing volume and skipping tracks</li>
+<li>Lastly, since I use caps lock + wasd on my current keyboard for arrow keys and the default has them set to the right hand side, I decided to keep it consistent and put them on the left 4th row</li>
+</ul>
+</li>
+<li><code>Showcase mentioned changes</code></li>
+</ul>
+</li>
+<li>Now that I have my keyboard and plans ready, it&rsquo;s time to start the 7 days ;)</li>
+</ul>
+<h3 id=thoughts>Thoughts</h3>
+<h2 id=daily-journals>Daily Journals</h2>
+<ul>
+<li><a href=/Split-Keyboard-Journals rel=noopener class=internal-link data-src=/Split-Keyboard-Journals>Split Keyboard Journals</a></li>
+</ul>
+<h3 id=day-1>Day 1</h3>
+<ul>
+<li>I was a bit too optimistic about easily being able to switch. Considering the fact that I now have to take notes, type school assignments, do practice exams, and play games using such an unfamiliar keyboard, I&rsquo;ve failed to realize how much I took my fast typing speed for granted
+<code>Clips of writing different things</code></li>
+<li>The time it&rsquo;s taken me to do things has virtually doubled, and it&rsquo;s been taking a toll on my overall productivity throughout the day
+<code>Idek man</code></li>
+<li>When I was typing notes for the book I was reading, my slower typing speed forced me to write concise jot notes instead of the elaborate thoughts I was used to, which wasn&rsquo;t necessarily a bad thing
+<code>super concise notes</code></li>
+<li>Of course, the major issue I had today was the placement of symbols. I got used to the letter placement fairly quickly, but I struggled immensely to type things like add and equals, which is in such a weird spot man
+<ul>
+<li>If worse comes to worse</li>
+<li>I might end up remapping it to where backspace traditionally is</li>
+<li><code>show how to press add and equals</code>
+<ul>
+<li>Speaking of backspace, I&rsquo;ve gotten used to its new location near my thumb. When I tried using my old keyboard, I kept pressing my right thumb on the space bar out of habit</li>
+<li><code>Maybe cool swap between???</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>When I was writing my computer science practice test, I think I spent more time figuring out where keys were than actually answering the questions</li>
+<li><code>Pull up practice test attempt i took on intellij</code>
+<ul>
+<li>I said I would use the keyboard throughout my whole day, but I might make an exception solely for this since this exam is kindddd offff important</li>
+<li>I don&rsquo;t want to switch up the way I code days prior to writing an AP exam</li>
+<li><code>collegeboard</code></li>
+</ul>
+</li>
+<li>Also, It&rsquo;s weird to give the pinky such little room to press keys
+<ul>
+<li>I&rsquo;m used to the width of traditional modifiers, so now I tend to hit one key too far to the right when using shortcuts like copy and pasting</li>
+<li><code>clip of me exaggeratingly missing pinky keys</code></li>
+</ul>
+</li>
+<li>As ergonomics go, I like how I can easily pivot my elbow to switch between my keyboard and mouse</li>
+<li><code>clip of easily switching</code>
+<ul>
+<li>Previously, I had to move my whole arm and bring it back, which was quite tedious when simply correcting small errors</li>
+<li><code>clip of exaggerated switching</code></li>
+<li>I still have yet to designate the locations of my arms, but right now its similar to my regular posture with my left arm straight and my right arm a bit turned towards it</li>
+<li><code>Day 1 typing tests</code></li>
+</ul>
+</li>
+<li>different profile keycaps haven&rsquo;t been an issue, and have even helped me with knowing where the numbers are</li>
+<li><code>Clip of different profiles</code></li>
+<li>Seeing that my typing tests were done a bit later in the day, I was already a bit used to the new keyboard after hours of painstaking typing. Here&rsquo;s today&rsquo;s typing speeds.</li>
+<li><code>Obsidian typing logs</code></li>
+<li>Now that I&rsquo;m starting to get a bit used to the lily, I&rsquo;ll try out some of the new key locations presented by the different layers</li>
+<li><code>different layers</code></li>
+</ul>
+<h3 id=day-2>Day 2</h3>
+<ul>
+<li>
+<p>Unfortunately, I didn&rsquo;t put much emphasis on using the unique mapping of some keys. On the bright side however, I began to quickly get accustomed to the new layout. I was able to peak at 80 words for both monkeytype and typeracer, but my speedcoder results lagged behind and actually went down&mldr;</p>
+</li>
+<li>
+<p><code>clip of 80wpm day 2</code></p>
+<ul>
+<li>After rewatching my typing footage, it seems like my habit of mainly using my index finger has continued to persist when using the lily. From now on, I&rsquo;ll try to be more conscious of spreading the keys amongst my fingers more evenly, but this decision will probably end up harming my typing speeds.</li>
+<li><code>zoom in on extreme index usage</code></li>
+</ul>
+</li>
+<li>
+<p>When using it for my computer science practice testing, my growing familiarity and practice has made coding less of a burden. I think I&rsquo;ll be able to confidently type on this keyboard after this week, so there&rsquo;s going to be absolutely no switching between this keyboard and my normal keyboard.</p>
+</li>
+<li>
+<p><code>clip of speedcoder, clip of storing keyboard</code></p>
+</li>
+<li>
+<p>To further utilize the hotkey convenience this keyboard provides, I want to think of ways to cram as much hotkeys for my note-taking app obsidian on the left hand side</p>
+</li>
+<li>
+<p><code>obsidian hotkeys scroll or showcase</code></p>
+</li>
+<li>
+<p>Furthermore, I also want to think about what to map these function keys to, since I mainly just use the ones on the lower layer. Same goes with the arrow keys and blank keys.</p>
+</li>
+<li>
+<p><code>show function keys</code></p>
+</li>
+<li>
+<p>Later today, I&rsquo;ll try also to find a sufficient wrist rest that doesn&rsquo;t consist of presidential socks.</p>
+</li>
+<li>
+<p><code>obama and trump socks showcase</code></p>
+</li>
+<li>
+<p>Overall, I&rsquo;m feeling suprisingly comfortable using this keyboard despite it only being my second day</p>
+</li>
+</ul>
+<h3 id=day-3>Day 3</h3>
+<ul>
+<li>After further consideration (and definitely not because of my laziness), I didn&rsquo;t bother trying to fix my index typing habits. Surpisingly enough, the issue only persists with my left hand, as on my right hand my pointer only covers two columns. My middle and ring finger are still useful for the two most left letter columns so I don&rsquo;t think it&rsquo;s dragging me down too much.</li>
+<li><code>show finger differences, disclaimer saying wasd</code></li>
+<li>I also spent some time searching for a new wrist rest, but decided to stick with the sock wrist wrest, as it seems to be working just fine.</li>
+<li><code>zoom on sock or reuse sock clip</code></li>
+<li>Not gonna lie, I was surprised to see that my typing speeds haven&rsquo;t stagnated yet. I was able to hit 94 wpm on monkeytype, and improve my overall averages across all 3 typing websites. I wasn&rsquo;t expecting to hit 100 wpm within my first week of switching, but at this rate, I might even catch up to my previous typing speeds :o</li>
+<li><code>typing clip</code>
+<ul>
+<li>I&rsquo;m starting to grow an appreciaton for the thumb buttons; after getting used to them, it makes my thumbs more useful and makes doing things like hitting backspace and enter less tedious</li>
+</ul>
+</li>
+<li>Tomorrow, I&rsquo;ll <strong>actually</strong> get to thinking of possible optimizations when using this keyboard.</li>
+</ul>
+<h3 id=day-4>Day 4</h3>
+<ul>
+<li>I felt super sluggish typing today, but somehow, I managed to hit new personal bests in both typeracer and speedcoder</li>
+<li><code>show end of bests</code></li>
+<li>After getting a feel of the keyboard, I&rsquo;m thinking of switching the keycaps, as I think the uniform keycaps are holding me back. If I alter my typing posture a tiny bit, I end up missing keys more often, so maybe switching to keycaps with more sculpture will be more forgiving</li>
+<li><code>show keycaps, demonstrate switching angle</code></li>
+<li>As for possible hotkeys, I haven&rsquo;t had any inconveniences recently with the layout, so I haven&rsquo;t been able to think of potential adjustments for the upper layer</li>
+<li>I tried to sort through my keycaps, but quickly realized that most of my sets wouldn&rsquo;t have enough for the thumb keys. I guess I&rsquo;ll just have to make do with what I have.</li>
+</ul>
+<h3 id=day-5>Day 5</h3>
+<ul>
+<li>Nothing special happened today, other than the fact that I hit 96 wpm on typeracer :o</li>
+<li><code>typing clip</code>
+<ul>
+<li>I was curious so I tried doing the 10 word option on monkeytype, and I ended up hitting 120ish words per minute</li>
+<li><code>120 clip</code>
+<ul>
+<li>I guess my stamina is preventing me from getting high scores so I&rsquo;ll have to consciously remember to maintain the pace</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>My dad gave me a wrist rest to replace my sock, and the extra width has helped with giving my wrist more flexibility to move around</li>
+<li><code>wrist wrest showcase</code></li>
+<li>When I was doing my code typing, I decided to actually pay attention to the mistakes diagram and realized that most of my mistakes are from the right hand side
+<ul>
+<li>This makes sense, as when typing on a regular keyboard I&rsquo;m used to having my hand angled</li>
+</ul>
+</li>
+<li><code>showcase mistakes gui</code></li>
+<li>Also, I think I&rsquo;m experiencing fatigue with my left hand, which isn&rsquo;t a good sign xd</li>
+<li><code>shaking hand</code></li>
+</ul>
+<h3 id=day-6>Day 6</h3>
+<p><code>100 wpm</code></p>
+<ul>
+<li>I did it, I finally hit it. On a standard keyboard I&rsquo;m able to type 100+ frequently on typeracer, but I&rsquo;m still proud of hitting 100 on monkeytype nonetheless
+<ul>
+<li>I zoomed through the first part and almost choked, but thankfully I didn&rsquo;t</li>
+</ul>
+</li>
+<li>I was thinking of switching my keycaps to my the sculpted SA profile on my normal keyboard, but after seeing how close I was to hitting 100, I didn&rsquo;t want to change anything up</li>
+<li><code>clip of keycaps</code></li>
+<li>I would say that the 100 is fairly accurate in my comfortability with typing in a split, I haven&rsquo;t looked at the keys for days</li>
+<li>Although my monkeytype score zoomed, my other ones didn&rsquo;t see much improvement</li>
+<li>I decided to move the two halves even further and angled the right one a bit upwards, which might be the better play long term for ergonomics</li>
+<li><code>clip of me adjusting</code></li>
+</ul>
+<h3 id=day-7>Day 7</h3>
+<ul>
+<li>Surprisingly enough, my 100 wpm from yesterday was not a fluke, seeing that I was able to do it again. I even almost hit 97 wpm on typeracer :o</li>
+<li><code>100 again</code></li>
+<li>Speedcoder was still a struggle, but I feel like I still have lots of room for improvement if I start to use numbers and icons on different layers
+<ul>
+<li>however, I think it&rsquo;s important that I get the basics down like letters and the traditional keys for symbols, which I feel super confident in now</li>
+</ul>
+</li>
+<li><code>clip of speedcoder day 7</code></li>
+<li>It might seem weird, but telling myself to take it slow allows me to make less errors and overall type faster than if I were to try and push myself</li>
+<li><code>slow vs fast</code></li>
+<li>Alas, the 7th day ended, and so did the experiment.</li>
+</ul>
+<h2 id=post-experiment>Post Experiment</h2>
+<ul>
+<li>After strictly using a split keyboard for a whole week, I&rsquo;m a bit curious as to how fast I can type with a regular keyboard&mldr;</li>
+<li><code>clip of setting up keyboard and failing miserably</code>
+<ul>
+<li>Yeah, the two typing styles are completely different. It&rsquo;ll probably take me a while to get used to a regular keyboard again</li>
+</ul>
+</li>
+</ul>
+<h3 id=first-thoughts>First Thoughts</h3>
+<ul>
+<li>First off, I&rsquo;m super proud of myself for not raging and wrecking the keyboard due to my initial low typing speeds. Looking back, I&rsquo;m surprised at how much I was able to adapt within just 7 days.</li>
+<li><code>pretend rage</code></li>
+<li>After looking</li>
+<li>So, after finally completing my 7 day experiment, here&rsquo;s my two cents on using a split keyboard</li>
+</ul>
+<h3 id=assessments>Assessments</h3>
+<h4 id=ergonomics>Ergonomics</h4>
+<ul>
+<li>I think I was overestimating the ergonomic benefits of a split keyboard. Being able to split your keyboard is pretty convenient if you want your chest to be more opened up, but as far as health benefits go, I don&rsquo;t think there were many.</li>
+<li><code>clip of separating keyboard and opening chest</code></li>
+<li>With my old typing style, my wrists were already fairly straight, so that health benefit wasn&rsquo;t of much importance for me.</li>
+<li><code>old typing style</code></li>
+<li>Also note, these opinions are coming from a non-doctor that spends their whole days in front of a computer, so it&rsquo;s up to you on whether you want to take my word for it.</li>
+</ul>
+<h4 id=typing-experience>Typing Experience</h4>
+<ul>
+<li>As of writing this script, I think I enjoy the typing experience of a split keyboard more, but that might just be me in the honeymoon phase when trying something new.</li>
+<li><code>typing footage</code></li>
+<li>I find the backspace and enter keys to be super convenient, and it&rsquo;s nice not having to move my hands too far away from the middle to hit the keys.</li>
+</ul>
+<h3 id=recommendation>Recommendation</h3>
+<p>I already voiced my opinions through my journalling, but to see whether a split keyboard might be for you, here&rsquo;s some pros and cons you should consider</p>
+<h4 id=pros>Pros</h4>
+<ul>
+<li>This one is more specific to the lily58, but if you&rsquo;re into mechanical keyboards, building the keyboard and setting it up can be a fun and refreshing experience from the standard keyboard designs</li>
+<li><code>someone soldering lily58</code>
+<ul>
+<li>My friend was generous enough to build it for me, but having to set up the firmware was a bit confusing but rewarding</li>
+<li><code>qmk toolbox</code></li>
+<li>If you want, you can also customize the displays, add encoders or add blue tooth</li>
+<li><code>oled dog, encoder lily, bluetooth lily</code></li>
+</ul>
+</li>
+<li>If you have bad typing habits like me, the split keyboard does a good job at forcing you to fix them. If it weren&rsquo;t for commiting to this experiment, I would have never stopped using my index to press space. Never.</li>
+<li><code>two finger typer</code></li>
+</ul>
+<h4 id=cons>Cons</h4>
+<ul>
+<li>Now for the cons.</li>
+<li>First off, if you&rsquo;ve got some important deadlines coming up, processing and adapting to the new layout is going to be frustrating and time-consuming. I guess if you were able to switch between the two keyboards it would be more doable, but it would interfere with the learning process.</li>
+<li><code>Switching between my two keyboards</code></li>
+<li>Second, you gotta spend quite a bit of money to try one out. A lily is relatively cheap, but if you want something like a moonlander or ergodox ez it&rsquo;s going to end up costing you over $400</li>
+<li><code>price points of keyboards</code></li>
+</ul>
+<h2 id=conclusion>Conclusion</h2>
+<ul>
+<li>Anyways, that wraps it up for my seven day experience with using a split keyboard. If you haven&rsquo;t already, I would recommend you listen to the opinions of other people on reddit, or watch someone else&rsquo;s video like Switch and Click&rsquo;s.</li>
+<li><code>clip of reddit scroll and switch and clicks video</code></li>
+<li>If you found my advice helpful be sure to like and share this video, and subscribe for more content like this. Stay mindful.</li>
+</ul>
+<hr>
+<p>References:</p>
+</article>
+<hr>
+<div class=page-end>
+<div class=backlinks-container>
+<h3>Backlinks</h3>
+<ul class=backlinks>
+<li>
+<a href=/Learning-to-Use-a-Split-Keyboard>Untitled Page</a>
+</li>
+<li>
+<a href=/Split-Keyboard-Journals>Untitled Page</a>
+</li>
+<li>
+<a href=/Split-Keyboard-Video-Description>Untitled Page</a>
+</li>
+</ul>
+</div>
+<div>
+<script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script>
+<h3>Interactive Graph</h3>
+<div id=graph-container></div>
+<style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
+<script src=https://quartz.jzhao.xyz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
+<script>drawGraph("https://quartz.jzhao.xyz/Split-Keyboard-Script","https://quartz.jzhao.xyz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+</div>
+</div>
+<div id=contact_buttons>
+<footer>
+<p>Made by John Mavrick Reyes using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p>
+<ul>
+<li><a href=/>Home</a></li>
+<li><a href=http://johnmavrick.tech/>Website</a></li><li><a href=https://linktr.ee/johnmavrick>Linktree</a></li></ul>
+</footer>
+</div>
+<script src=https://quartz.jzhao.xyz/js/popover.9d69dffc0f2d029ef30cf63230ccce4c.min.js></script>
+<script>initPopover("https://quartz.jzhao.xyz")</script>
+</div>
+</body>
+</html>

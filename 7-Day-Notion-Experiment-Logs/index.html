@@ -1,0 +1,478 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=description content="Status: Tags: Links: [[!V I tried using notion for 7 days]]
+ 7 Day Notion Experiment Logs Days 1 02/10 Notes DevDuck notion video  Page vs database  Different views for database  Properties      Examples">
+<title>John Mavrick's Garden</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type=image/png href=/icon.png>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
+<link href=https://quartz.jzhao.xyz/styles.62abffa83e1b36143f7e490dc494ec6f.min.css rel=stylesheet>
+<script src=https://quartz.jzhao.xyz/js/darkmode.46b07878b7f5d9e26ad7a3c40f8a0605.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
+<script>const BASE_URL="https://quartz.jzhao.xyz/",fetchData=Promise.all([fetch("https://quartz.jzhao.xyz/indices/linkIndex.b4df6755e0129cea17afc671eb36e0d2.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://quartz.jzhao.xyz/indices/contentIndex.8923c41347a61a4c98ec93c68e1b0edb.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
+<body>
+<div id=search-container>
+<div id=search-space>
+<input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something...">
+<div id=results-container>
+</div>
+</div>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://quartz.jzhao.xyz/js/search.bc849b857f2c1b822264d40635bb67b6.min.js></script>
+<div class=singlePage>
+<header>
+<h1 id=page-title><a href=https://quartz.jzhao.xyz/>John Mavrick's Garden</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+<div class=spacer></div>
+<div class=darkmode>
+<input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg>
+</label>
+<label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg>
+</label>
+</div>
+</header>
+<article>
+<p class=meta>
+Last updated Unknown
+</p>
+<ul class=tags>
+</ul>
+<p>Status:
+Tags:
+Links: <a href=/V-I-tried-using-notion-for-7-days rel=noopener class=internal-link data-src=/V-I-tried-using-notion-for-7-days>!V I tried using notion for 7 days</a></p>
+<hr>
+<h1 id=7-day-notion-experiment-logs>7 Day Notion Experiment Logs</h1>
+<h2 id=days>Days</h2>
+<h3 id=1-0210>1 02/10</h3>
+<h4 id=notes>Notes</h4>
+<h5 id=devduck-notion-video>DevDuck notion video</h5>
+<ul>
+<li>Page vs database
+<ul>
+<li>Different views for database
+<ul>
+<li>Properties</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Examples</p>
+<ul>
+<li>kanban board for game tasks
+<ul>
+<li>different filters (type, due date, etc)</li>
+<li>Active > not started</li>
+</ul>
+</li>
+<li>video planner</li>
+</ul>
+<p>Problems</p>
+<ul>
+<li>Load times</li>
+<li>offline</li>
+</ul>
+<h4 id=ideas>Ideas</h4>
+<h6 id=why-do-i-want-to-use-notion>Why do I want to use notion?</h6>
+<ul>
+<li>Need an organized hub to help plan and organize</li>
+<li>Been using obsidian for a long time, and wanting to see if some of the things I do there are more conveniently done in other productivity workspaces</li>
+</ul>
+<p>Ideas</p>
+<ul>
+<li>Project management and organization
+<ul>
+<li>different parts of my life
+<ul>
+<li>school
+<ul>
+<li>study plans, retrospective time tables</li>
+<li>task management</li>
+</ul>
+</li>
+<li>video planner
+<ul>
+<li>misc notes when creating video, planning, scriptwriting</li>
+</ul>
+</li>
+<li>plans when learning new things</li>
+<li>Revision timetable</li>
+</ul>
+</li>
+<li>sync</li>
+</ul>
+</li>
+<li>Declutter my obsidian to keep it as knowledge management and notes</li>
+<li>Dashboards for the different areas in my life
+Questions</li>
+<li>How to connect/use it with external notes like obsidian and onenote</li>
+</ul>
+<p>Drawbacks</p>
+<ul>
+<li>I need to make sure the things I want to do will only be needed when I have an online connection
+<ul>
+<li>Can&rsquo;t use flashcards while transitting like I do with Obsidian</li>
+</ul>
+</li>
+</ul>
+<h3 id=2-0211>2 02/11</h3>
+<h4 id=notes-1>Notes</h4>
+<h5 id=how-i-study-for-computer-science-with-notion>How I Study for Computer Science with Notion</h5>
+<ul>
+<li>Emphasis on toggle</li>
+<li>Each of his notes are categorized using questions</li>
+<li>Said to not download templates and to make your own, so I did :)</li>
+</ul>
+<h4 id=logs>Logs</h4>
+<ul>
+<li>
+<p>Just going to make basic skeleton structure of my plans from day 1</p>
+</li>
+<li>
+<p>Decided on PARA model</p>
+<ul>
+<li>Gallery view to show the pictures as they look clean
+<ul>
+<li>Started decorating, going for dark cyberpunk theme
+<ul>
+<li>Randomly found images online</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Unsure on what to put on dashboards?</li>
+</ul>
+</li>
+<li>
+<h2 id=created-project-template>Created project template</h2>
+</li>
+<li>
+<p>Todoist embed</p>
+</li>
+<li>
+<p>Plan is to finish up all the templates and views on saturday so I can properly plan on sunday during weekly review</p>
+</li>
+<li>
+<p><input disabled type=checkbox> Create project note for notion? lmao</p>
+</li>
+</ul>
+<p>days for:</p>
+<ul>
+<li>school
+<ul>
+<li>Upload slides, onenote links, reference notes !</li>
+</ul>
+</li>
+<li>content creation</li>
+<li>adding projects</li>
+<li>pillars/dashboard notes
+<ul>
+<li>reminders as to why i want to do things</li>
+<li>long term goals cultivated from periodic reviews</li>
+<li>main focuses in periodic reviews</li>
+<li>no task stuff, will be put</li>
+</ul>
+</li>
+</ul>
+<p>Valorant???</p>
+<ul>
+<li>Sort by map</li>
+<li>Store lineups, playstyles, etc</li>
+</ul>
+<h3 id=3-0212>3 02/12</h3>
+<h4 id=notes-2>Notes</h4>
+<h5 id=how-i-organize-my-life--stay-productivenotion-tour--free-templatehttpswwwyoutubecomwatchvzi_qawwslsyt992sab_channeldobochobo>
+<a href="https://www.youtube.com/watch?v=zi_qAwwslSY&t=992s&ab_channel=dobochobo" rel=noopener>how i organize my life & stay productive💡notion tour + free template</a></h5>
+<p>Area dashboards</p>
+<ul>
+<li>Academia
+<ul>
+<li>Current classes
+<img src=https://cdn.discordapp.com/attachments/422640766414880771/942222735189348362/Screenshot_20220212-050431.jpg alt=Image></li>
+<li>Studio/creative
+<ul>
+<li>Idea dump/planning</li>
+<li>Images and quotes</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Content calendar</p>
+<ul>
+<li>Drafts and videos</li>
+</ul>
+<p>Classes</p>
+<ul>
+<li>Properties
+<ul>
+<li>Name</li>
+<li>Credits</li>
+<li>Grade</li>
+<li>Teacher</li>
+<li>Quarter</li>
+<li>School</li>
+<li>Course page</li>
+<li>Start date ?
+Video planning (table list)</li>
+</ul>
+</li>
+<li>Properties
+<ul>
+<li>Video num</li>
+<li>Status
+<ul>
+<li>Planning</li>
+<li>Filming</li>
+<li>Editing</li>
+<li>Published</li>
+</ul>
+</li>
+<li>Sponsor</li>
+<li>Published (check)</li>
+<li>Date</li>
+<li>Tags
+<ul>
+<li>URL</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>content
+<ul>
+<li>brain dump</li>
+<li>outline</li>
+<li>script/voiceover</li>
+</ul>
+</li>
+</ul>
+<p>Chloe tan</p>
+<ul>
+<li>video styles
+<ul>
+<li>sit down and talk</li>
+<li>do things and review</li>
+<li>do cool things</li>
+</ul>
+</li>
+<li>gallery view, just list of ideas</li>
+</ul>
+<h4 id=logs-1>Logs</h4>
+<p>Found out about full width lmao</p>
+<p>Plan today is to setup school hub</p>
+<ul>
+<li>tried embedding school calendar and importing assignments, but ended up being buddy and tedious</li>
+<li>setup main hub</li>
+<li>study plan template</li>
+<li>retrospective time tables</li>
+<li>task management</li>
+</ul>
+<p>Track finances
+<a href=https://gyazo.com/37e00fc1f40cc0e794caaf43ab5a528f rel=noopener>
+<img src=https://i.gyazo.com/37e00fc1f40cc0e794caaf43ab5a528f.png alt="Image from Gyazo"></a></p>
+<p>pros and cons of using notion vs obsidian for planning</p>
+<ul>
+<li>wide view and different views pretty epic</li>
+<li>more view customization</li>
+</ul>
+<p>Future stuff</p>
+<ul>
+<li><input disabled type=checkbox> do 295 study plan + timetable</li>
+<li><input disabled type=checkbox> create notion project</li>
+<li><input disabled type=checkbox> finance thingy</li>
+<li><input disabled type=checkbox> transfer weekly reviews into notion?</li>
+</ul>
+<h3 id=4-0213>4 02/13</h3>
+<ul>
+<li>Yeah idek what i want to do</li>
+</ul>
+<p>Worked on transferring weekly review to notion</p>
+<ul>
+<li>Super happy with the dynamic customization, was able to turn what was originally a huge wall of text into a more pleasing weekly review</li>
+</ul>
+<p>Databases help a lot with organizing :)</p>
+<h4 id=projects>Projects</h4>
+<p>actual projects will be made in project database</p>
+<ul>
+<li>contain the kanban lists, the notes, etc !</li>
+</ul>
+<p>hubsies will have a weekly section with page reference to future plan, inline weekly planner</p>
+<ul>
+<li>weekly planner will have reference to project note</li>
+</ul>
+<p>areas will have an inline sorted to display relevant projects</p>
+<p>school will have database for assignment notes for organization</p>
+<h4 id=weekly-review>Weekly Review</h4>
+<ul>
+<li>I like the component-based nature of the databases to make it less linear</li>
+<li>Unsure on how I want to utilize the weekly planner
+<ul>
+<li>Use duplicates? or are they just reminders?
+<ul>
+<li>I could just highlight what I want to do on separate days
+<ul>
+<li>Just want it to be seamless</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>just help remind me on what I need to do, link to the relevant project note</li>
+</ul>
+<h3 id=5-0214-16-lmao>5 02/14-16 lmao</h3>
+<ul>
+<li>Kept using it for schoolwork, nothing new added
+<ul>
+<li>Made assignments
+<ul>
+<li>Computing assignment 2
+<ul>
+<li>Notion starts lagging as I&rsquo;m typing, rather annoying</li>
+<li>unlike a more linear note taking app, I like how I can fill in empty space by moving notes to another column</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>study plan
+<ul>
+<li>templates make things much easier</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>notion enhanced
+<ul>
+<li>themes, other features, wanted to try to see if it reduced lag but its about the same :(
+<ul>
+<li>need to troubleshoot xd</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id=6>6</h3>
+<ul>
+<li>Used it for taking notes and project management for a hackathon</li>
+<li>Was proficient enough to know how to implement the things I wanted to, using kanbans for different components of the program
+<ul>
+<li>Only problem is that my teammates could view but not edit, was over 1000 block limit</li>
+</ul>
+</li>
+</ul>
+<p>Finance planner?
+Learning a new thing roadmap?
+Notion mods?</p>
+<ul>
+<li>Tried a bunch of extensions</li>
+<li>Find it really laggy, scrolling is delayed, might have to just use online version</li>
+</ul>
+<h3 id=7>7</h3>
+<p>VALORANT notes</p>
+<ul>
+<li>Really a fan of gallery view, a nice change from linear note taking in Obsidian</li>
+</ul>
+<h3 id=reflection>Reflection</h3>
+<ul>
+<li>
+<p>Will make videos going in depth on all of my creations :)</p>
+</li>
+<li>
+<p>Like the wide variety of database views</p>
+</li>
+</ul>
+<h4 id=pros>Pros</h4>
+<ul>
+<li>Features available if you&rsquo;re using solo</li>
+<li>Only problem i had was uploading large images, other than that was able to do pretty much everything I wanted</li>
+<li>The ecosystem of content made it really easy to find inspiration and imeplementations of things I wanted to do
+<ul>
+<li>Can be really lazy and download templates</li>
+</ul>
+</li>
+<li>Decoration
+<ul>
+<li>Way more customizable than other apps, with different colors, images, icons, covers, layouts, just a lot you can do
+<ul>
+<li>Unfortunately, this can also be a downfall
+<ul>
+<li>Spend more time customizing than doing work</li>
+<li>Perfectionism</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id=cons>Cons</h4>
+<ul>
+<li>Lag</li>
+<li>Forced online</li>
+<li>Lack of sharing</li>
+</ul>
+<h4 id=how-will-i-use-notion-going-forward>How will I use notion going forward</h4>
+<ul>
+<li>I&rsquo;m going to use notion for all the things I implemented throughout the 7 days
+<ul>
+<li>Dashboard for things</li>
+<li>Planning</li>
+<li>Weekly reviews</li>
+<li></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id=backlinks>Backlinks</h1>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>list from <a href=/7-Day-Notion-Experiment-Logs rel=noopener class=internal-link data-src=/7-Day-Notion-Experiment-Logs>7 Day Notion Experiment Logs</a> AND !outgoing(<a href=/7-Day-Notion-Experiment-Logs rel=noopener class=internal-link data-src=/7-Day-Notion-Experiment-Logs>7 Day Notion Experiment Logs</a>)
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>References:</p>
+<p>Created:: 2022-02-10 22:42</p>
+</article>
+<hr>
+<div class=page-end>
+<div class=backlinks-container>
+<h3>Backlinks</h3>
+<ul class=backlinks>
+<li>
+<a href=/V-I-tried-using-notion-for-7-days>Untitled Page</a>
+</li>
+</ul>
+</div>
+<div>
+<script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script>
+<h3>Interactive Graph</h3>
+<div id=graph-container></div>
+<style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
+<script src=https://quartz.jzhao.xyz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
+<script>drawGraph("https://quartz.jzhao.xyz/7-Day-Notion-Experiment-Logs","https://quartz.jzhao.xyz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+</div>
+</div>
+<div id=contact_buttons>
+<footer>
+<p>Made by John Mavrick Reyes using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p>
+<ul>
+<li><a href=/>Home</a></li>
+<li><a href=http://johnmavrick.tech/>Website</a></li><li><a href=https://linktr.ee/johnmavrick>Linktree</a></li></ul>
+</footer>
+</div>
+<script src=https://quartz.jzhao.xyz/js/popover.9d69dffc0f2d029ef30cf63230ccce4c.min.js></script>
+<script>initPopover("https://quartz.jzhao.xyz")</script>
+</div>
+</body>
+</html>

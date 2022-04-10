@@ -1,0 +1,169 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=description content="Status: Tags: #cards/math232 Links: [[Math 232 Course Outline]]
+ MATH 232 Vocabulary 1 1.1 $R^2$ ;; 2D space
+$R^3$ ;; 3D space">
+<title>John Mavrick's Garden</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" type=image/png href=/icon.png>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&family=Fira+Code:wght@400;700&display=swap" rel=stylesheet>
+<link href=https://quartz.jzhao.xyz/styles.62abffa83e1b36143f7e490dc494ec6f.min.css rel=stylesheet>
+<script src=https://quartz.jzhao.xyz/js/darkmode.46b07878b7f5d9e26ad7a3c40f8a0605.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:!0},{left:'$',right:'$',display:!1}],throwOnError:!1})})</script>
+<script>const BASE_URL="https://quartz.jzhao.xyz/",fetchData=Promise.all([fetch("https://quartz.jzhao.xyz/indices/linkIndex.b4df6755e0129cea17afc671eb36e0d2.min.json").then(a=>a.json()).then(a=>({index:a.index,links:a.links})),fetch("https://quartz.jzhao.xyz/indices/contentIndex.8923c41347a61a4c98ec93c68e1b0edb.min.json").then(a=>a.json())]).then(([{index:a,links:b},c])=>({index:a,links:b,content:c}))</script>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-XYFD95KB4J',{anonymize_ip:!1})}</script>
+<body>
+<div id=search-container>
+<div id=search-space>
+<input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something...">
+<div id=results-container>
+</div>
+</div>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://quartz.jzhao.xyz/js/search.bc849b857f2c1b822264d40635bb67b6.min.js></script>
+<div class=singlePage>
+<header>
+<h1 id=page-title><a href=https://quartz.jzhao.xyz/>John Mavrick's Garden</a></h1><svg tabindex="0" id="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg>
+<div class=spacer></div>
+<div class=darkmode>
+<input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg>
+</label>
+<label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg>
+</label>
+</div>
+</header>
+<article>
+<p class=meta>
+Last updated Unknown
+</p>
+<ul class=tags>
+</ul>
+<p>Status:
+Tags: <code>#cards/math232</code>
+Links: <a href=/Math-232-Course-Outline rel=noopener class=internal-link data-src=/Math-232-Course-Outline>Math 232 Course Outline</a></p>
+<hr>
+<h1 id=math-232-vocabulary>MATH 232 Vocabulary</h1>
+<h2 id=1>1</h2>
+<h3 id=11>1.1</h3>
+<p>$R^2$ ;; 2D space</p>
+<p>$R^3$ ;; 3D space</p>
+<p>n-tuple ;; ordered list of an numbers enclosed in brackets</p>
+<p>coordinate ;; n-tuple that describes position of joint</p>
+<p>scalar ;; object that can be described by a number, written normally</p>
+<p>vector ;; object that can be described by a number value (magnitude) and direction. Can also be descripbed by n-tuple
+Components ;; each item of a vector</p>
+<h3 id=12>1.2</h3>
+<p>trivial solution ;; the solution that consists of the
+trivial solution ;; the solution that consists of the zero vector.<br>
+unit vector ;; a vector of length 1.<br>
+standard basis vectors in R2 ;; {e1 = (1, 0), e2 = (0, 1)}
+standard basis vectors in R3 ;; {e1 = (1, 0, 0), e2 = (0, 1, 0), e3 = (0, 0, 1)} linear</p>
+<p>basis ;; a minimum spanning set.</p>
+<h3 id=13>1.3</h3>
+<p>length/magnitude/norm of vector ;; how long vector is
+angle of a vector ;; angle between x axis and vector, measured counter-clockwise</p>
+<p>product ;; multiplication of two things</p>
+<p>dot product ;; type of vector multiplication
+cross product ;; type of vector multiplication used only in $R^3$</p>
+<p>orthogonal ;; at right angles, perpendicular</p>
+<p>normal vector ;; vector orthogonal to what it is being referenced to/plane</p>
+<h3 id=15>1.5</h3>
+<p>Scalar Product ;; another name for the dot product (the result of the dot product is a scalar)</p>
+<p>Inner product ;; another name for the dot product.
+Projection ;; an everyday example of this is your shadow - a projection of you onto the ground.</p>
+<p>Unit Vector ;; a vector with a norm of 1</p>
+<p>Dimension of a space ;; the number of vectors in the basis that spans the space.
+Hyperplane ;; n-dimensional generalization of the plane. A subspace whose dimension is one less than the ambient space.
+Triangle inequality ;; Diagonal of a rectangle is never longer than the sum of both sides</p>
+<p>Cauchy-Schwartz Inequality
+?</p>
+<ul>
+<li>
+<a href=https://gyazo.com/491083cced769814553ab137be43a08a rel=noopener>
+<img src=https://i.gyazo.com/491083cced769814553ab137be43a08a.png alt="Image from Gyazo"></a></li>
+</ul>
+<h2 id=2>2</h2>
+<h3 id=21--systems-of-linear-equations-and-elimination>2.1- Systems of Linear Equations and Elimination</h3>
+<p>Linear equation ;; equations of the form $a_1x_1 + a_2x_2 + &mldr; + a_nx_n = b$, geometrically a hyperplane in $R^2$</p>
+<p>Homogeneous linear equation ;; linear equation where b is zero</p>
+<p>Non-linear equation ;; all the rest</p>
+<p>System of equations ;; a set of equations in the same variables
+Unknowns ;; the variables in a system of equations
+Solution ;; the values of the variables that solve the
+Solution set ;; the set of all the solutions</p>
+<p>Consistent ;; a system of linear equations that has at least one solution
+Inconsistent ;; a system of linear equations that has no solution</p>
+<p>Pivot ;; top non-zero entry in a column of a matrixs</p>
+<h3 id=24>2.4</h3>
+<p>Hooke’s Law ;; F = kx where F is force, k is the spring constant, and x is displacement.</p>
+<p>Law’s of Electrical Circuits ;; Ohm’s Law, Kirchhoff’s voltage and current laws.</p>
+<p>Flow Network ;; a collection of branches through which something flows.
+Partial Fractions ;; a method of rewriting a rational fraction as a sum of fractions whose denominators are linear or irreducible quadratic factors.</p>
+<p>Chemical Equation ;; Indicate how reactants are rearranged into products.
+Balanced Chemcial Equations ;; Chemical Equations where both sides of the equation have the same number of atoms of each type.</p>
+<h2 id=3>3</h2>
+<h3 id=34>3.4</h3>
+<p>Range ;; set of all possible outputs of a transformation
+Nullspace ;; all of the inputs that get mapped to 0
+Column space ;; subspace spanned by columns of a matrix
+Row space ;; the subspace spanned by rows of a matrix</p>
+<h3 id=35>3.5</h3>
+<p>Invertible ;; has an inverse
+I ;; multiplicattive identity matrix
+Additive identity ;; Adding 0
+Additive inverse ;; y where x+y = 0, x is some number
+Multiplicative inverse ;; y where xy = 1, x is some number</p>
+<hr>
+<h1 id=backlinks>Backlinks</h1>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback>list from <a href=/MATH-232-Vocabulary rel=noopener class=internal-link data-src=/MATH-232-Vocabulary>MATH 232 Vocabulary</a> AND !outgoing(<a href=/MATH-232-Vocabulary rel=noopener class=internal-link data-src=/MATH-232-Vocabulary>MATH 232 Vocabulary</a>)
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>References:</p>
+<p>Created:: 2022-01-10 13:02</p>
+</article>
+<hr>
+<div class=page-end>
+<div class=backlinks-container>
+<h3>Backlinks</h3>
+<ul class=backlinks>
+<li>
+<a href=/Math-232-Course-Outline>Untitled Page</a>
+</li>
+</ul>
+</div>
+<div>
+<script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script>
+<h3>Interactive Graph</h3>
+<div id=graph-container></div>
+<style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style>
+<script src=https://quartz.jzhao.xyz/js/graph.27e8521c25c27c79dea35f434c486167.js></script>
+<script>drawGraph("https://quartz.jzhao.xyz/MATH-232-Vocabulary","https://quartz.jzhao.xyz",[{"/moc":"#4388cc"}],-1,!0,!1,!0)</script>
+</div>
+</div>
+<div id=contact_buttons>
+<footer>
+<p>Made by John Mavrick Reyes using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p>
+<ul>
+<li><a href=/>Home</a></li>
+<li><a href=http://johnmavrick.tech/>Website</a></li><li><a href=https://linktr.ee/johnmavrick>Linktree</a></li></ul>
+</footer>
+</div>
+<script src=https://quartz.jzhao.xyz/js/popover.9d69dffc0f2d029ef30cf63230ccce4c.min.js></script>
+<script>initPopover("https://quartz.jzhao.xyz")</script>
+</div>
+</body>
+</html>
